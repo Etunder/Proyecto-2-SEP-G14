@@ -1,0 +1,17 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/etien/Desktop/SEP/FPU/FPU/FPU.srcs/sim_1/new/Cascader_tb.vhd,1715134392,vhdl,,,,tb_cascader_cu,,,,,,,,
+C:/Users/etien/Desktop/SEP/FPU/FPU/FPU.srcs/sim_1/new/tb_FFT.vhd,1715228038,vhdl,,,,fft_tb,,,,,,,,
+C:/Users/etien/Desktop/SEP/FPU/FPU/FPU.srcs/sim_1/new/tb_FPU_Cascader.vhd,1715215182,vhdl,,,,tb_fpu_cascader,,,,,,,,
+C:/Users/etien/Desktop/SEP/FPU/FPU/FPU.srcs/sim_1/new/tb_fpmult.vhd,1715120041,vhdl,,,,tb_fpmult,,,,,,,,
+C:/Users/etien/Desktop/SEP/FPU/FPU/FPU.srcs/sources_1/new/Cascader_CU.vhd,1715226068,vhdl,,,,cascader_cu,,,,,,,,
+C:/Users/etien/Desktop/SEP/FPU/FPU/FPU.srcs/sources_1/new/FFT.vhd,1715231572,vhdl,,,,fft,,,,,,,,
+C:/Users/etien/Desktop/SEP/FPU/FPU/FPU.srcs/sources_1/new/FPU.vhd,1715150855,vhdl,,,,fpu,,,,,,,,
+C:/Users/etien/Desktop/SEP/FPU/FPU/FPU.srcs/sources_1/new/FPU_Cascader.vhd,1715229378,vhdl,,,,fpu_cascader,,,,,,,,
+C:/Users/etien/Desktop/SEP/FPU/fp32_logic/src/fp32_op/fp32_addsub.vhd,1715152362,vhdl,,,,fp32_addsub,,,,,,,,
+C:/Users/etien/Desktop/SEP/FPU/fp32_logic/src/fp32_op/fp32_mult.vhd,1715152263,vhdl,,,,fp32_mult,,,,,,,,
+C:/Users/etien/Desktop/SEP/FPU/fp32_logic/src/fp32_op/fp32_pkg.vhd,1714772165,vhdl,C:/Users/etien/Desktop/SEP/FPU/FPU/FPU.srcs/sources_1/new/FFT.vhd,,,fp32_pkg,,,,,,,,
+C:/Users/etien/Desktop/SEP/FPU/fp32_logic/src/fp32_op/reduce_pack.vhd,1714772165,vhdl,C:/Users/etien/Desktop/SEP/FPU/fp32_logic/src/fp32_op/fp32_pkg.vhd,,,reduce_pack,,,,,,,,
+C:/Users/etien/Desktop/SEP/FPU/fp32_logic/src/fp32_op/rtl_dsp48_25x25.vhd,1714772165,vhdl,C:/Users/etien/Desktop/SEP/FPU/fp32_logic/src/fp32_op/fp32_mult.vhd,,,rtl_dsp48_25x25,,,,,,,,

@@ -1,0 +1,295 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri May 10 20:01:07 2024
+# Process ID: 19664
+# Current directory: C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer/CircularBuffer.runs/impl_1
+# Command line: vivado.exe -log circular_buffer.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source circular_buffer.tcl -notrace
+# Log file: C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer/CircularBuffer.runs/impl_1/circular_buffer.vdi
+# Journal file: C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer/CircularBuffer.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source circular_buffer.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer/CircularBuffer.runs/impl_1'.)
+WARNING: [IP_Flow 19-3685] Ignored loading user repository 'c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer/CircularBuffer.srcs'. The path is contained within another repository.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:circular_buffer:1.0'. The one found in IP location 'c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer' will take precedence over the same IP in location c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer/CircularBuffer.srcs
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer/CircularBuffer.cache/ip 
+Command: link_design -top circular_buffer -part xc7z010clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1070.188 ; gain = 0.000
+WARNING: [Netlist 29-101] Netlist 'circular_buffer' is not ideal for floorplanning, since the cellview 'circular_buffer' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1070.188 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1070.188 ; gain = 0.000
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1070.188 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: ac6c3a3c
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1427.637 ; gain = 357.449
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: ac6c3a3c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.093 . Memory (MB): peak = 1617.602 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: ac6c3a3c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 1617.602 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: ac6c3a3c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.134 . Memory (MB): peak = 1617.602 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: ac6c3a3c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.148 . Memory (MB): peak = 1617.602 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: ac6c3a3c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.173 . Memory (MB): peak = 1617.602 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: ac6c3a3c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.180 . Memory (MB): peak = 1617.602 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1617.602 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: ac6c3a3c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.184 . Memory (MB): peak = 1617.602 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: ac6c3a3c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1617.602 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: ac6c3a3c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1617.602 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1617.602 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: ac6c3a3c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1617.602 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+24 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1617.602 ; gain = 547.414
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer/CircularBuffer.runs/impl_1/circular_buffer_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file circular_buffer_drc_opted.rpt -pb circular_buffer_drc_opted.pb -rpx circular_buffer_drc_opted.rpx
+Command: report_drc -file circular_buffer_drc_opted.rpt -pb circular_buffer_drc_opted.pb -rpx circular_buffer_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer/CircularBuffer.runs/impl_1/circular_buffer_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1617.602 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 21b50af7
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1617.602 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1617.602 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-415] IO Placement failed due to overutilization. This design contains 2049 I/O ports
+ while the target  device: 7z010 package: clg400, contains only 230 available user I/O. The target device has 230 usable I/O pins of which 0 are already occupied by user-locked I/Os.
+ To rectify this issue:
+ 1. Ensure you are targeting the correct device and package.  Select a larger device or different package if necessary.
+ 2. Check the top-level ports of the design to ensure the correct number of ports are specified.
+ 3. Consider design changes to reduce the number of I/Os necessary.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+ERROR: [Place 30-68] Instance is_done_OBUF_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[0]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1000]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1001]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1002]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1003]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1004]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1005]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1006]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1007]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1008]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1009]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[100]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1010]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1011]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1012]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1013]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1014]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1015]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1016]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1017]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1018]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1019]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[101]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1020]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1021]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1022]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1023]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1024]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1025]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1026]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1027]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1028]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1029]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[102]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1030]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1031]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1032]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1033]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1034]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1035]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1036]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1037]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1038]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1039]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[103]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1040]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1041]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1042]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1043]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1044]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1045]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1046]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1047]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1048]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1049]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[104]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1050]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1051]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1052]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1053]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1054]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1055]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1056]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1057]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1058]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1059]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[105]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1060]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1061]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1062]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1063]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1064]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1065]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1066]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1067]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1068]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1069]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[106]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1070]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1071]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1072]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1073]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1074]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1075]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1076]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1077]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1078]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1079]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[107]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1080]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1081]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1082]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1083]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1084]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1085]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1086]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1087]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1088]_inst (OBUF) is not placed
+ERROR: [Place 30-68] Instance vector_64x32_bits_OBUF[1089]_inst (OBUF) is not placed
+INFO: [Common 17-14] Message 'Place 30-68' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 21b50af7
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1617.602 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 21b50af7
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1617.602 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 21b50af7
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1617.602 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+40 Infos, 6 Warnings, 0 Critical Warnings and 103 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Fri May 10 20:01:52 2024...

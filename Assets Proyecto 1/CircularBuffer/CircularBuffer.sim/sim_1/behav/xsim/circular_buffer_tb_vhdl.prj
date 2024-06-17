@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../CircularBuffer.srcs/sources_1/new/circular_buffer.vhd" \
+"../../../../CircularBuffer.srcs/sim_1/new/circular_buffer_tb.vhd" \
+
+# Do not sort compile order
+nosort

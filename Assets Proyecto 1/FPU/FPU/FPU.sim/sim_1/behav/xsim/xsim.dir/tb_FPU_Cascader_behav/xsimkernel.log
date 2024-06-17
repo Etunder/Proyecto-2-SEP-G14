@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_FPU_Cascader_behav/xsimk.exe -simmode gui -wdb tb_FPU_Cascader_behav.wdb -simrunnum 0 -socket 50293
+Design successfully loaded
+Design Loading Memory Usage: 6564 KB (Peak: 6564 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 11332 KB (Peak: 11332 KB)
+Simulation CPU Usage: 765 ms
