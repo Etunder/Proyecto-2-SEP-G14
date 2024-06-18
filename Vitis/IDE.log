@@ -1,0 +1,14 @@
+23:18:33 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Vitis\temp_xsdb_launch_script.tcl
+23:18:33 INFO  : Registering command handlers for Vitis TCF services
+23:18:38 INFO  : Platform repository initialization has completed.
+23:18:39 INFO  : XSCT server has started successfully.
+23:18:39 INFO  : plnx-install-location is set to ''
+23:18:39 INFO  : Successfully done setting XSCT server connection channel  
+23:18:43 INFO  : Successfully done setting workspace for the tool. 
+23:18:43 INFO  : Successfully done query RDI_DATADIR 
+23:21:54 INFO  : Result from executing command 'getProjects': HW_top
+23:21:54 INFO  : Result from executing command 'getPlatforms': 
+09:20:38 INFO  : Successfully done sdx_reload_mss "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Vitis/HW_top/zynq_fsbl/zynq_fsbl_bsp/system.mss"
+09:20:39 INFO  : Successfully done sdx_reload_mss "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Vitis/HW_top/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+09:27:23 INFO  : Result from executing command 'getProjects': HW_top
+09:27:23 INFO  : Result from executing command 'getPlatforms': HW_top|C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Vitis/HW_top/export/HW_top/HW_top.xpfm

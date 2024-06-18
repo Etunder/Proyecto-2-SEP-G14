@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="top_axi_quad_spi_0_0_synth_1" LaunchDir="C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/top_axi_quad_spi_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_axi_gpio_0_0_synth_1" LaunchDir="C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/top_axi_gpio_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_axi_gpio_1_0_synth_1" LaunchDir="C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/top_axi_gpio_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="top_axi_gpio_0_0_synth_1"/>
+	</Run>
+	<Run Id="top_axi_iic_0_0_synth_1" LaunchDir="C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/top_axi_iic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_rst_ps7_0_50M_0_synth_1" LaunchDir="C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/top_rst_ps7_0_50M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_processing_system7_0_0_synth_1" LaunchDir="C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/top_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_xbar_0_synth_1" LaunchDir="C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/top_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_axi_quad_spi_1_0_synth_1" LaunchDir="C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/top_axi_quad_spi_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="top_auto_pc_0_synth_1" LaunchDir="C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/top_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="top_axi_quad_spi_0_0_synth_1"/>
+		<Parent Id="top_axi_gpio_0_0_synth_1"/>
+		<Parent Id="top_axi_gpio_1_0_synth_1"/>
+		<Parent Id="top_axi_iic_0_0_synth_1"/>
+		<Parent Id="top_rst_ps7_0_50M_0_synth_1"/>
+		<Parent Id="top_processing_system7_0_0_synth_1"/>
+		<Parent Id="top_xbar_0_synth_1"/>
+		<Parent Id="top_axi_quad_spi_1_0_synth_1"/>
+		<Parent Id="top_auto_pc_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="top_axi_quad_spi_0_0_synth_1"/>
+		<Parent Id="top_axi_gpio_0_0_synth_1"/>
+		<Parent Id="top_axi_gpio_1_0_synth_1"/>
+		<Parent Id="top_axi_iic_0_0_synth_1"/>
+		<Parent Id="top_rst_ps7_0_50M_0_synth_1"/>
+		<Parent Id="top_processing_system7_0_0_synth_1"/>
+		<Parent Id="top_xbar_0_synth_1"/>
+		<Parent Id="top_axi_quad_spi_1_0_synth_1"/>
+		<Parent Id="top_auto_pc_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

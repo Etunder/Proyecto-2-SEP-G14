@@ -1,0 +1,352 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Jun 16 21:17:49 2024
+# Process ID: 19120
+# Current directory: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14560 C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Top\Top\Top.xpr
+# Log file: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/vivado.log
+# Journal file: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/etien/Desktop/Proyecto SEP 2/Top/Top' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 2'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 1071.281 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/top.bd}
+Successfully read diagram <top> from BD file <C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/top.bd>
+export_ip_user_files -of_objects  [get_files C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/new/BUZZER.vhd] -no_script -reset -force -quiet
+remove_files  C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/new/BUZZER.vhd
+remove_files  C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/new/BUZZER.vhd
+WARNING: [Vivado 12-818] No files matched 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/new/BUZZER.vhd'
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_quad_spi:3.2 axi_quad_spi_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_1
+endgroup
+set_property location {1 131 -207} [get_bd_cells axi_gpio_0]
+set_property location {1 156 -471} [get_bd_cells axi_quad_spi_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_iic:2.0 axi_iic_0
+endgroup
+set_property location {2 327 -55} [get_bd_cells axi_iic_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_quad_spi:3.2 axi_quad_spi_1
+endgroup
+set_property location {2 373 -54} [get_bd_cells axi_quad_spi_1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+endgroup
+set_property location {0.5 -15 -245} [get_bd_cells processing_system7_0]
+WARNING: [Boardtcl 53-1] No current board_part set.
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_rtl_0
+INFO: [BoardRule 102-9] connect_bd_intf_net /gpio_rtl_0 /axi_gpio_0/GPIO
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_0/S_AXI} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_gpio_0/S_AXI]
+Slave segment '/axi_gpio_0/S_AXI/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4120_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_1/GPIO]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_rtl_1
+INFO: [BoardRule 102-9] connect_bd_intf_net /gpio_rtl_1 /axi_gpio_1/GPIO
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_gpio_1/S_AXI} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_gpio_1/S_AXI]
+Slave segment '/axi_gpio_1/S_AXI/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4121_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_iic_0/IIC]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:iic_rtl:1.0 iic_rtl_0
+INFO: [BoardRule 102-9] connect_bd_intf_net /iic_rtl_0 /axi_iic_0/IIC
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_iic_0/S_AXI} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_iic_0/S_AXI]
+Slave segment '/axi_iic_0/S_AXI/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4160_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_quad_spi_0/AXI_LITE} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_quad_spi_0/AXI_LITE]
+Slave segment '/axi_quad_spi_0/AXI_LITE/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x41E0_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_quad_spi_0/SPI_0]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:spi_rtl:1.0 spi_rtl_0
+INFO: [BoardRule 102-9] connect_bd_intf_net /spi_rtl_0 /axi_quad_spi_0/SPI_0
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_quad_spi_1/AXI_LITE} ddr_seg {Auto} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_quad_spi_1/AXI_LITE]
+Slave segment '/axi_quad_spi_1/AXI_LITE/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x41E1_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_quad_spi_1/SPI_0]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:spi_rtl:1.0 spi_rtl_1
+INFO: [BoardRule 102-9] connect_bd_intf_net /spi_rtl_1 /axi_quad_spi_1/SPI_0
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_quad_spi_0/ext_spi_clk]
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config { Clk {/processing_system7_0/FCLK_CLK0 (50 MHz)} Freq {100} Ref_Clk0 {} Ref_Clk1 {} Ref_Clk2 {}}  [get_bd_pins axi_quad_spi_1/ext_spi_clk]
+endgroup
+regenerate_bd_layout
+regenerate_bd_layout
+regenerate_bd_layout -routing
+delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO] [get_bd_intf_ports gpio_rtl_0]
+delete_bd_objs [get_bd_intf_nets axi_gpio_1_GPIO] [get_bd_intf_ports gpio_rtl_1]
+delete_bd_objs [get_bd_intf_nets axi_iic_0_IIC] [get_bd_intf_ports iic_rtl_0]
+delete_bd_objs [get_bd_intf_nets axi_quad_spi_0_SPI_0] [get_bd_intf_ports spi_rtl_0]
+delete_bd_objs [get_bd_intf_nets axi_quad_spi_1_SPI_0] [get_bd_intf_ports spi_rtl_1]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_rtl_0
+INFO: [BoardRule 102-9] connect_bd_intf_net /gpio_rtl_0 /axi_gpio_0/GPIO
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_1/GPIO]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_rtl_1
+INFO: [BoardRule 102-9] connect_bd_intf_net /gpio_rtl_1 /axi_gpio_1/GPIO
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_iic_0/IIC]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:iic_rtl:1.0 iic_rtl_0
+INFO: [BoardRule 102-9] connect_bd_intf_net /iic_rtl_0 /axi_iic_0/IIC
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_quad_spi_0/SPI_0]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:spi_rtl:1.0 spi_rtl_0
+INFO: [BoardRule 102-9] connect_bd_intf_net /spi_rtl_0 /axi_quad_spi_0/SPI_0
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_quad_spi_1/SPI_0]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:spi_rtl:1.0 spi_rtl_1
+INFO: [BoardRule 102-9] connect_bd_intf_net /spi_rtl_1 /axi_quad_spi_1/SPI_0
+endgroup
+delete_bd_objs [get_bd_intf_nets axi_gpio_0_GPIO] [get_bd_intf_ports gpio_rtl_0]
+delete_bd_objs [get_bd_intf_nets axi_gpio_1_GPIO] [get_bd_intf_ports gpio_rtl_1]
+startgroup
+set_property -dict [list CONFIG.C_IS_DUAL {1}] [get_bd_cells axi_gpio_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_IS_DUAL {1} CONFIG.C_ALL_OUTPUTS {1}] [get_bd_cells axi_gpio_1]
+endgroup
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_rtl_0
+INFO: [BoardRule 102-9] connect_bd_intf_net /gpio_rtl_0 /axi_gpio_0/GPIO
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_0/GPIO2]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_rtl_1
+INFO: [BoardRule 102-9] connect_bd_intf_net /gpio_rtl_1 /axi_gpio_0/GPIO2
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_1/GPIO]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_rtl_2
+INFO: [BoardRule 102-9] connect_bd_intf_net /gpio_rtl_2 /axi_gpio_1/GPIO
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_1/GPIO2]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_rtl_3
+INFO: [BoardRule 102-9] connect_bd_intf_net /gpio_rtl_3 /axi_gpio_1/GPIO2
+endgroup
+regenerate_bd_layout
+regenerate_bd_layout -routing
+startgroup
+set_property -dict [list CONFIG.C_ALL_OUTPUTS {0}] [get_bd_cells axi_gpio_1]
+endgroup
+delete_bd_objs [get_bd_intf_nets axi_gpio_1_GPIO] [get_bd_intf_ports gpio_rtl_2]
+delete_bd_objs [get_bd_intf_nets axi_gpio_1_GPIO2] [get_bd_intf_ports gpio_rtl_3]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_1/GPIO]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_rtl_2
+INFO: [BoardRule 102-9] connect_bd_intf_net /gpio_rtl_2 /axi_gpio_1/GPIO
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins axi_gpio_1/GPIO2]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_rtl_3
+INFO: [BoardRule 102-9] connect_bd_intf_net /gpio_rtl_3 /axi_gpio_1/GPIO2
+endgroup
+set_property name RS [get_bd_intf_ports gpio_rtl_2]
+undo
+INFO: [Common 17-17] undo 'set_property name RS [get_bd_intf_ports gpio_rtl_2]'
+set_property name RS [get_bd_intf_ports gpio_rtl_0]
+set_property name RST [get_bd_intf_ports gpio_rtl_1]
+set_property name iic_rtl [get_bd_intf_ports iic_rtl_0]
+set_property name spi_rtl [get_bd_intf_ports spi_rtl_1]
+delete_bd_objs [get_bd_intf_nets axi_quad_spi_0_SPI_0]
+delete_bd_objs [get_bd_intf_ports spi_rtl_0]
+startgroup
+make_bd_pins_external  [get_bd_pins axi_quad_spi_0/io1_o]
+WARNING: [BD 41-1306] The connection to interface pin /axi_quad_spi_0/io1_o is being overridden by the user. This pin will not be connected as a part of interface connection SPI_0
+endgroup
+set_property name MOSI [get_bd_ports io1_o_0]
+startgroup
+make_bd_pins_external  [get_bd_pins axi_quad_spi_0/ss_o]
+WARNING: [BD 41-1306] The connection to interface pin /axi_quad_spi_0/ss_o is being overridden by the user. This pin will not be connected as a part of interface connection SPI_0
+endgroup
+set_property name CS [get_bd_ports ss_o_0]
+startgroup
+set_property -dict [list CONFIG.C_USE_STARTUP {0} CONFIG.C_USE_STARTUP_INT {0}] [get_bd_cells axi_quad_spi_0]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins axi_quad_spi_0/sck_o]
+WARNING: [BD 41-1306] The connection to interface pin /axi_quad_spi_0/sck_o is being overridden by the user. This pin will not be connected as a part of interface connection SPI_0
+endgroup
+set_property name SCLK [get_bd_ports sck_o_0]
+add_files -fileset constrs_1 -norecurse C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Zybo-Z7-Master.xdc
+make_wrapper -files [get_files C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/top.bd] -top
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_1 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_1 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+Wrote  : <C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Top\Top\Top.srcs\sources_1\bd\top\top.bd> 
+Wrote  : <C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/ui/bd_2ae56375.ui> 
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/synth/top.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/sim/top.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/hdl/top_wrapper.vhd
+make_wrapper: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1342.781 ; gain = 145.965
+add_files -norecurse C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/hdl/top_wrapper.vhd
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 41-1662] The design 'top.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Top\Top\Top.srcs\sources_1\bd\top\top.bd> 
+Wrote  : <C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/ui/bd_2ae56375.ui> 
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/synth/top.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/sim/top.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/hdl/top_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_quad_spi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_iic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_quad_spi_1 .
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/ip/top_auto_pc_0/top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_50M .
+Exporting to file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/hw_handoff/top.hwh
+Generated Block Design Tcl file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/hw_handoff/top_bd.tcl
+Generated Hardware Definition File C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/synth/top.hwdef
+[Sun Jun 16 22:29:17 2024] Launched top_axi_quad_spi_0_0_synth_1, top_axi_gpio_0_0_synth_1, top_axi_gpio_1_0_synth_1, top_axi_iic_0_0_synth_1, top_rst_ps7_0_50M_0_synth_1, top_processing_system7_0_0_synth_1, top_xbar_0_synth_1, top_axi_quad_spi_1_0_synth_1, top_auto_pc_0_synth_1, synth_1...
+Run output will be captured here:
+top_axi_quad_spi_0_0_synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/top_axi_quad_spi_0_0_synth_1/runme.log
+top_axi_gpio_0_0_synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/top_axi_gpio_0_0_synth_1/runme.log
+top_axi_gpio_1_0_synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/top_axi_gpio_1_0_synth_1/runme.log
+top_axi_iic_0_0_synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/top_axi_iic_0_0_synth_1/runme.log
+top_rst_ps7_0_50M_0_synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/top_rst_ps7_0_50M_0_synth_1/runme.log
+top_processing_system7_0_0_synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/top_processing_system7_0_0_synth_1/runme.log
+top_xbar_0_synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/top_xbar_0_synth_1/runme.log
+top_axi_quad_spi_1_0_synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/top_axi_quad_spi_1_0_synth_1/runme.log
+top_auto_pc_0_synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/top_auto_pc_0_synth_1/runme.log
+synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/synth_1/runme.log
+[Sun Jun 16 22:29:17 2024] Launched impl_1...
+Run output will be captured here: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1395.504 ; gain = 52.723
+delete_bd_objs [get_bd_intf_nets axi_gpio_1_GPIO] [get_bd_intf_ports gpio_rtl_2]
+delete_bd_objs [get_bd_intf_nets axi_gpio_1_GPIO2] [get_bd_intf_ports gpio_rtl_3]
+save_bd_design
+Wrote  : <C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Top\Top\Top.srcs\sources_1\bd\top\top.bd> 
+Wrote  : <C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/ui/bd_2ae56375.ui> 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_1 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_1 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+Wrote  : <C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Top\Top\Top.srcs\sources_1\bd\top\top.bd> 
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/synth/top.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/sim/top.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/hdl/top_wrapper.vhd
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/ip/top_auto_pc_0/top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/hw_handoff/top.hwh
+Generated Block Design Tcl file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/hw_handoff/top_bd.tcl
+Generated Hardware Definition File C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/synth/top.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP top_auto_pc_0, cache-ID = 3898b299cee55cb1; cache size = 7.669 MB.
+[Sun Jun 16 22:41:40 2024] Launched synth_1...
+Run output will be captured here: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/synth_1/runme.log
+[Sun Jun 16 22:41:40 2024] Launched impl_1...
+Run output will be captured here: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 2102.211 ; gain = 16.883
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+regenerate_bd_layout
+make_wrapper -files [get_files C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/top.bd] -top
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {1} CONFIG.C_GPIO2_WIDTH {1}] [get_bd_cells axi_gpio_0]
+endgroup
+save_bd_design
+Wrote  : <C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Top\Top\Top.srcs\sources_1\bd\top\top.bd> 
+Wrote  : <C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/ui/bd_2ae56375.ui> 
+startgroup
+set_property -dict [list CONFIG.C_ALL_OUTPUTS {1} CONFIG.C_ALL_OUTPUTS_2 {1}] [get_bd_cells axi_gpio_0]
+endgroup
+regenerate_bd_layout
+save_bd_design
+Wrote  : <C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Top\Top\Top.srcs\sources_1\bd\top\top.bd> 
+Wrote  : <C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/ui/bd_2ae56375.ui> 
+regenerate_bd_layout
+make_wrapper -files [get_files C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/top.bd] -top
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_1 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_1 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+Wrote  : <C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Top\Top\Top.srcs\sources_1\bd\top\top.bd> 
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/synth/top.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/sim/top.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/hdl/top_wrapper.vhd
+make_wrapper: Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 2426.219 ; gain = 15.535
+reset_run synth_1
+reset_run top_axi_gpio_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 41-1662] The design 'top.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Top\Top\Top.srcs\sources_1\bd\top\top.bd> 
+Wrote  : <C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/ui/bd_2ae56375.ui> 
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/synth/top.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/sim/top.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/hdl/top_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/ip/top_auto_pc_0/top_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/hw_handoff/top.hwh
+Generated Block Design Tcl file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/hw_handoff/top_bd.tcl
+Generated Hardware Definition File C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/synth/top.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP top_auto_pc_0, cache-ID = 3898b299cee55cb1; cache size = 7.669 MB.
+[Sun Jun 16 23:06:25 2024] Launched top_axi_gpio_0_0_synth_1, synth_1...
+Run output will be captured here:
+top_axi_gpio_0_0_synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/top_axi_gpio_0_0_synth_1/runme.log
+synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/synth_1/runme.log
+[Sun Jun 16 23:06:25 2024] Launched impl_1...
+Run output will be captured here: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2426.219 ; gain = 0.000
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+set_property pfm_name {} [get_files -all {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/Top.srcs/sources_1/bd/top/top.bd}]
+write_hw_platform -fixed -include_bit -force -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/top.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/top.xsa ...
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2020.1/data\embeddedsw) loading 2 seconds
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Top/Top/top.xsa
+write_hw_platform: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 2426.219 ; gain = 0.000
