@@ -6,6 +6,7 @@ u8 config[3];
 int Lux;
 int16_t val;
 int temp;
+int Start = 1;
 
 int init_IIC() {
 
@@ -44,10 +45,13 @@ int read_tmp(){
 	temp = val / 128;
 	return temp;
 }
+
 int read_opt(){
 	u8 config[3] = {0x01, 0xc4, 0x10};
-	XIic_Send(iic.BaseAddress,OPT_ADDR,(u8 *)&config, 3, XIIC_STOP);
-
+	if (Start == 1) {
+		XIic_Send(iic.BaseAddress,OPT_ADDR,(u8 *)&config, 3, XIIC_STOP);
+		Start = 0;
+	}
 	SendBuffer[0] = 0x00;
 	XIic_Send(iic.BaseAddress,OPT_ADDR,(u8 *)&SendBuffer, 1, XIIC_REPEATED_START);
 	XIic_Recv(iic.BaseAddress,OPT_ADDR,(u8 *)&RecvBuffer, 2, XIIC_STOP);

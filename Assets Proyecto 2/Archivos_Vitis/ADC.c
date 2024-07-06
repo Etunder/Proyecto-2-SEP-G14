@@ -76,7 +76,7 @@ int read_acy(){
 	for (int i = 0; i < 2; i++) {
 		XSpi_Transfer(&SpiInstance1, WriteBufferACY, ReadBufferACY,
 				BUFFER_SIZE_ADC);
-		ejeACY = ReadBufferACY[0] / 2 + ReadBufferACY[1] * 128;
+		ejeACY = (ReadBufferACY[0] + ReadBufferACY[1] * 256) / 4;
 	}
 	return ejeACY;
 
