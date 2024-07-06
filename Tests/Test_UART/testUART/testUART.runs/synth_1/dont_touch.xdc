@@ -7,4 +7,19 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==uart || ORIG_RE
 # IP: bd/uart/ip/uart_processing_system7_0_0/uart_processing_system7_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==uart_processing_system7_0_0 || ORIG_REF_NAME==uart_processing_system7_0_0} -quiet] -quiet
 
+# IP: bd/uart/ip/uart_AXIFloat_0_0/uart_AXIFloat_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==uart_AXIFloat_0_0 || ORIG_REF_NAME==uart_AXIFloat_0_0} -quiet] -quiet
+
+# IP: bd/uart/ip/uart_vio_0_0/uart_vio_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==uart_vio_0_0 || ORIG_REF_NAME==uart_vio_0_0} -quiet] -quiet
+
+# IP: bd/uart/ip/uart_ps7_0_axi_periph_0/uart_ps7_0_axi_periph_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==uart_ps7_0_axi_periph_0 || ORIG_REF_NAME==uart_ps7_0_axi_periph_0} -quiet] -quiet
+
+# IP: bd/uart/ip/uart_rst_ps7_0_50M_0/uart_rst_ps7_0_50M_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==uart_rst_ps7_0_50M_0 || ORIG_REF_NAME==uart_rst_ps7_0_50M_0} -quiet] -quiet
+
+# IP: bd/uart/ip/uart_auto_pc_0/uart_auto_pc_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==uart_auto_pc_0 || ORIG_REF_NAME==uart_auto_pc_0} -quiet] -quiet
+
 # XDC: bd/uart/uart_ooc.xdc

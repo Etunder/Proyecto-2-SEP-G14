@@ -8,6 +8,7 @@
 #include "xuartps.h"
 #include "ff.h"
 #include "xil_cache.h"
+#include "xil_io.h"
 
 #define SD_DEVICE_ID    XPAR_XSDPS_0_DEVICE_ID
 #define BUFFER_SIZE     64  // Buffer for 64 FP32 values
@@ -19,6 +20,7 @@ static int UartInit(void);
 static int ListFiles(char files[][256], int *file_count);
 static int ReadFileFromSDWithIndex(const char* Filename, float* Buffer, UINT BufferSize, UINT StartIndex);
 static void PrintFloat(float value);
+static uint32_t binaryStringToUint32(const char* binaryString);
 
 XSdPs SdInstance;
 XUartPs Uart_Ps; // Declare the Uart_Ps variable
@@ -72,6 +74,11 @@ int main(void) {
         xil_printf("Middle float value: ");
         PrintFloat(Buffer[BUFFER_SIZE / 2]);
         xil_printf("\r\n");
+
+        xil_printf("Index %d", startIndex);
+        char str[33] = "00111110010011001100110011001101";
+        uint32_t msj = binaryStringToUint32(str);
+		Xil_Out32(XPAR_AXIFLOAT_0_S00_AXI_BASEADDR, msj);
 
         startIndex += BUFFER_SIZE;
 

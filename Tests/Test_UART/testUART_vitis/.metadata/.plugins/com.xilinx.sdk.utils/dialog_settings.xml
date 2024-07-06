@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="C:\Users\Amteo\Desktop\Universidad\SEP\Proyecto-2-SEP-G14\Tests\Test_UART\testUART" key="scw_hwspec_file_selection"/>
 	<item value="C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART" key="scw_hwspec"/>
 </section>

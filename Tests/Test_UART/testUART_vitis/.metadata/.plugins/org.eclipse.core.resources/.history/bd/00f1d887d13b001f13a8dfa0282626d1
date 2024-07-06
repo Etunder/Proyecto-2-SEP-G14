@@ -1,0 +1,283 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+#include <string.h>
+#include "xparameters.h"
+#include "xsdps.h"
+#include "xil_printf.h"
+#include "xuartps.h"
+#include "ff.h"
+#include "xil_cache.h"
+#include "xil_io.h"
+
+#define SD_DEVICE_ID    XPAR_XSDPS_0_DEVICE_ID
+#define BUFFER_SIZE     64  // Buffer for 64 FP32 values
+#define MAX_FILES       100 // Maximum number of files to list
+#define BINARY_STRING_LENGTH 32
+
+static int SdInit(void);
+static int UartInit(void);
+static int ListFiles(char files[][256], int *file_count);
+static int ReadFileFromSDWithIndex(const char* Filename, float* Buffer, UINT BufferSize, UINT StartIndex);
+static void PrintFloat(float value);
+
+XSdPs SdInstance;
+XUartPs Uart_Ps; // Declare the Uart_Ps variable
+
+int main(void) {
+    int Status;
+    float Buffer[BUFFER_SIZE];
+    char files[MAX_FILES][256];
+    int file_count = 0;
+    int file_index;
+    UINT startIndex = 0;
+
+    Status = UartInit();
+    if (Status != XST_SUCCESS) {
+        xil_printf("UART Initialization failed \r\n");
+        return XST_FAILURE;
+    }
+
+    Status = SdInit();
+    if (Status != XST_SUCCESS) {
+        xil_printf("SD Initialization failed \r\n");
+        return XST_FAILURE;
+    }
+
+    Status = ListFiles(files, &file_count);
+    if (Status != XST_SUCCESS) {
+        xil_printf("Failed to list files on SD card \r\n");
+        return XST_FAILURE;
+    }
+
+    xil_printf("Enter the number of the file you want to read: ");
+    scanf("%d", &file_index);
+
+    if (file_index < 0 || file_index >= file_count) {
+        xil_printf("Invalid file index\r\n");
+        return XST_FAILURE;
+    }
+
+    while (1) {
+        Status = ReadFileFromSDWithIndex(files[file_index], Buffer, BUFFER_SIZE, startIndex);
+        if (Status != XST_SUCCESS && Status != FR_OK) {
+            xil_printf("Failed to read file from SD card \r\n");
+            break;
+        }
+
+        // Print the first and middle float values
+        xil_printf("First float value: ");
+        PrintFloat(Buffer[0]);
+        xil_printf("\r\n");
+
+        xil_printf("Middle float value: ");
+        PrintFloat(Buffer[BUFFER_SIZE / 2]);
+        xil_printf("\r\n");
+
+        xil_printf("Index %d", startIndex);
+        char str[33] = "00111110010011001100110011001101";
+        uint32_t msj = binaryStringToUint32(str);
+		Xil_Out32(XPAR_AXIFLOAT_0_S00_AXI_BASEADDR, msj);
+
+        startIndex += BUFFER_SIZE;
+
+        // Stop reading when end of file is reached
+        if (Status == FR_NO_FILE) { // Assumes empty buffer means end of data
+            break;
+        }
+    }
+
+    return XST_SUCCESS;
+}
+
+static int UartInit(void) {
+    int Status;
+    XUartPs_Config *Config;
+
+    Config = XUartPs_LookupConfig(XPAR_XUARTPS_0_DEVICE_ID);
+    if (NULL == Config) {
+        return XST_FAILURE;
+    }
+
+    Status = XUartPs_CfgInitialize(&Uart_Ps, Config, Config->BaseAddress);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    Status = XUartPs_SelfTest(&Uart_Ps);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    XUartPs_SetOperMode(&Uart_Ps, XUARTPS_OPER_MODE_NORMAL);
+
+    return XST_SUCCESS;
+}
+
+static int SdInit(void) {
+    int Status;
+    XSdPs_Config *SdConfig;
+
+    SdConfig = XSdPs_LookupConfig(SD_DEVICE_ID);
+    if (NULL == SdConfig) {
+        return XST_FAILURE;
+    }
+
+    Status = XSdPs_CfgInitialize(&SdInstance, SdConfig, SdConfig->BaseAddress);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    Status = XSdPs_CardInitialize(&SdInstance);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    return XST_SUCCESS;
+}
+
+static int ListFiles(char files[][256], int *file_count) {
+    FRESULT Res;
+    FATFS FatFs;
+    DIR Dir;
+    FILINFO Finfo;
+    TCHAR *Path = "0:/";
+
+    xil_printf("Mounting filesystem...\r\n");
+    // Mount the filesystem
+    Res = f_mount(&FatFs, Path, 0);
+    if (Res != FR_OK) {
+        xil_printf("Failed to mount filesystem: %d\r\n", Res);
+        return XST_FAILURE;
+    }
+
+    xil_printf("Opening directory: %s\r\n", Path);
+    // Open the directory
+    Res = f_opendir(&Dir, Path);
+    if (Res != FR_OK) {
+        xil_printf("Failed to open directory: %d\r\n", Res);
+        f_mount(NULL, Path, 0);
+        return XST_FAILURE;
+    }
+
+    // Read and list all files
+    *file_count = 0;
+    for (;;) {
+        Res = f_readdir(&Dir, &Finfo);
+        if (Res != FR_OK || Finfo.fname[0] == 0) break; // Break on error or end of directory
+
+        if (!(Finfo.fattrib & AM_DIR)) {
+            xil_printf("File %d: %s (Size: %lu bytes)\r\n", *file_count, Finfo.fname, Finfo.fsize);
+            strcpy(files[*file_count], Finfo.fname);
+            (*file_count)++;
+            if (*file_count >= MAX_FILES) break;
+        }
+    }
+
+    // Close the directory
+    f_closedir(&Dir);
+
+    // Unmount the filesystem
+    f_mount(NULL, Path, 0);
+
+    return XST_SUCCESS;
+}
+
+static uint32_t binaryStringToUint32(const char* binaryString) {
+    uint32_t result = 0;
+    for (int i = 0; i < 32; i++) {
+        result <<= 1;
+        if (binaryString[i] == '1') {
+            result |= 1;
+        }
+    }
+    return result;
+}
+
+// Function to convert uint32_t to float by reinterpreting bits
+float uint32ToFloat(uint32_t uint32Value) {
+    float floatValue;
+    // Use a union to reinterpret the bits
+    union {
+        uint32_t u;
+        float f;
+    } converter;
+
+    converter.u = uint32Value;
+    floatValue = converter.f;
+
+    return floatValue;
+}
+
+static void PrintFloat(float value) {
+    char buffer[32];
+    snprintf(buffer, sizeof(buffer), "%f", value);
+    xil_printf("%s", buffer);
+}
+
+static int ReadFileFromSDWithIndex(const char* Filename, float* Buffer, UINT BufferSize, UINT StartIndex) {
+    FRESULT Res;
+    FATFS FatFs;
+    FIL Fil;
+    TCHAR *Path = "0:/";
+    char line[BINARY_STRING_LENGTH + 1];  // +1 for null terminator
+    int bufferIndex = 0; // Declare and initialize bufferIndex
+    UINT bytesRead;
+    UINT byteIndex = StartIndex * BINARY_STRING_LENGTH;
+
+    xil_printf("Mounting filesystem...\r\n");
+    // Mount the filesystem
+    Res = f_mount(&FatFs, Path, 0);
+    if (Res != FR_OK) {
+        xil_printf("Failed to mount filesystem: %d\r\n", Res);
+        return XST_FAILURE;
+    }
+
+    xil_printf("Opening file: %s\r\n", Filename);
+    // Open the file
+    Res = f_open(&Fil, Filename, FA_READ);
+    if (Res != FR_OK) {
+        xil_printf("Failed to open file: %d\r\n", Res);
+        f_mount(NULL, Path, 0);
+        return XST_FAILURE;
+    }
+
+    // Seek to the start index
+    Res = f_lseek(&Fil, byteIndex);
+    if (Res != FR_OK) {
+        xil_printf("Failed to seek file: %d\r\n", Res);
+        f_close(&Fil);
+        f_mount(NULL, Path, 0);
+        return XST_FAILURE;
+    }
+
+    xil_printf("Reading file content...\r\n");
+    // Read the file content line by line
+    while (f_read(&Fil, line, BINARY_STRING_LENGTH, &bytesRead) == FR_OK && bytesRead == BINARY_STRING_LENGTH) {
+    	line[BINARY_STRING_LENGTH] = '\0';  // Null-terminate the line
+        if (bufferIndex >= BUFFER_SIZE) {
+            xil_printf("Buffer overflow\r\n");
+            break;
+        }
+        // Convert binary string to float
+        uint32_t temp = binaryStringToUint32(line);
+        Buffer[bufferIndex] = uint32ToFloat(temp);
+        bufferIndex++;
+    }
+
+    // Check if end of file is reached
+    if (f_tell(&Fil) >= f_size(&Fil)) {
+        xil_printf("End of file reached\r\n");
+        Res = FR_NO_FILE; // Use a valid FATFS error code to indicate end of file
+    }
+
+    // Close the file
+    f_close(&Fil);
+
+    // Unmount the filesystem
+    f_mount(NULL, Path, 0);
+
+    xil_printf("File read successfully.\r\n");
+
+    return Res;
+}

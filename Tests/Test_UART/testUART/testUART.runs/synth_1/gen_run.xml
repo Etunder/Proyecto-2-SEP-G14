@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1720133708">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1720293001">
   <File Type="PA-TCL" Name="uart_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="uart_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="uart_wrapper_reports.tcl"/>
@@ -49,4 +49,8 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="uart_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="uart_rst_ps7_0_50M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="uart_vio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="uart_AXIFloat_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="uart_auto_pc_0"/>
 </GenRun>

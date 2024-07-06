@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\uartTest\export\uartTest" key="sdx.custom.platform.repository.locations"/>
+	<item value="C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\uartTest\export\uartTest;C:\Users\Amteo\Desktop\Universidad\SEP\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\uartTest\export\uartTest" key="sdx.custom.platform.repository.locations"/>
 </section>

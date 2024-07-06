@@ -3667,3 +3667,1689 @@ TRACE::2024-07-04.19:37:15::SCWMssOS::DEBUG:  swdes dump  C:/Users/etien/Desktop
 C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
 
 TRACE::2024-07-04.19:37:15::SCWMssOS::Sw design exists and opened at  C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:17:40::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:40::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:40::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:48::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:17:48::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:48::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:17:48::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-07-06.15:17:52::SCWPlatform::Opened new HwDB with name uart_wrapper
+TRACE::2024-07-06.15:17:52::SCWReader::Active system found as  uartTest
+TRACE::2024-07-06.15:17:52::SCWReader::Handling sysconfig uartTest
+TRACE::2024-07-06.15:17:52::SCWDomain::checking for install qemu data   : 
+TRACE::2024-07-06.15:17:52::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2024-07-06.15:17:52::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2024-07-06.15:17:52::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:52::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:52::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:52::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:17:52::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:52::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:17:52::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper
+TRACE::2024-07-06.15:17:52::SCWPlatform::Opened existing hwdb uart_wrapper
+TRACE::2024-07-06.15:17:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:17:52::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:52::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:52::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:52::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:17:52::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:52::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:17:52::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper
+TRACE::2024-07-06.15:17:52::SCWPlatform::Opened existing hwdb uart_wrapper
+TRACE::2024-07-06.15:17:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:17:52::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:52::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:52::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:52::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:17:52::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:52::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:17:52::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper
+TRACE::2024-07-06.15:17:52::SCWPlatform::Opened existing hwdb uart_wrapper
+TRACE::2024-07-06.15:17:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:17:52::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2024-07-06.15:17:52::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:52::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:52::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:52::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:17:52::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:52::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:17:52::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper
+TRACE::2024-07-06.15:17:52::SCWPlatform::Opened existing hwdb uart_wrapper
+TRACE::2024-07-06.15:17:52::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:17:52::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:17:52::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-07-06.15:17:52::SCWMssOS::No sw design opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:17:52::SCWMssOS::mss exists loading the mss file  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:17:52::SCWMssOS::Opened the sw design from mss  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:17:52::SCWMssOS::Adding the swdes entry C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2024-07-06.15:17:52::SCWMssOS::updating the scw layer about changes
+TRACE::2024-07-06.15:17:52::SCWMssOS::Opened the sw design.  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:17:52::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:52::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:52::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:52::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:17:53::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:17:53::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper
+TRACE::2024-07-06.15:17:53::SCWPlatform::Opened existing hwdb uart_wrapper
+TRACE::2024-07-06.15:17:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:17:53::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:17:53::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:17:53::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:17:53::SCWMssOS:: library already available in sw design:  xilffs:4.3
+TRACE::2024-07-06.15:17:53::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:17:53::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:17:53::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper
+TRACE::2024-07-06.15:17:53::SCWPlatform::Opened existing hwdb uart_wrapper
+TRACE::2024-07-06.15:17:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:17:53::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:17:53::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:17:53::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:17:53::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2024-07-06.15:17:53::SCWMssOS::Saving the mss changes C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:17:53::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-07-06.15:17:53::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-07-06.15:17:53::SCWMssOS::Commit changes completed.
+TRACE::2024-07-06.15:17:53::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-07-06.15:17:53::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-07-06.15:17:53::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:17:53::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:17:53::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper
+TRACE::2024-07-06.15:17:53::SCWPlatform::Opened existing hwdb uart_wrapper
+TRACE::2024-07-06.15:17:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:17:53::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:17:53::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:17:53::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:17:53::SCWReader::No isolation master present  
+TRACE::2024-07-06.15:17:53::SCWDomain::checking for install qemu data   : 
+TRACE::2024-07-06.15:17:53::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2024-07-06.15:17:53::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2024-07-06.15:17:53::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:17:53::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:17:53::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper
+TRACE::2024-07-06.15:17:53::SCWPlatform::Opened existing hwdb uart_wrapper
+TRACE::2024-07-06.15:17:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:17:53::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:17:53::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:17:53::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper
+TRACE::2024-07-06.15:17:53::SCWPlatform::Opened existing hwdb uart_wrapper
+TRACE::2024-07-06.15:17:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:17:53::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:17:53::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:17:53::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper
+TRACE::2024-07-06.15:17:53::SCWPlatform::Opened existing hwdb uart_wrapper
+TRACE::2024-07-06.15:17:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:17:53::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:17:53::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:17:53::SCWMssOS::No sw design opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:17:53::SCWMssOS::mss exists loading the mss file  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:17:53::SCWMssOS::Opened the sw design from mss  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:17:53::SCWMssOS::Adding the swdes entry C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2024-07-06.15:17:53::SCWMssOS::updating the scw layer about changes
+TRACE::2024-07-06.15:17:53::SCWMssOS::Opened the sw design.  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:17:53::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:17:53::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:17:53::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper
+TRACE::2024-07-06.15:17:53::SCWPlatform::Opened existing hwdb uart_wrapper
+TRACE::2024-07-06.15:17:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:17:53::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:17:53::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:17:53::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:17:53::SCWMssOS:: library already available in sw design:  xilffs:4.3
+TRACE::2024-07-06.15:17:53::SCWMssOS::Saving the mss changes C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:17:53::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-07-06.15:17:53::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-07-06.15:17:53::SCWMssOS::Commit changes completed.
+TRACE::2024-07-06.15:17:53::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-07-06.15:17:53::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-07-06.15:17:53::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:17:53::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:17:53::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper
+TRACE::2024-07-06.15:17:53::SCWPlatform::Opened existing hwdb uart_wrapper
+TRACE::2024-07-06.15:17:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:17:53::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:17:53::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:17:53::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:17:53::SCWReader::No isolation master present  
+LOG::2024-07-06.15:17:53::SCWPlatform::Started generating the artifacts platform uartTest
+TRACE::2024-07-06.15:17:53::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-07-06.15:17:53::SCWPlatform::Started generating the artifacts for system configuration uartTest
+LOG::2024-07-06.15:17:53::SCWSystem::Checking the domain zynq_fsbl
+LOG::2024-07-06.15:17:53::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2024-07-06.15:17:53::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2024-07-06.15:17:53::SCWDomain::Building the domain :  zynq_fsbl
+TRACE::2024-07-06.15:17:53::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:17:53::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:53::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:17:53::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper
+TRACE::2024-07-06.15:17:53::SCWPlatform::Opened existing hwdb uart_wrapper
+TRACE::2024-07-06.15:17:53::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:17:53::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:17:53::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:17:53::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:17:53::SCWBDomain::Completed writing the mss file at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2024-07-06.15:17:53::SCWBDomain::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-07-06.15:17:53::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2024-07-06.15:17:53::SCWBDomain::System Command Ran  C:&  cd  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl & make 
+TRACE::2024-07-06.15:17:54::SCWBDomain::make: Nothing to be done for 'all'.
+
+LOG::2024-07-06.15:17:54::SCWSystem::Checking the domain standalone_domain
+LOG::2024-07-06.15:17:54::SCWSystem::Not a boot domain 
+LOG::2024-07-06.15:17:54::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2024-07-06.15:17:54::SCWDomain::Generating domain artifcats
+TRACE::2024-07-06.15:17:54::SCWMssOS::Generating standalone artifcats
+TRACE::2024-07-06.15:17:54::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/sw/uartTest/qemu/
+TRACE::2024-07-06.15:17:54::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/sw/uartTest/standalone_domain/qemu/
+TRACE::2024-07-06.15:17:54::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-07-06.15:17:54::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:54::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:54::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:54::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:17:54::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:17:54::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:17:54::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper
+TRACE::2024-07-06.15:17:54::SCWPlatform::Opened existing hwdb uart_wrapper
+TRACE::2024-07-06.15:17:54::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:17:54::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:17:54::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:17:54::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:17:54::SCWMssOS::Completed writing the mss file at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2024-07-06.15:17:54::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:17:54::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-07-06.15:17:54::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-07-06.15:17:54::SCWDomain::Building the domain :  standalone_domain
+TRACE::2024-07-06.15:17:54::SCWMssOS::doing bsp build ... 
+TRACE::2024-07-06.15:17:54::SCWMssOS::System Command Ran  C: & cd  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp & make 
+TRACE::2024-07-06.15:17:54::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src"
+
+TRACE::2024-07-06.15:17:54::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2024-07-06.15:17:54::SCWMssOS::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2024-07-06.15:17:54::SCWMssOS::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:17:54::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src"
+
+TRACE::2024-07-06.15:17:54::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2024-07-06.15:17:54::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2024-07-06.15:17:54::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:17:54::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_1/src"
+
+TRACE::2024-07-06.15:17:54::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-07-06.15:17:54::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-07-06.15:17:54::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:17:55::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_6/src"
+
+TRACE::2024-07-06.15:17:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-07-06.15:17:55::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-07-06.15:17:55::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:17:55::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_6/src"
+
+TRACE::2024-07-06.15:17:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-07-06.15:17:55::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-07-06.15:17:55::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:17:55::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_11/src"
+
+TRACE::2024-07-06.15:17:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_11/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-07-06.15:17:55::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-07-06.15:17:55::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:17:55::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_7/src"
+
+TRACE::2024-07-06.15:17:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-07-06.15:17:55::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-07-06.15:17:55::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:17:56::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_7/src"
+
+TRACE::2024-07-06.15:17:56::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-07-06.15:17:56::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-07-06.15:17:56::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:17:56::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_2/src"
+
+TRACE::2024-07-06.15:17:56::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-07-06.15:17:56::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-07-06.15:17:56::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:17:56::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_2/src"
+
+TRACE::2024-07-06.15:17:56::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2024-07-06.15:17:56::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2024-07-06.15:17:56::SCWMssOS::startfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:17:56::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_2/src"
+
+TRACE::2024-07-06.15:17:56::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-07-06.15:17:56::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-07-06.15:17:56::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:17:56::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_9/src"
+
+TRACE::2024-07-06.15:17:56::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-07-06.15:17:56::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-07-06.15:17:56::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:17:57::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_2/src"
+
+TRACE::2024-07-06.15:17:57::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-07-06.15:17:57::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-07-06.15:17:57::SCWMssOS::nostartfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:17:58::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_9/src"
+
+TRACE::2024-07-06.15:17:58::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-07-06.15:17:58::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-07-06.15:17:58::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:17:58::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_5/src"
+
+TRACE::2024-07-06.15:17:58::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-07-06.15:17:58::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-07-06.15:17:58::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:17:58::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_4/src"
+
+TRACE::2024-07-06.15:17:58::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-07-06.15:17:58::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-07-06.15:17:58::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:17:58::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v4_3/src"
+
+TRACE::2024-07-06.15:17:58::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xilffs_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-07-06.15:17:58::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-07-06.15:17:58::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:17:59::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src"
+
+TRACE::2024-07-06.15:17:59::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2024-07-06.15:17:59::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2024-07-06.15:17:59::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:17:59::SCWMssOS::"Compiling coresightps_dcc"
+
+TRACE::2024-07-06.15:18:01::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src"
+
+TRACE::2024-07-06.15:18:01::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2024-07-06.15:18:01::SCWMssOS::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2024-07-06.15:18:01::SCWMssOS::ostartfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:18:01::SCWMssOS::"Compiling cpu_cortexa9"
+
+TRACE::2024-07-06.15:18:01::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_1/src"
+
+TRACE::2024-07-06.15:18:01::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-07-06.15:18:01::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-07-06.15:18:01::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:18:02::SCWMssOS::"Compiling ddrps"
+
+TRACE::2024-07-06.15:18:02::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_6/src"
+
+TRACE::2024-07-06.15:18:02::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-07-06.15:18:02::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-07-06.15:18:02::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:18:02::SCWMssOS::"Compiling devcfg"
+
+TRACE::2024-07-06.15:18:10::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_6/src"
+
+TRACE::2024-07-06.15:18:11::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-07-06.15:18:11::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-07-06.15:18:11::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:18:15::SCWMssOS::"Compiling dmaps"
+
+TRACE::2024-07-06.15:18:19::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_11/src"
+
+TRACE::2024-07-06.15:18:19::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_11/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-07-06.15:18:19::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-07-06.15:18:19::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:18:20::SCWMssOS::"Compiling emacps"
+
+TRACE::2024-07-06.15:18:22::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_7/src"
+
+TRACE::2024-07-06.15:18:22::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-07-06.15:18:22::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-07-06.15:18:22::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:18:22::SCWMssOS::"Compiling gpiops"
+
+TRACE::2024-07-06.15:18:24::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_7/src"
+
+TRACE::2024-07-06.15:18:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-07-06.15:18:24::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-07-06.15:18:24::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:18:24::SCWMssOS::"Compiling qspips"
+
+TRACE::2024-07-06.15:18:25::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_2/src"
+
+TRACE::2024-07-06.15:18:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-07-06.15:18:25::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-07-06.15:18:25::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:18:25::SCWMssOS::"Compiling scugic"
+
+TRACE::2024-07-06.15:18:27::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_2/src"
+
+TRACE::2024-07-06.15:18:27::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-07-06.15:18:27::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-07-06.15:18:27::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:18:27::SCWMssOS::"Compiling scutimer"
+
+TRACE::2024-07-06.15:18:28::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_2/src"
+
+TRACE::2024-07-06.15:18:28::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-07-06.15:18:28::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-07-06.15:18:28::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:18:28::SCWMssOS::"Compiling scuwdt"
+
+TRACE::2024-07-06.15:18:29::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_9/src"
+
+TRACE::2024-07-06.15:18:29::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2024-07-06.15:18:29::SCWMssOS::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2024-07-06.15:18:29::SCWMssOS::les -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:18:29::SCWMssOS::"Compiling sdps"
+
+TRACE::2024-07-06.15:18:31::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_2/src"
+
+TRACE::2024-07-06.15:18:31::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-07-06.15:18:31::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-07-06.15:18:31::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:18:31::SCWMssOS::"Compiling standalone"
+
+TRACE::2024-07-06.15:18:43::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_9/src"
+
+TRACE::2024-07-06.15:18:43::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-07-06.15:18:43::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-07-06.15:18:43::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:18:43::SCWMssOS::"Compiling uartps"
+
+TRACE::2024-07-06.15:18:51::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_5/src"
+
+TRACE::2024-07-06.15:18:51::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-07-06.15:18:51::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-07-06.15:18:51::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:18:51::SCWMssOS::"Compiling usbps"
+
+TRACE::2024-07-06.15:18:53::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_4/src"
+
+TRACE::2024-07-06.15:18:53::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-07-06.15:18:53::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-07-06.15:18:53::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:18:53::SCWMssOS::"Compiling xadcps"
+
+TRACE::2024-07-06.15:18:55::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v4_3/src"
+
+TRACE::2024-07-06.15:18:55::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xilffs_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-07-06.15:18:55::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-07-06.15:18:55::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:18:55::SCWMssOS::"Compiling XilFFs Library"
+
+TRACE::2024-07-06.15:18:55::SCWMssOS::'Finished building libraries'
+
+TRACE::2024-07-06.15:18:55::SCWMssOS::Copying to export directory.
+TRACE::2024-07-06.15:18:55::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-07-06.15:18:55::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-07-06.15:18:55::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2024-07-06.15:18:55::SCWSystem::Completed Processing the sysconfig uartTest
+LOG::2024-07-06.15:18:55::SCWPlatform::Completed generating the artifacts for system configuration uartTest
+TRACE::2024-07-06.15:18:55::SCWPlatform::Started preparing the platform 
+TRACE::2024-07-06.15:18:55::SCWSystem::Writing the bif file for system config uartTest
+TRACE::2024-07-06.15:18:55::SCWSystem::dir created 
+TRACE::2024-07-06.15:18:55::SCWSystem::Writing the bif 
+TRACE::2024-07-06.15:18:55::SCWPlatform::Started writing the spfm file 
+TRACE::2024-07-06.15:18:55::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-07-06.15:18:55::SCWPlatform::Completed generating the platform
+TRACE::2024-07-06.15:18:55::SCWMssOS::Saving the mss changes C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:18:55::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-07-06.15:18:55::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-07-06.15:18:55::SCWMssOS::Commit changes completed.
+TRACE::2024-07-06.15:18:55::SCWMssOS::Saving the mss changes C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:18:55::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-07-06.15:18:55::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-07-06.15:18:55::SCWMssOS::Commit changes completed.
+TRACE::2024-07-06.15:18:55::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:18:55::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:18:55::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:18:55::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:18:55::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:18:55::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:18:55::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper
+TRACE::2024-07-06.15:18:55::SCWPlatform::Opened existing hwdb uart_wrapper
+TRACE::2024-07-06.15:18:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:18:55::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:18:55::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:18:55::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:18:55::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:18:55::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:18:55::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:18:55::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:18:55::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:18:55::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:18:55::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper
+TRACE::2024-07-06.15:18:55::SCWPlatform::Opened existing hwdb uart_wrapper
+TRACE::2024-07-06.15:18:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:18:55::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:18:55::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:18:55::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:18:55::SCWWriter::formatted JSON is {
+	"platformName":	"uartTest",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"uartTest",
+	"platHandOff":	"C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/uart_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/uart_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"uartTest",
+	"systems":	[{
+			"systemName":	"uartTest",
+			"systemDesc":	"uartTest",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"uartTest",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"eeb4c41a75b090d26ea47e8e7a1272b3",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"e5e290cca5e01bd2c618b99ec00f21bb",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-07-06.15:18:55::SCWPlatform::updated the xpfm file.
+TRACE::2024-07-06.15:18:56::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:18:56::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:18:56::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:18:56::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:18:56::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:18:56::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:18:56::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper
+TRACE::2024-07-06.15:18:56::SCWPlatform::Opened existing hwdb uart_wrapper
+TRACE::2024-07-06.15:18:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:18:56::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:18:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:18:56::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:26:15::SCWPlatform::Clearing the existing platform
+TRACE::2024-07-06.15:26:15::SCWSystem::Clearing the existing sysconfig
+TRACE::2024-07-06.15:26:15::SCWBDomain::clearing the fsbl build
+TRACE::2024-07-06.15:26:15::SCWMssOS::Removing the swdes entry for  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:15::SCWMssOS::Removing the swdes entry for  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:26:15::SCWSystem::Clearing the domains completed.
+TRACE::2024-07-06.15:26:15::SCWPlatform::Clearing the opened hw db.
+TRACE::2024-07-06.15:26:15::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:15::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:15::SCWPlatform:: Platform location is C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:15::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:15::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:15::SCWPlatform::Removing the HwDB with name C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:16::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:16::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:16::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:16::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:16::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:16::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:16::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-07-06.15:26:28::SCWPlatform::Opened new HwDB with name uart_wrapper_1
+TRACE::2024-07-06.15:26:28::SCWReader::Active system found as  uartTest
+TRACE::2024-07-06.15:26:28::SCWReader::Handling sysconfig uartTest
+TRACE::2024-07-06.15:26:28::SCWDomain::checking for install qemu data   : 
+TRACE::2024-07-06.15:26:28::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2024-07-06.15:26:28::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2024-07-06.15:26:28::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:28::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_1
+TRACE::2024-07-06.15:26:28::SCWPlatform::Opened existing hwdb uart_wrapper_1
+TRACE::2024-07-06.15:26:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:26:28::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:28::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_1
+TRACE::2024-07-06.15:26:28::SCWPlatform::Opened existing hwdb uart_wrapper_1
+TRACE::2024-07-06.15:26:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:26:28::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:28::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_1
+TRACE::2024-07-06.15:26:28::SCWPlatform::Opened existing hwdb uart_wrapper_1
+TRACE::2024-07-06.15:26:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:26:28::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2024-07-06.15:26:28::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:28::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_1
+TRACE::2024-07-06.15:26:28::SCWPlatform::Opened existing hwdb uart_wrapper_1
+TRACE::2024-07-06.15:26:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:26:28::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:28::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-07-06.15:26:28::SCWMssOS::No sw design opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:28::SCWMssOS::mss exists loading the mss file  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:28::SCWMssOS::Opened the sw design from mss  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:28::SCWMssOS::Adding the swdes entry C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2024-07-06.15:26:28::SCWMssOS::updating the scw layer about changes
+TRACE::2024-07-06.15:26:28::SCWMssOS::Opened the sw design.  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:28::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:28::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_1
+TRACE::2024-07-06.15:26:28::SCWPlatform::Opened existing hwdb uart_wrapper_1
+TRACE::2024-07-06.15:26:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:26:28::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:28::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:26:28::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:28::SCWMssOS:: library already available in sw design:  xilffs:4.3
+TRACE::2024-07-06.15:26:28::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:28::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_1
+TRACE::2024-07-06.15:26:28::SCWPlatform::Opened existing hwdb uart_wrapper_1
+TRACE::2024-07-06.15:26:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:26:28::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:28::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:26:28::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:28::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2024-07-06.15:26:28::SCWMssOS::Saving the mss changes C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:28::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-07-06.15:26:28::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-07-06.15:26:28::SCWMssOS::Commit changes completed.
+TRACE::2024-07-06.15:26:28::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-07-06.15:26:28::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-07-06.15:26:28::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:28::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_1
+TRACE::2024-07-06.15:26:28::SCWPlatform::Opened existing hwdb uart_wrapper_1
+TRACE::2024-07-06.15:26:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:26:28::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:28::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:26:28::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:28::SCWReader::No isolation master present  
+TRACE::2024-07-06.15:26:28::SCWDomain::checking for install qemu data   : 
+TRACE::2024-07-06.15:26:28::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2024-07-06.15:26:28::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2024-07-06.15:26:28::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:28::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_1
+TRACE::2024-07-06.15:26:28::SCWPlatform::Opened existing hwdb uart_wrapper_1
+TRACE::2024-07-06.15:26:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:26:28::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:28::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_1
+TRACE::2024-07-06.15:26:28::SCWPlatform::Opened existing hwdb uart_wrapper_1
+TRACE::2024-07-06.15:26:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:26:28::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:28::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_1
+TRACE::2024-07-06.15:26:28::SCWPlatform::Opened existing hwdb uart_wrapper_1
+TRACE::2024-07-06.15:26:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:26:28::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:26:28::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:26:28::SCWMssOS::No sw design opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:26:28::SCWMssOS::mss exists loading the mss file  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:26:28::SCWMssOS::Opened the sw design from mss  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:26:28::SCWMssOS::Adding the swdes entry C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2024-07-06.15:26:28::SCWMssOS::updating the scw layer about changes
+TRACE::2024-07-06.15:26:28::SCWMssOS::Opened the sw design.  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:26:28::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:28::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_1
+TRACE::2024-07-06.15:26:28::SCWPlatform::Opened existing hwdb uart_wrapper_1
+TRACE::2024-07-06.15:26:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:26:28::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:26:28::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:26:28::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:26:28::SCWMssOS:: library already available in sw design:  xilffs:4.3
+TRACE::2024-07-06.15:26:28::SCWMssOS::Saving the mss changes C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:26:28::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-07-06.15:26:28::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-07-06.15:26:28::SCWMssOS::Commit changes completed.
+TRACE::2024-07-06.15:26:28::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-07-06.15:26:28::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-07-06.15:26:28::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:28::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_1
+TRACE::2024-07-06.15:26:28::SCWPlatform::Opened existing hwdb uart_wrapper_1
+TRACE::2024-07-06.15:26:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:26:28::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:26:28::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:26:28::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:26:28::SCWReader::No isolation master present  
+TRACE::2024-07-06.15:26:28::SCWPlatform::Clearing the existing platform
+TRACE::2024-07-06.15:26:28::SCWSystem::Clearing the existing sysconfig
+TRACE::2024-07-06.15:26:28::SCWBDomain::clearing the fsbl build
+TRACE::2024-07-06.15:26:28::SCWMssOS::Removing the swdes entry for  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:28::SCWMssOS::Removing the swdes entry for  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:26:28::SCWSystem::Clearing the domains completed.
+TRACE::2024-07-06.15:26:28::SCWPlatform::Clearing the opened hw db.
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Platform location is C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:28::SCWPlatform::Removing the HwDB with name C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:28::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:28::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-07-06.15:26:33::SCWPlatform::Opened new HwDB with name uart_wrapper_2
+TRACE::2024-07-06.15:26:33::SCWReader::Active system found as  uartTest
+TRACE::2024-07-06.15:26:33::SCWReader::Handling sysconfig uartTest
+TRACE::2024-07-06.15:26:33::SCWDomain::checking for install qemu data   : 
+TRACE::2024-07-06.15:26:33::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2024-07-06.15:26:33::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2024-07-06.15:26:33::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:33::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:33::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:33::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:33::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:34::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_2
+TRACE::2024-07-06.15:26:34::SCWPlatform::Opened existing hwdb uart_wrapper_2
+TRACE::2024-07-06.15:26:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:26:34::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:34::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:34::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_2
+TRACE::2024-07-06.15:26:34::SCWPlatform::Opened existing hwdb uart_wrapper_2
+TRACE::2024-07-06.15:26:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:26:34::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:34::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:34::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_2
+TRACE::2024-07-06.15:26:34::SCWPlatform::Opened existing hwdb uart_wrapper_2
+TRACE::2024-07-06.15:26:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:26:34::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2024-07-06.15:26:34::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:34::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:34::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_2
+TRACE::2024-07-06.15:26:34::SCWPlatform::Opened existing hwdb uart_wrapper_2
+TRACE::2024-07-06.15:26:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:26:34::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:34::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-07-06.15:26:34::SCWMssOS::No sw design opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:34::SCWMssOS::mss exists loading the mss file  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:34::SCWMssOS::Opened the sw design from mss  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:34::SCWMssOS::Adding the swdes entry C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2024-07-06.15:26:34::SCWMssOS::updating the scw layer about changes
+TRACE::2024-07-06.15:26:34::SCWMssOS::Opened the sw design.  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:34::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:34::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:34::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_2
+TRACE::2024-07-06.15:26:34::SCWPlatform::Opened existing hwdb uart_wrapper_2
+TRACE::2024-07-06.15:26:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:26:34::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:34::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:26:34::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:34::SCWMssOS:: library already available in sw design:  xilffs:4.3
+TRACE::2024-07-06.15:26:34::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:34::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:34::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_2
+TRACE::2024-07-06.15:26:34::SCWPlatform::Opened existing hwdb uart_wrapper_2
+TRACE::2024-07-06.15:26:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:26:34::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:34::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:26:34::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:34::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2024-07-06.15:26:34::SCWMssOS::Saving the mss changes C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:34::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-07-06.15:26:34::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-07-06.15:26:34::SCWMssOS::Commit changes completed.
+TRACE::2024-07-06.15:26:34::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-07-06.15:26:34::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-07-06.15:26:34::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:34::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:34::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_2
+TRACE::2024-07-06.15:26:34::SCWPlatform::Opened existing hwdb uart_wrapper_2
+TRACE::2024-07-06.15:26:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:26:34::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:34::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:26:34::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:26:34::SCWReader::No isolation master present  
+TRACE::2024-07-06.15:26:34::SCWDomain::checking for install qemu data   : 
+TRACE::2024-07-06.15:26:34::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2024-07-06.15:26:34::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2024-07-06.15:26:34::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:34::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:34::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_2
+TRACE::2024-07-06.15:26:34::SCWPlatform::Opened existing hwdb uart_wrapper_2
+TRACE::2024-07-06.15:26:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:26:34::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:34::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:34::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_2
+TRACE::2024-07-06.15:26:34::SCWPlatform::Opened existing hwdb uart_wrapper_2
+TRACE::2024-07-06.15:26:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:26:34::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:34::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:34::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_2
+TRACE::2024-07-06.15:26:34::SCWPlatform::Opened existing hwdb uart_wrapper_2
+TRACE::2024-07-06.15:26:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:26:34::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:26:34::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:26:34::SCWMssOS::No sw design opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:26:34::SCWMssOS::mss exists loading the mss file  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:26:34::SCWMssOS::Opened the sw design from mss  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:26:34::SCWMssOS::Adding the swdes entry C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2024-07-06.15:26:34::SCWMssOS::updating the scw layer about changes
+TRACE::2024-07-06.15:26:34::SCWMssOS::Opened the sw design.  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:26:34::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:34::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:34::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_2
+TRACE::2024-07-06.15:26:34::SCWPlatform::Opened existing hwdb uart_wrapper_2
+TRACE::2024-07-06.15:26:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:26:34::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:26:34::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:26:34::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:26:34::SCWMssOS:: library already available in sw design:  xilffs:4.3
+TRACE::2024-07-06.15:26:34::SCWMssOS::Saving the mss changes C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:26:34::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-07-06.15:26:34::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-07-06.15:26:34::SCWMssOS::Commit changes completed.
+TRACE::2024-07-06.15:26:34::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-07-06.15:26:34::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-07-06.15:26:34::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:34::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:34::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:34::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_2
+TRACE::2024-07-06.15:26:34::SCWPlatform::Opened existing hwdb uart_wrapper_2
+TRACE::2024-07-06.15:26:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:26:34::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:26:34::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:26:34::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:26:34::SCWReader::No isolation master present  
+TRACE::2024-07-06.15:26:59::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:59::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:59::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:59::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:26:59::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:59::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:26:59::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_2
+TRACE::2024-07-06.15:26:59::SCWPlatform::Opened existing hwdb uart_wrapper_2
+TRACE::2024-07-06.15:26:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:26:59::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/tempdsa/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:59::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/tempdsa/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:59::SCWPlatform:: Platform location is C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/tempdsa
+TRACE::2024-07-06.15:26:59::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/tempdsa/uart_wrapper.xsa
+TRACE::2024-07-06.15:26:59::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:27:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:27:11::SCWMssOS::Doing hw sync for the mss in domain: zynq_fsbl
+TRACE::2024-07-06.15:27:11::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:27:11::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:27:11::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_2
+TRACE::2024-07-06.15:27:11::SCWPlatform::Opened existing hwdb uart_wrapper_2
+TRACE::2024-07-06.15:27:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:27:11::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:27:11::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:27:11::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_2
+TRACE::2024-07-06.15:27:11::SCWPlatform::Opened existing hwdb uart_wrapper_2
+TRACE::2024-07-06.15:27:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:27:11::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:27:11::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:27:11::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:27:11::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/tempdsa/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/tempdsa/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/tempdsa/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/tempdsa
+TRACE::2024-07-06.15:27:11::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/tempdsa/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:27:11::SCWPlatform::update - Opened existing hwdb uart_wrapper_3
+TRACE::2024-07-06.15:27:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:27:11::SCWMssOS::Doing hw sync for the mss in domain: standalone_domain
+TRACE::2024-07-06.15:27:11::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:27:11::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:27:11::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_2
+TRACE::2024-07-06.15:27:11::SCWPlatform::Opened existing hwdb uart_wrapper_2
+TRACE::2024-07-06.15:27:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:27:11::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:27:11::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:27:11::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_2
+TRACE::2024-07-06.15:27:11::SCWPlatform::Opened existing hwdb uart_wrapper_2
+TRACE::2024-07-06.15:27:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:27:11::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:27:11::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:27:11::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:27:11::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/tempdsa/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/tempdsa/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/tempdsa/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/tempdsa
+TRACE::2024-07-06.15:27:11::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/tempdsa/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:27:11::SCWPlatform::update - Opened existing hwdb uart_wrapper_3
+TRACE::2024-07-06.15:27:11::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:27:11::SCWMssOS::Saving the mss changes C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:27:11::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-07-06.15:27:11::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-07-06.15:27:11::SCWMssOS::Commit changes completed.
+TRACE::2024-07-06.15:27:11::SCWMssOS::Completed hw sync for the mss in domain: zynq_fsbl
+TRACE::2024-07-06.15:27:11::SCWMssOS::Removing the swdes entry for  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:27:11::SCWMssOS::Saving the mss changes C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:27:11::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-07-06.15:27:11::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-07-06.15:27:11::SCWMssOS::Commit changes completed.
+TRACE::2024-07-06.15:27:11::SCWMssOS::Completed hw sync for the mss in domain: standalone_domain
+TRACE::2024-07-06.15:27:11::SCWMssOS::Removing the swdes entry for  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:27:11::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:27:11::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:11::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:27:11::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-07-06.15:27:15::SCWPlatform::Opened new HwDB with name uart_wrapper_4
+TRACE::2024-07-06.15:27:15::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:15::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:15::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:15::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:27:15::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:15::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:27:15::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_4
+TRACE::2024-07-06.15:27:15::SCWPlatform::Opened existing hwdb uart_wrapper_4
+TRACE::2024-07-06.15:27:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:27:15::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:27:15::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-07-06.15:27:15::SCWMssOS::No sw design opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:27:15::SCWMssOS::mss exists loading the mss file  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:27:15::SCWMssOS::Opened the sw design from mss  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:27:15::SCWMssOS::Adding the swdes entry C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2024-07-06.15:27:15::SCWMssOS::updating the scw layer about changes
+TRACE::2024-07-06.15:27:15::SCWMssOS::Opened the sw design.  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:27:15::SCWMssOS::Saving the mss changes C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:27:15::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-07-06.15:27:15::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-07-06.15:27:15::SCWMssOS::Commit changes completed.
+TRACE::2024-07-06.15:27:15::SCWMssOS::Saving the mss changes C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:27:15::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2024-07-06.15:27:15::SCWMssOS::Writing the mss file completed C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:27:15::SCWMssOS::Commit changes completed.
+TRACE::2024-07-06.15:27:15::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:15::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:15::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:15::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:27:15::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:15::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:27:15::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_4
+TRACE::2024-07-06.15:27:15::SCWPlatform::Opened existing hwdb uart_wrapper_4
+TRACE::2024-07-06.15:27:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:27:15::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:27:15::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:27:15::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:27:15::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:15::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:15::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:15::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:27:15::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:15::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:27:15::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_4
+TRACE::2024-07-06.15:27:15::SCWPlatform::Opened existing hwdb uart_wrapper_4
+TRACE::2024-07-06.15:27:15::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:27:15::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:27:15::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:27:15::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:27:15::SCWWriter::formatted JSON is {
+	"platformName":	"uartTest",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"uartTest",
+	"platHandOff":	"C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/uart_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/uart_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"uartTest",
+	"systems":	[{
+			"systemName":	"uartTest",
+			"systemDesc":	"uartTest",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"uartTest",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"eeb4c41a75b090d26ea47e8e7a1272b3",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"e5e290cca5e01bd2c618b99ec00f21bb",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2024-07-06.15:27:33::SCWPlatform::Started generating the artifacts platform uartTest
+TRACE::2024-07-06.15:27:33::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-07-06.15:27:33::SCWPlatform::Started generating the artifacts for system configuration uartTest
+LOG::2024-07-06.15:27:33::SCWSystem::Checking the domain zynq_fsbl
+LOG::2024-07-06.15:27:33::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2024-07-06.15:27:33::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2024-07-06.15:27:33::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2024-07-06.15:27:33::SCWSystem::Checking the domain standalone_domain
+LOG::2024-07-06.15:27:33::SCWSystem::Not a boot domain 
+LOG::2024-07-06.15:27:33::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2024-07-06.15:27:33::SCWDomain::Generating domain artifcats
+TRACE::2024-07-06.15:27:33::SCWMssOS::Generating standalone artifcats
+TRACE::2024-07-06.15:27:33::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/sw/uartTest/qemu/
+TRACE::2024-07-06.15:27:33::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/sw/uartTest/standalone_domain/qemu/
+TRACE::2024-07-06.15:27:33::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-07-06.15:27:33::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:33::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:33::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:33::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:27:33::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:27:33::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:27:33::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_4
+TRACE::2024-07-06.15:27:33::SCWPlatform::Opened existing hwdb uart_wrapper_4
+TRACE::2024-07-06.15:27:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:27:33::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:27:33::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:27:33::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:27:33::SCWMssOS::Completed writing the mss file at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2024-07-06.15:27:33::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:27:34::SCWMssOS::bsp generated is stale removing and regenerating. 
+TRACE::2024-07-06.15:27:39::SCWMssOS::doing bsp build ... 
+TRACE::2024-07-06.15:27:39::SCWMssOS::System Command Ran  C: & cd  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp & make 
+TRACE::2024-07-06.15:27:39::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src"
+
+TRACE::2024-07-06.15:27:39::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2024-07-06.15:27:39::SCWMssOS::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2024-07-06.15:27:39::SCWMssOS::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src"
+
+TRACE::2024-07-06.15:27:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2024-07-06.15:27:40::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2024-07-06.15:27:40::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_1/src"
+
+TRACE::2024-07-06.15:27:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-07-06.15:27:40::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-07-06.15:27:40::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_6/src"
+
+TRACE::2024-07-06.15:27:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-07-06.15:27:40::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-07-06.15:27:40::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_6/src"
+
+TRACE::2024-07-06.15:27:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-07-06.15:27:40::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-07-06.15:27:40::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:40::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_11/src"
+
+TRACE::2024-07-06.15:27:40::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_11/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-07-06.15:27:40::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-07-06.15:27:40::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:41::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_7/src"
+
+TRACE::2024-07-06.15:27:41::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-07-06.15:27:41::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-07-06.15:27:41::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:41::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_7/src"
+
+TRACE::2024-07-06.15:27:41::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-07-06.15:27:41::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-07-06.15:27:41::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:41::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_2/src"
+
+TRACE::2024-07-06.15:27:41::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-07-06.15:27:41::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-07-06.15:27:41::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:41::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_2/src"
+
+TRACE::2024-07-06.15:27:41::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2024-07-06.15:27:41::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2024-07-06.15:27:41::SCWMssOS::startfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:41::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_2/src"
+
+TRACE::2024-07-06.15:27:41::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-07-06.15:27:41::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-07-06.15:27:41::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:41::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_9/src"
+
+TRACE::2024-07-06.15:27:41::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-07-06.15:27:41::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-07-06.15:27:41::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:42::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_2/src"
+
+TRACE::2024-07-06.15:27:42::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2024-07-06.15:27:42::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2024-07-06.15:27:42::SCWMssOS::nostartfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:43::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_9/src"
+
+TRACE::2024-07-06.15:27:43::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-07-06.15:27:43::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-07-06.15:27:43::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:43::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_5/src"
+
+TRACE::2024-07-06.15:27:43::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-07-06.15:27:43::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-07-06.15:27:43::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:43::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_4/src"
+
+TRACE::2024-07-06.15:27:43::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-07-06.15:27:43::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-07-06.15:27:43::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:43::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v4_3/src"
+
+TRACE::2024-07-06.15:27:43::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xilffs_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2024-07-06.15:27:43::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2024-07-06.15:27:43::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:43::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src"
+
+TRACE::2024-07-06.15:27:43::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2024-07-06.15:27:43::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2024-07-06.15:27:43::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:43::SCWMssOS::"Compiling coresightps_dcc"
+
+TRACE::2024-07-06.15:27:44::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src"
+
+TRACE::2024-07-06.15:27:44::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2024-07-06.15:27:44::SCWMssOS::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2024-07-06.15:27:44::SCWMssOS::ostartfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:45::SCWMssOS::"Compiling cpu_cortexa9"
+
+TRACE::2024-07-06.15:27:46::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_1/src"
+
+TRACE::2024-07-06.15:27:46::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-07-06.15:27:46::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-07-06.15:27:46::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:47::SCWMssOS::"Compiling ddrps"
+
+TRACE::2024-07-06.15:27:48::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_6/src"
+
+TRACE::2024-07-06.15:27:48::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-07-06.15:27:48::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-07-06.15:27:48::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:49::SCWMssOS::"Compiling devcfg"
+
+TRACE::2024-07-06.15:27:52::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_6/src"
+
+TRACE::2024-07-06.15:27:52::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-07-06.15:27:52::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-07-06.15:27:52::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:52::SCWMssOS::"Compiling dmaps"
+
+TRACE::2024-07-06.15:27:54::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_11/src"
+
+TRACE::2024-07-06.15:27:54::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_11/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2024-07-06.15:27:54::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2024-07-06.15:27:54::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:54::SCWMssOS::"Compiling emacps"
+
+TRACE::2024-07-06.15:27:56::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_7/src"
+
+TRACE::2024-07-06.15:27:56::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-07-06.15:27:56::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-07-06.15:27:56::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:56::SCWMssOS::"Compiling gpiops"
+
+TRACE::2024-07-06.15:27:57::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_7/src"
+
+TRACE::2024-07-06.15:27:57::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-07-06.15:27:57::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-07-06.15:27:57::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:58::SCWMssOS::"Compiling qspips"
+
+TRACE::2024-07-06.15:27:59::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_2/src"
+
+TRACE::2024-07-06.15:27:59::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-07-06.15:27:59::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-07-06.15:27:59::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:27:59::SCWMssOS::"Compiling scugic"
+
+TRACE::2024-07-06.15:28:01::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_2/src"
+
+TRACE::2024-07-06.15:28:01::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2024-07-06.15:28:01::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2024-07-06.15:28:01::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:28:01::SCWMssOS::"Compiling scutimer"
+
+TRACE::2024-07-06.15:28:02::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_2/src"
+
+TRACE::2024-07-06.15:28:02::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-07-06.15:28:02::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-07-06.15:28:02::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:28:02::SCWMssOS::"Compiling scuwdt"
+
+TRACE::2024-07-06.15:28:03::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_9/src"
+
+TRACE::2024-07-06.15:28:03::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2024-07-06.15:28:03::SCWMssOS::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2024-07-06.15:28:03::SCWMssOS::les -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:28:03::SCWMssOS::"Compiling sdps"
+
+TRACE::2024-07-06.15:28:05::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_2/src"
+
+TRACE::2024-07-06.15:28:05::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2024-07-06.15:28:05::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2024-07-06.15:28:05::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:28:05::SCWMssOS::"Compiling standalone"
+
+TRACE::2024-07-06.15:28:17::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_9/src"
+
+TRACE::2024-07-06.15:28:17::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-07-06.15:28:17::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-07-06.15:28:17::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:28:17::SCWMssOS::"Compiling uartps"
+
+TRACE::2024-07-06.15:28:19::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_5/src"
+
+TRACE::2024-07-06.15:28:19::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2024-07-06.15:28:19::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2024-07-06.15:28:19::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:28:19::SCWMssOS::"Compiling usbps"
+
+TRACE::2024-07-06.15:28:26::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_4/src"
+
+TRACE::2024-07-06.15:28:26::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-07-06.15:28:26::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-07-06.15:28:26::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:28:26::SCWMssOS::"Compiling xadcps"
+
+TRACE::2024-07-06.15:28:27::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v4_3/src"
+
+TRACE::2024-07-06.15:28:27::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xilffs_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2024-07-06.15:28:27::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2024-07-06.15:28:27::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2024-07-06.15:28:28::SCWMssOS::"Compiling XilFFs Library"
+
+TRACE::2024-07-06.15:28:33::SCWMssOS::'Finished building libraries'
+
+TRACE::2024-07-06.15:28:34::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-07-06.15:28:34::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-07-06.15:28:34::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2024-07-06.15:28:34::SCWSystem::Completed Processing the sysconfig uartTest
+LOG::2024-07-06.15:28:34::SCWPlatform::Completed generating the artifacts for system configuration uartTest
+TRACE::2024-07-06.15:28:34::SCWPlatform::Started preparing the platform 
+TRACE::2024-07-06.15:28:34::SCWSystem::Writing the bif file for system config uartTest
+TRACE::2024-07-06.15:28:34::SCWSystem::dir created 
+TRACE::2024-07-06.15:28:34::SCWSystem::Writing the bif 
+TRACE::2024-07-06.15:28:34::SCWPlatform::Started writing the spfm file 
+TRACE::2024-07-06.15:28:34::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-07-06.15:28:34::SCWPlatform::Completed generating the platform
+TRACE::2024-07-06.15:28:34::SCWMssOS::Saving the mss changes C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:28:34::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-07-06.15:28:34::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-07-06.15:28:34::SCWMssOS::Commit changes completed.
+TRACE::2024-07-06.15:28:34::SCWMssOS::Saving the mss changes C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:28:34::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-07-06.15:28:34::SCWMssOS::Running validate of swdbs.
+KEYINFO::2024-07-06.15:28:34::SCWMssOS::Could not open the swdb for system_0
+KEYINFO::2024-07-06.15:28:34::SCWMssOS::Could not open the sw design at  system_0
+ERROR: [Hsi 55-1558] Software Design system_0 is not found
+
+TRACE::2024-07-06.15:28:34::SCWMssOS::Cleared the swdb table entry
+TRACE::2024-07-06.15:28:34::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2024-07-06.15:28:34::SCWMssOS::Writing the mss file completed C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:28:34::SCWMssOS::Commit changes completed.
+TRACE::2024-07-06.15:28:34::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:28:34::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:28:34::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:28:34::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:28:34::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:28:34::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:28:34::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_4
+TRACE::2024-07-06.15:28:34::SCWPlatform::Opened existing hwdb uart_wrapper_4
+TRACE::2024-07-06.15:28:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:28:34::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:28:34::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:28:34::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-06.15:28:34::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:28:34::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:28:34::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:28:34::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:28:34::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:28:34::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:28:34::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_4
+TRACE::2024-07-06.15:28:34::SCWPlatform::Opened existing hwdb uart_wrapper_4
+TRACE::2024-07-06.15:28:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:28:34::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:28:34::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:28:34::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:28:34::SCWWriter::formatted JSON is {
+	"platformName":	"uartTest",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"uartTest",
+	"platHandOff":	"C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/uart_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/uart_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"uartTest",
+	"systems":	[{
+			"systemName":	"uartTest",
+			"systemDesc":	"uartTest",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"uartTest",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"eeb4c41a75b090d26ea47e8e7a1272b3",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"2e99a4eb929891fcca3de24bbc8a88aa",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-07-06.15:28:34::SCWPlatform::updated the xpfm file.
+TRACE::2024-07-06.15:28:34::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:28:34::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:28:34::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:28:34::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw
+TRACE::2024-07-06.15:28:34::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/hw/uart_wrapper.xsa
+TRACE::2024-07-06.15:28:34::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-06.15:28:34::SCWPlatform::Trying to set the existing hwdb with name uart_wrapper_4
+TRACE::2024-07-06.15:28:34::SCWPlatform::Opened existing hwdb uart_wrapper_4
+TRACE::2024-07-06.15:28:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-06.15:28:34::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-06.15:28:34::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-06.15:28:34::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/ps7_cortexa9_0/standalone_domain/bsp/system.mss
