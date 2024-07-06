@@ -1,0 +1,151 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "xparameters.h"
+#include "xsdps.h"
+#include "xil_printf.h"
+#include "xuartps.h"
+#include "ff.h"
+#include "xil_cache.h"
+
+#define SD_DEVICE_ID    XPAR_XSDPS_0_DEVICE_ID
+#define BUFFER_SIZE     64  // Buffer for 64 FP32 values
+#define FILENAME        "song.bin"
+
+static int SdInit(void);
+static int UartInit(void);
+static int ReadFileFromSD(const char* Filename, float* Buffer, UINT BufferSize);
+
+XSdPs SdInstance;
+XUartPs Uart_Ps; // Declare the Uart_Ps variable
+
+int main(void) {
+    int Status;
+    float BufferA[BUFFER_SIZE];
+    float BufferB[BUFFER_SIZE];
+    int UseBufferA = 1;
+
+    Status = UartInit();
+    if (Status != XST_SUCCESS) {
+        xil_printf("UART Initialization failed \r\n");
+        return XST_FAILURE;
+    }
+
+    Status = SdInit();
+    if (Status != XST_SUCCESS) {
+        xil_printf("SD Initialization failed \r\n");
+        return XST_FAILURE;
+    }
+
+    // Initial read to fill BufferA
+    Status = ReadFileFromSD(FILENAME, BufferA, BUFFER_SIZE);
+    if (Status != XST_SUCCESS) {
+        xil_printf("Failed to read file from SD card \r\n");
+        return XST_FAILURE;
+    }
+
+    while (1) {
+        if (UseBufferA) {
+            // Process BufferA (processing code would go here)
+            Status = ReadFileFromSD(FILENAME, BufferB, BUFFER_SIZE);
+            if (Status != XST_SUCCESS) {
+                xil_printf("Failed to read file from SD card \r\n");
+                return XST_FAILURE;
+            }
+            UseBufferA = 0;
+        } else {
+            // Process BufferB (processing code would go here)
+            Status = ReadFileFromSD(FILENAME, BufferA, BUFFER_SIZE);
+            if (Status != XST_SUCCESS) {
+                xil_printf("Failed to read file from SD card \r\n");
+                return XST_FAILURE;
+            }
+            UseBufferA = 1;
+        }
+    }
+
+    return XST_SUCCESS;
+}
+
+static int UartInit(void) {
+    int Status;
+    XUartPs_Config *Config;
+
+    Config = XUartPs_LookupConfig(XPAR_XUARTPS_0_DEVICE_ID);
+    if (NULL == Config) {
+        return XST_FAILURE;
+    }
+
+    Status = XUartPs_CfgInitialize(&Uart_Ps, Config, Config->BaseAddress);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    Status = XUartPs_SelfTest(&Uart_Ps);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    XUartPs_SetOperMode(&Uart_Ps, XUARTPS_OPER_MODE_NORMAL);
+
+    return XST_SUCCESS;
+}
+
+static int SdInit(void) {
+    int Status;
+    XSdPs_Config *SdConfig;
+
+    SdConfig = XSdPs_LookupConfig(SD_DEVICE_ID);
+    if (NULL == SdConfig) {
+        return XST_FAILURE;
+    }
+
+    Status = XSdPs_CfgInitialize(&SdInstance, SdConfig, SdConfig->BaseAddress);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    Status = XSdPs_CardInitialize(&SdInstance);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    return XST_SUCCESS;
+}
+
+static int ReadFileFromSD(const char* Filename, float* Buffer, UINT BufferSize) {
+    FRESULT Res;
+    FATFS FatFs;
+    FIL Fil;
+    UINT BytesRead;
+    TCHAR *Path = "0:/";
+
+    // Mount the filesystem
+    Res = f_mount(&FatFs, Path, 0);
+    if (Res != FR_OK) {
+        xil_printf("Failed to mount filesystem: %d\r\n", Res);
+        return XST_FAILURE;
+    }
+
+    // Open the file
+    Res = f_open(&Fil, Filename, FA_READ);
+    if (Res != FR_OK) {
+        xil_printf("Failed to open file: %d\r\n", Res);
+        return XST_FAILURE;
+    }
+
+    // Read the file content into the buffer
+    Res = f_read(&Fil, Buffer, BufferSize * sizeof(float), &BytesRead);
+    if (Res != FR_OK || BytesRead != BufferSize * sizeof(float)) {
+        xil_printf("Failed to read file: %d\r\n", Res);
+        f_close(&Fil);
+        return XST_FAILURE;
+    }
+
+    // Close the file
+    f_close(&Fil);
+
+    // Unmount the filesystem
+    f_mount(NULL, Path, 0);
+
+    return XST_SUCCESS;
+}

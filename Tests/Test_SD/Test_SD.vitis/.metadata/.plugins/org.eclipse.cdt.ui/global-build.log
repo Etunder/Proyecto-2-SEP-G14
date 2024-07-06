@@ -1,0 +1,9 @@
+Nothing to build in platform 'test_sd'
+
+18:31:41 **** Incremental Build of configuration Debug for project read_sd ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+make[1]: Nothing to be done for 'main-build'.

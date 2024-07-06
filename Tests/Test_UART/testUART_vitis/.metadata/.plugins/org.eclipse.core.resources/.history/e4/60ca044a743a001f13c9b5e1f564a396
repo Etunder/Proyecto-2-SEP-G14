@@ -1,0 +1,166 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "xparameters.h"
+#include "xsdps.h"
+#include "xil_printf.h"
+#include "xuartps.h"
+#include "ff.h"
+#include "xil_cache.h"
+
+#define UART_DEVICE_ID  XPAR_XUARTPS_0_DEVICE_ID
+#define SD_DEVICE_ID    XPAR_XSDPS_0_DEVICE_ID
+#define MAX_BUFF_SIZE   1024 * 1024 * 50  // 50 MB buffer for example
+#define FILENAME        "Cancion.txt"
+#define PRINT_CHUNK_SIZE 32
+
+static int SdInit(void);
+static int UartInit(void);
+static int ReadFileFromSD(const char* Filename, char* Buffer, UINT BufferSize);
+
+XUartPs Uart_Ps;
+XSdPs SdInstance;
+
+int main(void)
+{
+    int Status;
+    char *FileContent = (char *)malloc(MAX_BUFF_SIZE);
+    if (FileContent == NULL) {
+        xil_printf("Memory allocation failed\r\n");
+        return XST_FAILURE;
+    }
+
+    Status = UartInit();
+    if (Status != XST_SUCCESS) {
+        xil_printf("UART Initialization failed \r\n");
+        free(FileContent);
+        return XST_FAILURE;
+    }
+
+    Status = SdInit();
+    if (Status != XST_SUCCESS) {
+        xil_printf("SD Initialization failed \r\n");
+        free(FileContent);
+        return XST_FAILURE;
+    }
+
+    Status = ReadFileFromSD(FILENAME, FileContent, MAX_BUFF_SIZE);
+    if (Status != XST_SUCCESS) {
+        xil_printf("Failed to read file from SD card \r\n");
+        free(FileContent);
+        return XST_FAILURE;
+    }
+
+    xil_printf("Successfully read file from SD card \r\n");
+
+    if (FileContent[0] != '\0') {
+        xil_printf("First %d characters: ", PRINT_CHUNK_SIZE);
+        for (int i = 0; i < PRINT_CHUNK_SIZE && FileContent[i] != '\0'; i++) {
+            xil_printf("%c", FileContent[i]);
+        }
+        xil_printf("\r\n");
+
+        int totalLength = 0;
+        while (FileContent[totalLength] != '\0') {
+            totalLength++;
+        }
+
+        if (totalLength > 0) {
+            xil_printf("Last %d characters: ", PRINT_CHUNK_SIZE);
+            for (int i = totalLength - PRINT_CHUNK_SIZE; i < totalLength; i++) {
+                if (i >= 0) {
+                    xil_printf("%c", FileContent[i]);
+                }
+            }
+            xil_printf("\r\n");
+        }
+    } else {
+        xil_printf("File is empty.\r\n");
+    }
+
+    free(FileContent);
+    return XST_SUCCESS;
+}
+
+static int UartInit(void)
+{
+    int Status;
+    XUartPs_Config *Config;
+
+    Config = XUartPs_LookupConfig(UART_DEVICE_ID);
+    if (NULL == Config) {
+        return XST_FAILURE;
+    }
+
+    Status = XUartPs_CfgInitialize(&Uart_Ps, Config, Config->BaseAddress);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    Status = XUartPs_SelfTest(&Uart_Ps);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    XUartPs_SetOperMode(&Uart_Ps, XUARTPS_OPER_MODE_NORMAL);
+
+    return XST_SUCCESS;
+}
+
+static int SdInit(void)
+{
+    int Status;
+    XSdPs_Config *SdConfig;
+
+    SdConfig = XSdPs_LookupConfig(SD_DEVICE_ID);
+    if (NULL == SdConfig) {
+        return XST_FAILURE;
+    }
+
+    Status = XSdPs_CfgInitialize(&SdInstance, SdConfig, SdConfig->BaseAddress);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    Status = XSdPs_CardInitialize(&SdInstance);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;
+    }
+
+    return XST_SUCCESS;
+}
+
+static int ReadFileFromSD(const char* Filename, char* Buffer, UINT BufferSize)
+{
+    FRESULT Res;
+    FATFS FatFs;
+    FIL Fil;
+    TCHAR *Path = "0:/";
+    UINT BytesRead;
+    UINT TotalBytesRead = 0;
+
+    Res = f_mount(&FatFs, Path, 0);
+    if (Res != FR_OK) {
+        return XST_FAILURE;
+    }
+
+    Res = f_open(&Fil, Filename, FA_READ);
+    if (Res != FR_OK) {
+        return XST_FAILURE;
+    }
+
+    do {
+        Res = f_read(&Fil, Buffer + TotalBytesRead, BufferSize - TotalBytesRead - 1, &BytesRead);
+        if (Res != FR_OK) {
+            f_close(&Fil);
+            return XST_FAILURE;
+        }
+        TotalBytesRead += BytesRead;
+    } while (BytesRead > 0 && TotalBytesRead < BufferSize - 1);
+
+    Buffer[TotalBytesRead] = '\0';
+
+    f_close(&Fil);
+    f_mount(NULL, Path, 0);
+
+    return XST_SUCCESS;
+}

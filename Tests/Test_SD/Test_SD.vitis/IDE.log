@@ -1,0 +1,647 @@
+09:28:28 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_SD\Test_SD.vitis\temp_xsdb_launch_script.tcl
+09:28:28 INFO  : Registering command handlers for Vitis TCF services
+09:28:35 INFO  : Platform repository initialization has completed.
+09:28:35 INFO  : XSCT server has started successfully.
+09:28:45 INFO  : Successfully done setting XSCT server connection channel  
+09:28:45 INFO  : plnx-install-location is set to ''
+09:28:45 INFO  : Successfully done query RDI_DATADIR 
+09:28:45 INFO  : Successfully done setting workspace for the tool. 
+09:30:48 INFO  : Result from executing command 'getProjects': test_sd
+09:30:48 INFO  : Result from executing command 'getPlatforms': 
+09:33:41 INFO  : Result from executing command 'getProjects': test_sd
+09:33:41 INFO  : Result from executing command 'getPlatforms': test_sd|C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/test_sd.xpfm
+09:33:43 INFO  : Successfully done sdx_reload_mss "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+09:34:13 INFO  : (SwPlatform)  Successfully done add_library 
+09:34:15 INFO  : (SwPlatform) Successfully done update_mss 
+09:34:15 INFO  : Successfully done sdx_reload_mss "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+09:36:32 INFO  : Result from executing command 'getProjects': test_sd
+09:36:32 INFO  : Result from executing command 'getPlatforms': test_sd|C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/test_sd.xpfm
+10:05:09 INFO  : Checking for BSP changes to sync application flags for project 'read_sd'...
+10:09:15 INFO  : Checking for BSP changes to sync application flags for project 'read_sd'...
+10:15:05 INFO  : Checking for BSP changes to sync application flags for project 'read_sd'...
+10:16:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:16:04 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+10:16:04 INFO  : 'jtag frequency' command is executed.
+10:16:04 INFO  : Context for 'APU' is selected.
+10:16:05 INFO  : System reset is completed.
+10:16:08 INFO  : 'after 3000' command is executed.
+10:16:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+10:16:09 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit"
+10:16:10 INFO  : Context for 'APU' is selected.
+10:16:10 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa'.
+10:16:10 INFO  : 'configparams force-mem-access 1' command is executed.
+10:16:10 INFO  : Context for 'APU' is selected.
+10:16:10 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/psinit/ps7_init.tcl' is done.
+10:16:13 ERROR : Memory read error at 0xF8F00208. Cannot halt processor core, timeout
+10:16:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/psinit/ps7_init.tcl
+ps7_init
+----------------End of Script----------------
+
+10:16:13 ERROR : Memory read error at 0xF8F00208. Cannot halt processor core, timeout
+10:17:35 INFO  : Checking for BSP changes to sync application flags for project 'read_sd'...
+10:18:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:18:46 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+10:18:46 INFO  : 'jtag frequency' command is executed.
+10:18:46 INFO  : Context for 'APU' is selected.
+10:18:47 INFO  : System reset is completed.
+10:18:50 INFO  : 'after 3000' command is executed.
+10:18:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+10:18:51 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit"
+10:18:51 INFO  : Context for 'APU' is selected.
+10:18:51 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa'.
+10:18:51 INFO  : 'configparams force-mem-access 1' command is executed.
+10:18:51 INFO  : Context for 'APU' is selected.
+10:18:51 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/psinit/ps7_init.tcl' is done.
+10:18:54 ERROR : Memory read error at 0xF8F00208. Cannot halt processor core, timeout
+10:18:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/psinit/ps7_init.tcl
+ps7_init
+----------------End of Script----------------
+
+10:18:54 ERROR : Memory read error at 0xF8F00208. Cannot halt processor core, timeout
+10:19:02 INFO  : Checking for BSP changes to sync application flags for project 'read_sd'...
+10:19:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:19:06 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+10:19:06 INFO  : 'jtag frequency' command is executed.
+10:19:06 INFO  : Context for 'APU' is selected.
+10:19:06 INFO  : System reset is completed.
+10:19:09 INFO  : 'after 3000' command is executed.
+10:19:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+10:19:11 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit"
+10:19:11 INFO  : Context for 'APU' is selected.
+10:19:11 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa'.
+10:19:11 INFO  : 'configparams force-mem-access 1' command is executed.
+10:19:11 INFO  : Context for 'APU' is selected.
+10:19:11 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/psinit/ps7_init.tcl' is done.
+10:19:13 ERROR : Memory read error at 0xF8F00208. Cannot halt processor core, timeout
+10:19:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/psinit/ps7_init.tcl
+ps7_init
+----------------End of Script----------------
+
+10:19:13 ERROR : Memory read error at 0xF8F00208. Cannot halt processor core, timeout
+10:19:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:19:33 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+10:19:33 INFO  : 'jtag frequency' command is executed.
+10:19:33 INFO  : Context for 'APU' is selected.
+10:19:33 INFO  : System reset is completed.
+10:19:36 INFO  : 'after 3000' command is executed.
+10:19:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+10:19:38 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit"
+10:19:38 INFO  : Context for 'APU' is selected.
+10:19:38 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa'.
+10:19:38 INFO  : 'configparams force-mem-access 1' command is executed.
+10:19:38 INFO  : Context for 'APU' is selected.
+10:19:38 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/psinit/ps7_init.tcl' is done.
+10:19:39 ERROR : Memory read error at 0xF8F00208. Cannot halt processor core, timeout
+10:19:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/psinit/ps7_init.tcl
+ps7_init
+----------------End of Script----------------
+
+10:19:39 ERROR : Memory read error at 0xF8F00208. Cannot halt processor core, timeout
+10:20:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:20:04 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+10:20:04 INFO  : 'jtag frequency' command is executed.
+10:20:04 INFO  : Context for 'APU' is selected.
+10:20:05 INFO  : System reset is completed.
+10:20:08 INFO  : 'after 3000' command is executed.
+10:20:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+10:20:09 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit"
+10:20:09 INFO  : Context for 'APU' is selected.
+10:20:09 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa'.
+10:20:09 INFO  : 'configparams force-mem-access 1' command is executed.
+10:20:09 INFO  : Context for 'APU' is selected.
+10:20:10 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/psinit/ps7_init.tcl' is done.
+10:20:11 INFO  : 'ps7_init' command is executed.
+10:20:11 INFO  : 'ps7_post_config' command is executed.
+10:20:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:20:11 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/Debug/read_sd.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:20:11 INFO  : 'configparams force-mem-access 0' command is executed.
+10:20:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/Debug/read_sd.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:20:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:20:12 INFO  : 'con' command is executed.
+10:20:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:20:12 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_SD\Test_SD.vitis\.sdk\launch_scripts\single_application_debug\debugger_read_sd-default_3.tcl'
+10:21:27 INFO  : Disconnected from the channel tcfchan#6.
+10:21:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:21:29 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+10:21:29 INFO  : 'jtag frequency' command is executed.
+10:21:29 INFO  : Context for 'APU' is selected.
+10:21:29 INFO  : System reset is completed.
+10:21:32 INFO  : 'after 3000' command is executed.
+10:21:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+10:21:34 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit"
+10:21:34 INFO  : Context for 'APU' is selected.
+10:21:34 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa'.
+10:21:34 INFO  : 'configparams force-mem-access 1' command is executed.
+10:21:34 INFO  : Context for 'APU' is selected.
+10:21:34 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/psinit/ps7_init.tcl' is done.
+10:21:36 INFO  : 'ps7_init' command is executed.
+10:21:36 INFO  : 'ps7_post_config' command is executed.
+10:21:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:21:37 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/Debug/read_sd.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:21:37 INFO  : 'configparams force-mem-access 0' command is executed.
+10:21:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/Debug/read_sd.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:21:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:21:37 INFO  : 'con' command is executed.
+10:21:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:21:37 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_SD\Test_SD.vitis\.sdk\launch_scripts\single_application_debug\debugger_read_sd-default_4.tcl'
+10:22:32 INFO  : Checking for BSP changes to sync application flags for project 'read_sd'...
+10:22:48 INFO  : Disconnected from the channel tcfchan#8.
+10:22:49 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:22:50 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+10:22:50 INFO  : 'jtag frequency' command is executed.
+10:22:50 INFO  : Context for 'APU' is selected.
+10:22:50 INFO  : System reset is completed.
+10:22:53 INFO  : 'after 3000' command is executed.
+10:22:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+10:22:54 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit"
+10:22:55 INFO  : Context for 'APU' is selected.
+10:22:55 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa'.
+10:22:55 INFO  : 'configparams force-mem-access 1' command is executed.
+10:22:55 INFO  : Context for 'APU' is selected.
+10:22:55 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/psinit/ps7_init.tcl' is done.
+10:22:56 INFO  : 'ps7_init' command is executed.
+10:22:56 INFO  : 'ps7_post_config' command is executed.
+10:22:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:22:57 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/Debug/read_sd.elf' is downloaded to processor 'ps7_cortexa9_0'.
+10:22:57 INFO  : 'configparams force-mem-access 0' command is executed.
+10:22:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/Debug/read_sd.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+10:22:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+10:22:57 INFO  : 'con' command is executed.
+10:22:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+10:22:57 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_SD\Test_SD.vitis\.sdk\launch_scripts\single_application_debug\debugger_read_sd-default_5.tcl'
+10:23:45 INFO  : Checking for BSP changes to sync application flags for project 'read_sd'...
+10:26:43 INFO  : Checking for BSP changes to sync application flags for project 'read_sd'...
+10:26:45 INFO  : Checking for BSP changes to sync application flags for project 'read_sd'...
+10:26:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:26:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:26:53 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+10:42:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:42:40 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+10:42:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:42:43 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+10:42:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+10:42:46 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+17:58:56 INFO  : Disconnected from the channel tcfchan#9.
+11:48:18 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_SD\Test_SD.vitis\temp_xsdb_launch_script.tcl
+11:48:25 INFO  : XSCT server has started successfully.
+11:48:25 INFO  : plnx-install-location is set to ''
+11:48:25 INFO  : Successfully done setting XSCT server connection channel  
+11:48:25 INFO  : Successfully done setting workspace for the tool. 
+11:48:37 INFO  : Registering command handlers for Vitis TCF services
+11:48:37 INFO  : Platform repository initialization has completed.
+11:48:48 INFO  : Successfully done query RDI_DATADIR 
+21:19:29 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_SD\Test_SD.vitis\temp_xsdb_launch_script.tcl
+21:19:37 INFO  : XSCT server has started successfully.
+21:19:37 INFO  : Successfully done setting XSCT server connection channel  
+21:19:37 INFO  : plnx-install-location is set to ''
+21:19:37 INFO  : Successfully done setting workspace for the tool. 
+21:19:51 INFO  : Registering command handlers for Vitis TCF services
+21:19:52 INFO  : Platform repository initialization has completed.
+21:20:02 INFO  : Successfully done query RDI_DATADIR 
+21:21:35 INFO  : Result from executing command 'getProjects': test_sd
+21:21:35 INFO  : Result from executing command 'getPlatforms': test_sd|C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/test_sd.xpfm
+21:21:36 INFO  : Checking for BSP changes to sync application flags for project 'read_sd'...
+21:21:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:21:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:21:53 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+21:21:53 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+21:21:53 INFO  : 'jtag frequency' command is executed.
+21:21:53 INFO  : 'jtag frequency' command is executed.
+21:21:53 INFO  : Context for 'APU' is selected.
+21:21:53 INFO  : Context for 'APU' is selected.
+21:21:53 INFO  : System reset is completed.
+21:21:53 INFO  : System reset is completed.
+21:21:56 INFO  : 'after 3000' command is executed.
+21:21:59 INFO  : 'after 3000' command is executed.
+21:22:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+21:22:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+21:22:02 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit"
+21:22:03 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit"
+21:22:03 INFO  : Context for 'APU' is selected.
+21:22:03 INFO  : Context for 'APU' is selected.
+21:22:03 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa'.
+21:22:03 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa'.
+21:22:03 INFO  : 'configparams force-mem-access 1' command is executed.
+21:22:03 INFO  : 'configparams force-mem-access 1' command is executed.
+21:22:03 INFO  : Context for 'APU' is selected.
+21:22:03 INFO  : Context for 'APU' is selected.
+21:22:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:22:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:22:03 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:22:03 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+21:22:04 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/sw/test_sd/boot/fsbl.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:22:05 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/sw/test_sd/boot/fsbl.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:22:05 INFO  : 'set bp_22_4_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+21:22:05 INFO  : 'set bp_22_5_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+21:23:06 WARN  : Exit breakpoint of FSBL (XFsbl_Exit) is not hit within allocated wait time of '60' seconds.
+Note: To wait for a fixed amount of time specify the FSBL function as empty in launch configuration. Use 'IDE_FSBL_BP_HIT_WAIT_TIME' environment variable in launch configuration to modify the wait time (seconds).
+Reason: timeout: target has not halted
+21:23:06 WARN  : Exit breakpoint of FSBL (XFsbl_Exit) is not hit within allocated wait time of '60' seconds.
+Note: To wait for a fixed amount of time specify the FSBL function as empty in launch configuration. Use 'IDE_FSBL_BP_HIT_WAIT_TIME' environment variable in launch configuration to modify the wait time (seconds).
+Reason: Already running
+21:23:06 INFO  : 'bpremove $bp_22_4_fsbl_bp' command is executed.
+21:23:06 INFO  : 'bpremove $bp_22_5_fsbl_bp' command is executed.
+21:23:12 INFO  : 'configparams force-mem-access 0' command is executed.
+21:23:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/sw/test_sd/boot/fsbl.elf
+set bp_22_5_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_22_5_fsbl_bp
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:23:13 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_SD\Test_SD.vitis\.sdk\launch_scripts\single_application_debug\debugger_read_sd-default_9.tcl'
+21:23:16 INFO  : 'configparams force-mem-access 0' command is executed.
+21:23:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/sw/test_sd/boot/fsbl.elf
+set bp_22_4_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_22_4_fsbl_bp
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:23:16 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_SD\Test_SD.vitis\.sdk\launch_scripts\single_application_debug\debugger_read_sd-default_9.tcl'
+17:19:48 INFO  : Successfully done sdx_reload_mss "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/ps7_cortexa9_0/standalone_domain/bsp/system.mss"
+17:29:35 INFO  : Result from executing command 'getProjects': test_sd
+17:29:35 INFO  : Result from executing command 'getPlatforms': test_sd|C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/test_sd.xpfm
+17:29:45 INFO  : Hardware specification for platform project 'test_sd' is updated.
+17:31:29 INFO  : Result from executing command 'getProjects': test_sd
+17:31:29 INFO  : Result from executing command 'getPlatforms': test_sd|C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/test_sd.xpfm
+17:31:29 INFO  : Checking for BSP changes to sync application flags for project 'read_sd'...
+17:31:34 INFO  : Updating application flags with new BSP settings...
+17:31:34 INFO  : Successfully updated application flags for project read_sd.
+17:44:10 INFO  : Checking for BSP changes to sync application flags for project 'read_sd'...
+18:01:46 ERROR : Failed to update hardware specification for project 'test_sd'.
+Reason: Failed to execute command 'platform config -updatehw {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/test_sd_wrapper.xsa}'. Click on details for more information.
+18:04:02 INFO  : Hardware specification for platform project 'test_sd' is updated.
+18:05:15 INFO  : Result from executing command 'getProjects': test_sd
+18:05:15 INFO  : Result from executing command 'getPlatforms': test_sd|C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/test_sd.xpfm
+18:07:17 INFO  : Checking for BSP changes to sync application flags for project 'read_sd'...
+18:07:22 INFO  : Updating application flags with new BSP settings...
+18:07:22 INFO  : Successfully updated application flags for project read_sd.
+18:07:51 INFO  : Disconnected from the channel tcfchan#2.
+18:07:52 INFO  : The hardware specfication used by project 'read_sd' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+18:07:52 INFO  : The file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_SD\Test_SD.vitis\read_sd\_ide\bitstream\test_sd_wrapper.bit' stored in project is removed.
+18:07:52 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_SD\Test_SD.vitis\read_sd\_ide\bitstream' in project 'read_sd'.
+18:07:52 INFO  : The file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_SD\Test_SD.vitis\read_sd\_ide\psinit\ps7_init.tcl' stored in project is removed.
+18:08:04 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_SD\Test_SD.vitis\read_sd\_ide\psinit' in project 'read_sd'.
+18:08:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:08:05 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+18:08:05 INFO  : 'jtag frequency' command is executed.
+18:08:05 INFO  : Context for 'APU' is selected.
+18:08:05 INFO  : System reset is completed.
+18:08:08 INFO  : 'after 3000' command is executed.
+18:08:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+18:08:10 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit"
+18:08:10 INFO  : Context for 'APU' is selected.
+18:08:10 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa'.
+18:08:10 INFO  : 'configparams force-mem-access 1' command is executed.
+18:08:10 INFO  : Context for 'APU' is selected.
+18:08:10 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/psinit/ps7_init.tcl' is done.
+18:08:11 INFO  : 'ps7_init' command is executed.
+18:08:12 INFO  : 'ps7_post_config' command is executed.
+18:08:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:08:12 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/Debug/read_sd.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:08:12 INFO  : 'configparams force-mem-access 0' command is executed.
+18:08:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/Debug/read_sd.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:08:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:08:13 INFO  : 'con' command is executed.
+18:08:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:08:13 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_SD\Test_SD.vitis\.sdk\launch_scripts\single_application_debug\debugger_read_sd-default_11.tcl'
+18:15:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:15:32 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+18:15:32 INFO  : 'jtag frequency' command is executed.
+18:15:32 INFO  : Context for 'APU' is selected.
+18:15:32 INFO  : System reset is completed.
+18:15:33 INFO  : Checking for BSP changes to sync application flags for project 'read_sd'...
+18:15:35 INFO  : 'after 3000' command is executed.
+18:15:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+18:15:37 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit"
+18:15:37 INFO  : Context for 'APU' is selected.
+18:15:37 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa'.
+18:15:37 INFO  : 'configparams force-mem-access 1' command is executed.
+18:15:37 INFO  : Context for 'APU' is selected.
+18:15:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:15:37 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:15:38 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/sw/test_sd/boot/fsbl.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:15:38 INFO  : 'set bp_15_38_fsbl_bp [bpadd -addr &XFsbl_Exit]' command is executed.
+18:16:39 WARN  : Exit breakpoint of FSBL (XFsbl_Exit) is not hit within allocated wait time of '60' seconds.
+Note: To wait for a fixed amount of time specify the FSBL function as empty in launch configuration. Use 'IDE_FSBL_BP_HIT_WAIT_TIME' environment variable in launch configuration to modify the wait time (seconds).
+Reason: timeout: target has not halted
+18:16:39 INFO  : 'bpremove $bp_15_38_fsbl_bp' command is executed.
+18:16:42 INFO  : 'configparams force-mem-access 0' command is executed.
+18:16:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+targets -set -nocase -filter {name =~ "*A9*#0"}
+rst -processor
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/sw/test_sd/boot/fsbl.elf
+set bp_15_38_fsbl_bp [bpadd -addr &XFsbl_Exit]
+con -block -timeout 60
+bpremove $bp_15_38_fsbl_bp
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:16:43 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_SD\Test_SD.vitis\.sdk\launch_scripts\single_application_debug\debugger_read_sd-default_9.tcl'
+18:17:18 INFO  : Disconnected from the channel tcfchan#6.
+18:17:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:17:19 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+18:17:20 INFO  : 'jtag frequency' command is executed.
+18:17:20 INFO  : Context for 'APU' is selected.
+18:17:20 INFO  : System reset is completed.
+18:17:23 INFO  : 'after 3000' command is executed.
+18:17:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+18:17:24 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit"
+18:17:24 INFO  : Context for 'APU' is selected.
+18:17:24 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa'.
+18:17:24 INFO  : 'configparams force-mem-access 1' command is executed.
+18:17:25 INFO  : Context for 'APU' is selected.
+18:17:25 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/psinit/ps7_init.tcl' is done.
+18:17:26 INFO  : 'ps7_init' command is executed.
+18:17:26 INFO  : 'ps7_post_config' command is executed.
+18:17:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:17:27 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/Debug/read_sd.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:17:27 INFO  : 'configparams force-mem-access 0' command is executed.
+18:17:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/Debug/read_sd.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:17:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:17:27 INFO  : 'con' command is executed.
+18:17:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:17:27 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_SD\Test_SD.vitis\.sdk\launch_scripts\single_application_debug\debugger_read_sd-default_11.tcl'
+18:27:34 INFO  : Checking for BSP changes to sync application flags for project 'read_sd'...
+18:27:40 INFO  : Checking for BSP changes to sync application flags for project 'read_sd'...
+18:28:00 INFO  : No configuration has been selected for launch. Cancelling the launch operation.
+18:28:04 INFO  : Checking for BSP changes to sync application flags for project 'read_sd'...
+18:28:15 WARN  : channel "tcfchan#6" closed
+18:28:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:28:16 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+18:28:16 INFO  : 'jtag frequency' command is executed.
+18:28:16 INFO  : Context for 'APU' is selected.
+18:28:17 INFO  : System reset is completed.
+18:28:20 INFO  : 'after 3000' command is executed.
+18:28:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+18:28:21 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit"
+18:28:21 INFO  : Context for 'APU' is selected.
+18:28:21 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa'.
+18:28:21 INFO  : 'configparams force-mem-access 1' command is executed.
+18:28:21 INFO  : Context for 'APU' is selected.
+18:28:21 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/psinit/ps7_init.tcl' is done.
+18:28:24 INFO  : 'ps7_init' command is executed.
+18:28:24 INFO  : 'ps7_post_config' command is executed.
+18:28:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:28:24 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/Debug/read_sd.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:28:24 INFO  : 'configparams force-mem-access 0' command is executed.
+18:28:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/hw/test_sd_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/Debug/read_sd.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:28:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:28:24 INFO  : 'con' command is executed.
+18:28:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:28:24 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_SD\Test_SD.vitis\.sdk\launch_scripts\single_application_debug\debugger_read_sd-default_12.tcl'
+18:31:41 INFO  : Checking for BSP changes to sync application flags for project 'read_sd'...
+19:15:32 INFO  : Disconnected from the channel tcfchan#7.
+19:15:32 WARN  : channel "tcfchan#7" closed

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Thu Jul  4 18:58:35 2024
+# Process ID: 6756
+# Current directory: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/impl_1
+# Command line: vivado.exe -log uart_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source uart_wrapper.tcl -notrace
+# Log file: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/impl_1/uart_wrapper.vdi
+# Journal file: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source uart_wrapper.tcl -notrace
