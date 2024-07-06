@@ -15,12 +15,20 @@
 #define MAX_FILES       100 // Maximum number of files to list
 #define BINARY_STRING_LENGTH 32
 
+typedef struct {
+    float *buffer;
+    int status;
+} ReadResult;
+
 static int SdInit(void);
 static int UartInit(void);
 static int ListFiles(char files[][256], int *file_count);
 static int ReadFileFromSDWithIndex(const char* Filename, float* Buffer, UINT BufferSize, UINT StartIndex);
 static void PrintFloat(float value);
 static uint32_t binaryStringToUint32(const char* binaryString);
+static ReadResult read64_fp(const char* file, UINT starIndex);
+
+
 
 XSdPs SdInstance;
 XUartPs Uart_Ps; // Declare the Uart_Ps variable
@@ -32,16 +40,11 @@ int main(void) {
     int file_count = 0;
     int file_index;
     UINT startIndex = 0;
+    ReadResult result;
 
     Status = UartInit();
     if (Status != XST_SUCCESS) {
         xil_printf("UART Initialization failed \r\n");
-        return XST_FAILURE;
-    }
-
-    Status = SdInit();
-    if (Status != XST_SUCCESS) {
-        xil_printf("SD Initialization failed \r\n");
         return XST_FAILURE;
     }
 
@@ -60,27 +63,24 @@ int main(void) {
     }
 
     while (1) {
-        Status = ReadFileFromSDWithIndex(files[file_index], Buffer, BUFFER_SIZE, startIndex);
-        if (Status != XST_SUCCESS && Status != FR_OK) {
-            xil_printf("Failed to read file from SD card \r\n");
-            break;
-        }
+    	result = read64_fp(files[file_index], startIndex);
+    	Status = result.status;
 
         // Print the first and middle float values
-        xil_printf("First float value: ");
-        PrintFloat(Buffer[0]);
-        xil_printf("\r\n");
+//    	xil_printf("First float value: ");
+//		PrintFloat(result.buffer[0]);
+//		xil_printf("\r\n");
+//
+//		xil_printf("Middle float value: ");
+//		PrintFloat(result.buffer[BUFFER_SIZE / 2]);
+//		xil_printf("\r\n");
 
-        xil_printf("Middle float value: ");
-        PrintFloat(Buffer[BUFFER_SIZE / 2]);
-        xil_printf("\r\n");
+		xil_printf("Index %d \r \n", startIndex);
+//        char str[33] = "00111110010011001100110011001101";
+//        uint32_t msj = binaryStringToUint32(str);
+//		Xil_Out32(XPAR_AXIFLOAT_0_S00_AXI_BASEADDR, msj);
 
-        xil_printf("Index %d", startIndex);
-        char str[33] = "00111110010011001100110011001101";
-        uint32_t msj = binaryStringToUint32(str);
-		Xil_Out32(XPAR_AXIFLOAT_0_S00_AXI_BASEADDR, msj);
-
-        startIndex += BUFFER_SIZE;
+        startIndex += 64;
 
         // Stop reading when end of file is reached
         if (Status == FR_NO_FILE) { // Assumes empty buffer means end of data
@@ -90,6 +90,33 @@ int main(void) {
 
     return XST_SUCCESS;
 }
+
+ReadResult read64_fp(const char* file, UINT startIndex) {
+    int Status;
+    static float Buffer[BUFFER_SIZE];  // Static to ensure it exists after the function exits
+    static ReadResult result;
+
+    Status = UartInit();
+    if (Status != XST_SUCCESS) {
+        xil_printf("UART Initialization failed \r\n");
+        result.buffer = NULL;
+        result.status = Status;
+        return result;
+    }
+
+    Status = ReadFileFromSDWithIndex(file, Buffer, BUFFER_SIZE, startIndex);
+    if (Status != XST_SUCCESS && Status != FR_OK) {
+        xil_printf("Failed to read file from SD card \r\n");
+        result.buffer = NULL;
+        result.status = Status;
+        return result;
+    }
+
+    result.buffer = Buffer;
+    result.status = Status;
+    return result;
+}
+
 
 static int UartInit(void) {
     int Status;
@@ -212,7 +239,7 @@ float uint32ToFloat(uint32_t uint32Value) {
 
 static void PrintFloat(float value) {
     char buffer[32];
-    snprintf(buffer, sizeof(buffer), "%f", value);
+    snprintf(buffer, sizeof(buffer), "%f", value); // Adjust precision if needed
     xil_printf("%s", buffer);
 }
 
@@ -224,9 +251,9 @@ static int ReadFileFromSDWithIndex(const char* Filename, float* Buffer, UINT Buf
     char line[BINARY_STRING_LENGTH + 1];  // +1 for null terminator
     int bufferIndex = 0; // Declare and initialize bufferIndex
     UINT bytesRead;
-    UINT byteIndex = StartIndex * BINARY_STRING_LENGTH;
+    UINT byteIndex = StartIndex * BINARY_STRING_LENGTH * BUFFER_SIZE;
 
-    xil_printf("Mounting filesystem...\r\n");
+//    xil_printf("Mounting filesystem...\r\n");
     // Mount the filesystem
     Res = f_mount(&FatFs, Path, 0);
     if (Res != FR_OK) {
@@ -234,7 +261,7 @@ static int ReadFileFromSDWithIndex(const char* Filename, float* Buffer, UINT Buf
         return XST_FAILURE;
     }
 
-    xil_printf("Opening file: %s\r\n", Filename);
+//    xil_printf("Opening file: %s\r\n", Filename);
     // Open the file
     Res = f_open(&Fil, Filename, FA_READ);
     if (Res != FR_OK) {
@@ -252,22 +279,25 @@ static int ReadFileFromSDWithIndex(const char* Filename, float* Buffer, UINT Buf
         return XST_FAILURE;
     }
 
-    xil_printf("Reading file content...\r\n");
+//    xil_printf("Reading file content...\r\n");
     // Read the file content line by line
     while (f_read(&Fil, line, BINARY_STRING_LENGTH, &bytesRead) == FR_OK && bytesRead == BINARY_STRING_LENGTH) {
     	line[BINARY_STRING_LENGTH] = '\0';  // Null-terminate the line
         if (bufferIndex >= BUFFER_SIZE) {
-            xil_printf("Buffer overflow\r\n");
+//            xil_printf("Buffer overflow\r\n");
             break;
         }
         // Convert binary string to float
         uint32_t temp = binaryStringToUint32(line);
-        Buffer[bufferIndex] = uint32ToFloat(temp);
+        float temp_f = uint32ToFloat(temp);
+        xil_printf("Temp: %d \r\n", temp);
+        printf("Temp_f: %f \r\n", temp_f);
+        Buffer[bufferIndex] = temp_f;
         bufferIndex++;
     }
 
     // Check if end of file is reached
-    if (f_tell(&Fil) >= f_size(&Fil)) {
+    if (f_eof(&Fil)) {
         xil_printf("End of file reached\r\n");
         Res = FR_NO_FILE; // Use a valid FATFS error code to indicate end of file
     }
@@ -278,7 +308,7 @@ static int ReadFileFromSDWithIndex(const char* Filename, float* Buffer, UINT Buf
     // Unmount the filesystem
     f_mount(NULL, Path, 0);
 
-    xil_printf("File read successfully.\r\n");
+//    xil_printf("File read successfully.\r\n");
 
     return Res;
 }

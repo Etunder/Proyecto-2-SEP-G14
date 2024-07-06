@@ -2543,3 +2543,1376 @@ con
 15:57:31 INFO  : Launch script is exported to file 'C:\Users\Amteo\Desktop\Universidad\SEP\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_1.tcl'
 16:00:52 WARN  : channel "tcfchan#6" closed
 16:00:52 INFO  : Disconnected from the channel tcfchan#7.
+16:13:13 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\temp_xsdb_launch_script.tcl
+16:13:18 INFO  : XSCT server has started successfully.
+16:13:18 INFO  : plnx-install-location is set to ''
+16:13:18 INFO  : Successfully done setting XSCT server connection channel  
+16:13:18 INFO  : Successfully done setting workspace for the tool. 
+16:13:24 INFO  : Registering command handlers for Vitis TCF services
+16:13:24 INFO  : Platform repository initialization has completed.
+16:13:31 INFO  : Successfully done query RDI_DATADIR 
+16:27:25 INFO  : Result from executing command 'getProjects': uartTest
+16:27:25 INFO  : Result from executing command 'getPlatforms': uartTest|C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/uartTest.xpfm
+16:27:25 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+16:31:08 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+16:31:42 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+16:31:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:31:58 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+16:31:58 INFO  : 'jtag frequency' command is executed.
+16:31:58 INFO  : Context for 'APU' is selected.
+16:31:58 INFO  : System reset is completed.
+16:32:01 INFO  : 'after 3000' command is executed.
+16:32:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+16:32:02 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+16:32:03 INFO  : Context for 'APU' is selected.
+16:32:03 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+16:32:03 INFO  : 'configparams force-mem-access 1' command is executed.
+16:32:03 INFO  : Context for 'APU' is selected.
+16:32:03 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+16:32:04 INFO  : 'ps7_init' command is executed.
+16:32:04 INFO  : 'ps7_post_config' command is executed.
+16:32:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:32:04 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:32:04 INFO  : 'configparams force-mem-access 0' command is executed.
+16:32:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:32:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:32:04 INFO  : 'con' command is executed.
+16:32:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:32:04 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_3.tcl'
+16:32:15 INFO  : Disconnected from the channel tcfchan#2.
+16:32:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:32:17 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+16:32:17 INFO  : 'jtag frequency' command is executed.
+16:32:17 INFO  : Context for 'APU' is selected.
+16:32:17 INFO  : System reset is completed.
+16:32:20 INFO  : 'after 3000' command is executed.
+16:32:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+16:32:21 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+16:32:21 INFO  : Context for 'APU' is selected.
+16:32:21 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+16:32:21 INFO  : 'configparams force-mem-access 1' command is executed.
+16:32:21 INFO  : Context for 'APU' is selected.
+16:32:21 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+16:32:22 INFO  : 'ps7_init' command is executed.
+16:32:22 INFO  : 'ps7_post_config' command is executed.
+16:32:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:32:23 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:32:23 INFO  : 'configparams force-mem-access 0' command is executed.
+16:32:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:32:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:32:23 INFO  : 'con' command is executed.
+16:32:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:32:23 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_4.tcl'
+16:32:33 INFO  : Disconnected from the channel tcfchan#3.
+16:32:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:32:35 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+16:32:35 INFO  : 'jtag frequency' command is executed.
+16:32:35 INFO  : Context for 'APU' is selected.
+16:32:35 INFO  : System reset is completed.
+16:32:38 INFO  : 'after 3000' command is executed.
+16:32:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+16:32:39 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+16:32:39 INFO  : Context for 'APU' is selected.
+16:32:39 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+16:32:39 INFO  : 'configparams force-mem-access 1' command is executed.
+16:32:39 INFO  : Context for 'APU' is selected.
+16:32:39 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+16:32:40 INFO  : 'ps7_init' command is executed.
+16:32:40 INFO  : 'ps7_post_config' command is executed.
+16:32:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:32:40 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:32:40 INFO  : 'configparams force-mem-access 0' command is executed.
+16:32:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:32:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:32:40 INFO  : 'con' command is executed.
+16:32:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:32:40 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_5.tcl'
+16:44:47 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+16:45:25 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+16:45:42 INFO  : Disconnected from the channel tcfchan#4.
+16:45:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:45:44 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+16:45:44 INFO  : 'jtag frequency' command is executed.
+16:45:44 INFO  : Context for 'APU' is selected.
+16:45:44 INFO  : System reset is completed.
+16:45:47 INFO  : 'after 3000' command is executed.
+16:45:47 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+16:45:48 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+16:45:49 INFO  : Context for 'APU' is selected.
+16:45:49 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+16:45:49 INFO  : 'configparams force-mem-access 1' command is executed.
+16:45:49 INFO  : Context for 'APU' is selected.
+16:45:49 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+16:45:49 INFO  : 'ps7_init' command is executed.
+16:45:49 INFO  : 'ps7_post_config' command is executed.
+16:45:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:45:50 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:45:50 INFO  : 'configparams force-mem-access 0' command is executed.
+16:45:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:45:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:45:50 INFO  : 'con' command is executed.
+16:45:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:45:50 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_6.tcl'
+16:50:59 INFO  : Disconnected from the channel tcfchan#5.
+16:51:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:51:00 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+16:51:00 INFO  : 'jtag frequency' command is executed.
+16:51:00 INFO  : Context for 'APU' is selected.
+16:51:00 INFO  : System reset is completed.
+16:51:03 INFO  : 'after 3000' command is executed.
+16:51:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+16:51:04 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+16:51:04 INFO  : Context for 'APU' is selected.
+16:51:04 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+16:51:04 INFO  : 'configparams force-mem-access 1' command is executed.
+16:51:04 INFO  : Context for 'APU' is selected.
+16:51:04 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+16:51:05 INFO  : 'ps7_init' command is executed.
+16:51:05 INFO  : 'ps7_post_config' command is executed.
+16:51:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:51:06 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:51:06 INFO  : 'configparams force-mem-access 0' command is executed.
+16:51:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:51:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:51:06 INFO  : 'con' command is executed.
+16:51:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:51:06 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_7.tcl'
+16:53:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:53:11 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+16:53:11 INFO  : 'jtag frequency' command is executed.
+16:53:11 INFO  : Context for 'APU' is selected.
+16:53:12 INFO  : System reset is completed.
+16:53:14 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+16:53:15 INFO  : 'after 3000' command is executed.
+16:53:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+16:53:16 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+16:53:16 INFO  : Context for 'APU' is selected.
+16:53:16 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+16:53:16 INFO  : 'configparams force-mem-access 1' command is executed.
+16:53:16 INFO  : Context for 'APU' is selected.
+16:53:16 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+16:53:17 INFO  : 'ps7_init' command is executed.
+16:53:17 INFO  : 'ps7_post_config' command is executed.
+16:53:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:53:17 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:53:17 INFO  : 'configparams force-mem-access 0' command is executed.
+16:53:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:53:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:53:17 INFO  : 'con' command is executed.
+16:53:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:53:17 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_8.tcl'
+16:53:19 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+16:53:25 INFO  : Disconnected from the channel tcfchan#6.
+16:53:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:53:26 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+16:53:26 INFO  : 'jtag frequency' command is executed.
+16:53:26 INFO  : Context for 'APU' is selected.
+16:53:26 INFO  : System reset is completed.
+16:53:29 INFO  : 'after 3000' command is executed.
+16:53:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+16:53:31 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+16:53:31 INFO  : Context for 'APU' is selected.
+16:53:31 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+16:53:31 INFO  : 'configparams force-mem-access 1' command is executed.
+16:53:31 INFO  : Context for 'APU' is selected.
+16:53:31 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+16:53:31 INFO  : 'ps7_init' command is executed.
+16:53:31 INFO  : 'ps7_post_config' command is executed.
+16:53:31 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:53:32 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:53:32 INFO  : 'configparams force-mem-access 0' command is executed.
+16:53:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:53:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:53:32 INFO  : 'con' command is executed.
+16:53:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:53:32 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_9.tcl'
+16:55:16 WARN  : channel "tcfchan#6" closed
+16:55:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:55:18 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+16:55:18 INFO  : 'jtag frequency' command is executed.
+16:55:18 INFO  : Context for 'APU' is selected.
+16:55:18 INFO  : System reset is completed.
+16:55:21 INFO  : 'after 3000' command is executed.
+16:55:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+16:55:22 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+16:55:22 INFO  : Context for 'APU' is selected.
+16:55:22 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+16:55:22 INFO  : 'configparams force-mem-access 1' command is executed.
+16:55:22 INFO  : Context for 'APU' is selected.
+16:55:22 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+16:55:23 INFO  : 'ps7_init' command is executed.
+16:55:23 INFO  : 'ps7_post_config' command is executed.
+16:55:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:55:24 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:55:24 INFO  : 'configparams force-mem-access 0' command is executed.
+16:55:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:55:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:55:24 INFO  : 'con' command is executed.
+16:55:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:55:24 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_10.tcl'
+16:58:40 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+16:58:49 INFO  : Disconnected from the channel tcfchan#7.
+16:58:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:58:50 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+16:58:50 INFO  : 'jtag frequency' command is executed.
+16:58:50 INFO  : Context for 'APU' is selected.
+16:58:50 INFO  : System reset is completed.
+16:58:54 INFO  : 'after 3000' command is executed.
+16:58:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+16:58:55 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+16:58:55 INFO  : Context for 'APU' is selected.
+16:58:55 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+16:58:55 INFO  : 'configparams force-mem-access 1' command is executed.
+16:58:55 INFO  : Context for 'APU' is selected.
+16:58:55 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+16:58:56 INFO  : 'ps7_init' command is executed.
+16:58:56 INFO  : 'ps7_post_config' command is executed.
+16:58:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:58:56 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:58:56 INFO  : 'configparams force-mem-access 0' command is executed.
+16:58:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:58:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:58:56 INFO  : 'con' command is executed.
+16:58:56 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:58:56 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_11.tcl'
+17:00:54 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+17:01:00 WARN  : channel "tcfchan#7" closed
+17:01:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:01:02 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+17:01:02 INFO  : 'jtag frequency' command is executed.
+17:01:02 INFO  : Context for 'APU' is selected.
+17:01:02 INFO  : System reset is completed.
+17:01:05 INFO  : 'after 3000' command is executed.
+17:01:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+17:01:06 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+17:01:06 INFO  : Context for 'APU' is selected.
+17:01:06 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+17:01:06 INFO  : 'configparams force-mem-access 1' command is executed.
+17:01:06 INFO  : Context for 'APU' is selected.
+17:01:06 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+17:01:07 INFO  : 'ps7_init' command is executed.
+17:01:07 INFO  : 'ps7_post_config' command is executed.
+17:01:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:01:07 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:01:08 INFO  : 'configparams force-mem-access 0' command is executed.
+17:01:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:01:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:01:08 INFO  : 'con' command is executed.
+17:01:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:01:08 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_12.tcl'
+17:01:36 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+17:01:46 INFO  : Disconnected from the channel tcfchan#8.
+17:01:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:01:47 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+17:01:47 INFO  : 'jtag frequency' command is executed.
+17:01:47 INFO  : Context for 'APU' is selected.
+17:01:47 INFO  : System reset is completed.
+17:01:50 INFO  : 'after 3000' command is executed.
+17:01:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+17:01:52 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+17:01:52 INFO  : Context for 'APU' is selected.
+17:01:52 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+17:01:52 INFO  : 'configparams force-mem-access 1' command is executed.
+17:01:52 INFO  : Context for 'APU' is selected.
+17:01:52 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+17:01:53 INFO  : 'ps7_init' command is executed.
+17:01:53 INFO  : 'ps7_post_config' command is executed.
+17:01:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:01:53 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:01:53 INFO  : 'configparams force-mem-access 0' command is executed.
+17:01:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:01:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:01:53 INFO  : 'con' command is executed.
+17:01:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:01:53 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_13.tcl'
+17:02:41 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+17:02:50 WARN  : channel "tcfchan#8" closed
+17:02:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:02:52 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+17:02:52 INFO  : 'jtag frequency' command is executed.
+17:02:52 INFO  : Context for 'APU' is selected.
+17:02:52 INFO  : System reset is completed.
+17:02:55 INFO  : 'after 3000' command is executed.
+17:02:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+17:02:56 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+17:02:56 INFO  : Context for 'APU' is selected.
+17:02:56 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+17:02:56 INFO  : 'configparams force-mem-access 1' command is executed.
+17:02:56 INFO  : Context for 'APU' is selected.
+17:02:56 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+17:02:57 INFO  : 'ps7_init' command is executed.
+17:02:57 INFO  : 'ps7_post_config' command is executed.
+17:02:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:02:57 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:02:57 INFO  : 'configparams force-mem-access 0' command is executed.
+17:02:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:02:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:02:58 INFO  : 'con' command is executed.
+17:02:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:02:58 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_14.tcl'
+17:11:48 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+17:11:59 INFO  : Disconnected from the channel tcfchan#9.
+17:12:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:12:00 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+17:12:00 INFO  : 'jtag frequency' command is executed.
+17:12:00 INFO  : Context for 'APU' is selected.
+17:12:00 INFO  : System reset is completed.
+17:12:03 INFO  : 'after 3000' command is executed.
+17:12:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+17:12:05 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+17:12:05 INFO  : Context for 'APU' is selected.
+17:12:05 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+17:12:05 INFO  : 'configparams force-mem-access 1' command is executed.
+17:12:05 INFO  : Context for 'APU' is selected.
+17:12:05 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+17:12:06 INFO  : 'ps7_init' command is executed.
+17:12:06 INFO  : 'ps7_post_config' command is executed.
+17:12:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:12:07 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:12:07 INFO  : 'configparams force-mem-access 0' command is executed.
+17:12:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:12:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:12:07 INFO  : 'con' command is executed.
+17:12:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:12:07 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_15.tcl'
+17:37:35 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+17:42:20 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+17:42:29 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+17:42:38 WARN  : channel "tcfchan#9" closed
+17:42:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:42:57 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+17:42:57 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+17:43:27 INFO  : Disconnected from the channel tcfchan#10.
+17:43:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:43:28 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+17:43:28 INFO  : 'jtag frequency' command is executed.
+17:43:28 INFO  : Context for 'APU' is selected.
+17:43:28 INFO  : System reset is completed.
+17:43:31 INFO  : 'after 3000' command is executed.
+17:43:31 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+17:43:33 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+17:43:33 INFO  : Context for 'APU' is selected.
+17:43:33 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+17:43:33 INFO  : 'configparams force-mem-access 1' command is executed.
+17:43:33 INFO  : Context for 'APU' is selected.
+17:43:33 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+17:43:34 INFO  : 'ps7_init' command is executed.
+17:43:34 INFO  : 'ps7_post_config' command is executed.
+17:43:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:43:34 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:43:34 INFO  : 'configparams force-mem-access 0' command is executed.
+17:43:34 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:43:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:43:34 INFO  : 'con' command is executed.
+17:43:34 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:43:34 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_17.tcl'
+17:44:10 INFO  : Disconnected from the channel tcfchan#11.
+17:44:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:44:11 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+17:44:11 INFO  : 'jtag frequency' command is executed.
+17:44:11 INFO  : Context for 'APU' is selected.
+17:44:11 INFO  : System reset is completed.
+17:44:14 INFO  : 'after 3000' command is executed.
+17:44:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+17:44:16 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+17:44:16 INFO  : Context for 'APU' is selected.
+17:44:16 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+17:44:16 INFO  : 'configparams force-mem-access 1' command is executed.
+17:44:16 INFO  : Context for 'APU' is selected.
+17:44:16 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+17:44:17 INFO  : 'ps7_init' command is executed.
+17:44:17 INFO  : 'ps7_post_config' command is executed.
+17:44:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:44:17 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:44:17 INFO  : 'configparams force-mem-access 0' command is executed.
+17:44:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:44:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:44:17 INFO  : 'con' command is executed.
+17:44:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:44:17 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_18.tcl'
+17:45:47 INFO  : Disconnected from the channel tcfchan#12.
+17:45:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:45:48 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+17:45:48 INFO  : 'jtag frequency' command is executed.
+17:45:48 INFO  : Context for 'APU' is selected.
+17:45:48 INFO  : System reset is completed.
+17:45:51 INFO  : 'after 3000' command is executed.
+17:45:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+17:45:53 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+17:45:53 INFO  : Context for 'APU' is selected.
+17:45:53 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+17:45:53 INFO  : 'configparams force-mem-access 1' command is executed.
+17:45:53 INFO  : Context for 'APU' is selected.
+17:45:53 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+17:45:54 INFO  : 'ps7_init' command is executed.
+17:45:54 INFO  : 'ps7_post_config' command is executed.
+17:45:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:45:54 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:45:54 INFO  : 'configparams force-mem-access 0' command is executed.
+17:45:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:45:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:45:54 INFO  : 'con' command is executed.
+17:45:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:45:54 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_19.tcl'
+17:48:14 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+17:48:22 INFO  : Disconnected from the channel tcfchan#13.
+17:48:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:48:23 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+17:48:23 INFO  : 'jtag frequency' command is executed.
+17:48:23 INFO  : Context for 'APU' is selected.
+17:48:23 INFO  : System reset is completed.
+17:48:26 INFO  : 'after 3000' command is executed.
+17:48:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+17:48:27 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+17:48:27 INFO  : Context for 'APU' is selected.
+17:48:27 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+17:48:27 INFO  : 'configparams force-mem-access 1' command is executed.
+17:48:27 INFO  : Context for 'APU' is selected.
+17:48:27 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+17:48:28 INFO  : 'ps7_init' command is executed.
+17:48:28 INFO  : 'ps7_post_config' command is executed.
+17:48:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:48:29 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:48:29 INFO  : 'configparams force-mem-access 0' command is executed.
+17:48:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:48:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:48:29 INFO  : 'con' command is executed.
+17:48:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:48:29 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_20.tcl'
+17:52:50 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+17:52:57 INFO  : Disconnected from the channel tcfchan#14.
+17:52:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:52:58 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+17:52:58 INFO  : 'jtag frequency' command is executed.
+17:52:58 INFO  : Context for 'APU' is selected.
+17:52:59 INFO  : System reset is completed.
+17:53:02 INFO  : 'after 3000' command is executed.
+17:53:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+17:53:03 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+17:53:03 INFO  : Context for 'APU' is selected.
+17:53:03 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+17:53:03 INFO  : 'configparams force-mem-access 1' command is executed.
+17:53:03 INFO  : Context for 'APU' is selected.
+17:53:03 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+17:53:04 INFO  : 'ps7_init' command is executed.
+17:53:04 INFO  : 'ps7_post_config' command is executed.
+17:53:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:53:04 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:53:04 INFO  : 'configparams force-mem-access 0' command is executed.
+17:53:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:53:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:53:05 INFO  : 'con' command is executed.
+17:53:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:53:05 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_21.tcl'
+17:58:55 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+17:59:15 INFO  : Disconnected from the channel tcfchan#15.
+17:59:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:59:16 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+17:59:16 INFO  : 'jtag frequency' command is executed.
+17:59:16 INFO  : Context for 'APU' is selected.
+17:59:16 INFO  : System reset is completed.
+17:59:19 INFO  : 'after 3000' command is executed.
+17:59:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+17:59:20 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+17:59:20 INFO  : Context for 'APU' is selected.
+17:59:20 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+17:59:20 INFO  : 'configparams force-mem-access 1' command is executed.
+17:59:20 INFO  : Context for 'APU' is selected.
+17:59:20 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+17:59:21 INFO  : 'ps7_init' command is executed.
+17:59:21 INFO  : 'ps7_post_config' command is executed.
+17:59:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:59:22 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:59:22 INFO  : 'configparams force-mem-access 0' command is executed.
+17:59:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:59:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:59:22 INFO  : 'con' command is executed.
+17:59:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:59:22 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_22.tcl'
+18:05:15 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+18:05:21 INFO  : Disconnected from the channel tcfchan#16.
+18:05:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:05:40 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+18:05:40 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+18:06:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:06:18 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+18:06:18 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+18:06:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:06:29 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+18:06:29 INFO  : 'jtag frequency' command is executed.
+18:06:29 INFO  : Context for 'APU' is selected.
+18:06:29 INFO  : System reset is completed.
+18:06:32 INFO  : 'after 3000' command is executed.
+18:06:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+18:06:33 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+18:06:33 INFO  : Context for 'APU' is selected.
+18:06:34 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+18:06:34 INFO  : 'configparams force-mem-access 1' command is executed.
+18:06:34 INFO  : Context for 'APU' is selected.
+18:06:34 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+18:06:34 INFO  : 'ps7_init' command is executed.
+18:06:34 INFO  : 'ps7_post_config' command is executed.
+18:06:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:06:35 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:06:35 INFO  : 'configparams force-mem-access 0' command is executed.
+18:06:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:06:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:06:35 INFO  : 'con' command is executed.
+18:06:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:06:35 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_25.tcl'
+18:08:09 INFO  : Disconnected from the channel tcfchan#17.
+18:08:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:08:11 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+18:08:11 INFO  : 'jtag frequency' command is executed.
+18:08:11 INFO  : Context for 'APU' is selected.
+18:08:11 INFO  : System reset is completed.
+18:08:14 INFO  : 'after 3000' command is executed.
+18:08:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+18:08:15 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+18:08:15 INFO  : Context for 'APU' is selected.
+18:08:15 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+18:08:15 INFO  : 'configparams force-mem-access 1' command is executed.
+18:08:15 INFO  : Context for 'APU' is selected.
+18:08:15 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+18:08:16 INFO  : 'ps7_init' command is executed.
+18:08:16 INFO  : 'ps7_post_config' command is executed.
+18:08:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:08:16 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:08:17 INFO  : 'configparams force-mem-access 0' command is executed.
+18:08:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:08:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:08:17 INFO  : 'con' command is executed.
+18:08:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:08:17 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_26.tcl'
+18:08:27 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+18:09:07 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+18:09:13 INFO  : Disconnected from the channel tcfchan#18.
+18:09:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:09:14 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+18:09:14 INFO  : 'jtag frequency' command is executed.
+18:09:14 INFO  : Context for 'APU' is selected.
+18:09:14 INFO  : System reset is completed.
+18:09:17 INFO  : 'after 3000' command is executed.
+18:09:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+18:09:19 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+18:09:19 INFO  : Context for 'APU' is selected.
+18:09:19 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+18:09:19 INFO  : 'configparams force-mem-access 1' command is executed.
+18:09:19 INFO  : Context for 'APU' is selected.
+18:09:19 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+18:09:20 INFO  : 'ps7_init' command is executed.
+18:09:20 INFO  : 'ps7_post_config' command is executed.
+18:09:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:09:20 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:09:20 INFO  : 'configparams force-mem-access 0' command is executed.
+18:09:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:09:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:09:20 INFO  : 'con' command is executed.
+18:09:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:09:20 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_27.tcl'
+18:10:36 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+18:10:43 INFO  : Disconnected from the channel tcfchan#19.
+18:10:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:10:44 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+18:10:44 INFO  : 'jtag frequency' command is executed.
+18:10:44 INFO  : Context for 'APU' is selected.
+18:10:44 INFO  : System reset is completed.
+18:10:47 INFO  : 'after 3000' command is executed.
+18:10:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+18:10:50 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+18:10:50 INFO  : Context for 'APU' is selected.
+18:10:50 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+18:10:50 INFO  : 'configparams force-mem-access 1' command is executed.
+18:10:50 INFO  : Context for 'APU' is selected.
+18:10:50 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+18:10:51 INFO  : 'ps7_init' command is executed.
+18:10:51 INFO  : 'ps7_post_config' command is executed.
+18:10:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:10:51 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:10:51 INFO  : 'configparams force-mem-access 0' command is executed.
+18:10:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:10:51 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:10:51 INFO  : 'con' command is executed.
+18:10:51 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:10:51 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_28.tcl'
+18:12:23 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+18:12:31 INFO  : Disconnected from the channel tcfchan#20.
+18:12:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:12:33 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+18:12:33 INFO  : 'jtag frequency' command is executed.
+18:12:33 INFO  : Context for 'APU' is selected.
+18:12:33 INFO  : System reset is completed.
+18:12:36 INFO  : 'after 3000' command is executed.
+18:12:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+18:12:37 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+18:12:37 INFO  : Context for 'APU' is selected.
+18:12:37 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+18:12:37 INFO  : 'configparams force-mem-access 1' command is executed.
+18:12:37 INFO  : Context for 'APU' is selected.
+18:12:37 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+18:12:38 INFO  : 'ps7_init' command is executed.
+18:12:38 INFO  : 'ps7_post_config' command is executed.
+18:12:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:12:38 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:12:38 INFO  : 'configparams force-mem-access 0' command is executed.
+18:12:38 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:12:38 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:12:38 INFO  : 'con' command is executed.
+18:12:38 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:12:38 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_29.tcl'
+18:16:59 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+18:17:05 INFO  : Disconnected from the channel tcfchan#21.
+18:17:06 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:17:06 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+18:17:06 INFO  : 'jtag frequency' command is executed.
+18:17:06 INFO  : Context for 'APU' is selected.
+18:17:06 INFO  : System reset is completed.
+18:17:09 INFO  : 'after 3000' command is executed.
+18:17:09 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+18:17:10 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+18:17:10 INFO  : Context for 'APU' is selected.
+18:17:10 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+18:17:10 INFO  : 'configparams force-mem-access 1' command is executed.
+18:17:10 INFO  : Context for 'APU' is selected.
+18:17:10 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+18:17:11 INFO  : 'ps7_init' command is executed.
+18:17:11 INFO  : 'ps7_post_config' command is executed.
+18:17:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:17:12 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:17:12 INFO  : 'configparams force-mem-access 0' command is executed.
+18:17:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:17:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:17:12 INFO  : 'con' command is executed.
+18:17:12 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:17:12 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_30.tcl'
+18:20:45 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+18:20:59 INFO  : Disconnected from the channel tcfchan#22.
+18:21:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:21:00 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+18:21:00 INFO  : 'jtag frequency' command is executed.
+18:21:00 INFO  : Context for 'APU' is selected.
+18:21:01 INFO  : System reset is completed.
+18:21:04 INFO  : 'after 3000' command is executed.
+18:21:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+18:21:05 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+18:21:05 INFO  : Context for 'APU' is selected.
+18:21:05 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+18:21:05 INFO  : 'configparams force-mem-access 1' command is executed.
+18:21:05 INFO  : Context for 'APU' is selected.
+18:21:05 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+18:21:06 INFO  : 'ps7_init' command is executed.
+18:21:06 INFO  : 'ps7_post_config' command is executed.
+18:21:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:21:06 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:21:06 INFO  : 'configparams force-mem-access 0' command is executed.
+18:21:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:21:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:21:07 INFO  : 'con' command is executed.
+18:21:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:21:07 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_31.tcl'
+18:22:07 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+18:22:12 INFO  : Disconnected from the channel tcfchan#23.
+18:22:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:22:14 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+18:22:14 INFO  : 'jtag frequency' command is executed.
+18:22:14 INFO  : Context for 'APU' is selected.
+18:22:14 INFO  : System reset is completed.
+18:22:17 INFO  : 'after 3000' command is executed.
+18:22:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+18:22:18 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+18:22:18 INFO  : Context for 'APU' is selected.
+18:22:18 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+18:22:18 INFO  : 'configparams force-mem-access 1' command is executed.
+18:22:18 INFO  : Context for 'APU' is selected.
+18:22:18 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+18:22:19 INFO  : 'ps7_init' command is executed.
+18:22:19 INFO  : 'ps7_post_config' command is executed.
+18:22:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:22:20 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:22:20 INFO  : 'configparams force-mem-access 0' command is executed.
+18:22:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:22:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:22:20 INFO  : 'con' command is executed.
+18:22:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:22:20 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_32.tcl'
+18:23:44 INFO  : Checking for BSP changes to sync application flags for project 'testUART'...
+18:23:51 INFO  : Disconnected from the channel tcfchan#24.
+18:23:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:23:52 INFO  : Jtag cable 'Digilent Zybo Z7 210351B3FC84A' is selected.
+18:23:52 INFO  : 'jtag frequency' command is executed.
+18:23:52 INFO  : Context for 'APU' is selected.
+18:23:52 INFO  : System reset is completed.
+18:23:55 INFO  : 'after 3000' command is executed.
+18:23:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}' command is executed.
+18:23:56 INFO  : FPGA configured successfully with bitstream "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit"
+18:23:56 INFO  : Context for 'APU' is selected.
+18:23:56 INFO  : Hardware design and registers information is loaded from 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa'.
+18:23:56 INFO  : 'configparams force-mem-access 1' command is executed.
+18:23:56 INFO  : Context for 'APU' is selected.
+18:23:56 INFO  : Sourcing of 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl' is done.
+18:23:57 INFO  : 'ps7_init' command is executed.
+18:23:57 INFO  : 'ps7_post_config' command is executed.
+18:23:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:23:58 INFO  : The application 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:23:58 INFO  : 'configparams force-mem-access 0' command is executed.
+18:23:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351B3FC84A" && level==0 && jtag_device_ctx=="jsn-Zybo Z7-210351B3FC84A-13722093-0"}
+fpga -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/hw/uart_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:23:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:23:58 INFO  : 'con' command is executed.
+18:23:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:23:58 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART_vitis\.sdk\launch_scripts\single_application_debug\debugger_testuart-default_33.tcl'
+18:30:56 INFO  : Disconnected from the channel tcfchan#25.

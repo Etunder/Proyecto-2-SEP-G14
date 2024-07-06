@@ -80,3 +80,34 @@ timestamp=[2024-07-06 15:49:03], mode=BUILD, duration=0:00:03.351, duration_ms=3
 timestamp=[2024-07-06 15:51:23], mode=BUILD, duration=0:00:02.167, duration_ms=2167, data={name=testUART, configuration=Debug, clean_build=false}
 timestamp=[2024-07-06 15:52:35], mode=BUILD, duration=0:00:01.132, duration_ms=1132, data={name=testUART, configuration=Debug, clean_build=false}
 timestamp=[2024-07-06 15:54:32], mode=BUILD, duration=0:00:04.272, duration_ms=4272, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 16:13:22], mode=WORKBENCH_START, duration=0:00:16.793, duration_ms=16793, data={}
+timestamp=[2024-07-06 16:13:24], mode=WORKBENCH_UI_INIT, duration=0:00:01.719, duration_ms=1719, data={editors_count=10, platform_editors_count=7, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,testUART,testUART_system,uartTest}
+timestamp=[2024-07-06 16:13:24], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.178, duration_ms=178, data={}
+timestamp=[2024-07-06 16:27:25], mode=PLATFORM_GENERATION, duration=0:01:19.883, duration_ms=79883, data={name=uartTest}
+timestamp=[2024-07-06 16:27:32], mode=BUILD, duration=0:00:03.184, duration_ms=3184, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 16:31:09], mode=BUILD, duration=0:00:00.973, duration_ms=973, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 16:31:44], mode=BUILD, duration=0:00:01.178, duration_ms=1178, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 16:44:49], mode=BUILD, duration=0:00:02.041, duration_ms=2041, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 16:45:25], mode=BUILD, duration=0:00:00.540, duration_ms=540, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 16:53:16], mode=BUILD, duration=0:00:01.286, duration_ms=1286, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 16:53:20], mode=BUILD, duration=0:00:00.544, duration_ms=544, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 16:58:41], mode=BUILD, duration=0:00:01.223, duration_ms=1223, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 17:00:55], mode=BUILD, duration=0:00:01.235, duration_ms=1235, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 17:01:37], mode=BUILD, duration=0:00:01.223, duration_ms=1223, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 17:02:42], mode=BUILD, duration=0:00:01.295, duration_ms=1295, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 17:11:49], mode=BUILD, duration=0:00:01.157, duration_ms=1157, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 17:37:36], mode=BUILD, duration=0:00:01.414, duration_ms=1414, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 17:42:21], mode=BUILD, duration=0:00:00.672, duration_ms=672, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 17:42:31], mode=BUILD, duration=0:00:01.862, duration_ms=1862, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 17:48:15], mode=BUILD, duration=0:00:01.300, duration_ms=1300, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 17:52:51], mode=BUILD, duration=0:00:01.300, duration_ms=1300, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 17:58:56], mode=BUILD, duration=0:00:01.304, duration_ms=1304, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 18:05:16], mode=BUILD, duration=0:00:00.798, duration_ms=798, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 18:08:28], mode=BUILD, duration=0:00:00.744, duration_ms=744, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 18:09:08], mode=BUILD, duration=0:00:01.368, duration_ms=1368, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 18:10:37], mode=BUILD, duration=0:00:01.235, duration_ms=1235, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 18:12:24], mode=BUILD, duration=0:00:01.240, duration_ms=1240, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 18:17:00], mode=BUILD, duration=0:00:01.311, duration_ms=1311, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 18:20:47], mode=BUILD, duration=0:00:01.294, duration_ms=1294, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 18:22:08], mode=BUILD, duration=0:00:01.231, duration_ms=1231, data={name=testUART, configuration=Debug, clean_build=false}
+timestamp=[2024-07-06 18:23:45], mode=BUILD, duration=0:00:01.370, duration_ms=1370, data={name=testUART, configuration=Debug, clean_build=false}
