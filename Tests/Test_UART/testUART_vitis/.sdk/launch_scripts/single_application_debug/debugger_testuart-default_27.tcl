@@ -11,4 +11,8 @@ targets -set -nocase -filter {name =~"APU*"}
 source C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/psinit/ps7_init.tcl
 ps7_init
 ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
 configparams force-mem-access 0
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
