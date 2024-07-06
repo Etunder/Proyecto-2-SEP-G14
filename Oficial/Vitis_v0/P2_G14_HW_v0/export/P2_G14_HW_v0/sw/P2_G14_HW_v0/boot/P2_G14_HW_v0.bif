@@ -1,0 +1,7 @@
+/*P2_G14_HW_v0*/
+the_ROM_image:
+{
+  [bootloader]<P2_G14_HW_v0/boot/fsbl.elf>
+   <bitstream> 
+  <elf,ps7_cortexa9_0>
+}

@@ -1,0 +1,14 @@
+18:37:34 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\Amteo\Desktop\Universidad\SEP\Proyecto-2-SEP-G14\Oficial\Vitis_v0\temp_xsdb_launch_script.tcl
+18:37:34 INFO  : Registering command handlers for Vitis TCF services
+18:37:38 INFO  : XSCT server has started successfully.
+18:37:38 INFO  : plnx-install-location is set to ''
+18:37:38 INFO  : Successfully done setting XSCT server connection channel  
+18:37:39 INFO  : Platform repository initialization has completed.
+18:37:40 INFO  : Successfully done setting workspace for the tool. 
+18:37:40 INFO  : Successfully done query RDI_DATADIR 
+18:39:17 INFO  : Result from executing command 'getProjects': P2_G14_HW_v0
+18:39:18 INFO  : Result from executing command 'getPlatforms': 
+18:43:26 INFO  : Result from executing command 'getProjects': P2_G14_HW_v0
+18:43:26 INFO  : Result from executing command 'getPlatforms': P2_G14_HW_v0|C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Oficial/Vitis_v0/P2_G14_HW_v0/export/P2_G14_HW_v0/P2_G14_HW_v0.xpfm
+19:01:26 INFO  : Checking for BSP changes to sync application flags for project 'P2_G14_SW_v0'...
+19:02:26 INFO  : Checking for BSP changes to sync application flags for project 'P2_G14_SW_v0'...
