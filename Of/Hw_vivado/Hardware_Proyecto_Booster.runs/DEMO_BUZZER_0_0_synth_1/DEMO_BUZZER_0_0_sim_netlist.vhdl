@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Sun Jul  7 03:28:25 2024
+-- Date        : Sun Jul  7 18:23:44 2024
 -- Host        : DESKTOP-AVIBNI3 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim -rename_top decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix -prefix
 --               decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_ DEMO_BUZZER_0_0_sim_netlist.vhdl
@@ -941,8 +941,12 @@ entity decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   port (
     clk : in STD_LOGIC;
     BTN_JY : in STD_LOGIC;
+    MOOD : in STD_LOGIC_VECTOR ( 2 downto 0 );
     POT1 : in STD_LOGIC_VECTOR ( 9 downto 0 );
     LEDS : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    LEDR : out STD_LOGIC;
+    LEDG : out STD_LOGIC;
+    LEDB : out STD_LOGIC;
     BUZZER_PWM : out STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
@@ -959,16 +963,21 @@ end decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix;
 
 architecture STRUCTURE of decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix is
   signal \^btn_jy\ : STD_LOGIC;
+  signal \^mood\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   attribute x_interface_info : string;
   attribute x_interface_info of clk : signal is "xilinx.com:signal:clock:1.0 clk CLK";
   attribute x_interface_parameter : string;
   attribute x_interface_parameter of clk : signal is "XIL_INTERFACENAME clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN DEMO_clk, INSERT_VIP 0";
 begin
+  LEDB <= \^mood\(2);
+  LEDG <= \^mood\(1);
+  LEDR <= \^mood\(0);
   LEDS(3) <= \^btn_jy\;
   LEDS(2) <= \^btn_jy\;
   LEDS(1) <= \^btn_jy\;
   LEDS(0) <= \^btn_jy\;
   \^btn_jy\ <= BTN_JY;
+  \^mood\(2 downto 0) <= MOOD(2 downto 0);
 U0: entity work.decalper_eb_ot_sdeen_pot_pi_dehcac_xnilix_BUZZER
      port map (
       BTN_JY => \^btn_jy\,

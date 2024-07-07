@@ -54,4 +54,10 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==DEMO_xlconcat_0
 # IP: bd/DEMO/ip/DEMO_auto_pc_0/DEMO_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==DEMO_auto_pc_0 || ORIG_REF_NAME==DEMO_auto_pc_0} -quiet] -quiet
 
+# IP: bd/DEMO/ip/DEMO_xlslice_0_0/DEMO_xlslice_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==DEMO_xlslice_0_0 || ORIG_REF_NAME==DEMO_xlslice_0_0} -quiet] -quiet
+
+# IP: bd/DEMO/ip/DEMO_xlslice_1_0/DEMO_xlslice_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==DEMO_xlslice_1_0 || ORIG_REF_NAME==DEMO_xlslice_1_0} -quiet] -quiet
+
 # XDC: bd/DEMO/DEMO_ooc.xdc

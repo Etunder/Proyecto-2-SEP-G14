@@ -1,2 +1,6 @@
-Nothing to build in platform 'HW_lab10prop2'
+15:37:16 **** Incremental Build of project HW_lab10prop2 ****
+buildplatform.bat 52237 HW_lab10prop2 no_domain_build 
+XSDB Server Channel: tcfchan#1
+
+15:37:19 Build Finished (took 3s.1ms)
 

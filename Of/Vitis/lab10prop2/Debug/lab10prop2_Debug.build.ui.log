@@ -1,214 +1,9 @@
-2024-07-07T05:08:47.553871300255-05:08:47 **** Incremental Build of configuration Debug for project lab10prop2 ****
+2024-07-07T15:37:23.205541800255-15:37:23 **** Incremental Build of configuration Debug for project lab10prop2 ****
 000-make all 
 000-make --no-print-directory pre-build
 000-a9-linaro-pre-build-step
 000-' '
 000-make --no-print-directory main-build
-000-'Building file: ../src/ADC.c'
-000-'Invoking: ARM v7 gcc compiler'
-000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ADC.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/standalone_domain/bspinclude/include -MMD -MP -MF"src/ADC.d" -MT"src/ADC.o" -o "src/ADC.o" "../src/ADC.c"
-000-'Finished building: ../src/ADC.c'
-000-' '
-000-'Building file: ../src/Delay.c'
-000-'Invoking: ARM v7 gcc compiler'
-000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Delay.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/standalone_domain/bspinclude/include -MMD -MP -MF"src/Delay.d" -MT"src/Delay.o" -o "src/Delay.o" "../src/Delay.c"
-000-'Finished building: ../src/Delay.c'
-000-' '
-000-'Building file: ../src/I2C.c'
-000-'Invoking: ARM v7 gcc compiler'
-000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/I2C.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/standalone_domain/bspinclude/include -MMD -MP -MF"src/I2C.d" -MT"src/I2C.o" -o "src/I2C.o" "../src/I2C.c"
-000-'Finished building: ../src/I2C.c'
-000-' '
-000-'Building file: ../src/LCD_Driver.c'
-000-'Invoking: ARM v7 gcc compiler'
-000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LCD_Driver.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/standalone_domain/bspinclude/include -MMD -MP -MF"src/LCD_Driver.d" -MT"src/LCD_Driver.o" -o "src/LCD_Driver.o" "../src/LCD_Driver.c"
-000-'Finished building: ../src/LCD_Driver.c'
-000-' '
-000-'Building file: ../src/LCD_GUI.c'
-000-'Invoking: ARM v7 gcc compiler'
-000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LCD_GUI.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/standalone_domain/bspinclude/include -MMD -MP -MF"src/LCD_GUI.d" -MT"src/LCD_GUI.o" -o "src/LCD_GUI.o" "../src/LCD_GUI.c"
-000-'Finished building: ../src/LCD_GUI.c'
-000-' '
-000-'Building file: ../src/LCD_SPI.c'
-000-'Invoking: ARM v7 gcc compiler'
-000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LCD_SPI.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/standalone_domain/bspinclude/include -MMD -MP -MF"src/LCD_SPI.d" -MT"src/LCD_SPI.o" -o "src/LCD_SPI.o" "../src/LCD_SPI.c"
-000-'Finished building: ../src/LCD_SPI.c'
-000-' '
-000-'Building file: ../src/estado0.c'
-000-'Invoking: ARM v7 gcc compiler'
-000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/estado0.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/standalone_domain/bspinclude/include -MMD -MP -MF"src/estado0.d" -MT"src/estado0.o" -o "src/estado0.o" "../src/estado0.c"
-000-../src/estado0.c: In function 'draw_main_menu':
-000/lab10prop2/src/estado0.c9-1-1implicit declaration of function 'atoi' [-Wimplicit-function-declaration]1-../src/estado0.c:9:38: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
-000-    9 |     const char* color = tmp_to_color(atoi(tmp));
-000-      |                                      ^~~~
-000/lab10prop2/src/estado0.c11-1-1passing argument 6 of 'GUI_DisString_EN' makes integer from pointer without a cast [-Wint-conversion]1-../src/estado0.c:11:85: warning: passing argument 6 of 'GUI_DisString_EN' makes integer from pointer without a cast [-Wint-conversion]
-000-   11 |     (opcion == 1) ? GUI_DisString_EN(5, 50, "1. Canciones", &Font8, GUI_BACKGROUND, color) : GUI_DisString_EN(5, 50, "1. Canciones", &Font8, GUI_BACKGROUND, WHITE);
-000-      |                                                                                     ^~~~~
-000-      |                                                                                     |
-000-      |                                                                                     const char *
-000-In file included from ../src/globals.h:7,
-000-                 from ../src/estado0.c:1:
-000/lab10prop2/src/LCD_GUI.h85-1-1expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'const char *'0-../src/LCD_GUI.h:85:116: note: expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'const char *'
-000-   85 | void GUI_DisString_EN(POINT Xstart, POINT Ystart, const char * pString, sFONT* Font, COLOR Color_Background, COLOR Color_Foreground );
-000/lab10prop2/src/estado0.c12-1-1passing argument 6 of 'GUI_DisString_EN' makes integer from pointer without a cast [-Wint-conversion]1-../src/estado0.c:12:90: warning: passing argument 6 of 'GUI_DisString_EN' makes integer from pointer without a cast [-Wint-conversion]
-000-   12 |     (opcion == 2) ? GUI_DisString_EN(5, 70, "2. Mostrar tu voz", &Font8, GUI_BACKGROUND, color) : GUI_DisString_EN(5, 70, "2. Mostrar tu voz", &Font8, GUI_BACKGROUND, WHITE);
-000-      |                                                                                          ^~~~~
-000-      |                                                                                          |
-000-      |                                                                                          const char *
-000-In file included from ../src/globals.h:7,
-000-                 from ../src/estado0.c:1:
-000/lab10prop2/src/LCD_GUI.h85-1-1expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'const char *'0-../src/LCD_GUI.h:85:116: note: expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'const char *'
-000-   85 | void GUI_DisString_EN(POINT Xstart, POINT Ystart, const char * pString, sFONT* Font, COLOR Color_Background, COLOR Color_Foreground );
-000/lab10prop2/src/estado0.c13-1-1passing argument 6 of 'GUI_DisString_EN' makes integer from pointer without a cast [-Wint-conversion]1-../src/estado0.c:13:79: warning: passing argument 6 of 'GUI_DisString_EN' makes integer from pointer without a cast [-Wint-conversion]
-000-   13 |     (opcion == 3) ? GUI_DisString_EN(5, 90, "3. ???", &Font8, GUI_BACKGROUND, color) : GUI_DisString_EN(5, 90, "3. ???", &Font8, GUI_BACKGROUND, WHITE);
-000-      |                                                                               ^~~~~
-000-      |                                                                               |
-000-      |                                                                               const char *
-000-In file included from ../src/globals.h:7,
-000-                 from ../src/estado0.c:1:
-000/lab10prop2/src/LCD_GUI.h85-1-1expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'const char *'0-../src/LCD_GUI.h:85:116: note: expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'const char *'
-000-   85 | void GUI_DisString_EN(POINT Xstart, POINT Ystart, const char * pString, sFONT* Font, COLOR Color_Background, COLOR Color_Foreground );
-000/lab10prop2/src/estado0.c16-1-1passing argument 6 of 'GUI_DisString_EN' makes integer from pointer without a cast [-Wint-conversion]1-../src/estado0.c:16:61: warning: passing argument 6 of 'GUI_DisString_EN' makes integer from pointer without a cast [-Wint-conversion]
-000-   16 |     GUI_DisString_EN(110, 110, tmp, &Font8, GUI_BACKGROUND, color);
-000-      |                                                             ^~~~~
-000-      |                                                             |
-000-      |                                                             const char *
-000-In file included from ../src/globals.h:7,
-000-                 from ../src/estado0.c:1:
-000/lab10prop2/src/LCD_GUI.h85-1-1expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'const char *'0-../src/LCD_GUI.h:85:116: note: expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'const char *'
-000-   85 | void GUI_DisString_EN(POINT Xstart, POINT Ystart, const char * pString, sFONT* Font, COLOR Color_Background, COLOR Color_Foreground );
-000/lab10prop2/src/estado0.c20-1-1passing argument 6 of 'GUI_DisString_EN' makes integer from pointer without a cast [-Wint-conversion]1-../src/estado0.c:20:84: warning: passing argument 6 of 'GUI_DisString_EN' makes integer from pointer without a cast [-Wint-conversion]
-000-   20 |         (dia == 1) ? GUI_DisString_EN(5, 110, "Es de Dia", &Font8, GUI_BACKGROUND, color) : GUI_DisString_EN(5, 110, "Es de Noche", &Font8, GUI_BACKGROUND, color);
-000-      |                                                                                    ^~~~~
-000-      |                                                                                    |
-000-      |                                                                                    const char *
-000-In file included from ../src/globals.h:7,
-000-                 from ../src/estado0.c:1:
-000/lab10prop2/src/LCD_GUI.h85-1-1expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'const char *'0-../src/LCD_GUI.h:85:116: note: expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'const char *'
-000-   85 | void GUI_DisString_EN(POINT Xstart, POINT Ystart, const char * pString, sFONT* Font, COLOR Color_Background, COLOR Color_Foreground );
-000/lab10prop2/src/estado0.c20-1-1passing argument 6 of 'GUI_DisString_EN' makes integer from pointer without a cast [-Wint-conversion]1-../src/estado0.c:20:157: warning: passing argument 6 of 'GUI_DisString_EN' makes integer from pointer without a cast [-Wint-conversion]
-000-   20 |         (dia == 1) ? GUI_DisString_EN(5, 110, "Es de Dia", &Font8, GUI_BACKGROUND, color) : GUI_DisString_EN(5, 110, "Es de Noche", &Font8, GUI_BACKGROUND, color);
-000-      |                                                                                                                                                             ^~~~~
-000-      |                                                                                                                                                             |
-000-      |                                                                                                                                                             const char *
-000-In file included from ../src/globals.h:7,
-000-                 from ../src/estado0.c:1:
-000/lab10prop2/src/LCD_GUI.h85-1-1expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'const char *'0-../src/LCD_GUI.h:85:116: note: expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'const char *'
-000-   85 | void GUI_DisString_EN(POINT Xstart, POINT Ystart, const char * pString, sFONT* Font, COLOR Color_Background, COLOR Color_Foreground );
-000-'Finished building: ../src/estado0.c'
-000-' '
-000-'Building file: ../src/estado1.c'
-000-'Invoking: ARM v7 gcc compiler'
-000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/estado1.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/standalone_domain/bspinclude/include -MMD -MP -MF"src/estado1.d" -MT"src/estado1.o" -o "src/estado1.o" "../src/estado1.c"
-000-../src/estado1.c: In function 'draw_song_menu':
-000/lab10prop2/src/estado1.c6-1-1implicit declaration of function 'atoi' [-Wimplicit-function-declaration]1-../src/estado1.c:6:38: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
-000-    6 |     const char* color = tmp_to_color(atoi(tmp));
-000-      |                                      ^~~~
-000/lab10prop2/src/estado1.c9-1-1passing argument 6 of 'GUI_DisString_EN' makes integer from pointer without a cast [-Wint-conversion]1-../src/estado1.c:9:85: warning: passing argument 6 of 'GUI_DisString_EN' makes integer from pointer without a cast [-Wint-conversion]
-000-    9 |     (opcion == 1) ? GUI_DisString_EN(5, 50, song_titles[0], &Font8, GUI_BACKGROUND, color) : GUI_DisString_EN(5, 50, song_titles[0], &Font8, GUI_BACKGROUND, WHITE);
-000-      |                                                                                     ^~~~~
-000-      |                                                                                     |
-000-      |                                                                                     const char *
-000-In file included from ../src/globals.h:7,
-000-                 from ../src/estado1.c:1:
-000/lab10prop2/src/LCD_GUI.h85-1-1expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'const char *'0-../src/LCD_GUI.h:85:116: note: expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'const char *'
-000-   85 | void GUI_DisString_EN(POINT Xstart, POINT Ystart, const char * pString, sFONT* Font, COLOR Color_Background, COLOR Color_Foreground );
-000/lab10prop2/src/estado1.c10-1-1passing argument 6 of 'GUI_DisString_EN' makes integer from pointer without a cast [-Wint-conversion]1-../src/estado1.c:10:85: warning: passing argument 6 of 'GUI_DisString_EN' makes integer from pointer without a cast [-Wint-conversion]
-000-   10 |     (opcion == 2) ? GUI_DisString_EN(5, 70, song_titles[1], &Font8, GUI_BACKGROUND, color) : GUI_DisString_EN(5, 70, song_titles[1], &Font8, GUI_BACKGROUND, WHITE);
-000-      |                                                                                     ^~~~~
-000-      |                                                                                     |
-000-      |                                                                                     const char *
-000-In file included from ../src/globals.h:7,
-000-                 from ../src/estado1.c:1:
-000/lab10prop2/src/LCD_GUI.h85-1-1expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'const char *'0-../src/LCD_GUI.h:85:116: note: expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'const char *'
-000-   85 | void GUI_DisString_EN(POINT Xstart, POINT Ystart, const char * pString, sFONT* Font, COLOR Color_Background, COLOR Color_Foreground );
-000/lab10prop2/src/estado1.c11-1-1passing argument 6 of 'GUI_DisString_EN' makes integer from pointer without a cast [-Wint-conversion]1-../src/estado1.c:11:85: warning: passing argument 6 of 'GUI_DisString_EN' makes integer from pointer without a cast [-Wint-conversion]
-000-   11 |     (opcion == 3) ? GUI_DisString_EN(5, 90, song_titles[2], &Font8, GUI_BACKGROUND, color) : GUI_DisString_EN(5, 90, song_titles[2], &Font8, GUI_BACKGROUND, WHITE);
-000-      |                                                                                     ^~~~~
-000-      |                                                                                     |
-000-      |                                                                                     const char *
-000-In file included from ../src/globals.h:7,
-000-                 from ../src/estado1.c:1:
-000/lab10prop2/src/LCD_GUI.h85-1-1expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'const char *'0-../src/LCD_GUI.h:85:116: note: expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'const char *'
-000-   85 | void GUI_DisString_EN(POINT Xstart, POINT Ystart, const char * pString, sFONT* Font, COLOR Color_Background, COLOR Color_Foreground );
-000-../src/estado1.c: In function 'play_song':
-000/lab10prop2/src/estado1.c19-1-1passing argument 6 of 'GUI_DisString_EN' makes integer from pointer without a cast [-Wint-conversion]1-../src/estado1.c:19:77: warning: passing argument 6 of 'GUI_DisString_EN' makes integer from pointer without a cast [-Wint-conversion]
-000-   19 |     GUI_DisString_EN(5, 50, song_titles[cancion-1], &Font8, GUI_BACKGROUND, color);
-000-      |                                                                             ^~~~~
-000-      |                                                                             |
-000-      |                                                                             const char *
-000-In file included from ../src/globals.h:7,
-000-                 from ../src/estado1.c:1:
-000/lab10prop2/src/LCD_GUI.h85-1-1expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'const char *'0-../src/LCD_GUI.h:85:116: note: expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'const char *'
-000-   85 | void GUI_DisString_EN(POINT Xstart, POINT Ystart, const char * pString, sFONT* Font, COLOR Color_Background, COLOR Color_Foreground );
-000-'Finished building: ../src/estado1.c'
-000-' '
-000-'Building file: ../src/estado2.c'
-000-'Invoking: ARM v7 gcc compiler'
-000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/estado2.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/standalone_domain/bspinclude/include -MMD -MP -MF"src/estado2.d" -MT"src/estado2.o" -o "src/estado2.o" "../src/estado2.c"
-000-../src/estado2.c: In function 'draw_microphone_plot':
-000/lab10prop2/src/estado2.c6-1-1implicit declaration of function 'atoi' [-Wimplicit-function-declaration]1-../src/estado2.c:6:38: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
-000-    6 |     const char* color = tmp_to_color(atoi(tmp));
-000-      |                                      ^~~~
-000/lab10prop2/src/estado2.c17-1-1passing argument 5 of 'GUI_DrawLine' makes integer from pointer without a cast [-Wint-conversion]1-../src/estado2.c:17:106: warning: passing argument 5 of 'GUI_DrawLine' makes integer from pointer without a cast [-Wint-conversion]
-000-   17 |         GUI_DrawLine(i * 6 + 10, 120 - mic_values[i] / 8, (i + 1) * 6 + 10, 120 - mic_values[i + 1] / 8, color, LINE_SOLID, DOT_PIXEL_2X2);
-000-      |                                                                                                          ^~~~~
-000-      |                                                                                                          |
-000-      |                                                                                                          const char *
-000-In file included from ../src/globals.h:7,
-000-                 from ../src/estado2.c:1:
-000/lab10prop2/src/LCD_GUI.h79-1-1expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'const char *'0-../src/LCD_GUI.h:79:77: note: expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'const char *'
-000-   79 | void GUI_DrawLine(POINT Xstart, POINT Ystart, POINT Xend, POINT Yend, COLOR Color, LINE_STYLE Line_Style, DOT_PIXEL Dot_Pixel);
-000-'Finished building: ../src/estado2.c'
-000-' '
-000-'Building file: ../src/estado3.c'
-000-'Invoking: ARM v7 gcc compiler'
-000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/estado3.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/standalone_domain/bspinclude/include -MMD -MP -MF"src/estado3.d" -MT"src/estado3.o" -o "src/estado3.o" "../src/estado3.c"
-000-../src/estado3.c: In function 'estado3_handler':
-000/lab10prop2/src/estado3.c6-1-1implicit declaration of function 'atoi' [-Wimplicit-function-declaration]1-../src/estado3.c:6:38: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
-000-    6 |     const char* color = tmp_to_color(atoi(tmp));
-000-      |                                      ^~~~
-000/lab10prop2/src/estado3.c7-1-1passing argument 6 of 'GUI_DisString_EN' makes integer from pointer without a cast [-Wint-conversion]1-../src/estado3.c:7:62: warning: passing argument 6 of 'GUI_DisString_EN' makes integer from pointer without a cast [-Wint-conversion]
-000-    7 |     GUI_DisString_EN(30, 40, "???", &Font24, GUI_BACKGROUND, color);
-000-      |                                                              ^~~~~
-000-      |                                                              |
-000-      |                                                              const char *
-000-In file included from ../src/globals.h:7,
-000-                 from ../src/estado3.c:1:
-000/lab10prop2/src/LCD_GUI.h85-1-1expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'const char *'0-../src/LCD_GUI.h:85:116: note: expected 'uint16_t' {aka 'short unsigned int'} but argument is of type 'const char *'
-000-   85 | void GUI_DisString_EN(POINT Xstart, POINT Ystart, const char * pString, sFONT* Font, COLOR Color_Background, COLOR Color_Foreground );
-000-'Finished building: ../src/estado3.c'
-000-' '
-000-'Building file: ../src/font12.c'
-000-'Invoking: ARM v7 gcc compiler'
-000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/font12.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/standalone_domain/bspinclude/include -MMD -MP -MF"src/font12.d" -MT"src/font12.o" -o "src/font12.o" "../src/font12.c"
-000-'Finished building: ../src/font12.c'
-000-' '
-000-'Building file: ../src/font16.c'
-000-'Invoking: ARM v7 gcc compiler'
-000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/font16.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/standalone_domain/bspinclude/include -MMD -MP -MF"src/font16.d" -MT"src/font16.o" -o "src/font16.o" "../src/font16.c"
-000-'Finished building: ../src/font16.c'
-000-' '
-000-'Building file: ../src/font20.c'
-000-'Invoking: ARM v7 gcc compiler'
-000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/font20.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/standalone_domain/bspinclude/include -MMD -MP -MF"src/font20.d" -MT"src/font20.o" -o "src/font20.o" "../src/font20.c"
-000-'Finished building: ../src/font20.c'
-000-' '
-000-'Building file: ../src/font24.c'
-000-'Invoking: ARM v7 gcc compiler'
-000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/font24.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/standalone_domain/bspinclude/include -MMD -MP -MF"src/font24.d" -MT"src/font24.o" -o "src/font24.o" "../src/font24.c"
-000-'Finished building: ../src/font24.c'
-000-' '
-000-'Building file: ../src/font8.c'
-000-'Invoking: ARM v7 gcc compiler'
-000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/font8.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/standalone_domain/bspinclude/include -MMD -MP -MF"src/font8.d" -MT"src/font8.o" -o "src/font8.o" "../src/font8.c"
-000-'Finished building: ../src/font8.c'
-000-' '
-000-'Building file: ../src/globals.c'
-000-'Invoking: ARM v7 gcc compiler'
-000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/globals.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/standalone_domain/bspinclude/include -MMD -MP -MF"src/globals.d" -MT"src/globals.o" -o "src/globals.o" "../src/globals.c"
-000-'Finished building: ../src/globals.c'
-000-' '
 000-'Building file: ../src/init_project.c'
 000-'Invoking: ARM v7 gcc compiler'
 000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/init_project.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/standalone_domain/bspinclude/include -MMD -MP -MF"src/init_project.d" -MT"src/init_project.o" -o "src/init_project.o" "../src/init_project.c"
@@ -219,16 +14,6 @@
 000-compilation terminated.
 000-'Finished building: ../src/init_project.c'
 000-' '
-000-'Building file: ../src/main.c'
-000-'Invoking: ARM v7 gcc compiler'
-000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
-000-'Finished building: ../src/main.c'
-000-' '
-000-'Building file: ../src/platform.c'
-000-'Invoking: ARM v7 gcc compiler'
-000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/standalone_domain/bspinclude/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-000-'Finished building: ../src/platform.c'
-000-' '
 000-'Building file: ../src/timers.c'
 000-'Invoking: ARM v7 gcc compiler'
 000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timers.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/standalone_domain/bspinclude/include -MMD -MP -MF"src/timers.d" -MT"src/timers.o" -o "src/timers.o" "../src/timers.c"
@@ -238,46 +23,6 @@
 000-      |          ^~~~~~~~~~~
 000-compilation terminated.
 000-'Finished building: ../src/timers.c'
-000-' '
-000-'Building file: ../src/utils.c'
-000-'Invoking: ARM v7 gcc compiler'
-000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utils.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/standalone_domain/bspinclude/include -MMD -MP -MF"src/utils.d" -MT"src/utils.o" -o "src/utils.o" "../src/utils.c"
-000-../src/utils.c: In function 'update_sensor_values':
-000/lab10prop2/src/utils.c6-1-1implicit declaration of function 'read_joyx' [-Wimplicit-function-declaration]1-../src/utils.c:6:25: warning: implicit declaration of function 'read_joyx' [-Wimplicit-function-declaration]
-000-    6 |     sprintf(joyx, "%d", read_joyx());
-000-      |                         ^~~~~~~~~
-000/lab10prop2/src/utils.c7-1-1implicit declaration of function 'read_joyy' [-Wimplicit-function-declaration]1-../src/utils.c:7:25: warning: implicit declaration of function 'read_joyy' [-Wimplicit-function-declaration]
-000-    7 |     sprintf(joyy, "%d", read_joyy());
-000-      |                         ^~~~~~~~~
-000/lab10prop2/src/utils.c8-1-1implicit declaration of function 'read_tmp' [-Wimplicit-function-declaration]1-../src/utils.c:8:24: warning: implicit declaration of function 'read_tmp' [-Wimplicit-function-declaration]
-000-    8 |     sprintf(tmp, "%d", read_tmp());
-000-      |                        ^~~~~~~~
-000/lab10prop2/src/utils.c9-1-1implicit declaration of function 'read_opt' [-Wimplicit-function-declaration]1-../src/utils.c:9:24: warning: implicit declaration of function 'read_opt' [-Wimplicit-function-declaration]
-000-    9 |     sprintf(opt, "%d", read_opt());
-000-      |                        ^~~~~~~~
-000/lab10prop2/src/utils.c10-1-1implicit declaration of function 'read_POT1' [-Wimplicit-function-declaration]1-../src/utils.c:10:25: warning: implicit declaration of function 'read_POT1' [-Wimplicit-function-declaration]
-000-   10 |     sprintf(pot1, "%d", read_POT1());
-000-      |                         ^~~~~~~~~
-000/lab10prop2/src/utils.c11-1-1implicit declaration of function 'read_POT2' [-Wimplicit-function-declaration]1-../src/utils.c:11:25: warning: implicit declaration of function 'read_POT2' [-Wimplicit-function-declaration]
-000-   11 |     sprintf(pot2, "%d", read_POT2());
-000-      |                         ^~~~~~~~~
-000/lab10prop2/src/utils.c12-1-1implicit declaration of function 'read_acx' [-Wimplicit-function-declaration]1-../src/utils.c:12:24: warning: implicit declaration of function 'read_acx' [-Wimplicit-function-declaration]
-000-   12 |     sprintf(acx, "%d", read_acx());
-000-      |                        ^~~~~~~~
-000/lab10prop2/src/utils.c13-1-1implicit declaration of function 'read_acy' [-Wimplicit-function-declaration]1-../src/utils.c:13:24: warning: implicit declaration of function 'read_acy' [-Wimplicit-function-declaration]
-000-   13 |     sprintf(acy, "%d", read_acy());
-000-      |                        ^~~~~~~~
-000/lab10prop2/src/utils.c14-1-1implicit declaration of function 'read_MIC' [-Wimplicit-function-declaration]1-../src/utils.c:14:24: warning: implicit declaration of function 'read_MIC' [-Wimplicit-function-declaration]
-000-   14 |     sprintf(mic, "%d", read_MIC());
-000-      |                        ^~~~~~~~
-000/lab10prop2/src/utils.c21-1-1implicit declaration of function 'atoi' [-Wimplicit-function-declaration]1-../src/utils.c:21:22: warning: implicit declaration of function 'atoi' [-Wimplicit-function-declaration]
-000-   21 |     mic_values[19] = atoi(mic);
-000-      |                      ^~~~
-000-../src/utils.c: In function 'print_debug_info':
-000/lab10prop2/src/utils.c49-1-1implicit declaration of function 'read_acz' [-Wimplicit-function-declaration]1-../src/utils.c:49:31: warning: implicit declaration of function 'read_acz' [-Wimplicit-function-declaration]
-000-   49 |     xil_printf("ACZ :%d\n\r", read_acz());
-000-      |                               ^~~~~~~~
-000-'Finished building: ../src/utils.c'
 000-' '
 000-'Building target: lab10prop2.elf'
 000-'Invoking: ARM v7 gcc linker'
@@ -292,5 +37,5 @@
 000-'Finished building: lab10prop2.elf.size'
 000-' '
 00255-
-05:08:59 Build Finished (took 11s.625ms)
+15:37:26 Build Finished (took 3s.381ms)
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="DEMO_BUZZER_0_0_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1720337238">
+<GenRun Id="DEMO_BUZZER_0_0_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1720390794">
   <File Type="PA-TCL" Name="DEMO_BUZZER_0_0.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="DEMO_BUZZER_0_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="DEMO_BUZZER_0_0_reports.tcl"/>
