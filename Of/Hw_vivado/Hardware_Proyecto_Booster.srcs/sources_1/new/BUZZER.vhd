@@ -6,8 +6,12 @@ entity BUZZER is
     Port (
         clk : in std_logic;
         BTN_JY : in std_logic;
+        MOOD : in unsigned (2 downto 0);
         POT1 : in unsigned (9 downto 0);
         LEDS : out std_logic_vector (3 downto 0);
+        LEDR : out std_logic;
+        LEDG : out std_logic;
+        LEDB : out std_logic;
         BUZZER_PWM : out std_logic
     );
 end BUZZER;
@@ -43,5 +47,9 @@ begin
     BUZZER_PWM <= '1' when (AMPLITUD >= counter_PWM) else '0';
     
     LEDS <= "1111" when (BTN_JY = '1') else "0000";
+    
+    LEDR <= MOOD(0);
+    LEDG <= MOOD(1);
+    LEDB <= MOOD(2);
 
 end Behavioral;

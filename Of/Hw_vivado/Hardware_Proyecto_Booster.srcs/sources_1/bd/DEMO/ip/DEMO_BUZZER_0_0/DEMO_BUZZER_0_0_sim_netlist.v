@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Sun Jul  7 03:28:26 2024
+// Date        : Sun Jul  7 18:23:45 2024
 // Host        : DESKTOP-AVIBNI3 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_BUZZER_0_0/DEMO_BUZZER_0_0_sim_netlist.v
@@ -18,20 +18,32 @@
 module DEMO_BUZZER_0_0
    (clk,
     BTN_JY,
+    MOOD,
     POT1,
     LEDS,
+    LEDR,
+    LEDG,
+    LEDB,
     BUZZER_PWM);
   (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN DEMO_clk, INSERT_VIP 0" *) input clk;
   input BTN_JY;
+  input [2:0]MOOD;
   input [9:0]POT1;
   output [3:0]LEDS;
+  output LEDR;
+  output LEDG;
+  output LEDB;
   output BUZZER_PWM;
 
   wire BTN_JY;
   wire BUZZER_PWM;
+  wire [2:0]MOOD;
   wire [9:0]POT1;
   wire clk;
 
+  assign LEDB = MOOD[2];
+  assign LEDG = MOOD[1];
+  assign LEDR = MOOD[0];
   assign LEDS[3] = BTN_JY;
   assign LEDS[2] = BTN_JY;
   assign LEDS[1] = BTN_JY;

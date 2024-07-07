@@ -1,0 +1,29 @@
+timestamp=[2024-07-07 15:47:22], mode=WORKBENCH_START, duration=0:00:16.210, duration_ms=16210, data={}
+timestamp=[2024-07-07 15:47:24], mode=WORKBENCH_UI_INIT, duration=0:00:01.710, duration_ms=1710, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2024-07-07 15:47:33], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:08.311, duration_ms=8311, data={}
+timestamp=[2024-07-07 15:56:34], mode=PLATFORM_CREATION, duration=0:00:47.640, duration_ms=47640, data={platform_source=dsa, os=standalone, processor=ps7_cortexa9, platform=null}
+timestamp=[2024-07-07 15:58:38], mode=PLATFORM_GENERATION, duration=0:01:38.698, duration_ms=98698, data={name=P2_G14_HW_v3}
+timestamp=[2024-07-07 16:00:20], mode=APP_CREATION, duration=0:00:18.488, duration_ms=18488, data={name=P2_G14_SW_v3, project_type=sdk, os=standalone, processor=cortex-a9, runtime=C/C++, platform=P2_G14_HW_v3, application_type=application}
+timestamp=[2024-07-07 16:01:27], mode=BUILD, duration=0:00:10.107, duration_ms=10107, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
+timestamp=[2024-07-07 16:01:58], mode=BUILD, duration=0:00:06.906, duration_ms=6906, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
+timestamp=[2024-07-07 16:02:48], mode=BUILD, duration=0:00:06.910, duration_ms=6910, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
+timestamp=[2024-07-07 16:17:55], mode=BUILD, duration=0:00:03.704, duration_ms=3704, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
+timestamp=[2024-07-07 16:21:07], mode=BUILD, duration=0:00:03.838, duration_ms=3838, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
+timestamp=[2024-07-07 17:31:05], mode=BUILD, duration=0:00:07.649, duration_ms=7649, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
+timestamp=[2024-07-07 17:33:55], mode=BUILD, duration=0:00:02.328, duration_ms=2328, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
+timestamp=[2024-07-07 17:36:17], mode=BUILD, duration=0:00:01.315, duration_ms=1315, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
+timestamp=[2024-07-07 17:36:38], mode=BUILD, duration=0:00:01.189, duration_ms=1189, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
+timestamp=[2024-07-07 17:38:02], mode=BUILD, duration=0:00:04.277, duration_ms=4277, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
+timestamp=[2024-07-07 17:38:33], mode=BUILD, duration=0:00:04.747, duration_ms=4747, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
+timestamp=[2024-07-07 17:40:39], mode=BUILD, duration=0:00:01.138, duration_ms=1138, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
+timestamp=[2024-07-07 17:42:04], mode=BUILD, duration=0:00:02.811, duration_ms=2811, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
+timestamp=[2024-07-07 17:43:44], mode=BUILD, duration=0:00:04.797, duration_ms=4797, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
+timestamp=[2024-07-07 17:44:23], mode=BUILD, duration=0:00:01.973, duration_ms=1973, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
+timestamp=[2024-07-07 17:45:52], mode=BUILD, duration=0:00:01.902, duration_ms=1902, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
+timestamp=[2024-07-07 17:47:46], mode=BUILD, duration=0:00:08.516, duration_ms=8516, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
+timestamp=[2024-07-07 17:47:57], mode=BUILD, duration=0:00:10.070, duration_ms=10070, data={name=P2_G14_SW_v3_system, configuration=Debug, clean_build=false}
+timestamp=[2024-07-07 17:49:25], mode=BUILD, duration=0:00:02.596, duration_ms=2596, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
+timestamp=[2024-07-07 17:52:23], mode=BUILD, duration=0:00:02.124, duration_ms=2124, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
+timestamp=[2024-07-07 18:38:48], mode=PLATFORM_GENERATION, duration=0:00:03.706, duration_ms=3706, data={name=P2_G14_HW_v3}
+timestamp=[2024-07-07 18:39:55], mode=BUILD, duration=0:00:01.320, duration_ms=1320, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
+timestamp=[2024-07-07 18:40:36], mode=BUILD, duration=0:00:00.956, duration_ms=956, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}

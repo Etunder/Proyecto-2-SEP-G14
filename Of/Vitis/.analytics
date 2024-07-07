@@ -191,3 +191,8 @@ timestamp=[2024-07-07 05:06:45], mode=BUILD, duration=0:00:02.205, duration_ms=2
 timestamp=[2024-07-07 05:07:15], mode=BUILD, duration=0:00:02.290, duration_ms=2290, data={name=lab10prop2, configuration=Debug, clean_build=false}
 timestamp=[2024-07-07 05:08:47], mode=BUILD, duration=0:00:00.429, duration_ms=429, data={name=lab10prop2, configuration=Debug, clean_build=true}
 timestamp=[2024-07-07 05:08:59], mode=BUILD, duration=0:00:11.667, duration_ms=11667, data={name=lab10prop2, configuration=Debug, clean_build=false}
+timestamp=[2024-07-07 15:36:08], mode=WORKBENCH_START, duration=0:00:20.147, duration_ms=20147, data={}
+timestamp=[2024-07-07 15:36:10], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.250, duration_ms=250, data={}
+timestamp=[2024-07-07 15:36:10], mode=WORKBENCH_UI_INIT, duration=0:00:01.605, duration_ms=1605, data={editors_count=16, platform_editors_count=4, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=HW_lab10prop2,RemoteSystemsTempFiles,lab10prop2,lab10prop2_system}
+timestamp=[2024-07-07 15:37:19], mode=PLATFORM_GENERATION, duration=0:00:03.265, duration_ms=3265, data={name=HW_lab10prop2}
+timestamp=[2024-07-07 15:37:26], mode=BUILD, duration=0:00:03.432, duration_ms=3432, data={name=lab10prop2, configuration=Debug, clean_build=false}

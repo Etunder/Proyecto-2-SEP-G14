@@ -4793,3 +4793,14 @@ con
 05:06:41 INFO  : Checking for BSP changes to sync application flags for project 'lab10prop2'...
 05:07:13 INFO  : Checking for BSP changes to sync application flags for project 'lab10prop2'...
 05:08:47 INFO  : Checking for BSP changes to sync application flags for project 'lab10prop2'...
+15:35:57 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\Amteo\Desktop\Proyecto-2-SEP-G14\Of\Vitis\temp_xsdb_launch_script.tcl
+15:36:02 INFO  : XSCT server has started successfully.
+15:36:02 INFO  : plnx-install-location is set to ''
+15:36:02 INFO  : Successfully done setting XSCT server connection channel  
+15:36:02 INFO  : Successfully done setting workspace for the tool. 
+15:36:10 INFO  : Platform repository initialization has completed.
+15:36:10 INFO  : Registering command handlers for Vitis TCF services
+15:36:15 INFO  : Successfully done query RDI_DATADIR 
+15:37:19 INFO  : Result from executing command 'getProjects': HW_lab10prop2
+15:37:19 INFO  : Result from executing command 'getPlatforms': HW_lab10prop2|C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/export/HW_lab10prop2/HW_lab10prop2.xpfm;HW_lab10prop2|C:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/HW_lab10prop2.xpfm
+15:37:20 INFO  : Checking for BSP changes to sync application flags for project 'lab10prop2'...

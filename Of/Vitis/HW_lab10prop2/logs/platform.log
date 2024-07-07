@@ -8505,3 +8505,370 @@ TRACE::2024-07-07.04:59:52::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop
 C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss|system_0||
 
 TRACE::2024-07-07.04:59:52::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-07.15:36:25::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:25::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:25::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:28::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw
+TRACE::2024-07-07.15:36:28::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:28::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-07.15:36:28::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-07-07.15:36:32::SCWPlatform::Opened new HwDB with name DEMO_wrapper
+TRACE::2024-07-07.15:36:32::SCWReader::Active system found as  HW_lab10prop2
+TRACE::2024-07-07.15:36:32::SCWReader::Handling sysconfig HW_lab10prop2
+TRACE::2024-07-07.15:36:32::SCWDomain::checking for install qemu data   : 
+TRACE::2024-07-07.15:36:32::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2024-07-07.15:36:32::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2024-07-07.15:36:32::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw
+TRACE::2024-07-07.15:36:32::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-07.15:36:32::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper
+TRACE::2024-07-07.15:36:32::SCWPlatform::Opened existing hwdb DEMO_wrapper
+TRACE::2024-07-07.15:36:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-07.15:36:32::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw
+TRACE::2024-07-07.15:36:32::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-07.15:36:32::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper
+TRACE::2024-07-07.15:36:32::SCWPlatform::Opened existing hwdb DEMO_wrapper
+TRACE::2024-07-07.15:36:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-07.15:36:32::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw
+TRACE::2024-07-07.15:36:32::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-07.15:36:32::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper
+TRACE::2024-07-07.15:36:32::SCWPlatform::Opened existing hwdb DEMO_wrapper
+TRACE::2024-07-07.15:36:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-07.15:36:32::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2024-07-07.15:36:32::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw
+TRACE::2024-07-07.15:36:32::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-07.15:36:32::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper
+TRACE::2024-07-07.15:36:32::SCWPlatform::Opened existing hwdb DEMO_wrapper
+TRACE::2024-07-07.15:36:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-07.15:36:32::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-07.15:36:32::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-07-07.15:36:32::SCWMssOS::No sw design opened at  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-07.15:36:32::SCWMssOS::mss exists loading the mss file  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-07.15:36:32::SCWMssOS::Opened the sw design from mss  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-07.15:36:32::SCWMssOS::Adding the swdes entry C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2024-07-07.15:36:32::SCWMssOS::updating the scw layer about changes
+TRACE::2024-07-07.15:36:32::SCWMssOS::Opened the sw design.  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-07.15:36:32::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw
+TRACE::2024-07-07.15:36:32::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-07.15:36:32::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper
+TRACE::2024-07-07.15:36:32::SCWPlatform::Opened existing hwdb DEMO_wrapper
+TRACE::2024-07-07.15:36:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-07.15:36:32::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-07.15:36:32::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-07.15:36:32::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-07.15:36:32::SCWMssOS:: library already available in sw design:  xilffs:4.3
+TRACE::2024-07-07.15:36:32::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw
+TRACE::2024-07-07.15:36:32::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-07.15:36:32::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper
+TRACE::2024-07-07.15:36:32::SCWPlatform::Opened existing hwdb DEMO_wrapper
+TRACE::2024-07-07.15:36:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-07.15:36:32::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-07.15:36:32::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-07.15:36:32::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-07.15:36:32::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2024-07-07.15:36:32::SCWMssOS::Saving the mss changes C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-07.15:36:32::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-07-07.15:36:32::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-07-07.15:36:32::SCWMssOS::Commit changes completed.
+TRACE::2024-07-07.15:36:32::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-07-07.15:36:32::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-07-07.15:36:32::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw
+TRACE::2024-07-07.15:36:32::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-07.15:36:32::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper
+TRACE::2024-07-07.15:36:32::SCWPlatform::Opened existing hwdb DEMO_wrapper
+TRACE::2024-07-07.15:36:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-07.15:36:32::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-07.15:36:32::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-07.15:36:32::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-07.15:36:32::SCWReader::No isolation master present  
+TRACE::2024-07-07.15:36:32::SCWDomain::checking for install qemu data   : 
+TRACE::2024-07-07.15:36:32::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2024-07-07.15:36:32::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2024-07-07.15:36:32::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw
+TRACE::2024-07-07.15:36:32::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-07.15:36:32::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper
+TRACE::2024-07-07.15:36:32::SCWPlatform::Opened existing hwdb DEMO_wrapper
+TRACE::2024-07-07.15:36:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-07.15:36:32::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw
+TRACE::2024-07-07.15:36:32::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-07.15:36:32::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper
+TRACE::2024-07-07.15:36:32::SCWPlatform::Opened existing hwdb DEMO_wrapper
+TRACE::2024-07-07.15:36:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-07.15:36:32::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw
+TRACE::2024-07-07.15:36:32::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-07.15:36:32::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper
+TRACE::2024-07-07.15:36:32::SCWPlatform::Opened existing hwdb DEMO_wrapper
+TRACE::2024-07-07.15:36:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-07.15:36:32::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-07.15:36:32::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-07.15:36:32::SCWMssOS::No sw design opened at  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-07.15:36:32::SCWMssOS::mss exists loading the mss file  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-07.15:36:32::SCWMssOS::Opened the sw design from mss  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-07.15:36:32::SCWMssOS::Adding the swdes entry C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2024-07-07.15:36:32::SCWMssOS::updating the scw layer about changes
+TRACE::2024-07-07.15:36:32::SCWMssOS::Opened the sw design.  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-07.15:36:32::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw
+TRACE::2024-07-07.15:36:32::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-07.15:36:32::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper
+TRACE::2024-07-07.15:36:32::SCWPlatform::Opened existing hwdb DEMO_wrapper
+TRACE::2024-07-07.15:36:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-07.15:36:32::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-07.15:36:32::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-07.15:36:32::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-07.15:36:32::SCWMssOS:: library already available in sw design:  xilffs:4.3
+TRACE::2024-07-07.15:36:32::SCWMssOS::Saving the mss changes C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-07.15:36:32::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-07-07.15:36:32::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-07-07.15:36:32::SCWMssOS::Commit changes completed.
+TRACE::2024-07-07.15:36:32::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-07-07.15:36:32::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-07-07.15:36:32::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw
+TRACE::2024-07-07.15:36:32::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:36:32::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-07.15:36:32::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper
+TRACE::2024-07-07.15:36:32::SCWPlatform::Opened existing hwdb DEMO_wrapper
+TRACE::2024-07-07.15:36:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-07.15:36:32::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-07.15:36:32::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-07.15:36:32::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-07.15:36:32::SCWReader::No isolation master present  
+LOG::2024-07-07.15:37:18::SCWPlatform::Started generating the artifacts platform HW_lab10prop2
+TRACE::2024-07-07.15:37:18::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-07-07.15:37:18::SCWPlatform::Started generating the artifacts for system configuration HW_lab10prop2
+LOG::2024-07-07.15:37:18::SCWSystem::Checking the domain zynq_fsbl
+LOG::2024-07-07.15:37:18::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2024-07-07.15:37:18::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2024-07-07.15:37:18::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2024-07-07.15:37:18::SCWSystem::Checking the domain standalone_domain
+LOG::2024-07-07.15:37:18::SCWSystem::Not a boot domain 
+LOG::2024-07-07.15:37:18::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2024-07-07.15:37:18::SCWDomain::Generating domain artifcats
+TRACE::2024-07-07.15:37:18::SCWMssOS::Generating standalone artifcats
+TRACE::2024-07-07.15:37:18::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/qemu/
+TRACE::2024-07-07.15:37:18::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/standalone_domain/qemu/
+TRACE::2024-07-07.15:37:18::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-07-07.15:37:18::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:37:18::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:37:18::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:37:18::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw
+TRACE::2024-07-07.15:37:18::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:37:18::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-07.15:37:18::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper
+TRACE::2024-07-07.15:37:18::SCWPlatform::Opened existing hwdb DEMO_wrapper
+TRACE::2024-07-07.15:37:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-07.15:37:18::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-07.15:37:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-07.15:37:18::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-07.15:37:18::SCWMssOS::Completed writing the mss file at C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2024-07-07.15:37:18::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-07.15:37:18::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-07-07.15:37:18::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-07-07.15:37:18::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2024-07-07.15:37:18::SCWMssOS::skipping the bsp build ... 
+TRACE::2024-07-07.15:37:18::SCWMssOS::Copying to export directory.
+TRACE::2024-07-07.15:37:19::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-07-07.15:37:19::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2024-07-07.15:37:19::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2024-07-07.15:37:19::SCWSystem::Completed Processing the sysconfig HW_lab10prop2
+LOG::2024-07-07.15:37:19::SCWPlatform::Completed generating the artifacts for system configuration HW_lab10prop2
+TRACE::2024-07-07.15:37:19::SCWPlatform::Started preparing the platform 
+TRACE::2024-07-07.15:37:19::SCWSystem::Writing the bif file for system config HW_lab10prop2
+TRACE::2024-07-07.15:37:19::SCWSystem::dir created 
+TRACE::2024-07-07.15:37:19::SCWSystem::Writing the bif 
+TRACE::2024-07-07.15:37:19::SCWPlatform::Started writing the spfm file 
+TRACE::2024-07-07.15:37:19::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-07-07.15:37:19::SCWPlatform::Completed generating the platform
+TRACE::2024-07-07.15:37:19::SCWMssOS::Saving the mss changes C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-07.15:37:19::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-07-07.15:37:19::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-07-07.15:37:19::SCWMssOS::Commit changes completed.
+TRACE::2024-07-07.15:37:19::SCWMssOS::Saving the mss changes C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-07.15:37:19::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-07-07.15:37:19::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-07-07.15:37:19::SCWMssOS::Commit changes completed.
+TRACE::2024-07-07.15:37:19::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:37:19::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:37:19::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:37:19::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw
+TRACE::2024-07-07.15:37:19::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:37:19::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-07.15:37:19::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper
+TRACE::2024-07-07.15:37:19::SCWPlatform::Opened existing hwdb DEMO_wrapper
+TRACE::2024-07-07.15:37:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-07.15:37:19::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-07.15:37:19::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-07.15:37:19::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2024-07-07.15:37:19::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:37:19::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:37:19::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:37:19::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw
+TRACE::2024-07-07.15:37:19::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:37:19::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-07.15:37:19::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper
+TRACE::2024-07-07.15:37:19::SCWPlatform::Opened existing hwdb DEMO_wrapper
+TRACE::2024-07-07.15:37:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-07.15:37:19::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-07.15:37:19::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-07.15:37:19::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-07.15:37:19::SCWWriter::formatted JSON is {
+	"platformName":	"HW_lab10prop2",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"HW_lab10prop2",
+	"platHandOff":	"C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/DEMO_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/DEMO_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"HW_lab10prop2",
+	"systems":	[{
+			"systemName":	"HW_lab10prop2",
+			"systemDesc":	"HW_lab10prop2",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"HW_lab10prop2",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"4d296afc91a93c08d922f7c3299d73f6",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"187049d5395bb6410614c312045ffe8f",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-07-07.15:37:19::SCWPlatform::updated the xpfm file.
+TRACE::2024-07-07.15:37:19::SCWPlatform::Trying to open the hw design at C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:37:19::SCWPlatform::DSA given C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:37:19::SCWPlatform::DSA absoulate path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:37:19::SCWPlatform::DSA directory C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw
+TRACE::2024-07-07.15:37:19::SCWPlatform:: Platform Path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/hw/DEMO_wrapper.xsa
+TRACE::2024-07-07.15:37:19::SCWPlatform:: Unique name xilinx:zybo-z7-10::0.0
+TRACE::2024-07-07.15:37:19::SCWPlatform::Trying to set the existing hwdb with name DEMO_wrapper
+TRACE::2024-07-07.15:37:19::SCWPlatform::Opened existing hwdb DEMO_wrapper
+TRACE::2024-07-07.15:37:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-07-07.15:37:19::SCWMssOS::Checking the sw design at  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2024-07-07.15:37:19::SCWMssOS::DEBUG:  swdes dump  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2024-07-07.15:37:19::SCWMssOS::Sw design exists and opened at  C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/HW_lab10prop2/ps7_cortexa9_0/standalone_domain/bsp/system.mss

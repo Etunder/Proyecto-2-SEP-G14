@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date                      : Sun Jul  7 03:31:45 2024
+| Date                      : Sun Jul  7 18:28:20 2024
 | Host                      : DESKTOP-AVIBNI3 running 64-bit major release  (build 9200)
 | Command                   : report_io -file DEMO_wrapper_io_placed.rpt
 | Design                    : DEMO_wrapper
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|           148 |
+|           151 |
 +---------------+
 
 
@@ -344,8 +344,8 @@ Table of Contents
 | T7         |                   |            | GND                     | GND           |                    |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | T8         |                   | Dedicated  | VCCO_13                 | VCCO          |                    |      13 |            |      |                     |                      |   any** |            |           |          |      |                  |              |                   |              |
 | T9         |                   |            | NC                      | Not Connected |                    |         |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| T10        |                   | High Range | IO_L1N_T0_34            | User IO       |                    |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| T11        |                   | High Range | IO_L1P_T0_34            | User IO       |                    |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| T10        | LEDB              | High Range | IO_L1N_T0_34            | OUTPUT        | LVCMOS33           |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| T11        | LEDG              | High Range | IO_L1P_T0_34            | OUTPUT        | LVCMOS33           |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | T12        | spi_rtl_sck_io    | High Range | IO_L2P_T0_34            | BIDIR         | LVCMOS33           |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | T13        |                   |            | GND                     | GND           |                    |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | T14        | BUZZER_PWM        | High Range | IO_L5P_T0_34            | OUTPUT        | LVCMOS33           |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
@@ -409,7 +409,7 @@ Table of Contents
 | W12        |                   |            | GND                     | GND           |                    |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | W13        |                   | High Range | IO_L4N_T0_34            | User IO       |                    |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | W14        | spi_rtl_io1_io    | High Range | IO_L8P_T1_34            | BIDIR         | LVCMOS33           |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
-| W15        |                   | High Range | IO_L10N_T1_34           | User IO       |                    |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| W15        | LEDR              | High Range | IO_L10N_T1_34           | OUTPUT        | LVCMOS33           |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | W16        | CS[0]             | High Range | IO_L18N_T2_34           | OUTPUT        | LVCMOS33           |      34 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | W17        |                   | High Range | VCCO_34                 | VCCO          |                    |      34 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | W18        |                   | High Range | IO_L22P_T3_34           | User IO       |                    |      34 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |

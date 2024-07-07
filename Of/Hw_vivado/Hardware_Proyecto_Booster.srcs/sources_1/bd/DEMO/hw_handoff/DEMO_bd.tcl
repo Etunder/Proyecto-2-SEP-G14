@@ -180,6 +180,9 @@ proc create_root_design { parentCell } {
   set BTN_JY [ create_bd_port -dir I BTN_JY ]
   set BUZZER_PWM [ create_bd_port -dir O BUZZER_PWM ]
   set CS [ create_bd_port -dir O -from 0 -to 0 CS ]
+  set LEDB [ create_bd_port -dir O LEDB ]
+  set LEDG [ create_bd_port -dir O LEDG ]
+  set LEDR [ create_bd_port -dir O LEDR ]
   set LEDS [ create_bd_port -dir O -from 3 -to 0 LEDS ]
   set MOSI [ create_bd_port -dir O MOSI ]
   set SCLK [ create_bd_port -dir O SCLK ]
@@ -222,7 +225,7 @@ proc create_root_design { parentCell } {
    CONFIG.C_ALL_OUTPUTS {1} \
    CONFIG.C_ALL_OUTPUTS_2 {1} \
    CONFIG.C_GPIO2_WIDTH {10} \
-   CONFIG.C_GPIO_WIDTH {10} \
+   CONFIG.C_GPIO_WIDTH {13} \
    CONFIG.C_IS_DUAL {1} \
    CONFIG.GPIO2_BOARD_INTERFACE {Custom} \
    CONFIG.GPIO_BOARD_INTERFACE {Custom} \
@@ -1078,12 +1081,29 @@ proc create_root_design { parentCell } {
   # Create instance: vio_0, and set properties
   set vio_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:vio:3.0 vio_0 ]
   set_property -dict [ list \
-   CONFIG.C_NUM_PROBE_IN {3} \
+   CONFIG.C_NUM_PROBE_IN {5} \
    CONFIG.C_NUM_PROBE_OUT {0} \
  ] $vio_0
 
   # Create instance: xlconcat_0, and set properties
   set xlconcat_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0 ]
+
+  # Create instance: xlslice_0, and set properties
+  set xlslice_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0 ]
+  set_property -dict [ list \
+   CONFIG.DIN_FROM {9} \
+   CONFIG.DIN_WIDTH {13} \
+   CONFIG.DOUT_WIDTH {10} \
+ ] $xlslice_0
+
+  # Create instance: xlslice_1, and set properties
+  set xlslice_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_1 ]
+  set_property -dict [ list \
+   CONFIG.DIN_FROM {12} \
+   CONFIG.DIN_TO {10} \
+   CONFIG.DIN_WIDTH {13} \
+   CONFIG.DOUT_WIDTH {3} \
+ ] $xlslice_1
 
   # Create interface connections
   connect_bd_intf_net -intf_net axi_gpio_0_GPIO [get_bd_intf_ports RS] [get_bd_intf_pins axi_gpio_0/GPIO]
@@ -1106,9 +1126,13 @@ proc create_root_design { parentCell } {
   connect_bd_net -net AXIFloat_0_XD [get_bd_pins AXIFloat_0/XD] [get_bd_pins vio_0/probe_in2]
   connect_bd_net -net BTN_JY_0_1 [get_bd_ports BTN_JY] [get_bd_pins BUZZER_0/BTN_JY]
   connect_bd_net -net BUZZER_0_BUZZER_PWM [get_bd_ports BUZZER_PWM] [get_bd_pins BUZZER_0/BUZZER_PWM]
+  connect_bd_net -net BUZZER_0_LEDB [get_bd_ports LEDB] [get_bd_pins BUZZER_0/LEDB]
+  connect_bd_net -net BUZZER_0_LEDG [get_bd_ports LEDG] [get_bd_pins BUZZER_0/LEDG]
+  connect_bd_net -net BUZZER_0_LEDR [get_bd_ports LEDR] [get_bd_pins BUZZER_0/LEDR]
   connect_bd_net -net BUZZER_0_LEDS [get_bd_ports LEDS] [get_bd_pins BUZZER_0/LEDS]
+  connect_bd_net -net Net [get_bd_pins BUZZER_0/MOOD] [get_bd_pins vio_0/probe_in4] [get_bd_pins xlslice_1/Dout]
   connect_bd_net -net axi_gpio_1_gpio2_io_o [get_bd_pins axi_gpio_1/gpio2_io_o] [get_bd_pins vio_0/probe_in1]
-  connect_bd_net -net axi_gpio_1_gpio_io_o [get_bd_pins BUZZER_0/POT1] [get_bd_pins axi_gpio_1/gpio_io_o] [get_bd_pins vio_0/probe_in0]
+  connect_bd_net -net axi_gpio_1_gpio_io_o [get_bd_pins axi_gpio_1/gpio_io_o] [get_bd_pins vio_0/probe_in0] [get_bd_pins xlslice_0/Din] [get_bd_pins xlslice_1/Din]
   connect_bd_net -net axi_quad_spi_0_io1_o [get_bd_ports MOSI] [get_bd_pins axi_quad_spi_0/io1_o]
   connect_bd_net -net axi_quad_spi_0_sck_o [get_bd_ports SCLK] [get_bd_pins axi_quad_spi_0/sck_o]
   connect_bd_net -net axi_quad_spi_0_ss_o [get_bd_ports CS] [get_bd_pins axi_quad_spi_0/ss_o]
@@ -1119,6 +1143,7 @@ proc create_root_design { parentCell } {
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_50M/ext_reset_in]
   connect_bd_net -net rst_ps7_0_50M_peripheral_aresetn [get_bd_pins AXIFloat_0/s00_axi_aresetn] [get_bd_pins axi_gpio_0/s_axi_aresetn] [get_bd_pins axi_gpio_1/s_axi_aresetn] [get_bd_pins axi_iic_0/s_axi_aresetn] [get_bd_pins axi_quad_spi_0/s_axi_aresetn] [get_bd_pins axi_quad_spi_1/s_axi_aresetn] [get_bd_pins axi_timer_0/s_axi_aresetn] [get_bd_pins axi_timer_1/s_axi_aresetn] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/M01_ARESETN] [get_bd_pins ps7_0_axi_periph/M02_ARESETN] [get_bd_pins ps7_0_axi_periph/M03_ARESETN] [get_bd_pins ps7_0_axi_periph/M04_ARESETN] [get_bd_pins ps7_0_axi_periph/M05_ARESETN] [get_bd_pins ps7_0_axi_periph/M06_ARESETN] [get_bd_pins ps7_0_axi_periph/M07_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_50M/peripheral_aresetn]
   connect_bd_net -net xlconcat_0_dout [get_bd_pins processing_system7_0/IRQ_F2P] [get_bd_pins xlconcat_0/dout]
+  connect_bd_net -net xlslice_0_Dout [get_bd_pins BUZZER_0/POT1] [get_bd_pins vio_0/probe_in3] [get_bd_pins xlslice_0/Dout]
 
   # Create address segments
   assign_bd_address -offset 0x43C00000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs AXIFloat_0/S00_AXI/S00_AXI_reg] -force
