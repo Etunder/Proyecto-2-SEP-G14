@@ -1,0 +1,403 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Jul  6 20:29:07 2024
+# Process ID: 19988
+# Current directory: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12968 C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART\testUART.xpr
+# Log file: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/vivado.log
+# Journal file: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:17 . Memory (MB): peak = 1060.965 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/uart.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+Adding component instance block -- xilinx.com:user:AXIFloat:1.0 - AXIFloat_0
+Adding component instance block -- xilinx.com:ip:vio:3.0 - vio_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Successfully read diagram <uart> from BD file <C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/uart.bd>
+open_bd_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 1295.852 ; gain = 33.043
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:circular_buffer:1.0 circular_buffer_0
+endgroup
+set_property location {4.5 1417 168} [get_bd_cells circular_buffer_0]
+connect_bd_net [get_bd_pins AXIFloat_0/XD] [get_bd_pins circular_buffer_0/vector_32_bits]
+connect_bd_net [get_bd_pins circular_buffer_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:FFT:1.0 FFT_0
+endgroup
+set_property location {5.5 1862 165} [get_bd_cells FFT_0]
+connect_bd_net [get_bd_pins FFT_0/fft_processing_done] [get_bd_pins circular_buffer_0/fft_done]
+connect_bd_net [get_bd_pins circular_buffer_0/is_done] [get_bd_pins FFT_0/start]
+connect_bd_net [get_bd_pins circular_buffer_0/vector_64x32_bits] [get_bd_pins FFT_0/sample_vector]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0
+endgroup
+set_property location {6 1850 -61} [get_bd_cells blk_mem_gen_0]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/cos_sin.coe' provided. It will be converted relative to IP Instance files '../../../../../../../Assets Proyecto 1/cos_sin.coe'
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Write_Width_A {64} CONFIG.Read_Width_A {64} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {64} CONFIG.Read_Width_B {64} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/cos_sin.coe} CONFIG.Fill_Remaining_Memory_Locations {false} CONFIG.Use_RSTA_Pin {false} CONFIG.Port_A_Write_Rate {0} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells blk_mem_gen_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/cos_sin.coe' provided. It will be converted relative to IP Instance files '../../../../../../../../../Assets Proyecto 1/cos_sin.coe'
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property -dict [list CONFIG.Write_Depth_A {768}] [get_bd_cells blk_mem_gen_0]
+connect_bd_net [get_bd_pins FFT_0/fft_processing_done] [get_bd_pins blk_mem_gen_0/addra]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_0/addra is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins FFT_0/fft_processing_done] [get_bd_pins blk_mem_gen_0/addra]'
+connect_bd_net [get_bd_pins FFT_0/addr] [get_bd_pins blk_mem_gen_0/addra]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_0/addra is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+connect_bd_net [get_bd_pins FFT_0/ROM_data] [get_bd_pins blk_mem_gen_0/douta]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_0/douta is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+connect_bd_net [get_bd_pins FFT_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+connect_bd_net [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins processing_system7_0/FCLK_CLK0]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_0/clka is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:vio:3.0 vio_1
+endgroup
+set_property location {7.5 2448 191} [get_bd_cells vio_1]
+delete_bd_objs [get_bd_cells vio_1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0
+endgroup
+set_property location {7.5 2367 203} [get_bd_cells xlslice_0]
+set_property -dict [list CONFIG.DIN_WIDTH {384} CONFIG.DOUT_WIDTH {256}] [get_bd_cells xlslice_0]
+set_property -dict [list CONFIG.DIN_TO {255} CONFIG.DIN_FROM {255} CONFIG.DOUT_WIDTH {1}] [get_bd_cells xlslice_0]
+set_property -dict [list CONFIG.DIN_TO {0} CONFIG.DOUT_WIDTH {256}] [get_bd_cells xlslice_0]
+connect_bd_net [get_bd_pins FFT_0/fft_output] [get_bd_pins xlslice_0/Din]
+startgroup
+set_property -dict [list CONFIG.C_PROBE_IN1_WIDTH {256} CONFIG.C_NUM_PROBE_OUT {3} CONFIG.C_NUM_PROBE_IN {2}] [get_bd_cells vio_0]
+endgroup
+delete_bd_objs [get_bd_nets FFT_0_fft_processing_done]
+connect_bd_net [get_bd_pins vio_0/probe_out0] [get_bd_pins circular_buffer_0/fft_done]
+delete_bd_objs [get_bd_nets circular_buffer_0_is_done]
+connect_bd_net [get_bd_pins vio_0/probe_out1] [get_bd_pins FFT_0/start]
+connect_bd_net [get_bd_pins vio_0/probe_out2] [get_bd_pins FFT_0/rst]
+WARNING: [BD 41-1731] Type mismatch between connected pins: /vio_0/probe_out2(undef) and /FFT_0/rst(rst)
+connect_bd_net [get_bd_pins xlslice_0/Dout] [get_bd_pins vio_0/probe_in1]
+startgroup
+set_property -dict [list CONFIG.C_NUM_PROBE_IN {4}] [get_bd_cells vio_0]
+endgroup
+connect_bd_net [get_bd_pins circular_buffer_0/is_done] [get_bd_pins vio_0/probe_in2]
+connect_bd_net [get_bd_pins FFT_0/fft_processing_done] [get_bd_pins vio_0/probe_in3]
+startgroup
+set_property -dict [list CONFIG.C_NUM_PROBE_IN {5}] [get_bd_cells vio_0]
+endgroup
+connect_bd_net [get_bd_pins circular_buffer_0/full_out] [get_bd_pins vio_0/probe_in4]
+validate_bd_design
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+validate_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 1408.594 ; gain = 12.293
+regenerate_bd_layout
+regenerate_bd_layout -routing
+regenerate_bd_layout
+make_wrapper -files [get_files C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/uart.bd] -top
+INFO: [BD 41-1662] The design 'uart.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+Wrote  : <C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART\testUART.srcs\sources_1\bd\uart\uart.bd> 
+Wrote  : <C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/ui/bd_d02f786e.ui> 
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/synth/uart.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/sim/uart.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/hdl/uart_wrapper.vhd
+make_wrapper: Time (s): cpu = 00:00:15 ; elapsed = 00:00:33 . Memory (MB): peak = 1579.336 ; gain = 153.590
+reset_run synth_1
+reset_run uart_vio_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 41-1662] The design 'uart.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+Wrote  : <C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART\testUART.srcs\sources_1\bd\uart\uart.bd> 
+Wrote  : <C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/ui/bd_d02f786e.ui> 
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/synth/uart.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/sim/uart.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/hdl/uart_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/ip/uart_auto_pc_0/uart_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block circular_buffer_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FFT_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+Exporting to file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/hw_handoff/uart.hwh
+Generated Block Design Tcl file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/hw_handoff/uart_bd.tcl
+Generated Hardware Definition File C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/synth/uart.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP uart_auto_pc_0, cache-ID = 3898b299cee55cb1; cache size = 5.387 MB.
+[Sat Jul  6 20:49:53 2024] Launched uart_vio_0_0_synth_1, uart_blk_mem_gen_0_0_synth_1, uart_circular_buffer_0_0_synth_1, uart_FFT_0_0_synth_1, synth_1...
+Run output will be captured here:
+uart_vio_0_0_synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/uart_vio_0_0_synth_1/runme.log
+uart_blk_mem_gen_0_0_synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/uart_blk_mem_gen_0_0_synth_1/runme.log
+uart_circular_buffer_0_0_synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/uart_circular_buffer_0_0_synth_1/runme.log
+uart_FFT_0_0_synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/uart_FFT_0_0_synth_1/runme.log
+synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/synth_1/runme.log
+[Sat Jul  6 20:49:53 2024] Launched impl_1...
+Run output will be captured here: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1586.742 ; gain = 7.406
+set_property pfm_name {} [get_files -all {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/uart.bd}]
+write_hw_platform -fixed -include_bit -force -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/uart_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/uart_wrapper.xsa ...
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2020.1/data\embeddedsw) loading 0 seconds
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/uart_wrapper.xsa
+write_hw_platform: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1660.867 ; gain = 32.242
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.050 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.044 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.035 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.100 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.050 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.044 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.035 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.100 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.050 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.044 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.035 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.100 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.050 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.044 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.035 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.100 . PS DDR interfaces might fail when entering negative DQS skew values. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 13 2020-21:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 1684.461 ; gain = 3.461
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351B3FC84A
+open_hw_target: Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 2964.270 ; gain = 1279.809
+set_property PROGRAM.FILE {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/impl_1/uart_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/impl_1/uart_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/impl_1/uart_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s).
+INFO: [Labtools 27-1889] Uploading output probe values for VIO core [hw_vio_1]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+set_property OUTPUT_VALUE 1 [get_hw_probes uart_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uart_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uart_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uart_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uart_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+startgroup
+copy_bd_objs /  [get_bd_cells {xlslice_0}]
+set_property location {5 1391 421} [get_bd_cells xlslice_1]
+endgroup
+set_property -dict [list CONFIG.DIN_FROM {31} CONFIG.DIN_WIDTH {32} CONFIG.DOUT_WIDTH {32}] [get_bd_cells xlslice_1]
+connect_bd_net [get_bd_pins xlslice_1/Din] [get_bd_pins circular_buffer_0/vector_64x32_bits]
+startgroup
+set_property -dict [list CONFIG.DIN_WIDTH {2048}] [get_bd_cells xlslice_1]
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_NUM_PROBE_IN {6}] [get_bd_cells vio_0]
+endgroup
+connect_bd_net [get_bd_pins xlslice_1/Dout] [get_bd_pins vio_0/probe_in5]
+disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins vio_0/clk]
+disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins circular_buffer_0/clk]
+disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins FFT_0/clk]
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210351B3FC84A
+disconnect_bd_net /processing_system7_0_FCLK_CLK0 [get_bd_pins blk_mem_gen_0/clka]
+startgroup
+make_bd_pins_external  [get_bd_pins circular_buffer_0/clk]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+create_bd_cell: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 3279.512 ; gain = 125.477
+apply_board_connection -board_interface "sys_clock" -ip_intf "clk_wiz_0/clock_CLK_IN1" -diagram "uart" 
+INFO: [BoardInterface 100-3] current_bd_design uart
+INFO: [BoardInterface 100-10] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells -quiet /clk_wiz_0]
+INFO: [BoardInterface 100-12] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells -quiet /clk_wiz_0]
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+INFO: [BoardInterface 100-110] create_bd_port -dir I sys_clock -type clk
+INFO: [BoardInterface 100-105] set_property CONFIG.FREQ_HZ 100000000 /sys_clock
+INFO: [BoardInterface 100-106] set_property CONFIG.PHASE 0.000 /sys_clock
+INFO: [BoardInterface 100-111] connect_bd_net /sys_clock /clk_wiz_0/clk_in1
+INFO: [BoardInterface 100-114] set_property CONFIG.FREQ_HZ 125000000 /sys_clock
+endgroup
+delete_bd_objs [get_bd_nets sys_clock_1] [get_bd_cells clk_wiz_0]
+delete_bd_objs [get_bd_nets clk_0_1]
+delete_bd_objs [get_bd_ports clk_0]
+connect_bd_net [get_bd_ports sys_clock] [get_bd_pins circular_buffer_0/clk]
+connect_bd_net [get_bd_ports sys_clock] [get_bd_pins FFT_0/clk]
+connect_bd_net [get_bd_ports sys_clock] [get_bd_pins vio_0/clk]
+connect_bd_net [get_bd_ports sys_clock] [get_bd_pins blk_mem_gen_0/clka]
+WARNING: [BD 41-1306] The connection to interface pin /blk_mem_gen_0/clka is being overridden by the user. This pin will not be connected as a part of interface connection BRAM_PORTA
+validate_bd_design
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+regenerate_bd_layout
+make_wrapper -files [get_files C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/uart.bd] -top
+INFO: [BD 41-1662] The design 'uart.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+Wrote  : <C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART\testUART.srcs\sources_1\bd\uart\uart.bd> 
+Wrote  : <C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/ui/bd_d02f786e.ui> 
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/synth/uart.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/sim/uart.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/hdl/uart_wrapper.vhd
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/synth_1
+
+reset_run uart_processing_system7_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/uart_processing_system7_0_0_synth_1
+
+reset_run uart_vio_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/uart_vio_0_0_synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 41-1662] The design 'uart.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+Wrote  : <C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART\testUART.srcs\sources_1\bd\uart\uart.bd> 
+Wrote  : <C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/ui/bd_d02f786e.ui> 
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/synth/uart.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/sim/uart.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/hdl/uart_wrapper.vhd
+WARNING: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/ip/uart_auto_pc_0/uart_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_1 .
+Exporting to file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/hw_handoff/uart.hwh
+Generated Block Design Tcl file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/hw_handoff/uart_bd.tcl
+Generated Hardware Definition File C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/synth/uart.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP uart_auto_pc_0, cache-ID = 3898b299cee55cb1; cache size = 10.845 MB.
+[Sat Jul  6 22:11:47 2024] Launched uart_processing_system7_0_0_synth_1, uart_vio_0_0_synth_1, synth_1...
+Run output will be captured here:
+uart_processing_system7_0_0_synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/uart_processing_system7_0_0_synth_1/runme.log
+uart_vio_0_0_synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/uart_vio_0_0_synth_1/runme.log
+synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/synth_1/runme.log
+[Sat Jul  6 22:11:48 2024] Launched impl_1...
+Run output will be captured here: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:59 ; elapsed = 00:00:59 . Memory (MB): peak = 3397.145 ; gain = 67.398
+delete_bd_objs [get_bd_ports sys_clock]
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_ports sys_clock]'
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+apply_board_connection -board_interface "sys_clock" -ip_intf "clk_wiz_0/clock_CLK_IN1" -diagram "uart" 
+INFO: [BoardInterface 100-3] current_bd_design uart
+INFO: [BoardInterface 100-10] set_property CONFIG.USE_BOARD_FLOW true [get_bd_cells -quiet /clk_wiz_0]
+INFO: [BoardInterface 100-12] set_property CONFIG.CLK_IN1_BOARD_INTERFACE sys_clock [get_bd_cells -quiet /clk_wiz_0]
+WARNING: [BD 5-670] It is required to provide a frequency value for a user created input clock port. Please use the <-freq_hz $freq_val> argument of the create_bd_port command. ie create_bd_port -dir I -type clk -freq_hz 100000000 clkin
+INFO: [BoardInterface 100-110] create_bd_port -dir I sys_clock_0 -type clk
+INFO: [BoardInterface 100-105] set_property CONFIG.FREQ_HZ 100000000 /sys_clock_0
+INFO: [BoardInterface 100-106] set_property CONFIG.PHASE 0.000 /sys_clock_0
+INFO: [BoardInterface 100-111] connect_bd_net /sys_clock_0 /clk_wiz_0/clk_in1
+INFO: [BoardInterface 100-114] set_property CONFIG.FREQ_HZ 125000000 /sys_clock_0
+endgroup
+delete_bd_objs [get_bd_ports sys_clock]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins circular_buffer_0/clk]
+set_property name sys_clock [get_bd_ports sys_clock_0]
+startgroup
+endgroup
+validate_bd_design
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+validate_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3634.570 ; gain = 0.301
+make_wrapper -files [get_files C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/uart.bd] -top
+INFO: [BD 41-1662] The design 'uart.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+Wrote  : <C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART\testUART.srcs\sources_1\bd\uart\uart.bd> 
+Wrote  : <C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/ui/bd_d02f786e.ui> 
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/synth/uart.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/sim/uart.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/hdl/uart_wrapper.vhd
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {New External Port (ACTIVE_HIGH)}}  [get_bd_pins clk_wiz_0/reset]
+INFO: [BoardRule 102-10] create_bd_port -dir I reset_rtl -type rst
+INFO: [BoardRule 102-7] set_property CONFIG.POLARITY ACTIVE_HIGH /reset_rtl
+INFO: [BoardRule 102-15] connect_bd_net /reset_rtl /clk_wiz_0/reset
+INFO: [BoardRule 102-19] set_property CONFIG.POLARITY ACTIVE_HIGH /reset_rtl
+WARNING: [BoardRule 102-1] Board automation did not generate location constraint for /clk_wiz_0/reset. Users may need to specify the location constraint manually.
+delete_bd_objs [get_bd_nets reset_rtl_1] [get_bd_ports reset_rtl]
+make_wrapper -files [get_files C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/uart.bd] -top
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART\testUART.srcs\sources_1\bd\uart\uart.bd> 
+Wrote  : <C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/ui/bd_d02f786e.ui> 
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/synth/uart.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/sim/uart.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/hdl/uart_wrapper.vhd
+make_wrapper: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 3635.559 ; gain = 0.852
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/synth_1
+
+reset_run uart_vio_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/uart_vio_0_0_synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 41-1662] The design 'uart.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+Wrote  : <C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART\testUART.srcs\sources_1\bd\uart\uart.bd> 
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/synth/uart.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/sim/uart.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/hdl/uart_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/ip/uart_auto_pc_0/uart_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/hw_handoff/uart.hwh
+Generated Block Design Tcl file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/hw_handoff/uart_bd.tcl
+Generated Hardware Definition File C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/synth/uart.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP uart_auto_pc_0, cache-ID = 3898b299cee55cb1; cache size = 14.335 MB.
+[Sat Jul  6 22:28:55 2024] Launched uart_vio_0_0_synth_1, uart_clk_wiz_0_0_synth_1, synth_1...
+Run output will be captured here:
+uart_vio_0_0_synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/uart_vio_0_0_synth_1/runme.log
+uart_clk_wiz_0_0_synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/uart_clk_wiz_0_0_synth_1/runme.log
+synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/synth_1/runme.log
+[Sat Jul  6 22:28:56 2024] Launched impl_1...
+Run output will be captured here: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 3636.074 ; gain = 0.516
+set_property pfm_name {} [get_files -all {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/uart.bd}]
+write_hw_platform -fixed -include_bit -force -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/uart_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/uart_wrapper.xsa ...
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/uart_wrapper.xsa
+write_hw_platform: Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 3665.230 ; gain = 29.156
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351B3FC84A
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jul  6 22:46:02 2024...

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="uart_processing_system7_0_0_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1720133708">
+<GenRun Id="uart_processing_system7_0_0_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1720321728">
   <File Type="PA-TCL" Name="uart_processing_system7_0_0.tcl"/>
   <File Type="REPORTS-TCL" Name="uart_processing_system7_0_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="uart_processing_system7_0_0.vds"/>
@@ -9,9 +9,11 @@
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uart_processing_system7_0_0">
     <File Path="$PSRCDIR/sources_1/bd/uart/ip/uart_processing_system7_0_0/uart_processing_system7_0_0.xci">
       <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
       </FileInfo>
     </File>
     <Config>
@@ -22,9 +24,11 @@
   <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/uart_processing_system7_0_0">
     <File Path="$PSRCDIR/sources_1/bd/uart/ip/uart_processing_system7_0_0/uart_processing_system7_0_0.xci">
       <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
+        <Attr Name="ProcessingOrder" Val="EARLY"/>
       </FileInfo>
     </File>
     <Config>

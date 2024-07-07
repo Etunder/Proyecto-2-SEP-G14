@@ -1,0 +1,33 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 07fca8e3ab174f85b305dea8d7ee0282 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot FFT_tb_behav xil_defaultlib.FFT_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package xil_defaultlib.reduce_pack
+Compiling package xil_defaultlib.fp32_pkg
+Compiling package ieee.std_logic_unsigned
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture fp32_addsub of entity xil_defaultlib.fp32_addsub [fp32_addsub_default]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,areg=2,breg=2,d...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,dreg=0)(1,8)(1,...]
+Compiling architecture rtl_dsp48_25x25 of entity xil_defaultlib.rtl_dsp48_25x25 [\rtl_dsp48_25x25(1,7)\]
+Compiling architecture fp32_mult of entity xil_defaultlib.fp32_mult [\fp32_mult(1,7)\]
+Compiling architecture behavioral of entity xil_defaultlib.FPU [fpu_default]
+Compiling architecture behavioral of entity xil_defaultlib.Cascader_CU [cascader_cu_default]
+Compiling architecture behavioral of entity xil_defaultlib.FPU_Cascader [fpu_cascader_default]
+Compiling architecture behavioral of entity xil_defaultlib.FFT [fft_default]
+Compiling architecture tb of entity xil_defaultlib.fft_tb
+Built simulation snapshot FFT_tb_behav

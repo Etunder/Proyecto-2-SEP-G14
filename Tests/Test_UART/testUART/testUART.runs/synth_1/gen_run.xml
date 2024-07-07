@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1720293001">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1720388058">
   <File Type="PA-TCL" Name="uart_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="uart_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="uart_wrapper_reports.tcl"/>
@@ -24,6 +24,12 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/../../../Assets Proyecto 1/cos_sin.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="uart_wrapper"/>
@@ -32,6 +38,12 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../../Oficial/Zybo-Z7-Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
@@ -49,8 +61,11 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="uart_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="uart_clk_wiz_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="uart_rst_ps7_0_50M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="uart_FFT_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="uart_vio_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="uart_AXIFloat_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="uart_auto_pc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="uart_circular_buffer_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="uart_blk_mem_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="uart_AXIFloat_1_0"/>
 </GenRun>

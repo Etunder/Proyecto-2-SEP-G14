@@ -218,9 +218,9 @@
 #define XPAR_PS7_SLCR_0_S_AXI_HIGHADDR 0xF8000FFF
 
 
-/* Definitions for peripheral AXIFLOAT_0 */
-#define XPAR_AXIFLOAT_0_S00_AXI_BASEADDR 0x43C00000
-#define XPAR_AXIFLOAT_0_S00_AXI_HIGHADDR 0x43C0FFFF
+/* Definitions for peripheral AXIFLOAT_1 */
+#define XPAR_AXIFLOAT_1_S00_AXI_BASEADDR 0x43C00000
+#define XPAR_AXIFLOAT_1_S00_AXI_HIGHADDR 0x43C0FFFF
 
 
 /******************************************************************/

@@ -1,8 +1,8 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Sat Jul  6 15:09:55 2024
---Host        : DESKTOP-AVIBNI3 running 64-bit major release  (build 9200)
+--Date        : Sun Jul  7 17:34:12 2024
+--Host        : DESKTOP-9CMCGP1 running 64-bit major release  (build 9200)
 --Command     : generate_target uart_wrapper.bd
 --Design      : uart_wrapper
 --Purpose     : IP block netlist
@@ -33,7 +33,8 @@ entity uart_wrapper is
     FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    FIXED_IO_ps_srstb : inout STD_LOGIC
+    FIXED_IO_ps_srstb : inout STD_LOGIC;
+    sys_clock : in STD_LOGIC
   );
 end uart_wrapper;
 
@@ -60,7 +61,8 @@ architecture STRUCTURE of uart_wrapper is
     DDR_dm : inout STD_LOGIC_VECTOR ( 3 downto 0 );
     DDR_dq : inout STD_LOGIC_VECTOR ( 31 downto 0 );
     DDR_dqs_n : inout STD_LOGIC_VECTOR ( 3 downto 0 );
-    DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 )
+    DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 );
+    sys_clock : in STD_LOGIC
   );
   end component uart;
 begin
@@ -86,6 +88,7 @@ uart_i: component uart
       FIXED_IO_mio(53 downto 0) => FIXED_IO_mio(53 downto 0),
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
-      FIXED_IO_ps_srstb => FIXED_IO_ps_srstb
+      FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
+      sys_clock => sys_clock
     );
 end STRUCTURE;

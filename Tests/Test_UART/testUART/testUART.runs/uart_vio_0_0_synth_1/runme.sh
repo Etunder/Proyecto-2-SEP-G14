@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/uart_vio_0_0_synth_1'
+HD_PWD='C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/uart_vio_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

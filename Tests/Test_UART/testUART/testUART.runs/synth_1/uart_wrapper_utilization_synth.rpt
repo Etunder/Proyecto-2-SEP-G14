@@ -1,8 +1,8 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Sat Jul  6 15:15:07 2024
-| Host         : DESKTOP-AVIBNI3 running 64-bit major release  (build 9200)
+| Date         : Sun Jul  7 17:37:48 2024
+| Host         : DESKTOP-9CMCGP1 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file uart_wrapper_utilization_synth.rpt -pb uart_wrapper_utilization_synth.pb
 | Design       : uart_wrapper
 | Device       : 7z010clg400-1
@@ -178,8 +178,12 @@ Table of Contents
 | uart_vio_0_0                |    1 |
 | uart_rst_ps7_0_50M_0        |    1 |
 | uart_processing_system7_0_0 |    1 |
+| uart_clk_wiz_0_0            |    1 |
+| uart_circular_buffer_0_0    |    1 |
+| uart_blk_mem_gen_0_0        |    1 |
 | uart_auto_pc_0              |    1 |
-| uart_AXIFloat_0_0           |    1 |
+| uart_FFT_0_0                |    1 |
+| uart_AXIFloat_1_0           |    1 |
 +-----------------------------+------+
 
 

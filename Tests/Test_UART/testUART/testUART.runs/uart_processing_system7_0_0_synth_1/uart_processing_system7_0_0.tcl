@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "uart_processing_system7_0_0_synth_1" START { ROLLUP_AUTO }
+set_param xicom.use_bs_reader 1
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -81,14 +82,20 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.cache/wt [current_project]
 set_property parent.project_path C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.xpr [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:zybo-z7-10:part0:1.2 [current_project]
+set_property ip_repo_paths {
+  c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/ip_repo
+  {c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1}
+} [current_project]
+update_ip_catalog
 set_property ip_output_repo c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/ip/uart_processing_system7_0_0/uart_processing_system7_0_0.xci
+read_ip -quiet C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/ip/uart_processing_system7_0_0/uart_processing_system7_0_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/ip/uart_processing_system7_0_0/uart_processing_system7_0_0.xdc]
 
 OPTRACE "Adding files" END { }

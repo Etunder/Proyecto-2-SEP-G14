@@ -14,4 +14,5 @@ ps7_post_config
 targets -set -nocase -filter {name =~ "*A9*#0"}
 dow C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf
 configparams force-mem-access 0
-bpadd -addr &main
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con

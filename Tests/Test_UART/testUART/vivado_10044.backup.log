@@ -1,0 +1,365 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Jul  7 01:52:16 2024
+# Process ID: 10044
+# Current directory: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3780 C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART\testUART.xpr
+# Log file: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/vivado.log
+# Journal file: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:FFT:1.0'. The one found in IP location 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/ip_core_FFT' will take precedence over the same IP in location c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/nueva_FFT/new_FFT/new_FFT.srcs/sources_1/new
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'uart.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+uart_FFT_0_0
+
+open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:17 . Memory (MB): peak = 1071.492 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:FFT:1.0'. The one found in IP location 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/ip_core_FFT' will take precedence over the same IP in location c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/nueva_FFT/new_FFT/new_FFT.srcs/sources_1/new
+open_bd_design {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/uart.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+Adding component instance block -- xilinx.com:user:AXIFloat:1.0 - AXIFloat_0
+Adding component instance block -- xilinx.com:ip:vio:3.0 - vio_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding component instance block -- xilinx.com:user:FFT:1.0 - FFT_0
+Adding component instance block -- xilinx.com:user:circular_buffer:1.0 - circular_buffer_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /vio_0/probe_out2(undef) and /FFT_0/rst(rst)
+Successfully read diagram <uart> from BD file <C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/uart.bd>
+open_bd_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1458.945 ; gain = 1.758
+set_property  ip_repo_paths  c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/ip_repo [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/ip_repo'.
+set_property  ip_repo_paths  {c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/ip_repo {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer} {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/FPU} {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/Player} {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/nueva_FFT}} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/FPU'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/Player'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/nueva_FFT'.
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:FFT:1.0 [get_ips  uart_FFT_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/uart.bd'
+INFO: [IP_Flow 19-3422] Upgraded uart_FFT_0_0 (FFT_v1_0 1.0) from revision 3 to revision 2
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'state_out'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'coef_received_out'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'out_state'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'partial_done_count_out'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'rom_index_out'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'uart_FFT_0_0'. These changes may impact your design.
+WARNING: [BD 41-1731] Type mismatch between connected pins: /vio_0/probe_out2(undef) and /FFT_0_upgraded_ipi/rst(rst)
+CRITICAL WARNING: [BD 41-1167] The pin 'state_out' is not found on the upgraded version of the cell '/FFT_0'. Its connection to the net 'FFT_0_state_out' has been removed.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'uart_FFT_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+WARNING: [BD 41-597] NET <FFT_0_state_out> has no source
+Wrote  : <C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART\testUART.srcs\sources_1\bd\uart\uart.bd> 
+Wrote  : <C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/ui/bd_d02f786e.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips uart_FFT_0_0] -no_script -sync -force -quiet
+connect_bd_net [get_bd_pins FFT_0/out_state] [get_bd_pins vio_0/probe_in8]
+startgroup
+set_property -dict [list CONFIG.C_PROBE_IN12_WIDTH {6} CONFIG.C_PROBE_IN11_WIDTH {5} CONFIG.C_NUM_PROBE_IN {13}] [get_bd_cells vio_0]
+endgroup
+connect_bd_net [get_bd_pins FFT_0/coef_received_out] [get_bd_pins vio_0/probe_in10]
+connect_bd_net [get_bd_pins vio_0/probe_in11] [get_bd_pins FFT_0/partial_done_count_out]
+connect_bd_net [get_bd_pins vio_0/probe_in12] [get_bd_pins FFT_0/rom_index_out]
+validate_bd_design
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+make_wrapper -files [get_files C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/uart.bd] -top
+INFO: [BD 41-1662] The design 'uart.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+Wrote  : <C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART\testUART.srcs\sources_1\bd\uart\uart.bd> 
+Wrote  : <C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/ui/bd_d02f786e.ui> 
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/synth/uart.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/sim/uart.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/hdl/uart_wrapper.vhd
+make_wrapper: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1562.312 ; gain = 0.000
+report_ip_status -name ip_status 
+reset_run synth_1
+reset_run uart_vio_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 41-1662] The design 'uart.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+Wrote  : <C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART\testUART.srcs\sources_1\bd\uart\uart.bd> 
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/synth/uart.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/sim/uart.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/hdl/uart_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FFT_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/ip/uart_auto_pc_0/uart_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/hw_handoff/uart.hwh
+Generated Block Design Tcl file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/hw_handoff/uart_bd.tcl
+Generated Hardware Definition File C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/synth/uart.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP uart_auto_pc_0, cache-ID = 127a127157f167c7; cache size = 30.646 MB.
+[Sun Jul  7 01:58:22 2024] Launched uart_vio_0_0_synth_1, uart_FFT_0_0_synth_1, synth_1...
+Run output will be captured here:
+uart_vio_0_0_synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/uart_vio_0_0_synth_1/runme.log
+uart_FFT_0_0_synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/uart_FFT_0_0_synth_1/runme.log
+synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/synth_1/runme.log
+[Sun Jul  7 01:58:22 2024] Launched impl_1...
+Run output will be captured here: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1562.312 ; gain = 0.000
+set_property pfm_name {} [get_files -all {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/uart.bd}]
+write_hw_platform -fixed -include_bit -force -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/uart_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/uart_wrapper.xsa ...
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2020.1/data\embeddedsw) loading 2 seconds
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/uart_wrapper.xsa
+write_hw_platform: Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 1610.195 ; gain = 47.883
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2020.1.0
+  **** Build date : May 13 2020-21:10:29
+    ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1610.195 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351B3FC84A
+open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 2893.195 ; gain = 1283.000
+set_property PROGRAM.FILE {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/impl_1/uart_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/impl_1/uart_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/impl_1/uart_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+set_property OUTPUT_VALUE 0 [get_hw_probes uart_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uart_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+set_property OUTPUT_VALUE 0 [get_hw_probes uart_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uart_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uart_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uart_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uart_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+set_property OUTPUT_VALUE 1 [get_hw_probes uart_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uart_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uart_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uart_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uart_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uart_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+open_bd_design {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/uart.bd}
+ipx::edit_ip_in_project -upgrade true -name FFT_v1_0_project -directory C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.tmp/FFT_v1_0_project {c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/nueva_FFT/new_FFT/new_FFT.srcs/sources_1/new/component.xml}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/etien/desktop/proyecto-2-sep-g14/tests/test_uart/testuart/testuart.tmp/fft_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2953.406 ; gain = 2.535
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/FPU'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/Player'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/nueva_FFT'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 2954.461 ; gain = 3.590
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/nueva_FFT/new_FFT/new_FFT.srcs/sources_1/new/component.xml' ignored by IP packager.
+set_property core_revision 5 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+current_project testUART
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/FPU'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/Player'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/nueva_FFT'.
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:user:FFT:1.0 [get_ips  uart_FFT_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/uart.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/uart_FFT_0_0_synth_1
+
+INFO: [IP_Flow 19-3422] Upgraded uart_FFT_0_0 (FFT_v1_0 1.0) from revision 2 to revision 5
+WARNING: [BD 41-1731] Type mismatch between connected pins: /vio_0/probe_out2(undef) and /FFT_0_upgraded_ipi/rst(rst)
+Wrote  : <C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART\testUART.srcs\sources_1\bd\uart\uart.bd> 
+Wrote  : <C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/ui/bd_d02f786e.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips uart_FFT_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+set_property core_revision 6 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+make_wrapper -files [get_files C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/uart.bd] -top
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+Wrote  : <C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART\testUART.srcs\sources_1\bd\uart\uart.bd> 
+Wrote  : <C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/ui/bd_d02f786e.ui> 
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/synth/uart.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/sim/uart.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/hdl/uart_wrapper.vhd
+report_ip_status -name ip_status 
+make_wrapper -files [get_files C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/uart.bd] -top
+INFO: [BD 41-1662] The design 'uart.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+Wrote  : <C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART\testUART.srcs\sources_1\bd\uart\uart.bd> 
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/synth/uart.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/sim/uart.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/hdl/uart_wrapper.vhd
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 41-1662] The design 'uart.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+Wrote  : <C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART\testUART.srcs\sources_1\bd\uart\uart.bd> 
+Wrote  : <C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/ui/bd_d02f786e.ui> 
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/synth/uart.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/sim/uart.vhd
+VHDL Output written to : C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/hdl/uart_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FFT_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/ip/uart_auto_pc_0/uart_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/hw_handoff/uart.hwh
+Generated Block Design Tcl file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/hw_handoff/uart_bd.tcl
+Generated Hardware Definition File C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/synth/uart.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP uart_auto_pc_0, cache-ID = 127a127157f167c7; cache size = 42.079 MB.
+[Sun Jul  7 02:30:43 2024] Launched uart_FFT_0_0_synth_1, synth_1...
+Run output will be captured here:
+uart_FFT_0_0_synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/uart_FFT_0_0_synth_1/runme.log
+synth_1: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/synth_1/runme.log
+[Sun Jul  7 02:30:43 2024] Launched impl_1...
+Run output will be captured here: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3620.980 ; gain = 0.000
+set_property pfm_name {} [get_files -all {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/uart.bd}]
+write_hw_platform -fixed -include_bit -force -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/uart_wrapper.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/uart_wrapper.xsa ...
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/uart_wrapper.xsa
+write_hw_platform: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3680.461 ; gain = 59.480
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351B3FC84A
+set_property PROGRAM.FILE {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/impl_1/uart_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/impl_1/uart_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.runs/impl_1/uart_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s).
+set_property OUTPUT_VALUE 1 [get_hw_probes uart_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uart_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uart_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uart_i/vio_0_probe_out2 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out2} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uart_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes uart_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uart_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+set_property OUTPUT_VALUE 0 [get_hw_probes uart_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes uart_i/vio_0_probe_out1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {uart_i/vio_0_probe_out1} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+set_property INPUT_VALUE_RADIX UNSIGNED [get_hw_probes uart_i/FFT_0_addr -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+set_property INPUT_VALUE_RADIX UNSIGNED [get_hw_probes uart_i/FFT_0_partial_done_count_out -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+set_property INPUT_VALUE_RADIX UNSIGNED [get_hw_probes uart_i/FFT_0_rom_index_out -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"uart_i/vio_0"}]]
+current_project FFT_v1_0_project
+current_project testUART
+current_project FFT_v1_0_project
+current_project testUART
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jul  7 03:11:23 2024...

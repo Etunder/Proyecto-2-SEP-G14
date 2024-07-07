@@ -1,0 +1,370 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 6192
+License: Customer
+
+Current time: 	Sat Jul 06 20:16:35 CLT 2024
+Time zone: 	Chile Standard Time (America/Santiago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 150
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=18
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	etien
+User home directory: C:/Users/etien
+User working directory: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.1
+RDI_DATADIR: C:/Xilinx/Vivado/2020.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/etien/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/etien/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/etien/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/vivado.log
+Vivado journal file location: 	C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/vivado.jou
+Engine tmp dir: 	C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/.Xil/Vivado-6192-DESKTOP-9CMCGP1
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.1
+XILINX_SDK: C:/Xilinx/Vitis/2020.1
+XILINX_VITIS: C:/Xilinx/Vitis/2020.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.1
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,046 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 86 MB (+88173kb) [00:00:12]
+// [Engine Memory]: 1,046 MB (+945584kb) [00:00:12]
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART\testUART.xpr. Version: Vivado v2020.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,046 MB. GUI used memory: 57 MB. Current time: 7/6/24, 8:16:36 PM CLT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 93 MB (+2506kb) [00:00:29]
+// [GUI Memory]: 110 MB (+12389kb) [00:00:30]
+// WARNING: HEventQueue.dispatchEvent() is taking  6281 ms.
+// Tcl Message: open_project C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/ip_repo'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'. 
+// WARNING: HEventQueue.dispatchEvent() is taking  1439 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:32 ; elapsed = 00:00:19 . Memory (MB): peak = 1071.465 ; gain = 0.000 
+// Project name: testUART; location: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bz (cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,115 MB. GUI used memory: 67 MB. Current time: 7/6/24, 8:16:56 PM CLT
+// [Engine Memory]: 1,115 MB (+16935kb) [00:00:36]
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 139 MB (+25146kb) [00:00:49]
+// Elapsed time: 45 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_wrapper(STRUCTURE) (uart_wrapper.vhd)]", 1); // B (F, cs)
+// PAPropertyPanels.initPanels (uart.bd) elapsed time: 0.2s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_wrapper(STRUCTURE) (uart_wrapper.vhd), uart_i : uart (uart.bd)]", 2, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_wrapper(STRUCTURE) (uart_wrapper.vhd), uart_i : uart (uart.bd)]", 2, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_wrapper(STRUCTURE) (uart_wrapper.vhd), uart_i : uart (uart.bd)]", 2, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+// bz (cs):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/uart.bd} 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,167 MB. GUI used memory: 82 MB. Current time: 7/6/24, 8:17:46 PM CLT
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 
+// Tcl Message: Adding component instance block -- xilinx.com:user:AXIFloat:1.0 - AXIFloat_0 Adding component instance block -- xilinx.com:ip:vio:3.0 - vio_0 Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M Successfully read diagram <uart> from BD file <C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/uart.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 1,187 MB (+17289kb) [00:01:45]
+// WARNING: HEventQueue.dispatchEvent() is taking  4784 ms.
+// TclEventType: RSB_CONNECTION_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,247 MB. GUI used memory: 86 MB. Current time: 7/6/24, 8:18:10 PM CLT
+// [Engine Memory]: 1,247 MB (+476kb) [00:01:50]
+// Elapsed time: 28 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1256.434 ; gain = 48.871 
+dismissDialog("Open Block Design"); // bz (cs)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// O (cs):  Re-customize IP : addNotify
+// r (cs): Re-customize IP: addNotify
+// cl (r): Configuration Presets: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1371 ms.
+// Elapsed time: 16 seconds
+dismissDialog("Re-customize IP"); // O (cs)
+selectButton("Peripheral I/O Pins", "Peripheral I/O Pins"); // k (ch, r)
+// WARNING: HEventQueue.dispatchEvent() is taking  1736 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,353 MB. GUI used memory: 122 MB. Current time: 7/6/24, 8:18:32 PM CLT
+// [GUI Memory]: 172 MB (+26590kb) [00:02:52]
+// [Engine Memory]: 1,353 MB (+46401kb) [00:02:52]
+// Elapsed time: 123 seconds
+dismissDialog("Re-customize IP"); // r (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // af (cs)
+selectMenuItem((HResource) null, "Launch Vitis IDE"); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+// bz (cs):  Launch Vitis IDE : addNotify
+// 'X' command handler elapsed time: 12 seconds
+// Elapsed time: 13 seconds
+dismissDialog("Launch Vitis IDE"); // bz (cs)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 307ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1087 ms. Increasing delay to 3000 ms.
+// Elapsed time: 189 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 747, 91, 898, 529, false, false, false, true, false); // hq (m, cs) - Popup Trigger
+selectButton(PAResourceCommand.PACommandNames_ZOOM_FIT, "System_zoom_fit"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_FIT
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (J, cs)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// d (cs): Settings: addNotify
+// 'dF' command handler elapsed time: 10 seconds
+// WARNING: HEventQueue.dispatchEvent() is taking  10724 ms.
+// Thread: Reference Handler
+// 	at java.base@9.0.4/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.Reference.processPendingReferences(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Reference.access$000(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+// Thread: AWT-Windows
+// 	at java.desktop@9.0.4/sun.awt.windows.WToolkit.eventLoop(Native Method)
+// 	at java.desktop@9.0.4/sun.awt.windows.WToolkit.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Process Messages Thread
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.frmwork.d.h.construct(SourceFile:133)
+// 	at ui.frmwork.A.run(SourceFile:203)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: Update Runs Swing Worker Thread
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.data.experiment.F.construct(SourceFile:317)
+// 	at ui.frmwork.A.run(SourceFile:203)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at com.jidesoft.plaf.synthetica.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:99)
+// Thread: Monitor HEventQueue Thread
+// 	at java.base@9.0.4/java.lang.Thread.dumpThreads(Native Method)
+// 	at java.base@9.0.4/java.lang.Thread.getAllStackTraces(Unknown Source)
+// 	at ui.utils.d.c.hsh(SourceFile:531)
+// 	at ui.frmwork.b.e.construct(SourceFile:140)
+// 	at ui.frmwork.A.run(SourceFile:203)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Finalizer
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+// Thread: RunnableQueue-0
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.Object.wait(Unknown Source)
+// 	at org.apache.batik.util.RunnableQueue.run(RunnableQueue.java:222)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Batik CleanerThread
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at org.apache.batik.util.CleanerThread.run(CleanerThread.java:106)
+// Thread: Timer-0
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.Object.wait(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.mainLoop(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.run(Unknown Source)
+// Thread: SyntheticaAnimation 50
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.utils.lnf.b.run(SourceFile:100)
+// Thread: main
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.PlanAhead.c(SourceFile:1118)
+// 	at ui.PlanAhead.jswMain(SourceFile:1165)
+// Thread: hw_ila_monitor
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.Object.wait(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.mainLoop(Unknown Source)
+// 	at java.base@9.0.4/java.util.TimerThread.run(Unknown Source)
+// Thread: Signal Dispatcher
+// Thread: AWT-Shutdown
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.Object.wait(Unknown Source)
+// 	at java.desktop@9.0.4/sun.awt.AWTAutoShutdown.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Thread-1
+// Thread: AWT-EventQueue-0
+// 	at ui.frmwork.xhubcmdi.HSCTcXHubCommands_getXStoreDownloadDir(Native Method)
+// 	at ui.utils.az.WE(SourceFile:149)
+// 	at ui.utils.az.hrN(SourceFile:145)
+// 	at ui.b.K.a.a.gdm(SourceFile:49)
+// 	at ui.b.K.a.dw.bCG(SourceFile:70)
+// 	at ui.b.K.a.a.geq(SourceFile:60)
+// 	at ui.b.K.a.dw.fPN(SourceFile:355)
+// 	at ui.b.K.d.gdu(SourceFile:288)
+// 	at ui.b.K.d.gco(SourceFile:260)
+// 	at ui.views.c.dF.gnM(SourceFile:106)
+// 	at ui.views.c.dF.run(SourceFile:78)
+// 	at ui.frmwork.a.gJb(SourceFile:132)
+// 	at ui.views.c.dF.a(SourceFile:64)
+// 	at ui.views.R.b.k.R(SourceFile:408)
+// 	at ui.views.R.b.x.mouseReleased(SourceFile:269)
+// 	at java.desktop@9.0.4/java.awt.AWTEventMulticaster.mouseReleased(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.AWTEventMulticaster.mouseReleased(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.AWTEventMulticaster.mouseReleased(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.AWTEventMulticaster.mouseReleased(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.Component.processMouseEvent(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.JComponent.processMouseEvent(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.Component.processEvent(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.Container.processEvent(Unknown Source)
+// 	at ui.utils.swing.x.B.processEvent(SourceFile:599)
+// 	at java.desktop@9.0.4/java.awt.Component.dispatchEventImpl(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.Container.dispatchEventImpl(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.Component.dispatchEvent(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.LightweightDispatcher.retargetMouseEvent(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.LightweightDispatcher.processMouseEvent(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.LightweightDispatcher.dispatchEvent(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.Container.dispatchEventImpl(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.Window.dispatchEventImpl(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.Component.dispatchEvent(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.access$500(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue$3.run(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue$3.run(Unknown Source)
+// 	at java.base@9.0.4/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@9.0.4/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+// 	at java.base@9.0.4/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue$4.run(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue$4.run(Unknown Source)
+// 	at java.base@9.0.4/java.security.AccessController.doPrivileged(Native Method)
+// 	at java.base@9.0.4/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventQueue.dispatchEvent(Unknown Source)
+// 	at ui.frmwork.b.d.dispatchEvent(SourceFile:88)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+// 	at java.desktop@9.0.4/java.awt.EventDispatchThread.run(Unknown Source)
+// Thread: TimerQueue
+// 	at java.base@9.0.4/jdk.internal.misc.Unsafe.park(Native Method)
+// 	at java.base@9.0.4/java.util.concurrent.locks.LockSupport.parkNanos(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(Unknown Source)
+// 	at java.base@9.0.4/java.util.concurrent.DelayQueue.take(Unknown Source)
+// 	at java.desktop@9.0.4/javax.swing.TimerQueue.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Java2D Disposer
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.desktop@9.0.4/sun.java2d.Disposer.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: Common-Cleaner
+// 	at java.base@9.0.4/java.lang.Object.wait(Native Method)
+// 	at java.base@9.0.4/java.lang.ref.ReferenceQueue.remove(Unknown Source)
+// 	at java.base@9.0.4/jdk.internal.ref.CleanerImpl.run(Unknown Source)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// 	at java.base@9.0.4/jdk.internal.misc.InnocuousThread.run(Unknown Source)
+// Thread: SyntheticaCleanerThread
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.StyleFactory$ComponentPropertyStore$1.run(StyleFactory.java:1885)
+// Thread: Refresh Filesets Swing Worker Thread
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at ui.data.design.y.construct(SourceFile:2503)
+// 	at ui.frmwork.A.run(SourceFile:203)
+// 	at java.base@9.0.4/java.lang.Thread.run(Unknown Source)
+// Thread: SyntheticaAnimation 70
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: SyntheticaAnimation 25
+// 	at java.base@9.0.4/java.lang.Thread.sleep(Native Method)
+// 	at de.javasoft.plaf.synthetica.painter.AnimationThreadFactory$AnimationThread.run(AnimationThreadFactory.java:119)
+// Thread: Attach Listener
+// WARNING: HEventQueue.dispatchEvent() is taking  2278 ms.
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (J, cs)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// [GUI Memory]: 191 MB (+11849kb) [00:09:48]
+// WARNING: HTimer (StateMonitor Timer) is taking 605ms to process. Increasing delay to 4000 ms.
+// Elapsed time: 123 seconds
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6, true); // B (E, d) - Node
+expandTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6); // B (E, d)
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 7, false); // B (E, d)
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, "Add Repository"); // E (g, d)
