@@ -1,0 +1,25 @@
+#define INTC_DEVICE_ID     XPAR_PS7_SCUGIC_0_DEVICE_ID
+#define TIMER_CNTR_0 0
+
+#define TMR_DEVICE_ID     XPAR_TMRCTR_0_DEVICE_ID
+#define INTC_TMR_INTERRUPT_ID XPAR_FABRIC_AXI_TIMER_0_INTERRUPT_INTR
+#define MUSIC_RESET  0xFFA90000
+
+
+void TMR_Frequency_Handler(void *data)
+{
+    //xil_printf("frecuencia enviada %d \n\r", frecuencias[counter1]);
+    Xil_Out32(dir_frecuencia , frecuencias[counter1]);
+    if (counter1 <= 3472){
+        counter1++;
+
+    }
+    else{
+        counter1 = 0;
+    }
+
+    XTmrCtr_Stop(data, 0);
+    XTmrCtr_Reset(data, 0);
+    XTmrCtr_Start(data, 0);
+
+}

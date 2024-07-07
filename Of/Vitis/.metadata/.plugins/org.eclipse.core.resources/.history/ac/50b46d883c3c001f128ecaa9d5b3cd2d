@@ -1,0 +1,11 @@
+#ifndef TIMERS_H
+#define TIMERS_H
+
+extern XTmrCtr timer0; // Para actualizar el circular buffer
+extern XTmrCtr timer1; // Para cambiar la frecuencia del buzzer
+extern XScuGic asd;
+
+void TMR_Frequency_Handler(void *data);
+void TMR_CB_Handler(void *data);
+
+#endif // TIMERS_H

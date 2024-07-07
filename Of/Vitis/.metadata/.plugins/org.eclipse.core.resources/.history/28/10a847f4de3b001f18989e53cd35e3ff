@@ -1,0 +1,10 @@
+#ifndef INIT_PROJECT_H
+#define INIT_PROJECT_H
+
+#include "xgpio.h"
+#include "xspi.h"
+#include "i2c.h"
+
+int initialize_system(void);
+
+#endif

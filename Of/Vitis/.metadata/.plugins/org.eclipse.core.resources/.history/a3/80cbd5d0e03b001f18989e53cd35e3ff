@@ -1,0 +1,13 @@
+#ifndef GLOBALS_H
+#define GLOBALS_H
+
+#include "xgpio.h"
+#include "xspi.h"
+#include "LCD_Driver.h"
+#include "LCD_GUI.h"
+
+#define BACKGROUND WHITE
+#define FOREGROUND BLUE
+#define DELAY 1000
+
+#define

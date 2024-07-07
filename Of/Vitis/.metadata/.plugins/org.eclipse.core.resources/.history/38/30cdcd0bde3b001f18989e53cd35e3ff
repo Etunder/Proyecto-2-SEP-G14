@@ -1,0 +1,58 @@
+#include "init_project.h"
+#include "xil_printf.h"
+#include "xgpio.h"
+#include "xspi.h"
+#include "i2c.h"
+#include "LCD_SPI.h"
+#include "LCD_Driver.h"
+
+extern XGpio gpio0;
+extern XGpio gpio1;
+extern XSpi SpiInstance;
+extern XSpi SpiInstance1;
+
+
+int initialize_system(void) {
+    int status;
+
+    init_platform();
+
+    status = XGpio_Initialize(&gpio0, XPAR_AXI_GPIO_0_DEVICE_ID);
+    if (status != XST_SUCCESS) {
+        xil_printf("GPIO 0 Initialization Failed\r\n");
+        return XST_FAILURE;
+    }
+
+    status = XGpio_Initialize(&gpio1, XPAR_AXI_GPIO_1_DEVICE_ID);
+    if (status != XST_SUCCESS) {
+        xil_printf("GPIO 1 Initialization Failed\r\n");
+        return XST_FAILURE;
+    }
+
+    status = XSpi_Init(&SpiInstance, SPI_DEVICE_ID);
+    if (status != XST_SUCCESS) {
+        xil_printf("SPI Initialization Failed\r\n");
+        return XST_FAILURE;
+    }
+
+    status = init_adc(&SpiInstance1, SPI_DEVICE_ID_1);
+    if (status != XST_SUCCESS) {
+        xil_printf("ADC Initialization Failed\r\n");
+        return XST_FAILURE;
+    }
+
+    status = init_IIC();
+    if (status != XST_SUCCESS) {
+        xil_printf("IIC Initialization Failed\r\n");
+        return XST_FAILURE;
+    }
+
+    LCD_SCAN_DIR LCD_ScanDir = SCAN_DIR_DFT;
+    LCD_Init(LCD_ScanDir);
+    GUI_Show();
+    LCD_Clear(GUI_BACKGROUND);
+    GUI_INTRO();
+    LCD_Clear(GUI_BACKGROUND);
+
+    return XST_SUCCESS;
+}

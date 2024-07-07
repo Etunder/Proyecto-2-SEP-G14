@@ -1,0 +1,10 @@
+04:53:21 **** Build of configuration Debug for project lab10prop2_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 51685 C:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/HW_lab10prop2.xpfm standalone_domain C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/lab10prop2_system/Debug/system.bif
+sdcard_gen --xpfm C:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/HW_lab10prop2.xpfm --sys_config HW_lab10prop2 --bif C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/lab10prop2_system/Debug/system.bif --bitstream C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/lab10prop2/_ide/bitstream/DEMO_wrapper.bit --elf C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/lab10prop2/Debug/lab10prop2.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/lab10prop2/_ide/bitstream/DEMO_wrapper.bit
+Running C:/Xilinx/Vitis/2020.1/bin/bootgen  -image C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis/lab10prop2_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+04:53:44 Build Finished (took 22s.823ms)
+

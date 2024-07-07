@@ -1,0 +1,88 @@
+#define INTC_DEVICE_ID     		XPAR_PS7_SCUGIC_0_DEVICE_ID
+
+#define TMR_DEVICE_ID_0     	XPAR_TMRCTR_0_DEVICE_ID
+#define INTC_TMR_INTERRUPT_ID_0 XPAR_FABRIC_AXI_TIMER_0_INTERRUPT_INTR
+#define FREQUENCY_RESET  		0xFFA90000  // Por definir (FFFFF - el valor necesario)
+
+#define TMR_DEVICE_ID_1     	XPAR_TMRCTR_1_DEVICE_ID
+#define INTC_TMR_INTERRUPT_ID_1 XPAR_FABRIC_AXI_TIMER_1_INTERRUPT_INTR
+#define CB_RESET  				0xFFA90000	// Por definir
+
+
+XTmrCtr timer0; // Para cambiar la frecuencia del buzzer
+XTmrCtr timer1; // Para actualizar el circular buffer
+XScuGic asd;
+
+void TMR_Frequency_Handler(void *data)
+{
+    //xil_printf("frecuencia enviada %d \n\r", frecuencias[counter1]);
+    Xil_Out32(dir_frecuencia , frecuencias[counter1]);
+    if (counter1 <= 3472){
+        counter1++;
+
+    }
+    else{
+        counter1 = 0;
+    }
+
+    XTmrCtr_Stop(data, 0);
+    XTmrCtr_Reset(data, 0);
+    XTmrCtr_Start(data, 0);
+
+}
+
+void TMR_CB_Handler(void *data)
+{
+    Xil_Out32(dir_frecuencia , frecuencias[counter1]);
+    if (counter1 <= 3472){
+        counter1++;
+
+    }
+    else{
+        counter1 = 0;
+    }
+
+    XTmrCtr_Stop(data, 0);
+    XTmrCtr_Reset(data, 0);
+    XTmrCtr_Start(data, 0);
+
+}
+
+int IntcInitFunction(u16 DeviceId, XTmrCtr TmrInstancePtr0, XTmrCtr TmrInstancePtr1)
+{
+    XScuGic_ConfigIntcConfig;
+    int status;
+
+    IntcConfig = XScuGic_LookupConfig(DeviceId);
+    status = XScuGic_CfgInitialize(&INTC, IntcConfig, IntcConfig->CpuBaseAddress);
+    if(status != XST_SUCCESS) return XST_FAILURE;
+
+    status = InterruptSystemSetup(&INTC);
+    if(status != XST_SUCCESS) return XST_FAILURE;
+
+    XScuGic_SetPriorityTriggerType(&INTC, INTC_TMR_INTERRUPT_ID_0, 0x18, 0x1);
+    XScuGic_SetPriorityTriggerType(&INTC, INTC_TMR_INTERRUPT_ID_1, 0x20, 0x1);
+
+    status = XScuGic_Connect(&INTC,INTC_TMR_INTERRUPT_ID_0,(Xil_ExceptionHandler)TMR_Frequency_Handler,(void ) TmrInstancePtr0);
+    status = XScuGic_Connect(&INTC,INTC_TMR_INTERRUPT_ID_1,(Xil_ExceptionHandler)TMR_CB_Handler,(void) TmrInstancePtr1);
+
+    if(status != XST_SUCCESS) return XST_FAILURE;
+
+    XScuGic_Enable(&INTC, INTC_TMR_INTERRUPT_ID_0);
+    XScuGic_Enable(&INTC, INTC_TMR_INTERRUPT_ID_1);
+
+    return XST_SUCCESS;
+}
+
+int InterruptSystemSetup(XScuGicXScuGicInstancePtr)
+{
+
+    Xil_ExceptionRegisterHandler(XIL_EXCEPTION_ID_INT,
+    (Xil_ExceptionHandler)XScuGic_InterruptHandler,
+    XScuGicInstancePtr);
+
+    Xil_ExceptionEnable();
+
+    return XST_SUCCESS;
+
+}

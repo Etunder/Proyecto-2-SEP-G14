@@ -1,0 +1,13 @@
+#ifndef INIT_PROJECT_H
+#define INIT_PROJECT_H
+
+#include "xgpio.h"
+#include "xspi.h"
+#include "i2c.h"
+
+extern XGpio gpio0;
+extern XGpio gpio1;
+
+int initialize_system(void);
+
+#endif

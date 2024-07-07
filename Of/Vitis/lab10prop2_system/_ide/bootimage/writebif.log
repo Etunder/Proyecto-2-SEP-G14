@@ -1,0 +1,9 @@
+TRACE::2024-06-18.19:41:23::SCWBifWriter::Found the complete platform C:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/HW_lab10prop2.xpfm
+TRACE::2024-06-18.19:41:23::SCWBifWriter::hardware databse : DEMO_wrapper_9
+TRACE::2024-06-18.19:41:23::SCWBifWriter::bitstream found in the design
+TRACE::2024-06-18.19:41:23::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2024-06-18.19:41:23::SCWBifWriter::proc type : 
+TRACE::2024-06-18.19:41:23::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2024-06-18.19:41:23::SCWBifWriter::Device type is : zynq
+TRACE::2024-06-18.19:41:23::SCWBifWriter::Writing BIF to file : C:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/lab10prop2_system/_ide/bootimage/template_lab10prop2_system.bif
+TRACE::2024-06-18.19:41:23::SCWBifWriter::Writing the Zynq Baremetal bif 

@@ -1,0 +1,6 @@
+#ifndef ESTADO3_H
+#define ESTADO3_H
+
+void handle_estado3(const char* color);
+
+#endif
