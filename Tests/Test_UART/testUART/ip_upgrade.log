@@ -1,6 +1,352 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Jul  7 17:27:36 2024
+| Host         : DESKTOP-9CMCGP1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uart_circular_buffer_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of uart_circular_buffer_0_0 (xilinx.com:user:circular_buffer:1.0) from (Rev. 11) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Jul  7 17:27:36 2024
+| Host         : DESKTOP-9CMCGP1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uart_FFT_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of uart_FFT_0_0 (xilinx.com:user:FFT:1.0) from (Rev. 3) to (Rev. 4)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'uart_FFT_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'load_count_out'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Jul  7 16:23:44 2024
+| Host         : DESKTOP-9CMCGP1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uart_circular_buffer_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of uart_circular_buffer_0_0 (xilinx.com:user:circular_buffer:1.0) from (Rev. 10) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Jul  7 16:23:44 2024
+| Host         : DESKTOP-9CMCGP1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uart_FFT_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of uart_FFT_0_0 (xilinx.com:user:FFT:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Jul  7 15:46:51 2024
+| Host         : DESKTOP-9CMCGP1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uart_circular_buffer_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of uart_circular_buffer_0_0 (xilinx.com:user:circular_buffer:1.0 (Rev. 10)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Jul  7 14:10:39 2024
+| Host         : DESKTOP-9CMCGP1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uart_circular_buffer_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of uart_circular_buffer_0_0 (xilinx.com:user:circular_buffer:1.0) from (Rev. 9) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Jul  7 05:05:48 2024
+| Host         : DESKTOP-9CMCGP1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uart_FFT_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of uart_FFT_0_0 (xilinx.com:user:FFT:1.0) from (Rev. 6) to (Rev. 2)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Jul  7 03:26:42 2024
+| Host         : DESKTOP-9CMCGP1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uart_FFT_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of uart_FFT_0_0 (xilinx.com:user:FFT:1.0) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Jul  7 02:27:37 2024
+| Host         : DESKTOP-9CMCGP1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uart_FFT_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of uart_FFT_0_0 (xilinx.com:user:FFT:1.0) from (Rev. 2) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Jul  7 01:55:42 2024
+| Host         : DESKTOP-9CMCGP1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uart_FFT_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of uart_FFT_0_0 (xilinx.com:user:FFT:1.0) from (Rev. 3) to (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'uart_FFT_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'state_out'
+
+-Upgrade has added port 'coef_received_out'
+
+-Upgrade has added port 'out_state'
+
+-Upgrade has added port 'partial_done_count_out'
+
+-Upgrade has added port 'rom_index_out'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Jul  7 01:02:40 2024
+| Host         : DESKTOP-9CMCGP1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uart_circular_buffer_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of uart_circular_buffer_0_0 (xilinx.com:user:circular_buffer:1.0) from (Rev. 8) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Jul  7 00:37:19 2024
+| Host         : DESKTOP-9CMCGP1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uart_circular_buffer_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of uart_circular_buffer_0_0 (xilinx.com:user:circular_buffer:1.0) from (Rev. 6) to (Rev. 8)
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Jul  7 00:24:05 2024
+| Host         : DESKTOP-9CMCGP1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uart_circular_buffer_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of uart_circular_buffer_0_0 (xilinx.com:user:circular_buffer:1.0) from (Rev. 5) to (Rev. 6)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'uart_circular_buffer_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'full_counter_out'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sun Jul  7 00:24:05 2024
+| Host         : DESKTOP-9CMCGP1 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'uart_FFT_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of uart_FFT_0_0 (xilinx.com:user:FFT:1.0) from (Rev. 2) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'uart_FFT_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'state_out'
+
+
+
+
+
+
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
 | Date         : Sat Jul  6 15:09:05 2024
 | Host         : DESKTOP-AVIBNI3 running 64-bit major release  (build 9200)
 | Command      : upgrade_ip

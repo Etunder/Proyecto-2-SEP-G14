@@ -1,36 +1,10 @@
-18:23:44 **** Incremental Build of configuration Debug for project testUART ****
+18:03:16 **** Incremental Build of configuration Debug for project testUART ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/sw/uartTest/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-../src/helloworld.c: In function 'main':
-../src/helloworld.c:38:11: warning: unused variable 'Buffer' [-Wunused-variable]
-   38 |     float Buffer[BUFFER_SIZE];
-      |           ^~~~~~
-At top level:
-../src/helloworld.c:240:13: warning: 'PrintFloat' defined but not used [-Wunused-function]
-  240 | static void PrintFloat(float value) {
-      |             ^~~~~~~~~~
-../src/helloworld.c:145:12: warning: 'SdInit' defined but not used [-Wunused-function]
-  145 | static int SdInit(void) {
-      |            ^~~~~~
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: testUART.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/sw/uartTest/standalone_domain/bsplib/lib -o "testUART.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
-'Finished building target: testUART.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size testUART.elf  |tee "testUART.elf.size"
-   text	   data	    bss	    dec	    hex	filename
- 100160	   2642	  25600	 128402	  1f592	testUART.elf
-'Finished building: testUART.elf.size'
-' '
+make[1]: Nothing to be done for 'main-build'.
 
-18:23:45 Build Finished (took 1s.354ms)
+18:03:16 Build Finished (took 462ms)
 

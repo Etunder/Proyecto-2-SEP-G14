@@ -162,9 +162,52 @@ proc create_root_design { parentCell } {
 
 
   # Create ports
+  set sys_clock [ create_bd_port -dir I -type clk -freq_hz 125000000 sys_clock ]
+  set_property -dict [ list \
+   CONFIG.PHASE {0.000} \
+ ] $sys_clock
 
-  # Create instance: AXIFloat_0, and set properties
-  set AXIFloat_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:AXIFloat:1.0 AXIFloat_0 ]
+  # Create instance: AXIFloat_1, and set properties
+  set AXIFloat_1 [ create_bd_cell -type ip -vlnv xilinx.com:user:AXIFloat:1.0 AXIFloat_1 ]
+
+  # Create instance: FFT_0, and set properties
+  set FFT_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:FFT:1.0 FFT_0 ]
+
+  # Create instance: blk_mem_gen_0, and set properties
+  set blk_mem_gen_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0 ]
+  set_property -dict [ list \
+   CONFIG.Byte_Size {9} \
+   CONFIG.Coe_File {../../../../../../../../../Assets Proyecto 1/cos_sin.coe} \
+   CONFIG.EN_SAFETY_CKT {false} \
+   CONFIG.Enable_32bit_Address {false} \
+   CONFIG.Enable_A {Always_Enabled} \
+   CONFIG.Fill_Remaining_Memory_Locations {false} \
+   CONFIG.Load_Init_File {true} \
+   CONFIG.Memory_Type {Single_Port_ROM} \
+   CONFIG.Port_A_Write_Rate {0} \
+   CONFIG.Read_Width_A {64} \
+   CONFIG.Read_Width_B {64} \
+   CONFIG.Register_PortA_Output_of_Memory_Primitives {true} \
+   CONFIG.Use_Byte_Write_Enable {false} \
+   CONFIG.Use_RSTA_Pin {false} \
+   CONFIG.Write_Depth_A {768} \
+   CONFIG.Write_Width_A {64} \
+   CONFIG.Write_Width_B {64} \
+   CONFIG.use_bram_block {Stand_Alone} \
+ ] $blk_mem_gen_0
+
+  # Create instance: circular_buffer_0, and set properties
+  set circular_buffer_0 [ create_bd_cell -type ip -vlnv xilinx.com:user:circular_buffer:1.0 circular_buffer_0 ]
+
+  # Create instance: clk_wiz_0, and set properties
+  set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
+  set_property -dict [ list \
+   CONFIG.CLKOUT1_JITTER {124.615} \
+   CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {100} \
+   CONFIG.CLK_IN1_BOARD_INTERFACE {sys_clock} \
+   CONFIG.MMCM_CLKOUT0_DIVIDE_F {10.000} \
+   CONFIG.USE_BOARD_FLOW {true} \
+ ] $clk_wiz_0
 
   # Create instance: processing_system7_0, and set properties
   set processing_system7_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0 ]
@@ -653,23 +696,62 @@ proc create_root_design { parentCell } {
   # Create instance: vio_0, and set properties
   set vio_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:vio:3.0 vio_0 ]
   set_property -dict [ list \
-   CONFIG.C_NUM_PROBE_OUT {0} \
+   CONFIG.C_NUM_PROBE_IN {14} \
+   CONFIG.C_NUM_PROBE_OUT {3} \
  ] $vio_0
+
+  # Create instance: xlslice_0, and set properties
+  set xlslice_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0 ]
+  set_property -dict [ list \
+   CONFIG.DIN_FROM {255} \
+   CONFIG.DIN_TO {0} \
+   CONFIG.DIN_WIDTH {384} \
+   CONFIG.DOUT_WIDTH {256} \
+ ] $xlslice_0
+
+  # Create instance: xlslice_1, and set properties
+  set xlslice_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_1 ]
+  set_property -dict [ list \
+   CONFIG.DIN_FROM {31} \
+   CONFIG.DIN_TO {0} \
+   CONFIG.DIN_WIDTH {2048} \
+   CONFIG.DOUT_WIDTH {32} \
+ ] $xlslice_1
 
   # Create interface connections
   connect_bd_intf_net -intf_net processing_system7_0_DDR [get_bd_intf_ports DDR] [get_bd_intf_pins processing_system7_0/DDR]
   connect_bd_intf_net -intf_net processing_system7_0_FIXED_IO [get_bd_intf_ports FIXED_IO] [get_bd_intf_pins processing_system7_0/FIXED_IO]
   connect_bd_intf_net -intf_net processing_system7_0_M_AXI_GP0 [get_bd_intf_pins processing_system7_0/M_AXI_GP0] [get_bd_intf_pins ps7_0_axi_periph/S00_AXI]
-  connect_bd_intf_net -intf_net ps7_0_axi_periph_M00_AXI [get_bd_intf_pins AXIFloat_0/S00_AXI] [get_bd_intf_pins ps7_0_axi_periph/M00_AXI]
+  connect_bd_intf_net -intf_net ps7_0_axi_periph_M00_AXI [get_bd_intf_pins AXIFloat_1/S00_AXI] [get_bd_intf_pins ps7_0_axi_periph/M00_AXI]
 
   # Create port connections
-  connect_bd_net -net AXIFloat_0_XD [get_bd_pins AXIFloat_0/XD] [get_bd_pins vio_0/probe_in0]
-  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins AXIFloat_0/s00_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_50M/slowest_sync_clk] [get_bd_pins vio_0/clk]
+  connect_bd_net -net AXIFloat_0_XD [get_bd_pins AXIFloat_1/XD] [get_bd_pins circular_buffer_0/vector_32_bits] [get_bd_pins vio_0/probe_in0]
+  connect_bd_net -net FFT_0_addr [get_bd_pins FFT_0/addr] [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins vio_0/probe_in6]
+  connect_bd_net -net FFT_0_coef_received_out [get_bd_pins FFT_0/coef_received_out] [get_bd_pins vio_0/probe_in10]
+  connect_bd_net -net FFT_0_fft_output [get_bd_pins FFT_0/fft_output] [get_bd_pins xlslice_0/Din]
+  connect_bd_net -net FFT_0_fft_processing_done [get_bd_pins FFT_0/fft_processing_done] [get_bd_pins vio_0/probe_in3]
+  connect_bd_net -net FFT_0_load_count_out [get_bd_pins FFT_0/load_count_out] [get_bd_pins vio_0/probe_in13]
+  connect_bd_net -net FFT_0_partial_done_count_out [get_bd_pins FFT_0/partial_done_count_out] [get_bd_pins vio_0/probe_in11]
+  connect_bd_net -net FFT_0_rom_index_out [get_bd_pins FFT_0/rom_index_out] [get_bd_pins vio_0/probe_in12]
+  connect_bd_net -net FFT_0_state_out [get_bd_pins FFT_0/out_state] [get_bd_pins vio_0/probe_in8]
+  connect_bd_net -net blk_mem_gen_0_douta [get_bd_pins FFT_0/ROM_data] [get_bd_pins blk_mem_gen_0/douta] [get_bd_pins vio_0/probe_in7]
+  connect_bd_net -net circular_buffer_0_full_counter_out [get_bd_pins circular_buffer_0/full_counter_out] [get_bd_pins vio_0/probe_in9]
+  connect_bd_net -net circular_buffer_0_full_out [get_bd_pins circular_buffer_0/full_out] [get_bd_pins vio_0/probe_in4]
+  connect_bd_net -net circular_buffer_0_is_done [get_bd_pins circular_buffer_0/is_done] [get_bd_pins vio_0/probe_in2]
+  connect_bd_net -net circular_buffer_0_vector_64x32_bits [get_bd_pins FFT_0/sample_vector] [get_bd_pins circular_buffer_0/vector_64x32_bits] [get_bd_pins xlslice_1/Din]
+  connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins AXIFloat_1/s00_axi_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins ps7_0_axi_periph/ACLK] [get_bd_pins ps7_0_axi_periph/M00_ACLK] [get_bd_pins ps7_0_axi_periph/S00_ACLK] [get_bd_pins rst_ps7_0_50M/slowest_sync_clk]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_50M/ext_reset_in]
-  connect_bd_net -net rst_ps7_0_50M_peripheral_aresetn [get_bd_pins AXIFloat_0/s00_axi_aresetn] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_50M/peripheral_aresetn]
+  connect_bd_net -net rst_ps7_0_50M_peripheral_aresetn [get_bd_pins AXIFloat_1/s00_axi_aresetn] [get_bd_pins ps7_0_axi_periph/ARESETN] [get_bd_pins ps7_0_axi_periph/M00_ARESETN] [get_bd_pins ps7_0_axi_periph/S00_ARESETN] [get_bd_pins rst_ps7_0_50M/peripheral_aresetn]
+  connect_bd_net -net sys_clock_1 [get_bd_pins FFT_0/clk] [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins circular_buffer_0/clk] [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins vio_0/clk]
+  connect_bd_net -net sys_clock_2 [get_bd_ports sys_clock] [get_bd_pins clk_wiz_0/clk_in1]
+  connect_bd_net -net vio_0_probe_out0 [get_bd_pins circular_buffer_0/fft_done] [get_bd_pins vio_0/probe_out0]
+  connect_bd_net -net vio_0_probe_out1 [get_bd_pins FFT_0/start] [get_bd_pins vio_0/probe_out1]
+  connect_bd_net -net vio_0_probe_out2 [get_bd_pins FFT_0/rst] [get_bd_pins vio_0/probe_out2]
+  connect_bd_net -net xlslice_0_Dout [get_bd_pins vio_0/probe_in1] [get_bd_pins xlslice_0/Dout]
+  connect_bd_net -net xlslice_1_Dout [get_bd_pins vio_0/probe_in5] [get_bd_pins xlslice_1/Dout]
 
   # Create address segments
-  assign_bd_address -offset 0x43C00000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs AXIFloat_0/S00_AXI/S00_AXI_reg] -force
+  assign_bd_address -offset 0x43C00000 -range 0x00010000 -target_address_space [get_bd_addr_spaces processing_system7_0/Data] [get_bd_addr_segs AXIFloat_1/S00_AXI/S00_AXI_reg] -force
 
 
   # Restore current instance

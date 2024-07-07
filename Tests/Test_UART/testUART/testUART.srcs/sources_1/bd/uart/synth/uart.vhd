@@ -1,8 +1,8 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Sat Jul  6 15:09:55 2024
---Host        : DESKTOP-AVIBNI3 running 64-bit major release  (build 9200)
+--Date        : Sun Jul  7 17:34:12 2024
+--Host        : DESKTOP-9CMCGP1 running 64-bit major release  (build 9200)
 --Command     : generate_target uart.bd
 --Design      : uart
 --Purpose     : IP block netlist
@@ -610,10 +610,11 @@ entity uart is
     FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    FIXED_IO_ps_srstb : inout STD_LOGIC
+    FIXED_IO_ps_srstb : inout STD_LOGIC;
+    sys_clock : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of uart : entity is "uart,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=uart,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=7,numReposBlks=5,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_clkrst_cnt=1,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of uart : entity is "uart,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=uart,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=13,numReposBlks=11,numNonXlnxBlks=0,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=1,da_clkrst_cnt=1,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of uart : entity is "uart.hwdef";
 end uart;
@@ -688,7 +689,62 @@ architecture STRUCTURE of uart is
     PS_PORB : inout STD_LOGIC
   );
   end component uart_processing_system7_0_0;
-  component uart_AXIFloat_0_0 is
+  component uart_vio_0_0 is
+  port (
+    clk : in STD_LOGIC;
+    probe_in0 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe_in1 : in STD_LOGIC_VECTOR ( 255 downto 0 );
+    probe_in2 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe_in3 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe_in4 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe_in5 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe_in6 : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    probe_in7 : in STD_LOGIC_VECTOR ( 63 downto 0 );
+    probe_in8 : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    probe_in9 : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    probe_in10 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe_in11 : in STD_LOGIC_VECTOR ( 4 downto 0 );
+    probe_in12 : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    probe_in13 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    probe_out0 : out STD_LOGIC_VECTOR ( 0 to 0 );
+    probe_out1 : out STD_LOGIC_VECTOR ( 0 to 0 );
+    probe_out2 : out STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  end component uart_vio_0_0;
+  component uart_rst_ps7_0_50M_0 is
+  port (
+    slowest_sync_clk : in STD_LOGIC;
+    ext_reset_in : in STD_LOGIC;
+    aux_reset_in : in STD_LOGIC;
+    mb_debug_sys_rst : in STD_LOGIC;
+    dcm_locked : in STD_LOGIC;
+    mb_reset : out STD_LOGIC;
+    bus_struct_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
+    peripheral_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
+    interconnect_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 );
+    peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  end component uart_rst_ps7_0_50M_0;
+  component uart_blk_mem_gen_0_0 is
+  port (
+    clka : in STD_LOGIC;
+    addra : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    douta : out STD_LOGIC_VECTOR ( 63 downto 0 )
+  );
+  end component uart_blk_mem_gen_0_0;
+  component uart_xlslice_0_0 is
+  port (
+    Din : in STD_LOGIC_VECTOR ( 383 downto 0 );
+    Dout : out STD_LOGIC_VECTOR ( 255 downto 0 )
+  );
+  end component uart_xlslice_0_0;
+  component uart_xlslice_0_1 is
+  port (
+    Din : in STD_LOGIC_VECTOR ( 2047 downto 0 );
+    Dout : out STD_LOGIC_VECTOR ( 31 downto 0 )
+  );
+  end component uart_xlslice_0_1;
+  component uart_AXIFloat_1_0 is
   port (
     XD : out STD_LOGIC_VECTOR ( 31 downto 0 );
     s00_axi_aclk : in STD_LOGIC;
@@ -713,28 +769,57 @@ architecture STRUCTURE of uart is
     s00_axi_rvalid : out STD_LOGIC;
     s00_axi_rready : in STD_LOGIC
   );
-  end component uart_AXIFloat_0_0;
-  component uart_vio_0_0 is
+  end component uart_AXIFloat_1_0;
+  component uart_clk_wiz_0_0 is
+  port (
+    reset : in STD_LOGIC;
+    clk_in1 : in STD_LOGIC;
+    clk_out1 : out STD_LOGIC;
+    locked : out STD_LOGIC
+  );
+  end component uart_clk_wiz_0_0;
+  component uart_FFT_0_0 is
   port (
     clk : in STD_LOGIC;
-    probe_in0 : in STD_LOGIC_VECTOR ( 31 downto 0 )
+    rst : in STD_LOGIC;
+    sample_vector : in STD_LOGIC_VECTOR ( 2047 downto 0 );
+    start : in STD_LOGIC;
+    fft_output : out STD_LOGIC_VECTOR ( 383 downto 0 );
+    fft_processing_done : out STD_LOGIC;
+    ROM_data : in STD_LOGIC_VECTOR ( 63 downto 0 );
+    addr : out STD_LOGIC_VECTOR ( 9 downto 0 );
+    out_state : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    coef_received_out : out STD_LOGIC;
+    partial_done_count_out : out STD_LOGIC_VECTOR ( 4 downto 0 );
+    rom_index_out : out STD_LOGIC_VECTOR ( 5 downto 0 );
+    load_count_out : out STD_LOGIC_VECTOR ( 3 downto 0 )
   );
-  end component uart_vio_0_0;
-  component uart_rst_ps7_0_50M_0 is
+  end component uart_FFT_0_0;
+  component uart_circular_buffer_0_0 is
   port (
-    slowest_sync_clk : in STD_LOGIC;
-    ext_reset_in : in STD_LOGIC;
-    aux_reset_in : in STD_LOGIC;
-    mb_debug_sys_rst : in STD_LOGIC;
-    dcm_locked : in STD_LOGIC;
-    mb_reset : out STD_LOGIC;
-    bus_struct_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
-    peripheral_reset : out STD_LOGIC_VECTOR ( 0 to 0 );
-    interconnect_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 );
-    peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
+    clk : in STD_LOGIC;
+    fft_done : in STD_LOGIC;
+    is_done : out STD_LOGIC;
+    vector_32_bits : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    vector_64x32_bits : out STD_LOGIC_VECTOR ( 2047 downto 0 );
+    full_out : out STD_LOGIC;
+    full_counter_out : out STD_LOGIC_VECTOR ( 5 downto 0 )
   );
-  end component uart_rst_ps7_0_50M_0;
+  end component uart_circular_buffer_0_0;
   signal AXIFloat_0_XD : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal FFT_0_addr : STD_LOGIC_VECTOR ( 9 downto 0 );
+  signal FFT_0_coef_received_out : STD_LOGIC;
+  signal FFT_0_fft_output : STD_LOGIC_VECTOR ( 383 downto 0 );
+  signal FFT_0_fft_processing_done : STD_LOGIC;
+  signal FFT_0_load_count_out : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal FFT_0_partial_done_count_out : STD_LOGIC_VECTOR ( 4 downto 0 );
+  signal FFT_0_rom_index_out : STD_LOGIC_VECTOR ( 5 downto 0 );
+  signal FFT_0_state_out : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal blk_mem_gen_0_douta : STD_LOGIC_VECTOR ( 63 downto 0 );
+  signal circular_buffer_0_full_counter_out : STD_LOGIC_VECTOR ( 5 downto 0 );
+  signal circular_buffer_0_full_out : STD_LOGIC;
+  signal circular_buffer_0_is_done : STD_LOGIC;
+  signal circular_buffer_0_vector_64x32_bits : STD_LOGIC_VECTOR ( 2047 downto 0 );
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal processing_system7_0_DDR_CAS_N : STD_LOGIC;
@@ -816,6 +901,14 @@ architecture STRUCTURE of uart is
   signal ps7_0_axi_periph_M00_AXI_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal ps7_0_axi_periph_M00_AXI_WVALID : STD_LOGIC;
   signal rst_ps7_0_50M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal sys_clock_1 : STD_LOGIC;
+  signal sys_clock_2 : STD_LOGIC;
+  signal vio_0_probe_out0 : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal vio_0_probe_out1 : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal vio_0_probe_out2 : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal xlslice_0_Dout : STD_LOGIC_VECTOR ( 255 downto 0 );
+  signal xlslice_1_Dout : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal NLW_clk_wiz_0_locked_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_USB0_VBUS_PWRSELECT_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_USB0_PORT_INDCTL_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_rst_ps7_0_50M_mb_reset_UNCONNECTED : STD_LOGIC;
@@ -839,6 +932,8 @@ architecture STRUCTURE of uart is
   attribute X_INTERFACE_INFO of FIXED_IO_ps_clk : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK";
   attribute X_INTERFACE_INFO of FIXED_IO_ps_porb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB";
   attribute X_INTERFACE_INFO of FIXED_IO_ps_srstb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB";
+  attribute X_INTERFACE_INFO of sys_clock : signal is "xilinx.com:signal:clock:1.0 CLK.SYS_CLOCK CLK";
+  attribute X_INTERFACE_PARAMETER of sys_clock : signal is "XIL_INTERFACENAME CLK.SYS_CLOCK, CLK_DOMAIN uart_sys_clock, FREQ_HZ 125000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000";
   attribute X_INTERFACE_INFO of DDR_addr : signal is "xilinx.com:interface:ddrx:1.0 DDR ADDR";
   attribute X_INTERFACE_PARAMETER of DDR_addr : signal is "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250";
   attribute X_INTERFACE_INFO of DDR_ba : signal is "xilinx.com:interface:ddrx:1.0 DDR BA";
@@ -848,7 +943,8 @@ architecture STRUCTURE of uart is
   attribute X_INTERFACE_INFO of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
   attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
 begin
-AXIFloat_0: component uart_AXIFloat_0_0
+  sys_clock_2 <= sys_clock;
+AXIFloat_1: component uart_AXIFloat_1_0
      port map (
       XD(31 downto 0) => AXIFloat_0_XD(31 downto 0),
       s00_axi_aclk => processing_system7_0_FCLK_CLK0,
@@ -872,6 +968,45 @@ AXIFloat_0: component uart_AXIFloat_0_0
       s00_axi_wready => ps7_0_axi_periph_M00_AXI_WREADY,
       s00_axi_wstrb(3 downto 0) => ps7_0_axi_periph_M00_AXI_WSTRB(3 downto 0),
       s00_axi_wvalid => ps7_0_axi_periph_M00_AXI_WVALID
+    );
+FFT_0: component uart_FFT_0_0
+     port map (
+      ROM_data(63 downto 0) => blk_mem_gen_0_douta(63 downto 0),
+      addr(9 downto 0) => FFT_0_addr(9 downto 0),
+      clk => sys_clock_1,
+      coef_received_out => FFT_0_coef_received_out,
+      fft_output(383 downto 0) => FFT_0_fft_output(383 downto 0),
+      fft_processing_done => FFT_0_fft_processing_done,
+      load_count_out(3 downto 0) => FFT_0_load_count_out(3 downto 0),
+      out_state(2 downto 0) => FFT_0_state_out(2 downto 0),
+      partial_done_count_out(4 downto 0) => FFT_0_partial_done_count_out(4 downto 0),
+      rom_index_out(5 downto 0) => FFT_0_rom_index_out(5 downto 0),
+      rst => vio_0_probe_out2(0),
+      sample_vector(2047 downto 0) => circular_buffer_0_vector_64x32_bits(2047 downto 0),
+      start => vio_0_probe_out1(0)
+    );
+blk_mem_gen_0: component uart_blk_mem_gen_0_0
+     port map (
+      addra(9 downto 0) => FFT_0_addr(9 downto 0),
+      clka => sys_clock_1,
+      douta(63 downto 0) => blk_mem_gen_0_douta(63 downto 0)
+    );
+circular_buffer_0: component uart_circular_buffer_0_0
+     port map (
+      clk => sys_clock_1,
+      fft_done => vio_0_probe_out0(0),
+      full_counter_out(5 downto 0) => circular_buffer_0_full_counter_out(5 downto 0),
+      full_out => circular_buffer_0_full_out,
+      is_done => circular_buffer_0_is_done,
+      vector_32_bits(31 downto 0) => AXIFloat_0_XD(31 downto 0),
+      vector_64x32_bits(2047 downto 0) => circular_buffer_0_vector_64x32_bits(2047 downto 0)
+    );
+clk_wiz_0: component uart_clk_wiz_0_0
+     port map (
+      clk_in1 => sys_clock_2,
+      clk_out1 => sys_clock_1,
+      locked => NLW_clk_wiz_0_locked_UNCONNECTED,
+      reset => '0'
     );
 processing_system7_0: component uart_processing_system7_0_0
      port map (
@@ -1022,7 +1157,33 @@ rst_ps7_0_50M: component uart_rst_ps7_0_50M_0
     );
 vio_0: component uart_vio_0_0
      port map (
-      clk => processing_system7_0_FCLK_CLK0,
-      probe_in0(31 downto 0) => AXIFloat_0_XD(31 downto 0)
+      clk => sys_clock_1,
+      probe_in0(31 downto 0) => AXIFloat_0_XD(31 downto 0),
+      probe_in1(255 downto 0) => xlslice_0_Dout(255 downto 0),
+      probe_in10(0) => FFT_0_coef_received_out,
+      probe_in11(4 downto 0) => FFT_0_partial_done_count_out(4 downto 0),
+      probe_in12(5 downto 0) => FFT_0_rom_index_out(5 downto 0),
+      probe_in13(3 downto 0) => FFT_0_load_count_out(3 downto 0),
+      probe_in2(0) => circular_buffer_0_is_done,
+      probe_in3(0) => FFT_0_fft_processing_done,
+      probe_in4(0) => circular_buffer_0_full_out,
+      probe_in5(31 downto 0) => xlslice_1_Dout(31 downto 0),
+      probe_in6(9 downto 0) => FFT_0_addr(9 downto 0),
+      probe_in7(63 downto 0) => blk_mem_gen_0_douta(63 downto 0),
+      probe_in8(2 downto 0) => FFT_0_state_out(2 downto 0),
+      probe_in9(5 downto 0) => circular_buffer_0_full_counter_out(5 downto 0),
+      probe_out0(0) => vio_0_probe_out0(0),
+      probe_out1(0) => vio_0_probe_out1(0),
+      probe_out2(0) => vio_0_probe_out2(0)
+    );
+xlslice_0: component uart_xlslice_0_0
+     port map (
+      Din(383 downto 0) => FFT_0_fft_output(383 downto 0),
+      Dout(255 downto 0) => xlslice_0_Dout(255 downto 0)
+    );
+xlslice_1: component uart_xlslice_0_1
+     port map (
+      Din(2047 downto 0) => circular_buffer_0_vector_64x32_bits(2047 downto 0),
+      Dout(31 downto 0) => xlslice_1_Dout(31 downto 0)
     );
 end STRUCTURE;

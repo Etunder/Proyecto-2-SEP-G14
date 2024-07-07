@@ -153,3 +153,161 @@ INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/
 WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
 INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
 WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s).
+set_property INPUT_VALUE_RADIX BINARY [get_hw_probes DEMO_i/axi_gpio_1_gpio2_io_o -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"DEMO_i/vio_0"}]]
+set_property INPUT_VALUE_RADIX BINARY [get_hw_probes DEMO_i/axi_gpio_1_gpio_io_o -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"DEMO_i/vio_0"}]]
+ERROR: [Xicom 50-38] xicom: Unable to connect to debug core(s) on the target device. Check cable connectivity and that the target board is powered up then use the disconnect_hw_server and connect_hw_server to re-initialize the hardware target. Use open_hw_target to re-register the hardware device.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210351B3FC84A
+update_module_reference DEMO_BUZZER_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-5661] Bus Interface 'clk' does not have any bus interfaces associated with it.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Tests/ip_repo'.
+Upgrading 'C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd'
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/DEMO_BUZZER_0_0_synth_1
+
+INFO: [IP_Flow 19-1972] Upgraded DEMO_BUZZER_0_0 from BUZZER_v1_0 1.0 to BUZZER_v1_0 1.0
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'LEDB'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'LEDG'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'LEDR'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 'MOOD'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'DEMO_BUZZER_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1280] The upgrade of 'DEMO_BUZZER_0_0' has identified issues that may require user intervention. Please verify that the instance is correctly configured, and review any upgrade messages.
+Wrote  : <C:\Users\Amteo\Desktop\Proyecto-2-SEP-G14\Of\Hw_vivado\Hardware_Proyecto_Booster.srcs\sources_1\bd\DEMO\DEMO.bd> 
+Wrote  : <C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ui/bd_58220e03.ui> 
+update_module_reference: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2914.105 ; gain = 0.000
+startgroup
+make_bd_pins_external  [get_bd_pins BUZZER_0/LEDR]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins BUZZER_0/LEDG]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins BUZZER_0/LEDB]
+endgroup
+set_property name LEDR [get_bd_ports LEDR_0]
+set_property name LEDG [get_bd_ports LEDG_0]
+set_property name LEDB [get_bd_ports LEDB_0]
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {13}] [get_bd_cells axi_gpio_1]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0
+endgroup
+set_property -dict [list CONFIG.DIN_FROM {9} CONFIG.DIN_WIDTH {13} CONFIG.DOUT_WIDTH {10}] [get_bd_cells xlslice_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_1
+endgroup
+set_property location {3 773 175} [get_bd_cells xlslice_0]
+startgroup
+set_property -dict [list CONFIG.C_PROBE_IN4_WIDTH {3} CONFIG.C_PROBE_IN3_WIDTH {10} CONFIG.C_PROBE_IN0_WIDTH {13} CONFIG.C_NUM_PROBE_IN {5}] [get_bd_cells vio_0]
+endgroup
+delete_bd_objs [get_bd_nets axi_gpio_1_gpio_io_o]
+connect_bd_net [get_bd_pins axi_gpio_1/gpio_io_o] [get_bd_pins xlslice_0/Din]
+WARNING: [BD 41-1306] The connection to interface pin /axi_gpio_1/gpio_io_o is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+connect_bd_net [get_bd_pins axi_gpio_1/gpio_io_o] [get_bd_pins xlslice_1/Din]
+connect_bd_net [get_bd_pins axi_gpio_1/gpio_io_o] [get_bd_pins vio_0/probe_in0]
+connect_bd_net [get_bd_pins xlslice_0/Dout] [get_bd_pins vio_0/probe_in3]
+connect_bd_net [get_bd_pins xlslice_0/Dout] [get_bd_pins BUZZER_0/POT1]
+connect_bd_net [get_bd_pins BUZZER_0/MOOD] [get_bd_pins vio_0/probe_in4]
+connect_bd_net [get_bd_pins BUZZER_0/MOOD] [get_bd_pins xlslice_1/Dout]
+startgroup
+set_property -dict [list CONFIG.DIN_TO {10} CONFIG.DIN_FROM {12} CONFIG.DIN_WIDTH {13} CONFIG.DOUT_WIDTH {3}] [get_bd_cells xlslice_1]
+endgroup
+regenerate_bd_layout
+make_wrapper -files [get_files C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd] -top
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_1 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /axi_quad_spi_1 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+Wrote  : <C:\Users\Amteo\Desktop\Proyecto-2-SEP-G14\Of\Hw_vivado\Hardware_Proyecto_Booster.srcs\sources_1\bd\DEMO\DEMO.bd> 
+Wrote  : <C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ui/bd_58220e03.ui> 
+VHDL Output written to : C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/synth/DEMO.vhd
+VHDL Output written to : C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/sim/DEMO.vhd
+VHDL Output written to : C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/hdl/DEMO_wrapper.vhd
+make_wrapper: Time (s): cpu = 00:00:22 ; elapsed = 00:00:38 . Memory (MB): peak = 2937.664 ; gain = 15.516
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/synth_1
+
+reset_run DEMO_vio_0_0_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/DEMO_vio_0_0_synth_1
+
+reset_run DEMO_axi_gpio_0_1_synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/DEMO_axi_gpio_0_1_synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 41-1662] The design 'DEMO.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\Amteo\Desktop\Proyecto-2-SEP-G14\Of\Hw_vivado\Hardware_Proyecto_Booster.srcs\sources_1\bd\DEMO\DEMO.bd> 
+Wrote  : <C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ui/bd_58220e03.ui> 
+VHDL Output written to : C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/synth/DEMO.vhd
+VHDL Output written to : C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/sim/DEMO.vhd
+VHDL Output written to : C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/hdl/DEMO_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BUZZER_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_auto_pc_0/DEMO_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_1 .
+Exporting to file C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/hw_handoff/DEMO.hwh
+Generated Block Design Tcl file C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/hw_handoff/DEMO_bd.tcl
+Generated Hardware Definition File C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/synth/DEMO.hwdef
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DEMO_auto_pc_0, cache-ID = f0066fce20473567; cache size = 22.206 MB.
+[Sun Jul  7 18:19:59 2024] Launched DEMO_vio_0_0_synth_1, DEMO_axi_gpio_0_1_synth_1, DEMO_BUZZER_0_0_synth_1, synth_1...
+Run output will be captured here:
+DEMO_vio_0_0_synth_1: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/DEMO_vio_0_0_synth_1/runme.log
+DEMO_axi_gpio_0_1_synth_1: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/DEMO_axi_gpio_0_1_synth_1/runme.log
+DEMO_BUZZER_0_0_synth_1: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/DEMO_BUZZER_0_0_synth_1/runme.log
+synth_1: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/synth_1/runme.log
+[Sun Jul  7 18:19:59 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 2947.254 ; gain = 9.590
+set_property pfm_name {} [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}]
+write_hw_platform -fixed -include_bit -force -file C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/AAA.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/AAA.xsa ...
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/AAA.xsa
+write_hw_platform: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3023.633 ; gain = 76.379
+set_property pfm_name {} [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}]
+write_hw_platform -fixed -include_bit -force -file C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/BBB.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/BBB.xsa ...
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/BBB.xsa
+write_hw_platform: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3038.293 ; gain = 12.598
+set_property pfm_name {} [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}]
+write_hw_platform -fixed -include_bit -force -file C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/BBB.xsa
+INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/BBB.xsa ...
+WARNING: [Project 1-645] Board images not set in Hardware Platform.
+INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/BBB.xsa
+write_hw_platform: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 3050.477 ; gain = 12.117
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351B3FC84A
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210351B3FC84A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351B3FC84A
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210351B3FC84A

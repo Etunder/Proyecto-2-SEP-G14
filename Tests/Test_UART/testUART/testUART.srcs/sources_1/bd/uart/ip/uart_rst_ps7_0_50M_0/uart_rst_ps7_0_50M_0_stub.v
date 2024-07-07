@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Sat Jul  6 15:12:18 2024
-// Host        : DESKTOP-AVIBNI3 running 64-bit major release  (build 9200)
+// Date        : Sat Jul  6 23:11:13 2024
+// Host        : DESKTOP-9CMCGP1 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
-//               c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/ip/uart_rst_ps7_0_50M_0/uart_rst_ps7_0_50M_0_stub.v
+//               c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/ip/uart_rst_ps7_0_50M_0/uart_rst_ps7_0_50M_0_stub.v
 // Design      : uart_rst_ps7_0_50M_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z010clg400-1
