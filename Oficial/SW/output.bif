@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]C:\Users\etien\Desktop\Proyecto_2_Of\Of\Vitis2\P2_G14_HW_v3\export\P2_G14_HW_v3\sw\P2_G14_HW_v3\boot\fsbl.elf
+	C:\Users\etien\Desktop\Proyecto_2_Of\Of\Vitis2\P2_G14_SW_v3\_ide\bitstream\DEMO_wrapper.bit
+	C:\Users\etien\Desktop\Proyecto_2_Of\Of\Vitis2\P2_G14_SW_v3\Debug\P2_G14_SW_v3.elf
+}

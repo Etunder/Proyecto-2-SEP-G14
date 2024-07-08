@@ -1,0 +1,14 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/ip_core_FFT/src/tb_FFT.vhd,1720330673,vhdl,,,,fft_tb,,,,,,,,
+C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/nueva_FFT/new_FFT/new_FFT.srcs/sources_1/new/Cascader_CU.vhd,1720330677,vhdl,,,,cascader_cu,,,,,,,,
+C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/nueva_FFT/new_FFT/new_FFT.srcs/sources_1/new/FFT.vhd,1720336911,vhdl,,,,fft,,,,,,,,
+C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/nueva_FFT/new_FFT/new_FFT.srcs/sources_1/new/FPU.vhd,1720330648,vhdl,,,,fpu,,,,,,,,
+C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/nueva_FFT/new_FFT/new_FFT.srcs/sources_1/new/FPU_Cascader.vhd,1720330654,vhdl,,,,fpu_cascader,,,,,,,,
+C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/nueva_FFT/new_FFT/new_FFT.srcs/sources_1/new/fp32_addsub.vhd,1720330636,vhdl,,,,fp32_addsub,,,,,,,,
+C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/nueva_FFT/new_FFT/new_FFT.srcs/sources_1/new/fp32_mult.vhd,1720330639,vhdl,,,,fp32_mult,,,,,,,,
+C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/nueva_FFT/new_FFT/new_FFT.srcs/sources_1/new/fp32_pkg.vhd,1720330644,vhdl,C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/nueva_FFT/new_FFT/new_FFT.srcs/sources_1/new/FFT.vhd,,,fp32_pkg,,,,,,,,
+C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/nueva_FFT/new_FFT/new_FFT.srcs/sources_1/new/reduce_pack.vhd,1720331422,vhdl,C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/nueva_FFT/new_FFT/new_FFT.srcs/sources_1/new/fp32_pkg.vhd,,,reduce_pack,,,,,,,,
+C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/nueva_FFT/new_FFT/new_FFT.srcs/sources_1/new/rtl_dsp48_25x25.vhd,1720330667,vhdl,C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/nueva_FFT/new_FFT/new_FFT.srcs/sources_1/new/fp32_mult.vhd,,,rtl_dsp48_25x25,,,,,,,,

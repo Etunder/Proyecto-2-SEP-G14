@@ -1,0 +1,10 @@
+10:17:37 **** Incremental Build of configuration Debug for project read_sd_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 64871 C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/test_sd.xpfm standalone_domain C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd_system/Debug/system.bif
+sdcard_gen --xpfm C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/test_sd.xpfm --sys_config test_sd --bif C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd_system/Debug/system.bif --bitstream C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit --elf C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/Debug/read_sd.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd/_ide/bitstream/test_sd_wrapper.bit
+Running C:/Xilinx/Vitis/2020.1/bin/bootgen  -image C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+10:17:58 Build Finished (took 20s.654ms)
+

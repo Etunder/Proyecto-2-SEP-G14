@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Jul  7 19:40:49 2024
+# Process ID: 13416
+# Current directory: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5980 C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Tests\Test_UART\testUART\testUART.xpr
+# Log file: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/vivado.log
+# Journal file: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Oficial/Zybo-Z7-Master.xdc'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/ip_core_Nueva_FFT'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/AxiFloat'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/FPU'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/Player'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:40 ; elapsed = 00:00:23 . Memory (MB): peak = 1071.852 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/uart.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+Adding component instance block -- xilinx.com:ip:vio:3.0 - vio_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding component instance block -- xilinx.com:user:AXIFloat:1.0 - AXIFloat_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:user:FFT:1.0 - FFT_0
+Adding component instance block -- xilinx.com:user:circular_buffer:1.0 - circular_buffer_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /vio_0/probe_out2(undef) and /FFT_0/rst(rst)
+Successfully read diagram <uart> from BD file <C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART/testUART.srcs/sources_1/bd/uart/uart.bd>
+open_bd_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 1332.621 ; gain = 0.000
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul  8 03:45:56 2024...

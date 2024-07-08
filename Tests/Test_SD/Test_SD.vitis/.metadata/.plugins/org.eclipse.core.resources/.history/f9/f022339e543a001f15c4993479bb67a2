@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="read_sd" location="C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/read_sd" platform="C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_SD/Test_SD.vitis/test_sd/export/test_sd/test_sd.xpfm" platformUID="xilinx:zybo-z7-10::0.0(custom)" systemProject="read_sd_system" sysConfig="test_sd" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="8d8bfa13daa05f58cd27653719c88b1b">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.249910552">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1676774393" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

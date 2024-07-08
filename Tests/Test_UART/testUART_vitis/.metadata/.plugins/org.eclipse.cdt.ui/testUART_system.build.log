@@ -1,0 +1,10 @@
+19:11:31 **** Build of configuration Debug for project testUART_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 62058 C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/uartTest.xpfm standalone_domain C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART_system/Debug/system.bif
+sdcard_gen --xpfm C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/uartTest/export/uartTest/uartTest.xpfm --sys_config uartTest --bif C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART_system/Debug/system.bif --bitstream C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit --elf C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/Debug/testUART.elf,ps7_cortexa9_0
+creating BOOT.BIN using C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART/_ide/bitstream/uart_wrapper.bit
+Running C:/Xilinx/Vitis/2020.1/bin/bootgen  -image C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/Test_UART/testUART_vitis/testUART_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+19:11:52 Build Finished (took 20s.439ms)
+

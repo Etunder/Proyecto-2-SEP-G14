@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1720388060">
+  <File Type="BITSTR-BMM" Name="uart_wrapper_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="uart_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="uart_wrapper_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="uart_wrapper_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="uart_wrapper.tcl"/>
+  <File Type="OPT-TIMING" Name="uart_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="uart_wrapper_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="uart_wrapper_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="uart_wrapper_reports.tcl"/>
+  <File Type="OPT-DRC" Name="uart_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="uart_wrapper.hwdef"/>
+  <File Type="PWROPT-DCP" Name="uart_wrapper_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="uart_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="uart_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="uart_wrapper_placed.dcp"/>
+  <File Type="PLACE-IO" Name="uart_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="uart_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="uart_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="uart_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="uart_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="uart_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="uart_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-TIMING" Name="uart_wrapper_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="uart_wrapper_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="uart_wrapper.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="uart_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="uart_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="uart_wrapper_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="uart_wrapper.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="uart_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="uart_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="uart_wrapper_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="uart_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="uart_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="uart_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="uart_wrapper_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="uart_wrapper.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="uart_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="uart_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="uart_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="uart_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="uart_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="uart_wrapper_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="uart_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="uart_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="uart_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="uart_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="uart_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="uart_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="uart_wrapper_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="uart_wrapper_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="uart_wrapper_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="uart_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="uart_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="uart_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="uart_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="uart_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="uart_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="uart_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="uart_wrapper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="uart_wrapper.rbt"/>
+  <File Type="BITSTR-NKY" Name="uart_wrapper.nky"/>
+  <File Type="PDI-FILE" Name="uart_wrapper.pdi"/>
+  <File Type="RCFI_FILE" Name="uart_wrapper.rcfi"/>
+  <File Type="CFI_FILE" Name="uart_wrapper.cfi"/>
+  <File Type="RNPI_FILE" Name="uart_wrapper.rnpi"/>
+  <File Type="NPI_FILE" Name="uart_wrapper.npi"/>
+  <File Type="RBD_FILE" Name="uart_wrapper.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="uart_wrapper.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="uart_wrapper.sysdef"/>
+  <File Type="BG-BGN" Name="uart_wrapper.bgn"/>
+  <File Type="BG-DRC" Name="uart_wrapper.drc"/>
+  <File Type="RDI-RDI" Name="uart_wrapper.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/uart/uart.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/uart/hdl/uart_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../../../Assets Proyecto 1/cos_sin.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="uart_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../../Oficial/Zybo-Z7-Master.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="uart_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="uart_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="uart_rst_ps7_0_50M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="uart_FFT_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="uart_vio_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="uart_circular_buffer_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="uart_blk_mem_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="uart_AXIFloat_1_0"/>
+</GenRun>
