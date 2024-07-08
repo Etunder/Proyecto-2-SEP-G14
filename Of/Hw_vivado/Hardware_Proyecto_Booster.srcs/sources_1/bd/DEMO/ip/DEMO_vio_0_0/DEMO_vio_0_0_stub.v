@@ -1,7 +1,11 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+<<<<<<< HEAD
 // Date        : Mon Jul  8 04:03:04 2024
+=======
+// Date        : Sun Jul  7 20:18:43 2024
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
 // Host        : DESKTOP-9CMCGP1 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_vio_0_0/DEMO_vio_0_0_stub.v
@@ -17,9 +21,15 @@
 module DEMO_vio_0_0(clk, probe_in0, probe_in1, probe_in2, probe_in3, 
   probe_in4, probe_in5, probe_in6, probe_in7, probe_in8, probe_in9, probe_in10, probe_in11, 
   probe_in12, probe_in13, probe_in14, probe_in15, probe_in16, probe_in17, probe_in18, probe_out0)
+<<<<<<< HEAD
 /* synthesis syn_black_box black_box_pad_pin="clk,probe_in0[18:0],probe_in1[3:0],probe_in2[31:0],probe_in3[9:0],probe_in4[2:0],probe_in5[31:0],probe_in6[0:0],probe_in7[0:0],probe_in8[5:0],probe_in9[31:0],probe_in10[0:0],probe_in11[63:0],probe_in12[255:0],probe_in13[9:0],probe_in14[2:0],probe_in15[0:0],probe_in16[4:0],probe_in17[5:0],probe_in18[3:0],probe_out0[0:0]" */;
   input clk;
   input [18:0]probe_in0;
+=======
+/* synthesis syn_black_box black_box_pad_pin="clk,probe_in0[14:0],probe_in1[3:0],probe_in2[31:0],probe_in3[9:0],probe_in4[2:0],probe_in5[31:0],probe_in6[0:0],probe_in7[0:0],probe_in8[5:0],probe_in9[31:0],probe_in10[0:0],probe_in11[63:0],probe_in12[255:0],probe_in13[9:0],probe_in14[2:0],probe_in15[0:0],probe_in16[4:0],probe_in17[5:0],probe_in18[3:0],probe_out0[0:0]" */;
+  input clk;
+  input [14:0]probe_in0;
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
   input [3:0]probe_in1;
   input [31:0]probe_in2;
   input [9:0]probe_in3;

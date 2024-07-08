@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="P2_G14_SW_v3" location="C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis2/P2_G14_SW_v3" platform="C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Vitis2/P2_G14_HW_v3/export/P2_G14_HW_v3/P2_G14_HW_v3.xpfm" platformUID="xilinx:zybo-z7-10::0.0(custom)" systemProject="P2_G14_SW_v3_system" sysConfig="P2_G14_HW_v3" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="d70f23e57f03a4e0b9ca333a3cf94b25">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1312322645">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.660631927" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

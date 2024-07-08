@@ -15,26 +15,38 @@ int moods;
 int file_index;
 int fft_start = 0;
 int CB_update = 0;
+<<<<<<< HEAD
 int out_fft_index = 0;
+=======
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
 int fft_index;
 int full_out;
 int is_done;
 int fft_processing_done;
+<<<<<<< HEAD
 int fft_processing_done_flag = 0;
 int playing = 0;
 int fft_state = 0;
 char files[MAX_FILES][256];
 ReadResult result;
 int startIndex = 0; //BUFFER_SIZE * 500;
+=======
+char files[MAX_FILES][256];
+ReadResult result;
+int startIndex = BUFFER_SIZE * 500;
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
 int song_counter = 0;
 int Status;
 int file_count = 0;
 int circular_filing = 0;
 int circular_sent = 0;
+<<<<<<< HEAD
 int first_fft = 0;
 
 int dia = 1;
 int prev_dia = 0;
+=======
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
 
 const TempColorMapping temp_color_map[] = {
     {16, "Blue"},
@@ -56,6 +68,19 @@ const char *song_titles[NUM_SONGS][MOODS] = {
     {"Bink's sake (H)", "Bink's sake (S)", "Bink's sake (E)", "Bink's sake (C)", "Bink's sake (A)"},
     {"Inferno (H)", "Inferno (S)", "Inferno (E)", "Inferno (C)", "Inferno (A)"},
     {"PKMN OP.9 (H)", "PKMN OP.9 (S)", "PKMN OP.9 (E)", "PKMN OP.9 (C)", "PKMN OP.9 (A)"}
+<<<<<<< HEAD
+=======
+};
+
+const int *files_indexes[NUM_SONGS][MOODS] = {
+    {0, 0, 0, 0, 0},
+	{0, 0, 0, 0, 0},
+	{0, 0, 0, 0, 0}
+};
+
+const int *freq_array[NOTES] = {
+
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
 };
 
 const int *files_indexes[NUM_SONGS][MOODS] = {

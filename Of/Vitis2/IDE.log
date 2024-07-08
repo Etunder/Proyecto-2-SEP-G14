@@ -2809,6 +2809,7 @@ con
 02:42:27 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Of\Vitis2\.sdk\launch_scripts\single_application_debug\debugger_p2_g14_sw_v3-default_17.tcl'
 03:46:12 WARN  : channel "tcfchan#24" closed
 03:46:12 INFO  : Disconnected from the channel tcfchan#42.
+<<<<<<< HEAD
 04:02:28 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Of\Vitis2\temp_xsdb_launch_script.tcl
 04:02:39 INFO  : XSCT server has started successfully.
 04:02:40 INFO  : plnx-install-location is set to ''
@@ -5410,3 +5411,5 @@ con
 08:02:21 INFO  : Launch script is exported to file 'C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Of\Vitis2\.sdk\launch_scripts\single_application_debug\debugger_p2_g14_sw_v3-default_29.tcl'
 08:03:02 WARN  : channel "tcfchan#24" closed
 08:03:02 INFO  : Disconnected from the channel tcfchan#55.
+=======
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60

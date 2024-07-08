@@ -101,11 +101,19 @@ int init_project()
 
 	do {
 		scanf("%d", &moods);
+<<<<<<< HEAD
 		if (moods < 1 || moods > 4) {
 			xil_printf("Opción inválida. Por favor, elige una opción del 1 al 4: \n\r");
 			// file_index = 5; // Set to 5 if the input is invalid
 		}
 	} while (moods < 1 || moods > 4);
+=======
+		if (moods < 1 || moods > 5) {
+			xil_printf("Opción inválida. Por favor, elige una opción del 1 al 5: \n\r");
+			// file_index = 5; // Set to 5 if the input is invalid
+		}
+	} while (moods < 1 || moods > 5);
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
 
 	xil_printf("Opción seleccionada: %d\n\r", moods);
 

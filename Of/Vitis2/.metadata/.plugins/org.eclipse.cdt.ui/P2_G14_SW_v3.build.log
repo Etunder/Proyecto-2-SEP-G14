@@ -1,19 +1,32 @@
+<<<<<<< HEAD
 08:02:03 **** Incremental Build of configuration Debug for project P2_G14_SW_v3 ****
+=======
+02:42:09 **** Incremental Build of configuration Debug for project P2_G14_SW_v3 ****
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
+<<<<<<< HEAD
 'Building file: ../src/utils.c'
 'Invoking: ARM v7 gcc compiler'
 arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utils.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Vitis2/P2_G14_HW_v3/export/P2_G14_HW_v3/sw/P2_G14_HW_v3/standalone_domain/bspinclude/include -MMD -MP -MF"src/utils.d" -MT"src/utils.o" -o "src/utils.o" "../src/utils.c"
 In file included from ../src/globals.h:9,
                  from ../src/utils.c:1:
+=======
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Vitis2/P2_G14_HW_v3/export/P2_G14_HW_v3/sw/P2_G14_HW_v3/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/globals.h:9,
+                 from ../src/main.c:6:
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
 ../src/sdFunctions.h:18: warning: "BUFFER_SIZE" redefined
    18 | #define BUFFER_SIZE     64  // Buffer for 64 FP32 values
       | 
 In file included from ../src/LCD_Driver.h:5,
                  from ../src/globals.h:7,
+<<<<<<< HEAD
                  from ../src/utils.c:1:
 ../src/LCD_SPI.h:25: note: this is the location of the previous definition
    25 | #define BUFFER_SIZE  17
@@ -51,6 +64,13 @@ In file included from ../src/LCD_Driver.h:5,
    59 |     xil_printf("ACZ :%d\n\r", read_acz());
       |                               ^~~~~~~~
 'Finished building: ../src/utils.c'
+=======
+                 from ../src/main.c:6:
+../src/LCD_SPI.h:25: note: this is the location of the previous definition
+   25 | #define BUFFER_SIZE  17
+      | 
+'Finished building: ../src/main.c'
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
 ' '
 'Building target: P2_G14_SW_v3.elf'
 'Invoking: ARM v7 gcc linker'
@@ -60,9 +80,17 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size P2_G14_SW_v3.elf  |tee "P2_G14_SW_v3.elf.size"
    text	   data	    bss	    dec	    hex	filename
+<<<<<<< HEAD
  812880	   3714	  52000	 868594	  d40f2	P2_G14_SW_v3.elf
 'Finished building: P2_G14_SW_v3.elf.size'
 ' '
 
 08:02:05 Build Finished (took 2s.868ms)
+=======
+ 811240	   3650	  52032	 866922	  d3a6a	P2_G14_SW_v3.elf
+'Finished building: P2_G14_SW_v3.elf.size'
+' '
+
+02:42:12 Build Finished (took 3s.49ms)
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
 

@@ -22,7 +22,11 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
+<<<<<<< HEAD
             <spirit:value>9:60d342a3</spirit:value>
+=======
+            <spirit:value>9:1730a7d9</spirit:value>
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -33,7 +37,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
+<<<<<<< HEAD
             <spirit:value>9:60d342a3</spirit:value>
+=======
+            <spirit:value>9:1730a7d9</spirit:value>
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -49,11 +57,19 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< HEAD
             <spirit:value>Mon Jul 08 07:59:08 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:60d342a3</spirit:value>
+=======
+            <spirit:value>Mon Jul 08 00:13:32 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:1730a7d9</spirit:value>
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -73,7 +89,11 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
+<<<<<<< HEAD
             <spirit:value>9:1ddcc67e</spirit:value>
+=======
+            <spirit:value>9:8edc79d4</spirit:value>
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -89,11 +109,19 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< HEAD
             <spirit:value>Mon Jul 08 07:59:08 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:1ddcc67e</spirit:value>
+=======
+            <spirit:value>Mon Jul 08 00:13:32 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:8edc79d4</spirit:value>
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>

@@ -19,7 +19,7 @@ int main()
     if (init_project() != XST_SUCCESS) {
         return XST_FAILURE;
     }
-
+    initialize();
     int opcion = 1;
     int estado = 0;
     int cancion = 0;
@@ -57,6 +57,7 @@ int main()
         	}
         	circular_sent = 0;
         }
+<<<<<<< HEAD
 //        xil_printf("fft_index: %u \r\n", fft_index);
 //        xil_printf("full_out: %u \r\n", full_out);
 //        xil_printf("is_done: %u \r\n", is_done);
@@ -101,6 +102,17 @@ int main()
 				fft_state = 0;
 				break;
 		}
+=======
+        xil_printf("fft_index: %u \r\n", fft_index);
+        xil_printf("full_out: %u \r\n", full_out);
+        xil_printf("is_done: %u \r\n", is_done);
+        xil_printf("fft_processing_done: %u \r\n", fft_processing_done);
+        if (full_out == 1) {
+        	CB_update = 1;
+        }
+        if (CB_update == 1){
+        	fft_start = 1;
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
         }
 
 //        print_debug_info();

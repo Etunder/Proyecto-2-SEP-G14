@@ -4,7 +4,11 @@
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.        -->
 
 <hwsession version="1" minor="2">
+<<<<<<< HEAD
   <device name="xc7z010_1" gui_info="dashboard1=hw_vios[xc7z010_1/hw_vio_1=VIO_PROBES_1;],dashboard2=hw_ila_1[xc7z010_1/hw_ila_1/Settings=ILA_SETTINGS_1;xc7z010_1/hw_ila_1/Status=ILA_STATUS_1;xc7z010_1/hw_ila_1/Capture Setup=ILA_CAPTURE_1;xc7z010_1/hw_ila_1/Waveform=ILA_WAVE_1;xc7z010_1/hw_ila_1/Trigger Setup=ILA_TRIGGER_1;]"/>
+=======
+  <device name="xc7z010_1" gui_info="dashboard1=hw_vios[xc7z010_1/hw_vio_1=VIO_PROBES_1;]"/>
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
   <ObjectList object_type="hw_device" gui_info="">
     <Object name="xc7z010_1" gui_info="">
       <Properties Property="FULL_PROBES.FILE" value="$_project_name_.runs/impl_1/DEMO_wrapper.ltx"/>
@@ -21,6 +25,7 @@
   </ObjectList>
   <ObjectList object_type="hw_probe" gui_info="">
     <Object name="DEMO_i/AXIFloat_0_XD[31:0]" gui_info="hw_vios/hw_vio_1=0"/>
+<<<<<<< HEAD
     <Object name="DEMO_i/AXIFloat_0_XD_1[31:0]" gui_info="hw_vios/hw_vio_1=11"/>
     <Object name="DEMO_i/FFT_0_addr[9:0]" gui_info="hw_vios/hw_vio_1=7"/>
     <Object name="DEMO_i/FFT_0_coef_received_out" gui_info="hw_vios/hw_vio_1=6"/>
@@ -28,15 +33,28 @@
     <Object name="DEMO_i/FFT_0_out_state[2:0]" gui_info="hw_vios/hw_vio_1=8"/>
     <Object name="DEMO_i/FFT_0_partial_done_count_out[4:0]" gui_info="hw_vios/hw_vio_1=16"/>
     <Object name="DEMO_i/FFT_0_rom_index_out[5:0]" gui_info="hw_vios/hw_vio_1=17"/>
+=======
+    <Object name="DEMO_i/AXIFloat_0_XD_1[31:0]" gui_info="hw_vios/hw_vio_1=12"/>
+    <Object name="DEMO_i/FFT_0_addr[9:0]" gui_info="hw_vios/hw_vio_1=8"/>
+    <Object name="DEMO_i/FFT_0_coef_received_out" gui_info="hw_vios/hw_vio_1=6"/>
+    <Object name="DEMO_i/FFT_0_load_count_out[3:0]" gui_info="hw_vios/hw_vio_1=16"/>
+    <Object name="DEMO_i/FFT_0_out_state[2:0]" gui_info="hw_vios/hw_vio_1=9"/>
+    <Object name="DEMO_i/FFT_0_partial_done_count_out[4:0]" gui_info="hw_vios/hw_vio_1=17"/>
+    <Object name="DEMO_i/FFT_0_rom_index_out[5:0]" gui_info="hw_vios/hw_vio_1=18"/>
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
     <Object name="DEMO_i/Net[2:0]" gui_info="hw_vios/hw_vio_1=1"/>
     <Object name="DEMO_i/axi_gpio_1_gpio2_io_o[9:0]" gui_info="hw_vios/hw_vio_1=4_exp"/>
     <Object name="DEMO_i/axi_gpio_1_gpio_io_o[12:0]" gui_info="hw_vios/hw_vio_1=2_exp"/>
     <Object name="DEMO_i/axi_gpio_1_gpio_io_o[14:0]" gui_info="hw_vios/hw_vio_1=7"/>
+<<<<<<< HEAD
     <Object name="DEMO_i/axi_gpio_1_gpio_io_o[18:0]" gui_info="hw_vios/hw_vio_1=19"/>
+=======
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
     <Object name="DEMO_i/axi_gpio_1_gpio_io_o[9:0]" gui_info="hw_vios/hw_vio_1=2"/>
     <Object name="DEMO_i/blk_mem_gen_0_douta[63:0]" gui_info="hw_vios/hw_vio_1=3"/>
     <Object name="DEMO_i/circular_buffer_0_full_counter_out[5:0]" gui_info="hw_vios/hw_vio_1=4"/>
     <Object name="DEMO_i/circular_buffer_0_full_out" gui_info="hw_vios/hw_vio_1=5"/>
+<<<<<<< HEAD
     <Object name="DEMO_i/circular_buffer_0_is_done" gui_info="hw_vios/hw_vio_1=14"/>
     <Object name="DEMO_i/index_selector_0_output_index[3:0]" gui_info="hw_vios/hw_vio_1=9"/>
     <Object name="DEMO_i/vio_0_probe_out0" gui_info="hw_vios/hw_vio_1=13"/>
@@ -44,6 +62,15 @@
     <Object name="DEMO_i/xlslice_3_Dout" gui_info="hw_vios/hw_vio_1=10"/>
     <Object name="DEMO_i/xlslice_4_Dout[31:0]" gui_info="hw_vios/hw_vio_1=12"/>
     <Object name="DEMO_i/xlslice_5_Dout[255:0]" gui_info="hw_vios/hw_vio_1=18"/>
+=======
+    <Object name="DEMO_i/circular_buffer_0_is_done" gui_info="hw_vios/hw_vio_1=15"/>
+    <Object name="DEMO_i/index_selector_0_output_index[3:0]" gui_info="hw_vios/hw_vio_1=10"/>
+    <Object name="DEMO_i/vio_0_probe_out0" gui_info="hw_vios/hw_vio_1=14"/>
+    <Object name="DEMO_i/xlslice_0_Dout[9:0]" gui_info="hw_vios/hw_vio_1=2"/>
+    <Object name="DEMO_i/xlslice_3_Dout" gui_info="hw_vios/hw_vio_1=11"/>
+    <Object name="DEMO_i/xlslice_4_Dout[31:0]" gui_info="hw_vios/hw_vio_1=13"/>
+    <Object name="DEMO_i/xlslice_5_Dout[255:0]" gui_info="hw_vios/hw_vio_1=19"/>
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
   </ObjectList>
   <ObjectList object_type="hw_sysmon" gui_info="">
     <Object name="XADC" gui_info="hw_vios=[TEMPERATURE=-65281;SCAN_RATE=1000;TRACK_TIME=1;]"/>
@@ -875,6 +902,11 @@
         <Option Id="SOURCE" value="netlist"/>
       </probeOptions>
       <nets>
+        <net name="DEMO_i/axi_gpio_1_gpio_io_o[14]"/>
+        <net name="DEMO_i/axi_gpio_1_gpio_io_o[13]"/>
+        <net name="DEMO_i/axi_gpio_1_gpio_io_o[12]"/>
+        <net name="DEMO_i/axi_gpio_1_gpio_io_o[11]"/>
+        <net name="DEMO_i/axi_gpio_1_gpio_io_o[10]"/>
         <net name="DEMO_i/axi_gpio_1_gpio_io_o[9]"/>
         <net name="DEMO_i/axi_gpio_1_gpio_io_o[8]"/>
         <net name="DEMO_i/axi_gpio_1_gpio_io_o[7]"/>
@@ -885,6 +917,176 @@
         <net name="DEMO_i/axi_gpio_1_gpio_io_o[2]"/>
         <net name="DEMO_i/axi_gpio_1_gpio_io_o[1]"/>
         <net name="DEMO_i/axi_gpio_1_gpio_io_o[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="DEMO_i/axi_gpio_1_gpio_io_o[9]"/>
+        <net name="DEMO_i/axi_gpio_1_gpio_io_o[8]"/>
+        <net name="DEMO_i/axi_gpio_1_gpio_io_o[7]"/>
+        <net name="DEMO_i/axi_gpio_1_gpio_io_o[6]"/>
+        <net name="DEMO_i/axi_gpio_1_gpio_io_o[5]"/>
+        <net name="DEMO_i/axi_gpio_1_gpio_io_o[4]"/>
+        <net name="DEMO_i/axi_gpio_1_gpio_io_o[3]"/>
+        <net name="DEMO_i/axi_gpio_1_gpio_io_o[2]"/>
+        <net name="DEMO_i/axi_gpio_1_gpio_io_o[1]"/>
+        <net name="DEMO_i/axi_gpio_1_gpio_io_o[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="DEMO_i/blk_mem_gen_0_douta[63]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[62]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[61]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[60]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[59]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[58]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[57]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[56]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[55]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[54]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[53]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[52]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[51]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[50]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[49]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[48]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[47]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[46]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[45]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[44]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[43]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[42]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[41]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[40]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[39]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[38]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[37]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[36]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[35]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[34]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[33]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[32]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[31]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[30]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[29]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[28]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[27]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[26]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[25]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[24]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[23]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[22]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[21]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[20]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[19]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[18]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[17]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[16]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[15]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[14]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[13]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[12]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[11]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[10]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[9]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[8]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[7]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[6]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[5]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[4]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[3]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[2]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[1]"/>
+        <net name="DEMO_i/blk_mem_gen_0_douta[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="DEMO_i/circular_buffer_0_full_counter_out[5]"/>
+        <net name="DEMO_i/circular_buffer_0_full_counter_out[4]"/>
+        <net name="DEMO_i/circular_buffer_0_full_counter_out[3]"/>
+        <net name="DEMO_i/circular_buffer_0_full_counter_out[2]"/>
+        <net name="DEMO_i/circular_buffer_0_full_counter_out[1]"/>
+        <net name="DEMO_i/circular_buffer_0_full_counter_out[0]"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="DEMO_i/circular_buffer_0_full_out"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="net" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="BINARY"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="DEMO_i/circular_buffer_0_is_done"/>
+      </nets>
+    </probe>
+    <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">
+      <probeOptions Id="DebugProbeParams">
+        <Option Id="ACTIVITY_PERSISTENCE" value="SHORT"/>
+        <Option Id="DISPLAY_HINT" value=""/>
+        <Option Id="DISPLAY_VISIBILITY" value=""/>
+        <Option Id="HW_VIO" value="hw_vio_1"/>
+        <Option Id="INPUT_VALUE_RADIX" value="HEX"/>
+        <Option Id="NAME.CUSTOM" value=""/>
+        <Option Id="NAME.SELECT" value="Long"/>
+        <Option Id="SOURCE" value="netlist"/>
+      </probeOptions>
+      <nets>
+        <net name="DEMO_i/index_selector_0_output_index[3]"/>
+        <net name="DEMO_i/index_selector_0_output_index[2]"/>
+        <net name="DEMO_i/index_selector_0_output_index[1]"/>
+        <net name="DEMO_i/index_selector_0_output_index[0]"/>
       </nets>
     </probe>
     <probe type="vio_input" busType="bus" source="netlist" spec="VIO_INPUT_V2_RT">

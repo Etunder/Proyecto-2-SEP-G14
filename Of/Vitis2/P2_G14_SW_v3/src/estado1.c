@@ -46,9 +46,15 @@ int estado1_handler(int *opcion, int *cancion, int *wait)
             LCD_Clear(GUI_BACKGROUND);
             *cancion = *opcion;
             file_index = files_indexes[*cancion-1][moods-1];
+<<<<<<< HEAD
 			XTmrCtr_Start(&timer0, 0);
 			startIndex = 0;
 			playing = 1;
+=======
+            xil_printf("Sex");
+			XTmrCtr_Start(&timer0, 0);
+			xil_printf("O \r\n");
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
             *opcion = 1;
             *wait = 0;
         }

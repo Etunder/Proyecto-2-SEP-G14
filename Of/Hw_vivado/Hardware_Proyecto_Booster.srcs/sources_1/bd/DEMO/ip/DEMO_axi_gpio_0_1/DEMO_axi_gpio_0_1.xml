@@ -974,7 +974,11 @@ Each I/O pin of the AXI GPIO is individually programmable as an input or output 
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
+<<<<<<< HEAD
             <spirit:value>9:7e5e5818</spirit:value>
+=======
+            <spirit:value>9:ba380b82</spirit:value>
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -985,7 +989,11 @@ Each I/O pin of the AXI GPIO is individually programmable as an input or output 
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
+<<<<<<< HEAD
             <spirit:value>9:7e5e5818</spirit:value>
+=======
+            <spirit:value>9:ba380b82</spirit:value>
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1001,11 +1009,19 @@ Each I/O pin of the AXI GPIO is individually programmable as an input or output 
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< HEAD
             <spirit:value>Mon Jul 08 07:59:06 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:7e5e5818</spirit:value>
+=======
+            <spirit:value>Mon Jul 08 00:13:30 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:ba380b82</spirit:value>
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1034,7 +1050,11 @@ Each I/O pin of the AXI GPIO is individually programmable as an input or output 
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
+<<<<<<< HEAD
             <spirit:value>9:b49edc26</spirit:value>
+=======
+            <spirit:value>9:49651ceb</spirit:value>
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1050,11 +1070,19 @@ Each I/O pin of the AXI GPIO is individually programmable as an input or output 
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< HEAD
             <spirit:value>Mon Jul 08 07:59:06 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:b49edc26</spirit:value>
+=======
+            <spirit:value>Mon Jul 08 00:13:30 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:49651ceb</spirit:value>
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1068,11 +1096,19 @@ Each I/O pin of the AXI GPIO is individually programmable as an input or output 
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< HEAD
             <spirit:value>Mon Jul 08 07:59:06 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:7e5e5818</spirit:value>
+=======
+            <spirit:value>Mon Jul 08 00:13:31 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:ba380b82</spirit:value>
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1086,11 +1122,19 @@ Each I/O pin of the AXI GPIO is individually programmable as an input or output 
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
+<<<<<<< HEAD
             <spirit:value>Mon Jul 08 08:02:20 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
             <spirit:value>9:7e5e5818</spirit:value>
+=======
+            <spirit:value>Mon Jul 08 00:17:46 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:ba380b82</spirit:value>
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>

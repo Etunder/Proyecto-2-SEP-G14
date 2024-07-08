@@ -11,11 +11,19 @@
 
 #define TMR_DEVICE_ID_0          XPAR_TMRCTR_0_DEVICE_ID
 #define INTC_TMR_INTERRUPT_ID_0  XPAR_FABRIC_AXI_TIMER_0_INTERRUPT_INTR
+<<<<<<< HEAD
 #define FREQUENCY_RESET          0xFFFD93F4   // Por definir Real (FFFD93F4) Lento (FA0A1EFF)
 
 #define TMR_DEVICE_ID_1          XPAR_TMRCTR_1_DEVICE_ID
 #define INTC_TMR_INTERRUPT_ID_1  XPAR_FABRIC_AXI_TIMER_1_INTERRUPT_INTR
 #define CB_RESET                 0xFFFFF723  // Por definir Real (FFFFF723) Lento (FF67697F)
+=======
+#define FREQUENCY_RESET          0xFA0A1EFF   // Por definir Real (FFFFF723) Lento (FA0A1EFF)
+
+#define TMR_DEVICE_ID_1          XPAR_TMRCTR_1_DEVICE_ID
+#define INTC_TMR_INTERRUPT_ID_1  XPAR_FABRIC_AXI_TIMER_1_INTERRUPT_INTR
+#define CB_RESET                 0xFF67697F  // Por definir
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
 
 extern XTmrCtr timer0; // Para cambiar la frecuencia del buzzer
 extern XTmrCtr timer1; // Para actualizar el circular buffer

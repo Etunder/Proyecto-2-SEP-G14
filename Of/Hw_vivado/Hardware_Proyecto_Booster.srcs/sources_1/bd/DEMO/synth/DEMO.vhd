@@ -1,7 +1,11 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+<<<<<<< HEAD
 --Date        : Mon Jul  8 04:14:40 2024
+=======
+--Date        : Mon Jul  8 03:44:30 2024
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
 --Host        : DESKTOP-9CMCGP1 running 64-bit major release  (build 9200)
 --Command     : generate_target DEMO.bd
 --Design      : DEMO
@@ -2986,6 +2990,7 @@ architecture STRUCTURE of DEMO is
     Dout : out STD_LOGIC_VECTOR ( 255 downto 0 )
   );
   end component DEMO_xlslice_4_1;
+<<<<<<< HEAD
   component DEMO_ila_0_0 is
   port (
     clk : in STD_LOGIC;
@@ -3016,6 +3021,8 @@ architecture STRUCTURE of DEMO is
     Dout : out STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   end component DEMO_xlslice_2_1;
+=======
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
   component DEMO_BUZZER_0_0 is
   port (
     clk : in STD_LOGIC;
@@ -3027,6 +3034,39 @@ architecture STRUCTURE of DEMO is
     BUZZER_PWM : out STD_LOGIC
   );
   end component DEMO_BUZZER_0_0;
+<<<<<<< HEAD
+=======
+  component DEMO_ila_0_0 is
+  port (
+    clk : in STD_LOGIC;
+    probe0 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe1 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    probe2 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe3 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe4 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe5 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    probe6 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe7 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe8 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe9 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe10 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe11 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe12 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe13 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe14 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe15 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    probe16 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe17 : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    probe18 : in STD_LOGIC_VECTOR ( 2 downto 0 )
+  );
+  end component DEMO_ila_0_0;
+  component DEMO_xlslice_2_1 is
+  port (
+    Din : in STD_LOGIC_VECTOR ( 18 downto 0 );
+    Dout : out STD_LOGIC_VECTOR ( 3 downto 0 )
+  );
+  end component DEMO_xlslice_2_1;
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
   signal AXIFloat_0_XD : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal BTN_JY_0_1 : STD_LOGIC;
   signal BUZZER_0_BUZZER_PWM : STD_LOGIC;

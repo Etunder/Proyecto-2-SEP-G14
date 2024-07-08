@@ -103,6 +103,7 @@ timestamp=[2024-07-08 02:25:19], mode=BUILD, duration=0:00:02.788, duration_ms=2
 timestamp=[2024-07-08 02:37:09], mode=BUILD, duration=0:00:03.278, duration_ms=3278, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
 timestamp=[2024-07-08 02:39:21], mode=BUILD, duration=0:00:03.042, duration_ms=3042, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
 timestamp=[2024-07-08 02:42:12], mode=BUILD, duration=0:00:03.070, duration_ms=3070, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
+<<<<<<< HEAD
 timestamp=[2024-07-08 04:03:02], mode=WORKBENCH_START, duration=0:00:49.121, duration_ms=49121, data={}
 timestamp=[2024-07-08 04:03:04], mode=WORKBENCH_UI_INIT, duration=0:00:02.388, duration_ms=2388, data={editors_count=21, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=P2_G14_HW_v3,P2_G14_SW_v3,P2_G14_SW_v3_system,RemoteSystemsTempFiles}
 timestamp=[2024-07-08 04:03:07], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.331, duration_ms=331, data={}
@@ -161,3 +162,5 @@ timestamp=[2024-07-08 07:58:59], mode=BUILD, duration=0:00:01.771, duration_ms=1
 timestamp=[2024-07-08 07:59:21], mode=BUILD, duration=0:00:05.439, duration_ms=5439, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
 timestamp=[2024-07-08 08:00:58], mode=BUILD, duration=0:00:03.214, duration_ms=3214, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
 timestamp=[2024-07-08 08:02:06], mode=BUILD, duration=0:00:02.897, duration_ms=2897, data={name=P2_G14_SW_v3, configuration=Debug, clean_build=false}
+=======
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60

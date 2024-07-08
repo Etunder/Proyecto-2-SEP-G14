@@ -5177,6 +5177,7 @@ C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Vitis2/P2_G14_HW_v3/zynq_fsbl/zynq_
 
 TRACE::2024-07-07.21:21:21::SCWMssOS::Sw design exists and opened at  C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Vitis2/P2_G14_HW_v3/zynq_fsbl/zynq_fsbl_bsp/system.mss
 TRACE::2024-07-07.21:21:21::SCWMssOS::Removing the swdes entry for  C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Vitis2/P2_G14_HW_v3/zynq_fsbl/zynq_fsbl_bsp/system.mss
+<<<<<<< HEAD
 TRACE::2024-07-08.04:41:15::SCWPlatform::Trying to open the hw design at C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Vitis2/P2_G14_HW_v3/hw/DEMO_wrapper.xsa
 TRACE::2024-07-08.04:41:15::SCWPlatform::DSA given C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Vitis2/P2_G14_HW_v3/hw/DEMO_wrapper.xsa
 TRACE::2024-07-08.04:41:15::SCWPlatform::DSA absoulate path C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Vitis2/P2_G14_HW_v3/hw/DEMO_wrapper.xsa
@@ -5783,3 +5784,5 @@ TRACE::2024-07-08.04:41:46::SCWMssOS::DEBUG:  swdes dump  C:/Users/etien/Desktop
 C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Vitis2/P2_G14_HW_v3/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
 
 TRACE::2024-07-08.04:41:46::SCWMssOS::Sw design exists and opened at  C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Vitis2/P2_G14_HW_v3/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+=======
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60

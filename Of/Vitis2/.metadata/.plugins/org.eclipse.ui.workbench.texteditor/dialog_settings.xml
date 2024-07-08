@@ -8,7 +8,10 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
 			<item value="state"/>
+=======
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
 			<item value="AXIFLOAT"/>
 		</list>
 		<list key="replacehistory">
@@ -18,7 +21,12 @@
 		<item value="385" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="523" key="DIALOG_HEIGHT"/>
+<<<<<<< HEAD
 		<item value="1178" key="DIALOG_X_ORIGIN"/>
 		<item value="319" key="DIALOG_Y_ORIGIN"/>
+=======
+		<item value="1136" key="DIALOG_X_ORIGIN"/>
+		<item value="228" key="DIALOG_Y_ORIGIN"/>
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
 	</section>
 </section>

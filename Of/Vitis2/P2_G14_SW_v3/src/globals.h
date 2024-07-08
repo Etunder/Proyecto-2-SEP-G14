@@ -32,11 +32,15 @@ extern int moods;
 extern int file_index;
 extern int fft_start;
 extern int CB_update;
+<<<<<<< HEAD
 extern int out_fft_index;
+=======
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
 extern int fft_index;
 extern int full_out;
 extern int is_done;
 extern int fft_processing_done;
+<<<<<<< HEAD
 extern int fft_processing_done_flag;
 extern int playing;
 extern int fft_state;
@@ -47,6 +51,10 @@ extern int first_fft;
 extern int dia;
 extern int prev_dia;
 
+=======
+extern int circular_filing;
+extern int circular_sent;
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
 extern char files[MAX_FILES][256];
 extern ReadResult result;
 extern int startIndex;

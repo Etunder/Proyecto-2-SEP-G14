@@ -42,7 +42,11 @@ begin
         if (rising_edge(clk)) then
             FRECUENCIA <= NoteCounts(octave_int, note_int);
             FRECUENCIA_R <= to_unsigned(FRECUENCIA, 20);
+<<<<<<< HEAD
             temp_result <= resize(resize(POT1, 30) * resize(FRECUENCIA_R, 30),30);
+=======
+            temp_result <= resize(POT1, 30) * resize(FRECUENCIA_R, 30);
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
             AMPLITUD <= temp_result(29 downto 10);
             
             if (counter_PWM < FRECUENCIA_R) then

@@ -5,6 +5,7 @@
   <spirit:name>DEMO_xlslice_2_1</spirit:name>
   <spirit:version>1.0</spirit:version>
   <spirit:model>
+<<<<<<< HEAD
     <spirit:views>
       <spirit:view>
         <spirit:name>xilinx_verilogsynthesis</spirit:name>
@@ -98,6 +99,8 @@
         </spirit:parameters>
       </spirit:view>
     </spirit:views>
+=======
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
     <spirit:ports>
       <spirit:port>
         <spirit:name>Din</spirit:name>
@@ -110,8 +113,12 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic_vector</spirit:typeName>
+<<<<<<< HEAD
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
               <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+=======
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -127,8 +134,12 @@
           <spirit:wireTypeDefs>
             <spirit:wireTypeDef>
               <spirit:typeName>std_logic_vector</spirit:typeName>
+<<<<<<< HEAD
               <spirit:viewNameRef>xilinx_verilogsynthesis</spirit:viewNameRef>
               <spirit:viewNameRef>xilinx_verilogbehavioralsimulation</spirit:viewNameRef>
+=======
+              <spirit:viewNameRef>dummy_view</spirit:viewNameRef>
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
             </spirit:wireTypeDef>
           </spirit:wireTypeDefs>
         </spirit:wire>
@@ -152,6 +163,7 @@
       </spirit:modelParameter>
     </spirit:modelParameters>
   </spirit:model>
+<<<<<<< HEAD
   <spirit:fileSets>
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
@@ -187,6 +199,8 @@
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
+=======
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
   <spirit:description>Slices a number of bits off of Din input. dout = din[from_position : to_position]</spirit:description>
   <spirit:parameters>
     <spirit:parameter>

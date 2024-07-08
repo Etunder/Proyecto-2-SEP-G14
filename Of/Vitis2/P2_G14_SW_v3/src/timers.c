@@ -2,7 +2,10 @@
 #include "xil_io.h"
 #include "xtmrctr.h"
 #include "globals.h"
+<<<<<<< HEAD
 #include "utils.h"
+=======
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
 #include "sdFunctions.h"
 
 XTmrCtr timer0;
@@ -20,6 +23,7 @@ void TMR_Frequency_Handler(void *data)
 	if (!circular_filing && !circular_sent) {
 //		result = read64_fp(files[file_index], startIndex);
 		Status = result.status;
+<<<<<<< HEAD
 //		xil_printf("Start Index: %u \r\n", startIndex);
 
 		if (Status == FR_NO_FILE && startIndex != 0) { // Assumes empty buffer means end of data
@@ -36,6 +40,18 @@ void TMR_Frequency_Handler(void *data)
 		}
 		else {
 			startIndex += 64;
+=======
+		startIndex += 64;
+		xil_printf("Mateo \r\n");
+//		xil_printf("Start Index: %u \r\n", startIndex);
+
+		if (Status == FR_NO_FILE) { // Assumes empty buffer means end of data
+			xil_printf("No hay archivo \r\n");
+			XTmrCtr_Stop(data, 0);
+			XTmrCtr_Reset(data, 0);
+		}
+		else {
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
 			circular_sent = 1;
 			XTmrCtr_Stop(data, 0);
 			XTmrCtr_Reset(data, 0);
@@ -71,14 +87,21 @@ void TMR_CB_Handler(void *data)
 			XTmrCtr_Start(data, 0);
 		}
 		else {
+<<<<<<< HEAD
+=======
+			xil_printf("Termina primer Buffer \r\n");
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
 			XTmrCtr_Stop(data, 0);
 			XTmrCtr_Reset(data, 0);
 			circular_filing = 0;
 			song_counter = 0;
 		}
+<<<<<<< HEAD
 		if (song_counter == 63 && startIndex == 64) {
 			first_fft = 1;
 		}
+=======
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
 	}
 }
 

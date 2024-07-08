@@ -23,11 +23,17 @@ void update_sensor_values()
 
 void update_gpio_values()
 {
+<<<<<<< HEAD
 	int pot1_value = 0;
     if (playing == 1) {
     	pot1_value = atoi(pot1);
     }
     int concatenated_value = (((out_fft_index & 0xF) << 15) | ((CB_update & 0x1) << 14) | ((fft_start & 0x1) << 13) | ((moods & 0x7) << 10) | (pot1_value & 0x3FF));
+=======
+    int pot1_value = atoi(pot1);
+
+    int concatenated_value = (((CB_update & 0x1) << 14) | ((fft_start & 0x1) << 13) | ((moods & 0x7) << 10) | (pot1_value & 0x3FF));
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
     uint32_t commandline;
     XGpio_DiscreteWrite(&gpio1, POT1_pin, concatenated_value);
 

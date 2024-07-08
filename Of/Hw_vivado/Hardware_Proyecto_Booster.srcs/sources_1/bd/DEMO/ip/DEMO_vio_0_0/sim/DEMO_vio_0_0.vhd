@@ -53,7 +53,11 @@ USE ieee.numeric_std.ALL;
 ENTITY DEMO_vio_0_0 IS
 PORT (
 CLK : IN STD_LOGIC;
+<<<<<<< HEAD
 probe_in0 : IN STD_LOGIC_VECTOR(18 DOWNTO 0);
+=======
+probe_in0 : IN STD_LOGIC_VECTOR(14 DOWNTO 0);
+>>>>>>> dd5b7ffe83eb139edfc02be77ec7b79a8fa68d60
 probe_in1 : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
 probe_in2 : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
 probe_in3 : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
