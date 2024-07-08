@@ -1,8 +1,8 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Sun Jul  7 18:19:35 2024
---Host        : DESKTOP-AVIBNI3 running 64-bit major release  (build 9200)
+--Date        : Mon Jul  8 04:14:40 2024
+--Host        : DESKTOP-9CMCGP1 running 64-bit major release  (build 9200)
 --Command     : generate_target DEMO.bd
 --Design      : DEMO
 --Purpose     : IP block netlist
@@ -2500,21 +2500,18 @@ entity DEMO is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
-    LEDB : out STD_LOGIC;
-    LEDG : out STD_LOGIC;
-    LEDR : out STD_LOGIC;
     LEDS : out STD_LOGIC_VECTOR ( 3 downto 0 );
     MOSI : out STD_LOGIC;
     RST_tri_o : out STD_LOGIC_VECTOR ( 0 to 0 );
     RS_tri_o : out STD_LOGIC_VECTOR ( 0 to 0 );
     SCLK : out STD_LOGIC;
-    clk : in STD_LOGIC;
     iic_rtl_scl_i : in STD_LOGIC;
     iic_rtl_scl_o : out STD_LOGIC;
     iic_rtl_scl_t : out STD_LOGIC;
     iic_rtl_sda_i : in STD_LOGIC;
     iic_rtl_sda_o : out STD_LOGIC;
     iic_rtl_sda_t : out STD_LOGIC;
+    itr_l : in STD_LOGIC_VECTOR ( 0 to 0 );
     spi_rtl_io0_i : in STD_LOGIC;
     spi_rtl_io0_o : out STD_LOGIC;
     spi_rtl_io0_t : out STD_LOGIC;
@@ -2526,10 +2523,11 @@ entity DEMO is
     spi_rtl_sck_t : out STD_LOGIC;
     spi_rtl_ss_i : in STD_LOGIC_VECTOR ( 0 to 0 );
     spi_rtl_ss_o : out STD_LOGIC_VECTOR ( 0 to 0 );
-    spi_rtl_ss_t : out STD_LOGIC
+    spi_rtl_ss_t : out STD_LOGIC;
+    sys_clock : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of DEMO : entity is "DEMO,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=DEMO,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=27,numReposBlks=17,numNonXlnxBlks=0,numHierBlks=10,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=10,da_board_cnt=11,da_clkrst_cnt=2,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of DEMO : entity is "DEMO,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=DEMO,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=39,numReposBlks=29,numNonXlnxBlks=0,numHierBlks=10,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=10,da_board_cnt=11,da_clkrst_cnt=2,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of DEMO : entity is "DEMO.hwdef";
 end DEMO;
@@ -2538,11 +2536,26 @@ architecture STRUCTURE of DEMO is
   component DEMO_vio_0_0 is
   port (
     clk : in STD_LOGIC;
-    probe_in0 : in STD_LOGIC_VECTOR ( 12 downto 0 );
-    probe_in1 : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    probe_in0 : in STD_LOGIC_VECTOR ( 18 downto 0 );
+    probe_in1 : in STD_LOGIC_VECTOR ( 3 downto 0 );
     probe_in2 : in STD_LOGIC_VECTOR ( 31 downto 0 );
     probe_in3 : in STD_LOGIC_VECTOR ( 9 downto 0 );
-    probe_in4 : in STD_LOGIC_VECTOR ( 2 downto 0 )
+    probe_in4 : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    probe_in5 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe_in6 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe_in7 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe_in8 : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    probe_in9 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe_in10 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe_in11 : in STD_LOGIC_VECTOR ( 63 downto 0 );
+    probe_in12 : in STD_LOGIC_VECTOR ( 255 downto 0 );
+    probe_in13 : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    probe_in14 : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    probe_in15 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe_in16 : in STD_LOGIC_VECTOR ( 4 downto 0 );
+    probe_in17 : in STD_LOGIC_VECTOR ( 5 downto 0 );
+    probe_in18 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    probe_out0 : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component DEMO_vio_0_0;
   component DEMO_AXIFloat_0_0 is
@@ -2617,8 +2630,8 @@ architecture STRUCTURE of DEMO is
     s_axi_rresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_rvalid : out STD_LOGIC;
     s_axi_rready : in STD_LOGIC;
-    gpio_io_o : out STD_LOGIC_VECTOR ( 12 downto 0 );
-    gpio2_io_o : out STD_LOGIC_VECTOR ( 9 downto 0 )
+    gpio_io_o : out STD_LOGIC_VECTOR ( 18 downto 0 );
+    gpio2_io_i : in STD_LOGIC_VECTOR ( 6 downto 0 )
   );
   end component DEMO_axi_gpio_0_1;
   component DEMO_axi_iic_0_1 is
@@ -2770,7 +2783,7 @@ architecture STRUCTURE of DEMO is
     M_AXI_GP0_BRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
     M_AXI_GP0_RRESP : in STD_LOGIC_VECTOR ( 1 downto 0 );
     M_AXI_GP0_RDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    IRQ_F2P : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    IRQ_F2P : in STD_LOGIC_VECTOR ( 2 downto 0 );
     FCLK_CLK0 : out STD_LOGIC;
     FCLK_RESET0_N : out STD_LOGIC;
     MIO : inout STD_LOGIC_VECTOR ( 53 downto 0 );
@@ -2874,46 +2887,163 @@ architecture STRUCTURE of DEMO is
   port (
     In0 : in STD_LOGIC_VECTOR ( 0 to 0 );
     In1 : in STD_LOGIC_VECTOR ( 0 to 0 );
-    dout : out STD_LOGIC_VECTOR ( 1 downto 0 )
+    In2 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    dout : out STD_LOGIC_VECTOR ( 2 downto 0 )
   );
   end component DEMO_xlconcat_0_0;
+  component DEMO_xlslice_0_0 is
+  port (
+    Din : in STD_LOGIC_VECTOR ( 18 downto 0 );
+    Dout : out STD_LOGIC_VECTOR ( 9 downto 0 )
+  );
+  end component DEMO_xlslice_0_0;
+  component DEMO_xlslice_1_0 is
+  port (
+    Din : in STD_LOGIC_VECTOR ( 18 downto 0 );
+    Dout : out STD_LOGIC_VECTOR ( 2 downto 0 )
+  );
+  end component DEMO_xlslice_1_0;
+  component DEMO_circular_buffer_0_0 is
+  port (
+    clk : in STD_LOGIC;
+    fft_done : in STD_LOGIC;
+    is_done : out STD_LOGIC;
+    vector_32_bits : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    vector_64x32_bits : out STD_LOGIC_VECTOR ( 2047 downto 0 );
+    full_out : out STD_LOGIC;
+    full_counter_out : out STD_LOGIC_VECTOR ( 5 downto 0 )
+  );
+  end component DEMO_circular_buffer_0_0;
+  component DEMO_FFT_0_0 is
+  port (
+    clk : in STD_LOGIC;
+    rst : in STD_LOGIC;
+    sample_vector : in STD_LOGIC_VECTOR ( 2047 downto 0 );
+    start : in STD_LOGIC;
+    fft_output : out STD_LOGIC_VECTOR ( 383 downto 0 );
+    fft_processing_done : out STD_LOGIC;
+    ROM_data : in STD_LOGIC_VECTOR ( 63 downto 0 );
+    addr : out STD_LOGIC_VECTOR ( 9 downto 0 );
+    out_state : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    coef_received_out : out STD_LOGIC;
+    partial_done_count_out : out STD_LOGIC_VECTOR ( 4 downto 0 );
+    rom_index_out : out STD_LOGIC_VECTOR ( 5 downto 0 );
+    load_count_out : out STD_LOGIC_VECTOR ( 3 downto 0 )
+  );
+  end component DEMO_FFT_0_0;
+  component DEMO_index_selector_0_0 is
+  port (
+    clk : in STD_LOGIC;
+    long_vector : in STD_LOGIC_VECTOR ( 383 downto 0 );
+    output_index : out STD_LOGIC_VECTOR ( 3 downto 0 )
+  );
+  end component DEMO_index_selector_0_0;
+  component DEMO_blk_mem_gen_0_0 is
+  port (
+    clka : in STD_LOGIC;
+    addra : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    douta : out STD_LOGIC_VECTOR ( 63 downto 0 )
+  );
+  end component DEMO_blk_mem_gen_0_0;
+  component DEMO_clk_wiz_0_0 is
+  port (
+    reset : in STD_LOGIC;
+    clk_in1 : in STD_LOGIC;
+    clk_out1 : out STD_LOGIC;
+    locked : out STD_LOGIC
+  );
+  end component DEMO_clk_wiz_0_0;
+  component DEMO_xlslice_1_1 is
+  port (
+    Din : in STD_LOGIC_VECTOR ( 18 downto 0 );
+    Dout : out STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  end component DEMO_xlslice_1_1;
+  component DEMO_xlslice_2_0 is
+  port (
+    Din : in STD_LOGIC_VECTOR ( 18 downto 0 );
+    Dout : out STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  end component DEMO_xlslice_2_0;
+  component DEMO_xlconcat_1_0 is
+  port (
+    In0 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    In1 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    In2 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    In3 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    dout : out STD_LOGIC_VECTOR ( 6 downto 0 )
+  );
+  end component DEMO_xlconcat_1_0;
+  component DEMO_xlslice_4_0 is
+  port (
+    Din : in STD_LOGIC_VECTOR ( 2047 downto 0 );
+    Dout : out STD_LOGIC_VECTOR ( 31 downto 0 )
+  );
+  end component DEMO_xlslice_4_0;
+  component DEMO_xlslice_4_1 is
+  port (
+    Din : in STD_LOGIC_VECTOR ( 383 downto 0 );
+    Dout : out STD_LOGIC_VECTOR ( 255 downto 0 )
+  );
+  end component DEMO_xlslice_4_1;
+  component DEMO_ila_0_0 is
+  port (
+    clk : in STD_LOGIC;
+    probe0 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe1 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    probe2 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe3 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe4 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe5 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    probe6 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe7 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe8 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe9 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe10 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe11 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe12 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe13 : in STD_LOGIC_VECTOR ( 1 downto 0 );
+    probe14 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe15 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    probe16 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe17 : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    probe18 : in STD_LOGIC_VECTOR ( 2 downto 0 )
+  );
+  end component DEMO_ila_0_0;
+  component DEMO_xlslice_2_1 is
+  port (
+    Din : in STD_LOGIC_VECTOR ( 18 downto 0 );
+    Dout : out STD_LOGIC_VECTOR ( 3 downto 0 )
+  );
+  end component DEMO_xlslice_2_1;
   component DEMO_BUZZER_0_0 is
   port (
     clk : in STD_LOGIC;
     BTN_JY : in STD_LOGIC;
     MOOD : in STD_LOGIC_VECTOR ( 2 downto 0 );
     POT1 : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    INDEX : in STD_LOGIC_VECTOR ( 3 downto 0 );
     LEDS : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    LEDR : out STD_LOGIC;
-    LEDG : out STD_LOGIC;
-    LEDB : out STD_LOGIC;
     BUZZER_PWM : out STD_LOGIC
   );
   end component DEMO_BUZZER_0_0;
-  component DEMO_xlslice_0_0 is
-  port (
-    Din : in STD_LOGIC_VECTOR ( 12 downto 0 );
-    Dout : out STD_LOGIC_VECTOR ( 9 downto 0 )
-  );
-  end component DEMO_xlslice_0_0;
-  component DEMO_xlslice_1_0 is
-  port (
-    Din : in STD_LOGIC_VECTOR ( 12 downto 0 );
-    Dout : out STD_LOGIC_VECTOR ( 2 downto 0 )
-  );
-  end component DEMO_xlslice_1_0;
   signal AXIFloat_0_XD : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal BTN_JY_0_1 : STD_LOGIC;
   signal BUZZER_0_BUZZER_PWM : STD_LOGIC;
-  signal BUZZER_0_LEDB : STD_LOGIC;
-  signal BUZZER_0_LEDG : STD_LOGIC;
-  signal BUZZER_0_LEDR : STD_LOGIC;
   signal BUZZER_0_LEDS : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal FFT_0_addr : STD_LOGIC_VECTOR ( 9 downto 0 );
+  signal FFT_0_coef_received_out : STD_LOGIC;
+  signal FFT_0_fft_output : STD_LOGIC_VECTOR ( 383 downto 0 );
+  signal FFT_0_fft_processing_done : STD_LOGIC;
+  signal FFT_0_load_count_out : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal FFT_0_out_state : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal FFT_0_partial_done_count_out : STD_LOGIC_VECTOR ( 4 downto 0 );
+  signal FFT_0_rom_index_out : STD_LOGIC_VECTOR ( 5 downto 0 );
+  signal In2_0_1 : STD_LOGIC_VECTOR ( 0 to 0 );
   signal Net : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal axi_gpio_0_GPIO2_TRI_O : STD_LOGIC_VECTOR ( 0 to 0 );
   signal axi_gpio_0_GPIO_TRI_O : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal axi_gpio_1_gpio2_io_o : STD_LOGIC_VECTOR ( 9 downto 0 );
-  signal axi_gpio_1_gpio_io_o : STD_LOGIC_VECTOR ( 12 downto 0 );
+  signal axi_gpio_1_gpio_io_o : STD_LOGIC_VECTOR ( 18 downto 0 );
   signal axi_iic_0_IIC_SCL_I : STD_LOGIC;
   signal axi_iic_0_IIC_SCL_O : STD_LOGIC;
   signal axi_iic_0_IIC_SCL_T : STD_LOGIC;
@@ -2937,7 +3067,13 @@ architecture STRUCTURE of DEMO is
   signal axi_quad_spi_1_SPI_0_SS_T : STD_LOGIC;
   signal axi_timer_0_interrupt : STD_LOGIC;
   signal axi_timer_1_interrupt : STD_LOGIC;
+  signal blk_mem_gen_0_douta : STD_LOGIC_VECTOR ( 63 downto 0 );
+  signal circular_buffer_0_full_counter_out : STD_LOGIC_VECTOR ( 5 downto 0 );
+  signal circular_buffer_0_full_out : STD_LOGIC;
+  signal circular_buffer_0_is_done : STD_LOGIC;
+  signal circular_buffer_0_vector_64x32_bits : STD_LOGIC_VECTOR ( 2047 downto 0 );
   signal clk_0_1 : STD_LOGIC;
+  signal index_selector_0_output_index : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal processing_system7_0_DDR_CAS_N : STD_LOGIC;
@@ -3138,8 +3274,16 @@ architecture STRUCTURE of DEMO is
   signal ps7_0_axi_periph_M07_AXI_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal ps7_0_axi_periph_M07_AXI_WVALID : STD_LOGIC;
   signal rst_ps7_0_50M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal xlconcat_0_dout : STD_LOGIC_VECTOR ( 1 downto 0 );
+  signal sys_clock_1 : STD_LOGIC;
+  signal vio_0_probe_out0 : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal xlconcat_0_dout : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal xlconcat_1_dout : STD_LOGIC_VECTOR ( 6 downto 0 );
   signal xlslice_0_Dout : STD_LOGIC_VECTOR ( 9 downto 0 );
+  signal xlslice_2_Dout : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal xlslice_3_Dout : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal xlslice_4_Dout : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal xlslice_5_Dout : STD_LOGIC_VECTOR ( 255 downto 0 );
+  signal xlslice_6_Dout : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_axi_iic_0_iic2intc_irpt_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_iic_0_gpo_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_axi_quad_spi_0_io0_o_UNCONNECTED : STD_LOGIC;
@@ -3155,6 +3299,7 @@ architecture STRUCTURE of DEMO is
   signal NLW_axi_timer_1_generateout0_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_timer_1_generateout1_UNCONNECTED : STD_LOGIC;
   signal NLW_axi_timer_1_pwm0_UNCONNECTED : STD_LOGIC;
+  signal NLW_clk_wiz_0_locked_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_USB0_VBUS_PWRSELECT_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_USB0_PORT_INDCTL_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_rst_ps7_0_50M_mb_reset_UNCONNECTED : STD_LOGIC;
@@ -3178,8 +3323,6 @@ architecture STRUCTURE of DEMO is
   attribute X_INTERFACE_INFO of FIXED_IO_ps_clk : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK";
   attribute X_INTERFACE_INFO of FIXED_IO_ps_porb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB";
   attribute X_INTERFACE_INFO of FIXED_IO_ps_srstb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB";
-  attribute X_INTERFACE_INFO of clk : signal is "xilinx.com:signal:clock:1.0 CLK.CLK CLK";
-  attribute X_INTERFACE_PARAMETER of clk : signal is "XIL_INTERFACENAME CLK.CLK, CLK_DOMAIN DEMO_clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000";
   attribute X_INTERFACE_INFO of iic_rtl_scl_i : signal is "xilinx.com:interface:iic:1.0 iic_rtl SCL_I";
   attribute X_INTERFACE_INFO of iic_rtl_scl_o : signal is "xilinx.com:interface:iic:1.0 iic_rtl SCL_O";
   attribute X_INTERFACE_INFO of iic_rtl_scl_t : signal is "xilinx.com:interface:iic:1.0 iic_rtl SCL_T";
@@ -3196,6 +3339,8 @@ architecture STRUCTURE of DEMO is
   attribute X_INTERFACE_INFO of spi_rtl_sck_o : signal is "xilinx.com:interface:spi:1.0 spi_rtl SCK_O";
   attribute X_INTERFACE_INFO of spi_rtl_sck_t : signal is "xilinx.com:interface:spi:1.0 spi_rtl SCK_T";
   attribute X_INTERFACE_INFO of spi_rtl_ss_t : signal is "xilinx.com:interface:spi:1.0 spi_rtl SS_T";
+  attribute X_INTERFACE_INFO of sys_clock : signal is "xilinx.com:signal:clock:1.0 CLK.SYS_CLOCK CLK";
+  attribute X_INTERFACE_PARAMETER of sys_clock : signal is "XIL_INTERFACENAME CLK.SYS_CLOCK, CLK_DOMAIN DEMO_sys_clock, FREQ_HZ 125000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000";
   attribute X_INTERFACE_INFO of DDR_addr : signal is "xilinx.com:interface:ddrx:1.0 DDR ADDR";
   attribute X_INTERFACE_PARAMETER of DDR_addr : signal is "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250";
   attribute X_INTERFACE_INFO of DDR_ba : signal is "xilinx.com:interface:ddrx:1.0 DDR BA";
@@ -3212,9 +3357,7 @@ begin
   BTN_JY_0_1 <= BTN_JY;
   BUZZER_PWM <= BUZZER_0_BUZZER_PWM;
   CS(0) <= axi_quad_spi_0_ss_o(0);
-  LEDB <= BUZZER_0_LEDB;
-  LEDG <= BUZZER_0_LEDG;
-  LEDR <= BUZZER_0_LEDR;
+  In2_0_1(0) <= itr_l(0);
   LEDS(3 downto 0) <= BUZZER_0_LEDS(3 downto 0);
   MOSI <= axi_quad_spi_0_io1_o;
   RST_tri_o(0) <= axi_gpio_0_GPIO2_TRI_O(0);
@@ -3226,7 +3369,6 @@ begin
   axi_quad_spi_1_SPI_0_IO1_I <= spi_rtl_io1_i;
   axi_quad_spi_1_SPI_0_SCK_I <= spi_rtl_sck_i;
   axi_quad_spi_1_SPI_0_SS_I(0) <= spi_rtl_ss_i(0);
-  clk_0_1 <= clk;
   iic_rtl_scl_o <= axi_iic_0_IIC_SCL_O;
   iic_rtl_scl_t <= axi_iic_0_IIC_SCL_T;
   iic_rtl_sda_o <= axi_iic_0_IIC_SDA_O;
@@ -3239,6 +3381,7 @@ begin
   spi_rtl_sck_t <= axi_quad_spi_1_SPI_0_SCK_T;
   spi_rtl_ss_o(0) <= axi_quad_spi_1_SPI_0_SS_O(0);
   spi_rtl_ss_t <= axi_quad_spi_1_SPI_0_SS_T;
+  sys_clock_1 <= sys_clock;
 AXIFloat_0: component DEMO_AXIFloat_0_0
      port map (
       XD(31 downto 0) => AXIFloat_0_XD(31 downto 0),
@@ -3268,13 +3411,27 @@ BUZZER_0: component DEMO_BUZZER_0_0
      port map (
       BTN_JY => BTN_JY_0_1,
       BUZZER_PWM => BUZZER_0_BUZZER_PWM,
-      LEDB => BUZZER_0_LEDB,
-      LEDG => BUZZER_0_LEDG,
-      LEDR => BUZZER_0_LEDR,
+      INDEX(3 downto 0) => xlslice_6_Dout(3 downto 0),
       LEDS(3 downto 0) => BUZZER_0_LEDS(3 downto 0),
       MOOD(2 downto 0) => Net(2 downto 0),
       POT1(9 downto 0) => xlslice_0_Dout(9 downto 0),
       clk => clk_0_1
+    );
+FFT_0: component DEMO_FFT_0_0
+     port map (
+      ROM_data(63 downto 0) => blk_mem_gen_0_douta(63 downto 0),
+      addr(9 downto 0) => FFT_0_addr(9 downto 0),
+      clk => clk_0_1,
+      coef_received_out => FFT_0_coef_received_out,
+      fft_output(383 downto 0) => FFT_0_fft_output(383 downto 0),
+      fft_processing_done => FFT_0_fft_processing_done,
+      load_count_out(3 downto 0) => FFT_0_load_count_out(3 downto 0),
+      out_state(2 downto 0) => FFT_0_out_state(2 downto 0),
+      partial_done_count_out(4 downto 0) => FFT_0_partial_done_count_out(4 downto 0),
+      rom_index_out(5 downto 0) => FFT_0_rom_index_out(5 downto 0),
+      rst => vio_0_probe_out0(0),
+      sample_vector(2047 downto 0) => circular_buffer_0_vector_64x32_bits(2047 downto 0),
+      start => xlslice_3_Dout(0)
     );
 axi_gpio_0: component DEMO_axi_gpio_0_0
      port map (
@@ -3302,8 +3459,8 @@ axi_gpio_0: component DEMO_axi_gpio_0_0
     );
 axi_gpio_1: component DEMO_axi_gpio_0_1
      port map (
-      gpio2_io_o(9 downto 0) => axi_gpio_1_gpio2_io_o(9 downto 0),
-      gpio_io_o(12 downto 0) => axi_gpio_1_gpio_io_o(12 downto 0),
+      gpio2_io_i(6 downto 0) => xlconcat_1_dout(6 downto 0),
+      gpio_io_o(18 downto 0) => axi_gpio_1_gpio_io_o(18 downto 0),
       s_axi_aclk => processing_system7_0_FCLK_CLK0,
       s_axi_araddr(8 downto 0) => ps7_0_axi_periph_M04_AXI_ARADDR(8 downto 0),
       s_axi_aresetn => rst_ps7_0_50M_peripheral_aresetn(0),
@@ -3484,6 +3641,58 @@ axi_timer_1: component DEMO_axi_timer_1_0
       s_axi_wstrb(3 downto 0) => ps7_0_axi_periph_M07_AXI_WSTRB(3 downto 0),
       s_axi_wvalid => ps7_0_axi_periph_M07_AXI_WVALID
     );
+blk_mem_gen_0: component DEMO_blk_mem_gen_0_0
+     port map (
+      addra(9 downto 0) => FFT_0_addr(9 downto 0),
+      clka => clk_0_1,
+      douta(63 downto 0) => blk_mem_gen_0_douta(63 downto 0)
+    );
+circular_buffer_0: component DEMO_circular_buffer_0_0
+     port map (
+      clk => clk_0_1,
+      fft_done => xlslice_2_Dout(0),
+      full_counter_out(5 downto 0) => circular_buffer_0_full_counter_out(5 downto 0),
+      full_out => circular_buffer_0_full_out,
+      is_done => circular_buffer_0_is_done,
+      vector_32_bits(31 downto 0) => AXIFloat_0_XD(31 downto 0),
+      vector_64x32_bits(2047 downto 0) => circular_buffer_0_vector_64x32_bits(2047 downto 0)
+    );
+clk_wiz_0: component DEMO_clk_wiz_0_0
+     port map (
+      clk_in1 => sys_clock_1,
+      clk_out1 => clk_0_1,
+      locked => NLW_clk_wiz_0_locked_UNCONNECTED,
+      reset => '0'
+    );
+ila_0: component DEMO_ila_0_0
+     port map (
+      clk => processing_system7_0_FCLK_CLK0,
+      probe0(0) => ps7_0_axi_periph_M05_AXI_WREADY,
+      probe1(3 downto 0) => ps7_0_axi_periph_M05_AXI_AWADDR(3 downto 0),
+      probe10(31 downto 0) => ps7_0_axi_periph_M05_AXI_RDATA(31 downto 0),
+      probe11(0) => ps7_0_axi_periph_M05_AXI_AWVALID,
+      probe12(0) => ps7_0_axi_periph_M05_AXI_AWREADY,
+      probe13(1 downto 0) => ps7_0_axi_periph_M05_AXI_RRESP(1 downto 0),
+      probe14(31 downto 0) => ps7_0_axi_periph_M05_AXI_WDATA(31 downto 0),
+      probe15(3 downto 0) => ps7_0_axi_periph_M05_AXI_WSTRB(3 downto 0),
+      probe16(0) => ps7_0_axi_periph_M05_AXI_RVALID,
+      probe17(2 downto 0) => ps7_0_axi_periph_M05_AXI_ARPROT(2 downto 0),
+      probe18(2 downto 0) => ps7_0_axi_periph_M05_AXI_AWPROT(2 downto 0),
+      probe2(1 downto 0) => ps7_0_axi_periph_M05_AXI_BRESP(1 downto 0),
+      probe3(0) => ps7_0_axi_periph_M05_AXI_BVALID,
+      probe4(0) => ps7_0_axi_periph_M05_AXI_BREADY,
+      probe5(3 downto 0) => ps7_0_axi_periph_M05_AXI_ARADDR(3 downto 0),
+      probe6(0) => ps7_0_axi_periph_M05_AXI_RREADY,
+      probe7(0) => ps7_0_axi_periph_M05_AXI_WVALID,
+      probe8(0) => ps7_0_axi_periph_M05_AXI_ARVALID,
+      probe9(0) => ps7_0_axi_periph_M05_AXI_ARREADY
+    );
+index_selector_0: component DEMO_index_selector_0_0
+     port map (
+      clk => clk_0_1,
+      long_vector(383 downto 0) => FFT_0_fft_output(383 downto 0),
+      output_index(3 downto 0) => index_selector_0_output_index(3 downto 0)
+    );
 processing_system7_0: component DEMO_processing_system7_0_0
      port map (
       DDR_Addr(14 downto 0) => DDR_addr(14 downto 0),
@@ -3505,7 +3714,7 @@ processing_system7_0: component DEMO_processing_system7_0_0
       DDR_WEB => DDR_we_n,
       FCLK_CLK0 => processing_system7_0_FCLK_CLK0,
       FCLK_RESET0_N => processing_system7_0_FCLK_RESET0_N,
-      IRQ_F2P(1 downto 0) => xlconcat_0_dout(1 downto 0),
+      IRQ_F2P(2 downto 0) => xlconcat_0_dout(2 downto 0),
       MIO(53 downto 0) => FIXED_IO_mio(53 downto 0),
       M_AXI_GP0_ACLK => processing_system7_0_FCLK_CLK0,
       M_AXI_GP0_ARADDR(31 downto 0) => processing_system7_0_M_AXI_GP0_ARADDR(31 downto 0),
@@ -3768,26 +3977,75 @@ rst_ps7_0_50M: component DEMO_rst_ps7_0_50M_0
 vio_0: component DEMO_vio_0_0
      port map (
       clk => clk_0_1,
-      probe_in0(12 downto 0) => axi_gpio_1_gpio_io_o(12 downto 0),
-      probe_in1(9 downto 0) => axi_gpio_1_gpio2_io_o(9 downto 0),
+      probe_in0(18 downto 0) => axi_gpio_1_gpio_io_o(18 downto 0),
+      probe_in1(3 downto 0) => index_selector_0_output_index(3 downto 0),
+      probe_in10(0) => xlslice_3_Dout(0),
+      probe_in11(63 downto 0) => blk_mem_gen_0_douta(63 downto 0),
+      probe_in12(255 downto 0) => xlslice_5_Dout(255 downto 0),
+      probe_in13(9 downto 0) => FFT_0_addr(9 downto 0),
+      probe_in14(2 downto 0) => FFT_0_out_state(2 downto 0),
+      probe_in15(0) => FFT_0_coef_received_out,
+      probe_in16(4 downto 0) => FFT_0_partial_done_count_out(4 downto 0),
+      probe_in17(5 downto 0) => FFT_0_rom_index_out(5 downto 0),
+      probe_in18(3 downto 0) => FFT_0_load_count_out(3 downto 0),
       probe_in2(31 downto 0) => AXIFloat_0_XD(31 downto 0),
       probe_in3(9 downto 0) => xlslice_0_Dout(9 downto 0),
-      probe_in4(2 downto 0) => Net(2 downto 0)
+      probe_in4(2 downto 0) => Net(2 downto 0),
+      probe_in5(31 downto 0) => AXIFloat_0_XD(31 downto 0),
+      probe_in6(0) => circular_buffer_0_is_done,
+      probe_in7(0) => circular_buffer_0_full_out,
+      probe_in8(5 downto 0) => circular_buffer_0_full_counter_out(5 downto 0),
+      probe_in9(31 downto 0) => xlslice_4_Dout(31 downto 0),
+      probe_out0(0) => vio_0_probe_out0(0)
     );
 xlconcat_0: component DEMO_xlconcat_0_0
      port map (
       In0(0) => axi_timer_1_interrupt,
       In1(0) => axi_timer_0_interrupt,
-      dout(1 downto 0) => xlconcat_0_dout(1 downto 0)
+      In2(0) => In2_0_1(0),
+      dout(2 downto 0) => xlconcat_0_dout(2 downto 0)
+    );
+xlconcat_1: component DEMO_xlconcat_1_0
+     port map (
+      In0(0) => FFT_0_fft_processing_done,
+      In1(0) => circular_buffer_0_is_done,
+      In2(0) => circular_buffer_0_full_out,
+      In3(3 downto 0) => index_selector_0_output_index(3 downto 0),
+      dout(6 downto 0) => xlconcat_1_dout(6 downto 0)
     );
 xlslice_0: component DEMO_xlslice_0_0
      port map (
-      Din(12 downto 0) => axi_gpio_1_gpio_io_o(12 downto 0),
+      Din(18 downto 0) => axi_gpio_1_gpio_io_o(18 downto 0),
       Dout(9 downto 0) => xlslice_0_Dout(9 downto 0)
     );
 xlslice_1: component DEMO_xlslice_1_0
      port map (
-      Din(12 downto 0) => axi_gpio_1_gpio_io_o(12 downto 0),
+      Din(18 downto 0) => axi_gpio_1_gpio_io_o(18 downto 0),
       Dout(2 downto 0) => Net(2 downto 0)
+    );
+xlslice_2: component DEMO_xlslice_1_1
+     port map (
+      Din(18 downto 0) => axi_gpio_1_gpio_io_o(18 downto 0),
+      Dout(0) => xlslice_2_Dout(0)
+    );
+xlslice_3: component DEMO_xlslice_2_0
+     port map (
+      Din(18 downto 0) => axi_gpio_1_gpio_io_o(18 downto 0),
+      Dout(0) => xlslice_3_Dout(0)
+    );
+xlslice_4: component DEMO_xlslice_4_0
+     port map (
+      Din(2047 downto 0) => circular_buffer_0_vector_64x32_bits(2047 downto 0),
+      Dout(31 downto 0) => xlslice_4_Dout(31 downto 0)
+    );
+xlslice_5: component DEMO_xlslice_4_1
+     port map (
+      Din(383 downto 0) => FFT_0_fft_output(383 downto 0),
+      Dout(255 downto 0) => xlslice_5_Dout(255 downto 0)
+    );
+xlslice_6: component DEMO_xlslice_2_1
+     port map (
+      Din(18 downto 0) => axi_gpio_1_gpio_io_o(18 downto 0),
+      Dout(3 downto 0) => xlslice_6_Dout(3 downto 0)
     );
 end STRUCTURE;

@@ -93,22 +93,21 @@ int init_project()
 	//	LCD_Clear(GUI_BACKGROUND);
     GUI_INTRO();	// Logo SEP
 
-    xil_printf("¿Cual es tu mood?: \n\r");
-	xil_printf("1.) Otaku \n\r");
-	xil_printf("2.) Disco \n\r");
-	xil_printf("3.) Piante \n\r");
-	xil_printf("4.) Clásicos \n\r");
-	xil_printf("5.) Otros \n\r");
+    xil_printf("¿Que rango de notas quieres?: \n\r");
+	xil_printf("1.) Octava 3 \n\r");
+	xil_printf("2.) Octava 4 \n\r");
+	xil_printf("3.) Octava 5 \n\r");
+	xil_printf("4.) Octava 6 \n\r");
 
 	do {
-		scanf("%d", &file_index);
-		if (file_index < 1 || file_index > 5) {
-			xil_printf("Opción inválida. Por favor, elige una opción del 1 al 5: \n\r");
+		scanf("%d", &moods);
+		if (moods < 1 || moods > 4) {
+			xil_printf("Opción inválida. Por favor, elige una opción del 1 al 4: \n\r");
 			// file_index = 5; // Set to 5 if the input is invalid
 		}
-	} while (file_index < 1 || file_index > 5);
+	} while (moods < 1 || moods > 4);
 
-	xil_printf("Opción seleccionada: %d\n\r", file_index);
+	xil_printf("Opción seleccionada: %d\n\r", moods);
 
     LCD_Clear(GUI_BACKGROUND);
 

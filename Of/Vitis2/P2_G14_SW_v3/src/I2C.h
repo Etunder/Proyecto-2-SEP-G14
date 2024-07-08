@@ -9,8 +9,11 @@
 #define OPT_ADDR			0x44
 
 
+
 int init_IIC();
 int read_tmp();
 int read_opt();
+void clear_opt();
+
 
 #endif

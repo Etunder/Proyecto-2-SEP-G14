@@ -11,11 +11,11 @@
 
 #define TMR_DEVICE_ID_0          XPAR_TMRCTR_0_DEVICE_ID
 #define INTC_TMR_INTERRUPT_ID_0  XPAR_FABRIC_AXI_TIMER_0_INTERRUPT_INTR
-#define FREQUENCY_RESET          0xFFA90000  // Por definir (FFFFF - el valor necesario)
+#define FREQUENCY_RESET          0xFFFD93F4   // Por definir Real (FFFD93F4) Lento (FA0A1EFF)
 
 #define TMR_DEVICE_ID_1          XPAR_TMRCTR_1_DEVICE_ID
 #define INTC_TMR_INTERRUPT_ID_1  XPAR_FABRIC_AXI_TIMER_1_INTERRUPT_INTR
-#define CB_RESET                 0xFFA90000  // Por definir
+#define CB_RESET                 0xFFFFF723  // Por definir Real (FFFFF723) Lento (FF67697F)
 
 extern XTmrCtr timer0; // Para cambiar la frecuencia del buzzer
 extern XTmrCtr timer1; // Para actualizar el circular buffer
@@ -23,6 +23,7 @@ extern XScuGic INTC;
 
 void TMR_Frequency_Handler(void *data);
 void TMR_CB_Handler(void *data);
+void Light_Handler();
 int IntcInitFunction(u16 DeviceId, XTmrCtr *TmrInstancePtr0, XTmrCtr *TmrInstancePtr1);
 int InterruptSystemSetup(XScuGic *XScuGicInstancePtr);
 int init_timers();

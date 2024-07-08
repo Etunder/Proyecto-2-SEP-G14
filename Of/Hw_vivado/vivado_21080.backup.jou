@@ -1,0 +1,232 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sun Jul  7 19:29:45 2024
+# Process ID: 21080
+# Current directory: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5508 C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Of\Hw_vivado\Hardware_Proyecto_Booster.xpr
+# Log file: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/vivado.log
+# Journal file: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}
+set_property  ip_repo_paths  {c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/ip_repo {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/ip_core_Nueva_FFT} c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/ip_repo} [current_project]
+update_ip_catalog
+set_property  ip_repo_paths  {c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/ip_repo {c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/ip_core_Nueva_FFT} {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer} {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/FPU} {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/Player} c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/ip_repo} [current_project]
+update_ip_catalog
+update_module_reference DEMO_BUZZER_0_0
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:circular_buffer:1.0 circular_buffer_0
+endgroup
+set_property location {6.5 2089 509} [get_bd_cells circular_buffer_0]
+connect_bd_net [get_bd_pins circular_buffer_0/vector_32_bits] [get_bd_pins AXIFloat_0/XD]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:FFT:1.0 FFT_0
+endgroup
+set_property location {8.5 3061 501} [get_bd_cells FFT_0]
+set_property location {8 2901 488} [get_bd_cells FFT_0]
+set_property  ip_repo_paths  {c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/ip_repo {c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/ip_core_Nueva_FFT} {c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer} {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/IndexSelector} {c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/FPU} {c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/Player} c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/ip_repo} [current_project]
+update_ip_catalog
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:user:index_selector:1.0 index_selector_0
+endgroup
+set_property location {9.5 3508 488} [get_bd_cells index_selector_0]
+set_property location {8 2920 462} [get_bd_cells FFT_0]
+connect_bd_net [get_bd_pins FFT_0/fft_output] [get_bd_pins index_selector_0/long_vector]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0
+endgroup
+set_property location {8 3002 246} [get_bd_cells blk_mem_gen_0]
+set_property -dict [list CONFIG.Memory_Type {Single_Port_ROM} CONFIG.Enable_32bit_Address {false} CONFIG.Use_Byte_Write_Enable {false} CONFIG.Byte_Size {9} CONFIG.Write_Width_A {64} CONFIG.Write_Depth_A {768} CONFIG.Read_Width_A {64} CONFIG.Enable_A {Always_Enabled} CONFIG.Write_Width_B {64} CONFIG.Read_Width_B {64} CONFIG.Register_PortA_Output_of_Memory_Primitives {true} CONFIG.Load_Init_File {true} CONFIG.Coe_File {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/cos_sin.coe} CONFIG.Use_RSTA_Pin {false} CONFIG.Port_A_Write_Rate {0} CONFIG.use_bram_block {Stand_Alone} CONFIG.EN_SAFETY_CKT {false}] [get_bd_cells blk_mem_gen_0]
+connect_bd_net [get_bd_pins FFT_0/ROM_data] [get_bd_pins blk_mem_gen_0/douta]
+connect_bd_net [get_bd_pins blk_mem_gen_0/addra] [get_bd_pins FFT_0/addr]
+connect_bd_net [get_bd_pins FFT_0/clk] [get_bd_pins circular_buffer_0/clk]
+connect_bd_net [get_bd_pins blk_mem_gen_0/clka] [get_bd_pins FFT_0/clk]
+connect_bd_net [get_bd_pins index_selector_0/clk] [get_bd_pins FFT_0/clk]
+connect_bd_net [get_bd_pins circular_buffer_0/vector_64x32_bits] [get_bd_pins FFT_0/sample_vector]
+delete_bd_objs [get_bd_ports clk]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0
+apply_board_connection -board_interface "sys_clock" -ip_intf "clk_wiz_0/clock_CLK_IN1" -diagram "DEMO" 
+endgroup
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins vio_0/clk]
+connect_bd_net [get_bd_pins clk_wiz_0/clk_out1] [get_bd_pins FFT_0/clk]
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.C_GPIO2_WIDTH {4} CONFIG.C_ALL_INPUTS_2 {1} CONFIG.C_ALL_OUTPUTS_2 {0}] [get_bd_cells axi_gpio_1]
+delete_bd_objs [get_bd_nets axi_gpio_1_gpio2_io_o]
+endgroup
+connect_bd_net [get_bd_pins axi_gpio_1/gpio2_io_i] [get_bd_pins index_selector_0/output_index]
+startgroup
+set_property -dict [list CONFIG.C_PROBE_IN1_WIDTH {4}] [get_bd_cells vio_0]
+endgroup
+connect_bd_net [get_bd_pins vio_0/probe_in1] [get_bd_pins axi_gpio_1/gpio_io_o]
+disconnect_bd_net /axi_gpio_1_gpio_io_o [get_bd_pins vio_0/probe_in1]
+connect_bd_net [get_bd_pins vio_0/probe_in1] [get_bd_pins index_selector_0/output_index]
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {15}] [get_bd_cells axi_gpio_1]
+endgroup
+startgroup
+set_property -dict [list CONFIG.DIN_WIDTH {15}] [get_bd_cells xlslice_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.DIN_WIDTH {15}] [get_bd_cells xlslice_1]
+endgroup
+startgroup
+copy_bd_objs /  [get_bd_cells {xlslice_1}]
+set_property location {5 1672 285} [get_bd_cells xlslice_2]
+endgroup
+set_property -dict [list CONFIG.DIN_TO {13} CONFIG.DIN_FROM {14} CONFIG.DOUT_WIDTH {2}] [get_bd_cells xlslice_2]
+connect_bd_net [get_bd_pins xlslice_2/Din] [get_bd_pins axi_gpio_1/gpio_io_o]
+startgroup
+set_property -dict [list CONFIG.DIN_TO {14} CONFIG.DOUT_WIDTH {1}] [get_bd_cells xlslice_2]
+endgroup
+startgroup
+copy_bd_objs /  [get_bd_cells {xlslice_2}]
+set_property location {5 1523 222} [get_bd_cells xlslice_3]
+endgroup
+set_property -dict [list CONFIG.DIN_TO {13} CONFIG.DIN_FROM {13}] [get_bd_cells xlslice_3]
+connect_bd_net [get_bd_pins xlslice_3/Din] [get_bd_pins axi_gpio_1/gpio_io_o]
+connect_bd_net [get_bd_pins xlslice_2/Dout] [get_bd_pins circular_buffer_0/fft_done]
+connect_bd_net [get_bd_pins xlslice_3/Dout] [get_bd_pins FFT_0/start]
+startgroup
+endgroup
+startgroup
+set_property -dict [list CONFIG.C_GPIO2_WIDTH {7}] [get_bd_cells axi_gpio_1]
+endgroup
+disconnect_bd_net /index_selector_0_output_index [get_bd_pins axi_gpio_1/gpio2_io_i]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_1
+endgroup
+set_property -dict [list CONFIG.IN2_WIDTH.VALUE_SRC USER CONFIG.IN1_WIDTH.VALUE_SRC PROPAGATED CONFIG.IN0_WIDTH.VALUE_SRC PROPAGATED] [get_bd_cells xlconcat_1]
+set_property -dict [list CONFIG.NUM_PORTS {3} CONFIG.IN2_WIDTH {4}] [get_bd_cells xlconcat_1]
+set_property location {8.5 3003 1039} [get_bd_cells xlconcat_1]
+connect_bd_net [get_bd_pins xlconcat_1/In2] [get_bd_pins index_selector_0/output_index]
+set_property location {7.5 2843 1202} [get_bd_cells xlconcat_1]
+connect_bd_net [get_bd_pins xlconcat_1/In0] [get_bd_pins FFT_0/fft_processing_done]
+connect_bd_net [get_bd_pins xlconcat_1/In1] [get_bd_pins circular_buffer_0/is_done]
+connect_bd_net [get_bd_pins xlconcat_1/dout] [get_bd_pins axi_gpio_1/gpio2_io_i]
+startgroup
+set_property -dict [list CONFIG.NUM_PORTS {4}] [get_bd_cells xlconcat_1]
+endgroup
+startgroup
+set_property -dict [list CONFIG.IN3_WIDTH.VALUE_SRC USER CONFIG.IN2_WIDTH.VALUE_SRC PROPAGATED] [get_bd_cells xlconcat_1]
+set_property -dict [list CONFIG.IN3_WIDTH {4}] [get_bd_cells xlconcat_1]
+endgroup
+connect_bd_net [get_bd_pins index_selector_0/output_index] [get_bd_pins xlconcat_1/In3]
+disconnect_bd_net /index_selector_0_output_index [get_bd_pins xlconcat_1/In2]
+connect_bd_net [get_bd_pins xlconcat_1/In2] [get_bd_pins circular_buffer_0/full_out]
+regenerate_bd_layout
+regenerate_bd_layout -routing
+startgroup
+set_property -dict [list CONFIG.C_PROBE_IN18_WIDTH {4} CONFIG.C_PROBE_IN17_WIDTH {6} CONFIG.C_PROBE_IN16_WIDTH {5} CONFIG.C_PROBE_IN14_WIDTH {3} CONFIG.C_PROBE_IN13_WIDTH {10} CONFIG.C_PROBE_IN12_WIDTH {255} CONFIG.C_PROBE_IN11_WIDTH {64} CONFIG.C_PROBE_IN9_WIDTH {32} CONFIG.C_PROBE_IN8_WIDTH {6} CONFIG.C_PROBE_IN5_WIDTH {32} CONFIG.C_NUM_PROBE_OUT {1} CONFIG.C_NUM_PROBE_IN {19}] [get_bd_cells vio_0]
+endgroup
+connect_bd_net [get_bd_pins vio_0/probe_in5] [get_bd_pins AXIFloat_0/XD]
+connect_bd_net [get_bd_pins vio_0/probe_in6] [get_bd_pins circular_buffer_0/is_done]
+connect_bd_net [get_bd_pins vio_0/probe_in7] [get_bd_pins circular_buffer_0/full_out]
+connect_bd_net [get_bd_pins vio_0/probe_in8] [get_bd_pins circular_buffer_0/full_counter_out]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_4
+endgroup
+set_property location {7 2144 1241} [get_bd_cells xlslice_4]
+set_property -dict [list CONFIG.DIN_FROM {31} CONFIG.DIN_WIDTH {2048} CONFIG.DOUT_WIDTH {32}] [get_bd_cells xlslice_4]
+connect_bd_net [get_bd_pins xlslice_4/Din] [get_bd_pins circular_buffer_0/vector_64x32_bits]
+connect_bd_net [get_bd_pins xlslice_4/Dout] [get_bd_pins vio_0/probe_in9]
+connect_bd_net [get_bd_pins vio_0/probe_in10] [get_bd_pins xlslice_3/Dout]
+connect_bd_net [get_bd_pins vio_0/probe_in11] [get_bd_pins blk_mem_gen_0/douta]
+startgroup
+copy_bd_objs /  [get_bd_cells {xlslice_4}]
+set_property location {7 2198 1392} [get_bd_cells xlslice_5]
+endgroup
+set_property -dict [list CONFIG.DIN_FROM {255} CONFIG.DIN_WIDTH {384} CONFIG.DOUT_WIDTH {256}] [get_bd_cells xlslice_5]
+connect_bd_net [get_bd_pins xlslice_5/Din] [get_bd_pins FFT_0/fft_output]
+connect_bd_net [get_bd_pins xlslice_5/Dout] [get_bd_pins vio_0/probe_in12]
+startgroup
+set_property -dict [list CONFIG.C_PROBE_IN12_WIDTH {256}] [get_bd_cells vio_0]
+endgroup
+connect_bd_net [get_bd_pins vio_0/probe_in13] [get_bd_pins FFT_0/addr]
+connect_bd_net [get_bd_pins vio_0/probe_in14] [get_bd_pins FFT_0/out_state]
+connect_bd_net [get_bd_pins vio_0/probe_in15] [get_bd_pins FFT_0/coef_received_out]
+connect_bd_net [get_bd_pins vio_0/probe_in16] [get_bd_pins FFT_0/partial_done_count_out]
+connect_bd_net [get_bd_pins FFT_0/rom_index_out] [get_bd_pins vio_0/probe_in17]
+connect_bd_net [get_bd_pins vio_0/probe_in18] [get_bd_pins FFT_0/load_count_out]
+connect_bd_net [get_bd_pins vio_0/probe_out0] [get_bd_pins FFT_0/rst]
+regenerate_bd_layout
+regenerate_bd_layout -routing
+validate_bd_design
+make_wrapper -files [get_files C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd] -top
+reset_run synth_1
+reset_run DEMO_vio_0_0_synth_1
+reset_run DEMO_axi_gpio_0_1_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property pfm_name {} [get_files -all {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}]
+write_hw_platform -fixed -include_bit -force -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/DEMO_wrapper.xsa
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/DEMO_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/DEMO_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/DEMO_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property INPUT_VALUE_RADIX UNSIGNED [get_hw_probes DEMO_i/FFT_0_rom_index_out -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"DEMO_i/vio_0"}]]
+set_property INPUT_VALUE_RADIX UNSIGNED [get_hw_probes DEMO_i/FFT_0_load_count_out -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"DEMO_i/vio_0"}]]
+set_property INPUT_VALUE_RADIX UNSIGNED [get_hw_probes DEMO_i/FFT_0_partial_done_count_out -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"DEMO_i/vio_0"}]]
+set_property INPUT_VALUE_RADIX BINARY [get_hw_probes DEMO_i/AXIFloat_0_XD_1 -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"DEMO_i/vio_0"}]]
+set_property INPUT_VALUE_RADIX BINARY [get_hw_probes DEMO_i/xlslice_4_Dout -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"DEMO_i/vio_0"}]]
+startgroup
+set_property -dict [list CONFIG.NUM_PORTS {3}] [get_bd_cells xlconcat_0]
+endgroup
+startgroup
+make_bd_pins_external  [get_bd_pins xlconcat_0/In2]
+endgroup
+set_property name itr_l [get_bd_ports In2_0]
+validate_bd_design
+set_property INPUT_VALUE_RADIX BINARY [get_hw_probes DEMO_i/axi_gpio_1_gpio_io_o -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"DEMO_i/vio_0"}]]
+update_module_reference DEMO_BUZZER_0_0
+delete_bd_objs [get_bd_nets BUZZER_0_LEDR] [get_bd_ports LEDR]
+delete_bd_objs [get_bd_nets BUZZER_0_LEDG] [get_bd_ports LEDG]
+delete_bd_objs [get_bd_nets BUZZER_0_LEDB] [get_bd_ports LEDB]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_0
+endgroup
+connect_bd_net [get_bd_pins ila_0/clk] [get_bd_pins clk_wiz_0/clk_out1]
+set_property location {3 754 1190} [get_bd_cells ila_0]
+connect_bd_intf_net [get_bd_intf_pins ila_0/SLOT_0_AXI] [get_bd_intf_pins AXIFloat_0/S00_AXI]
+startgroup
+set_property -dict [list CONFIG.C_GPIO_WIDTH {19}] [get_bd_cells axi_gpio_1]
+endgroup
+startgroup
+set_property -dict [list CONFIG.DIN_WIDTH {19}] [get_bd_cells xlslice_2]
+endgroup
+startgroup
+set_property -dict [list CONFIG.DIN_WIDTH {19}] [get_bd_cells xlslice_3]
+endgroup
+startgroup
+set_property -dict [list CONFIG.DIN_WIDTH {19}] [get_bd_cells xlslice_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.DIN_WIDTH {19}] [get_bd_cells xlslice_1]
+endgroup
+startgroup
+copy_bd_objs /  [get_bd_cells {xlslice_2}]
+set_property location {5 1471 801} [get_bd_cells xlslice_6]
+endgroup
+set_property -dict [list CONFIG.DIN_TO {15} CONFIG.DIN_FROM {18} CONFIG.DOUT_WIDTH {4}] [get_bd_cells xlslice_6]
+connect_bd_net [get_bd_pins xlslice_6/Din] [get_bd_pins axi_gpio_1/gpio_io_o]
+connect_bd_net [get_bd_pins xlslice_6/Dout] [get_bd_pins BUZZER_0/INDEX]
+validate_bd_design
+disconnect_bd_net /clk_0_1 [get_bd_pins ila_0/clk]
+connect_bd_net [get_bd_pins ila_0/clk] [get_bd_pins processing_system7_0/FCLK_CLK0]
+validate_bd_design
+regenerate_bd_layout
+regenerate_bd_layout -routing
+make_wrapper -files [get_files C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd] -top
+reset_run synth_1
+reset_run DEMO_vio_0_0_synth_1
+reset_run DEMO_processing_system7_0_0_synth_1
+reset_run DEMO_axi_gpio_0_1_synth_1

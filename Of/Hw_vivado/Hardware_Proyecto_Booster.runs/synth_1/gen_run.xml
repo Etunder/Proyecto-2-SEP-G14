@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1720390794">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1720426522">
   <File Type="PA-TCL" Name="DEMO_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="DEMO_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="DEMO_wrapper_reports.tcl"/>
@@ -36,6 +36,12 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/../../Assets Proyecto 1/cos_sin.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
       <Option Name="TopModule" Val="DEMO_wrapper"/>
@@ -68,6 +74,7 @@
   <BlockFileSet Type="BlockSrcs" Name="DEMO_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="DEMO_AXIFloat_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="DEMO_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DEMO_FFT_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="DEMO_axi_gpio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="DEMO_vio_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="DEMO_rst_ps7_0_50M_0"/>
@@ -76,5 +83,11 @@
   <BlockFileSet Type="BlockSrcs" Name="DEMO_axi_quad_spi_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="DEMO_axi_timer_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="DEMO_axi_timer_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DEMO_clk_wiz_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DEMO_circular_buffer_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DEMO_index_selector_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DEMO_blk_mem_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DEMO_ila_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="DEMO_BUZZER_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="DEMO_auto_pc_0"/>
 </GenRun>

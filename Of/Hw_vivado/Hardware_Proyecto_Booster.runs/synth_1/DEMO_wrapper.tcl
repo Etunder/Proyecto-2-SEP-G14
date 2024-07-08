@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/synth_1/DEMO_wrapper.tcl"
+  variable script "C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/synth_1/DEMO_wrapper.tcl"
   variable category "vivado_synth"
 }
 
@@ -71,7 +71,6 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 2
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
 
@@ -79,52 +78,66 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.cache/wt [current_project]
-set_property parent.project_path C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.cache/wt [current_project]
+set_property parent.project_path C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:zybo-z7-10:part0:1.2 [current_project]
 set_property ip_repo_paths {
-  c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/ip_repo
-  c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Tests/ip_repo
+  c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/ip_repo
+  {c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/ip_core_Nueva_FFT}
+  {c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer}
+  {c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/IndexSelector}
+  {c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/FPU}
+  {c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/Player}
+  c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Tests/ip_repo
 } [current_project]
 update_ip_catalog
-set_property ip_output_repo c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.cache/ip [current_project]
+set_property ip_output_repo c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/hdl/DEMO_wrapper.vhd
-add_files C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_quad_spi_0_0/DEMO_axi_quad_spi_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_quad_spi_0_0/DEMO_axi_quad_spi_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_quad_spi_0_0/DEMO_axi_quad_spi_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_quad_spi_0_0/DEMO_axi_quad_spi_0_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_processing_system7_0_0/DEMO_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_gpio_0_0/DEMO_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_gpio_0_0/DEMO_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_gpio_0_0/DEMO_axi_gpio_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_xbar_0/DEMO_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_rst_ps7_0_50M_0/DEMO_rst_ps7_0_50M_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_rst_ps7_0_50M_0/DEMO_rst_ps7_0_50M_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_rst_ps7_0_50M_0/DEMO_rst_ps7_0_50M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_quad_spi_1_0/DEMO_axi_quad_spi_1_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_quad_spi_1_0/DEMO_axi_quad_spi_1_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_quad_spi_1_0/DEMO_axi_quad_spi_1_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_quad_spi_1_0/DEMO_axi_quad_spi_1_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_iic_0_1/DEMO_axi_iic_0_1_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_iic_0_1/DEMO_axi_iic_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_gpio_0_1/DEMO_axi_gpio_0_1_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_gpio_0_1/DEMO_axi_gpio_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_gpio_0_1/DEMO_axi_gpio_0_1.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_vio_0_0/DEMO_vio_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_vio_0_0/DEMO_vio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_timer_0_0/DEMO_axi_timer_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_timer_0_0/DEMO_axi_timer_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_timer_1_0/DEMO_axi_timer_1_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_timer_1_0/DEMO_axi_timer_1_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_auto_pc_0/DEMO_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO_ooc.xdc]
+add_files {{C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/cos_sin.coe}}
+read_vhdl -library xil_defaultlib C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/hdl/DEMO_wrapper.vhd
+add_files C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_quad_spi_0_0/DEMO_axi_quad_spi_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_quad_spi_0_0/DEMO_axi_quad_spi_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_quad_spi_0_0/DEMO_axi_quad_spi_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_quad_spi_0_0/DEMO_axi_quad_spi_0_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_processing_system7_0_0/DEMO_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_gpio_0_0/DEMO_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_gpio_0_0/DEMO_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_gpio_0_0/DEMO_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_xbar_0/DEMO_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_rst_ps7_0_50M_0/DEMO_rst_ps7_0_50M_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_rst_ps7_0_50M_0/DEMO_rst_ps7_0_50M_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_rst_ps7_0_50M_0/DEMO_rst_ps7_0_50M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_quad_spi_1_0/DEMO_axi_quad_spi_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_quad_spi_1_0/DEMO_axi_quad_spi_1_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_quad_spi_1_0/DEMO_axi_quad_spi_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_quad_spi_1_0/DEMO_axi_quad_spi_1_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_iic_0_1/DEMO_axi_iic_0_1_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_iic_0_1/DEMO_axi_iic_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_gpio_0_1/DEMO_axi_gpio_0_1_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_gpio_0_1/DEMO_axi_gpio_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_gpio_0_1/DEMO_axi_gpio_0_1.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_vio_0_0/DEMO_vio_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_vio_0_0/DEMO_vio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_timer_0_0/DEMO_axi_timer_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_timer_0_0/DEMO_axi_timer_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_timer_1_0/DEMO_axi_timer_1_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_axi_timer_1_0/DEMO_axi_timer_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_blk_mem_gen_0_0/DEMO_blk_mem_gen_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_clk_wiz_0_0/DEMO_clk_wiz_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_clk_wiz_0_0/DEMO_clk_wiz_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_clk_wiz_0_0/DEMO_clk_wiz_0_0_ooc.xdc]
+set_property used_in_synthesis false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_ila_0_0/ila_v6_2/constraints/ila_impl.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_ila_0_0/ila_v6_2/constraints/ila.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_ila_0_0/DEMO_ila_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_auto_pc_0/DEMO_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -135,8 +148,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Zybo-Z7-Master.xdc
-set_property used_in_implementation false [get_files C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Zybo-Z7-Master.xdc]
+read_xdc C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Zybo-Z7-Master.xdc
+set_property used_in_implementation false [get_files C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Zybo-Z7-Master.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

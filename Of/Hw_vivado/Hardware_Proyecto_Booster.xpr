@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="49" Path="C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.xpr">
+<Project Version="7" Minor="49" Path="C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="582508ad7ffe4637848fef09055566e2"/>
@@ -30,6 +30,11 @@
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../ip_repo"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../Assets Proyecto 1/ip_core_Nueva_FFT"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../Assets Proyecto 1/CircularBuffer"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../Assets Proyecto 1/IndexSelector"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../Assets Proyecto 1/FPU"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../Assets Proyecto 1/Player"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../Tests/ip_repo"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPCachePermission" Val="read"/>
@@ -85,50 +90,77 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_axi_timer_0_0/DEMO_axi_timer_0_0.xci">
-          <Proxy FileSetName="DEMO_axi_timer_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_axi_timer_1_0/DEMO_axi_timer_1_0.xci">
-          <Proxy FileSetName="DEMO_axi_timer_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_axi_quad_spi_1_0/DEMO_axi_quad_spi_1_0.xci">
-          <Proxy FileSetName="DEMO_axi_quad_spi_1_0"/>
+        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_BUZZER_0_0/DEMO_BUZZER_0_0.xci">
+          <Proxy FileSetName="DEMO_BUZZER_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_axi_iic_0_1/DEMO_axi_iic_0_1.xci">
           <Proxy FileSetName="DEMO_axi_iic_0_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_vio_0_0/DEMO_vio_0_0.xci">
-          <Proxy FileSetName="DEMO_vio_0_0"/>
+        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_processing_system7_0_0/DEMO_processing_system7_0_0.xci">
+          <Proxy FileSetName="DEMO_processing_system7_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_AXIFloat_0_0/DEMO_AXIFloat_0_0.xci">
-          <Proxy FileSetName="DEMO_AXIFloat_0_0"/>
+        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_xbar_0/DEMO_xbar_0.xci">
+          <Proxy FileSetName="DEMO_xbar_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_rst_ps7_0_50M_0/DEMO_rst_ps7_0_50M_0.xci">
           <Proxy FileSetName="DEMO_rst_ps7_0_50M_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_BUZZER_0_0/DEMO_BUZZER_0_0.xci">
-          <Proxy FileSetName="DEMO_BUZZER_0_0"/>
+        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_axi_gpio_0_0/DEMO_axi_gpio_0_0.xci">
+          <Proxy FileSetName="DEMO_axi_gpio_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_axi_gpio_0_1/DEMO_axi_gpio_0_1.xci">
-          <Proxy FileSetName="DEMO_axi_gpio_0_1"/>
+        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_axi_quad_spi_1_0/DEMO_axi_quad_spi_1_0.xci">
+          <Proxy FileSetName="DEMO_axi_quad_spi_1_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_axi_quad_spi_0_0/DEMO_axi_quad_spi_0_0.xci">
           <Proxy FileSetName="DEMO_axi_quad_spi_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_processing_system7_0_0/DEMO_processing_system7_0_0.xci">
-          <Proxy FileSetName="DEMO_processing_system7_0_0"/>
+        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_vio_0_0/DEMO_vio_0_0.xci">
+          <Proxy FileSetName="DEMO_vio_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_axi_gpio_0_0/DEMO_axi_gpio_0_0.xci">
-          <Proxy FileSetName="DEMO_axi_gpio_0_0"/>
+        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_axi_timer_0_0/DEMO_axi_timer_0_0.xci">
+          <Proxy FileSetName="DEMO_axi_timer_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_xbar_0/DEMO_xbar_0.xci">
-          <Proxy FileSetName="DEMO_xbar_0"/>
+        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_axi_gpio_0_1/DEMO_axi_gpio_0_1.xci">
+          <Proxy FileSetName="DEMO_axi_gpio_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_AXIFloat_0_0/DEMO_AXIFloat_0_0.xci">
+          <Proxy FileSetName="DEMO_AXIFloat_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_axi_timer_1_0/DEMO_axi_timer_1_0.xci">
+          <Proxy FileSetName="DEMO_axi_timer_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_circular_buffer_0_0/DEMO_circular_buffer_0_0.xci">
+          <Proxy FileSetName="DEMO_circular_buffer_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_clk_wiz_0_0/DEMO_clk_wiz_0_0.xci">
+          <Proxy FileSetName="DEMO_clk_wiz_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_index_selector_0_0/DEMO_index_selector_0_0.xci">
+          <Proxy FileSetName="DEMO_index_selector_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_FFT_0_0/DEMO_FFT_0_0.xci">
+          <Proxy FileSetName="DEMO_FFT_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_blk_mem_gen_0_0/DEMO_blk_mem_gen_0_0.xci">
+          <Proxy FileSetName="DEMO_blk_mem_gen_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_ila_0_0/DEMO_ila_0_0.xci">
+          <Proxy FileSetName="DEMO_ila_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="DEMO.bd" FileRelPathName="ip/DEMO_auto_pc_0/DEMO_auto_pc_0.xci">
+          <Proxy FileSetName="DEMO_auto_pc_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/DEMO/hdl/DEMO_wrapper.vhd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../SEP/Proyecto_Base_Booster_v2/DEMODEFINITIVA/DEMODEFINITIVA/DEMODEFINITIVA.srcs/sources_1/bd/DEMO/hdl/DEMO_wrapper.vhd"/>
           <Attr Name="ImportTime" Val="1699488819"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../Assets Proyecto 1/cos_sin.coe">
+        <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -246,9 +278,51 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
+    <FileSet Name="DEMO_clk_wiz_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DEMO_clk_wiz_0_0">
+      <Config>
+        <Option Name="TopModule" Val="DEMO_clk_wiz_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DEMO_circular_buffer_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DEMO_circular_buffer_0_0">
+      <Config>
+        <Option Name="TopModule" Val="DEMO_circular_buffer_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DEMO_FFT_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DEMO_FFT_0_0">
+      <Config>
+        <Option Name="TopModule" Val="DEMO_FFT_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DEMO_index_selector_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DEMO_index_selector_0_0">
+      <Config>
+        <Option Name="TopModule" Val="DEMO_index_selector_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DEMO_blk_mem_gen_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DEMO_blk_mem_gen_0_0">
+      <Config>
+        <Option Name="TopModule" Val="DEMO_blk_mem_gen_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DEMO_ila_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DEMO_ila_0_0">
+      <Config>
+        <Option Name="TopModule" Val="DEMO_ila_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
     <FileSet Name="DEMO_BUZZER_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DEMO_BUZZER_0_0">
       <Config>
         <Option Name="TopModule" Val="DEMO_BUZZER_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="DEMO_auto_pc_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/DEMO_auto_pc_0">
+      <Config>
+        <Option Name="TopModule" Val="DEMO_auto_pc_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -419,7 +493,81 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+    <Run Id="DEMO_clk_wiz_0_0_synth_1" Type="Ft3:Synth" SrcSet="DEMO_clk_wiz_0_0" Part="xc7z010clg400-1" ConstrsSet="DEMO_clk_wiz_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DEMO_clk_wiz_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DEMO_circular_buffer_0_0_synth_1" Type="Ft3:Synth" SrcSet="DEMO_circular_buffer_0_0" Part="xc7z010clg400-1" ConstrsSet="DEMO_circular_buffer_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DEMO_circular_buffer_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DEMO_FFT_0_0_synth_1" Type="Ft3:Synth" SrcSet="DEMO_FFT_0_0" Part="xc7z010clg400-1" ConstrsSet="DEMO_FFT_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DEMO_FFT_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DEMO_index_selector_0_0_synth_1" Type="Ft3:Synth" SrcSet="DEMO_index_selector_0_0" Part="xc7z010clg400-1" ConstrsSet="DEMO_index_selector_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DEMO_index_selector_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DEMO_blk_mem_gen_0_0_synth_1" Type="Ft3:Synth" SrcSet="DEMO_blk_mem_gen_0_0" Part="xc7z010clg400-1" ConstrsSet="DEMO_blk_mem_gen_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DEMO_blk_mem_gen_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DEMO_ila_0_0_synth_1" Type="Ft3:Synth" SrcSet="DEMO_ila_0_0" Part="xc7z010clg400-1" ConstrsSet="DEMO_ila_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DEMO_ila_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
     <Run Id="DEMO_BUZZER_0_0_synth_1" Type="Ft3:Synth" SrcSet="DEMO_BUZZER_0_0" Part="xc7z010clg400-1" ConstrsSet="DEMO_BUZZER_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DEMO_BUZZER_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DEMO_auto_pc_0_synth_1" Type="Ft3:Synth" SrcSet="DEMO_auto_pc_0" Part="xc7z010clg400-1" ConstrsSet="DEMO_auto_pc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/DEMO_auto_pc_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -653,7 +801,130 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+    <Run Id="DEMO_clk_wiz_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="DEMO_clk_wiz_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DEMO_clk_wiz_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DEMO_circular_buffer_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="DEMO_circular_buffer_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DEMO_circular_buffer_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DEMO_FFT_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="DEMO_FFT_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DEMO_FFT_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DEMO_index_selector_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="DEMO_index_selector_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DEMO_index_selector_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DEMO_blk_mem_gen_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="DEMO_blk_mem_gen_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DEMO_blk_mem_gen_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DEMO_ila_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="DEMO_ila_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DEMO_ila_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
     <Run Id="DEMO_BUZZER_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="DEMO_BUZZER_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DEMO_BUZZER_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2020"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="DEMO_auto_pc_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z010clg400-1" ConstrsSet="DEMO_auto_pc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="DEMO_auto_pc_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020">
           <Desc>Default settings for Implementation.</Desc>

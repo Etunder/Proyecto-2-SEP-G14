@@ -75,8 +75,8 @@ extern "C" {
 	(timeout>0) ? 0 : -1;  \
  }  )
 
-void usleep(unsigned long useconds);
-void sleep(unsigned int seconds);
+//void usleep(unsigned long useconds);
+//void sleep(unsigned int seconds);
 int usleep_R5(unsigned long useconds);
 unsigned sleep_R5(unsigned int seconds);
 int usleep_MB(unsigned long useconds);

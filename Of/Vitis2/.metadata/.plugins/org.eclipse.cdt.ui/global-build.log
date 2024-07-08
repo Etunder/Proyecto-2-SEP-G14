@@ -1,9 +1,67 @@
 Nothing to build in platform 'P2_G14_HW_v3'
 
-18:40:35 **** Incremental Build of configuration Debug for project P2_G14_SW_v3 ****
+08:02:03 **** Incremental Build of configuration Debug for project P2_G14_SW_v3 ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-make[1]: Nothing to be done for 'main-build'.
+'Building file: ../src/utils.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/utils.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Vitis2/P2_G14_HW_v3/export/P2_G14_HW_v3/sw/P2_G14_HW_v3/standalone_domain/bspinclude/include -MMD -MP -MF"src/utils.d" -MT"src/utils.o" -o "src/utils.o" "../src/utils.c"
+In file included from ../src/globals.h:9,
+                 from ../src/utils.c:1:
+../src/sdFunctions.h:18: warning: "BUFFER_SIZE" redefined
+   18 | #define BUFFER_SIZE     64  // Buffer for 64 FP32 values
+      | 
+In file included from ../src/LCD_Driver.h:5,
+                 from ../src/globals.h:7,
+                 from ../src/utils.c:1:
+../src/LCD_SPI.h:25: note: this is the location of the previous definition
+   25 | #define BUFFER_SIZE  17
+      | 
+../src/utils.c: In function 'update_sensor_values':
+../src/utils.c:6:25: warning: implicit declaration of function 'read_joyx' [-Wimplicit-function-declaration]
+    6 |     sprintf(joyx, "%d", read_joyx());
+      |                         ^~~~~~~~~
+../src/utils.c:7:25: warning: implicit declaration of function 'read_joyy' [-Wimplicit-function-declaration]
+    7 |     sprintf(joyy, "%d", read_joyy());
+      |                         ^~~~~~~~~
+../src/utils.c:8:24: warning: implicit declaration of function 'read_tmp' [-Wimplicit-function-declaration]
+    8 |     sprintf(tmp, "%d", read_tmp());
+      |                        ^~~~~~~~
+../src/utils.c:9:24: warning: implicit declaration of function 'read_opt' [-Wimplicit-function-declaration]
+    9 |     sprintf(opt, "%d", read_opt());
+      |                        ^~~~~~~~
+../src/utils.c:10:25: warning: implicit declaration of function 'read_POT1' [-Wimplicit-function-declaration]
+   10 |     sprintf(pot1, "%d", read_POT1());
+      |                         ^~~~~~~~~
+../src/utils.c:11:25: warning: implicit declaration of function 'read_POT2' [-Wimplicit-function-declaration]
+   11 |     sprintf(pot2, "%d", read_POT2());
+      |                         ^~~~~~~~~
+../src/utils.c:12:24: warning: implicit declaration of function 'read_acx' [-Wimplicit-function-declaration]
+   12 |     sprintf(acx, "%d", read_acx());
+      |                        ^~~~~~~~
+../src/utils.c:13:24: warning: implicit declaration of function 'read_acy' [-Wimplicit-function-declaration]
+   13 |     sprintf(acy, "%d", read_acy());
+      |                        ^~~~~~~~
+../src/utils.c:14:24: warning: implicit declaration of function 'read_MIC' [-Wimplicit-function-declaration]
+   14 |     sprintf(mic, "%d", read_MIC());
+      |                        ^~~~~~~~
+../src/utils.c: In function 'print_debug_info':
+../src/utils.c:59:31: warning: implicit declaration of function 'read_acz' [-Wimplicit-function-declaration]
+   59 |     xil_printf("ACZ :%d\n\r", read_acz());
+      |                               ^~~~~~~~
+'Finished building: ../src/utils.c'
+' '
+'Building target: P2_G14_SW_v3.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Vitis2/P2_G14_HW_v3/export/P2_G14_HW_v3/sw/P2_G14_HW_v3/standalone_domain/bsplib/lib -o "P2_G14_SW_v3.elf"  ./src/ADC.o ./src/Delay.o ./src/I2C.o ./src/LCD_Driver.o ./src/LCD_GUI.o ./src/LCD_SPI.o ./src/estado0.o ./src/estado1.o ./src/estado2.o ./src/estado3.o ./src/font12.o ./src/font16.o ./src/font20.o ./src/font24.o ./src/font8.o ./src/globals.o ./src/init_project.o ./src/main.o ./src/platform.o ./src/sdFunctions.o ./src/timers.o ./src/utils.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+'Finished building target: P2_G14_SW_v3.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size P2_G14_SW_v3.elf  |tee "P2_G14_SW_v3.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 812880	   3714	  52000	 868594	  d40f2	P2_G14_SW_v3.elf
+'Finished building: P2_G14_SW_v3.elf.size'
+' '

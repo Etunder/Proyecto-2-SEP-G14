@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_processing_system7_0_0/DEMO_processing_system7_0_0.xdc rfile:../../../Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_processing_system7_0_0/DEMO_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
+set_property SRC_FILE_INFO {cfile:c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_processing_system7_0_0/DEMO_processing_system7_0_0.xdc rfile:../../../Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_processing_system7_0_0/DEMO_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:inst} [current_design]
 current_instance inst
 set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter clk_fpga_0 0.3

@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>customized_ip</spirit:library>
+  <spirit:name>DEMO_circular_buffer_0_0</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>clk</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>clk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>FREQ_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.FREQ_HZ">100000000</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>FREQ_TOLERANCE_HZ</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.FREQ_TOLERANCE_HZ">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>PHASE</spirit:name>
+          <spirit:value spirit:format="float" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.PHASE">0.0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>CLK_DOMAIN</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.CLK_DOMAIN">/clk_wiz_0_clk_out1</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_BUSIF"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK.ASSOCIATED_RESET"/>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>none</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>INSERT_VIP</spirit:name>
+          <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="BUSIFPARAM_VALUE.CLK.INSERT_VIP">0</spirit:value>
+          <spirit:vendorExtensions>
+            <xilinx:parameterInfo>
+              <xilinx:parameterUsage>simulation.rtl</xilinx:parameterUsage>
+            </xilinx:parameterInfo>
+          </spirit:vendorExtensions>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagesynthesis</spirit:name>
+        <spirit:displayName>Synthesis</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:modelName>circular_buffer</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagesynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon Jul 08 00:13:32 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:eb959290</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_synthesisconstraints</spirit:name>
+        <spirit:displayName>Synthesis Constraints</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:synthesis.constraints</spirit:envIdentifier>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:eb959290</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsynthesiswrapper</spirit:name>
+        <spirit:displayName>VHDL Synthesis Wrapper</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis.wrapper</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>DEMO_circular_buffer_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsynthesiswrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon Jul 08 00:13:32 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:eb959290</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_anylanguagebehavioralsimulation</spirit:name>
+        <spirit:displayName>Simulation</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:modelName>circular_buffer</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon Jul 08 00:13:32 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:f96f59e4</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsimulationwrapper</spirit:name>
+        <spirit:displayName>VHDL Simulation Wrapper</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:simulation.wrapper</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>DEMO_circular_buffer_0_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsimulationwrapper_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon Jul 08 00:13:32 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:f96f59e4</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_externalfiles</spirit:name>
+        <spirit:displayName>External Files</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>GENtimestamp</spirit:name>
+            <spirit:value>Mon Jul 08 00:18:05 UTC 2024</spirit:value>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>outputProductCRC</spirit:name>
+            <spirit:value>9:eb959290</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>clk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>fft_done</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="1">0x0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>is_done</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="bitString" spirit:bitStringLength="1">0x0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>vector_32_bits</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>vector_64x32_bits</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">2047</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+          <spirit:driver>
+            <spirit:defaultValue spirit:format="long">0</spirit:defaultValue>
+          </spirit:driver>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>full_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>full_counter_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">5</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_anylanguagesynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_anylanguagebehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+  </spirit:model>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/b7ac/CircularBuffer.srcs/sources_1/new/circular_buffer.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsynthesiswrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>synth/DEMO_circular_buffer_0_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>../../ipshared/b7ac/CircularBuffer.srcs/sources_1/new/circular_buffer.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsimulationwrapper_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>sim/DEMO_circular_buffer_0_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>DEMO_circular_buffer_0_0.dcp</spirit:name>
+        <spirit:userFileType>dcp</spirit:userFileType>
+        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>DEMO_circular_buffer_0_0_stub.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>DEMO_circular_buffer_0_0_stub.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>DEMO_circular_buffer_0_0_sim_netlist.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>DEMO_circular_buffer_0_0_sim_netlist.vhdl</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
+        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
+        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>circular_buffer_v1_0</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">DEMO_circular_buffer_0_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:displayName>circular_buffer_v1_0</xilinx:displayName>
+      <xilinx:definitionSource>package_project</xilinx:definitionSource>
+      <xilinx:coreRevision>13</xilinx:coreRevision>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20e9d58e_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@744149d4_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@362f3a0c_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@29b6a234_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22808b73_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a2b1b5a_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f6600a0_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38dba5ed_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f8b961b_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@46482ede_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3725feef_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f6d39f9_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c3b86c9_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67c0675e_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74079498_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75ba50a9_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c695c71_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59a62432_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5fa5b253_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c98b308_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7df4402b_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@128969da_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2bd11dbe_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5706c559_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@50da0185_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59020021_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ab7d43c_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e66cfff_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65d2fe1c_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c423c50_ARCHIVE_LOCATION">c:/Users/Amteo/Desktop/Universidad/SEP/Proyecto1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@211f5708_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33a1de67_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d501a81_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d5a824c_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e940e4a_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6a834a92_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2fada339_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f67af7f_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40aa970a_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34b045d9_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7f15ae45_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b83c599_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5501917b_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40c6b78a_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@58abea8_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d2dd13e_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48d9155f_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3581f0ce_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3957f9ce_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c6c9001_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b7be203_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d2b37be_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5551db5_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5381e146_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@c3a106f_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62f4806d_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b1e6295_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d5b34e_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@44db1397_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@43311902_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4137f8d3_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b50184_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11a38654_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64ed9073_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6652d8f1_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@248baad2_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73ff7636_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bc49d7b_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@693c9a4f_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14ccf1ad_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c62d5ad_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e455413_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@56cdb50e_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d95ac15_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c7f1337_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@31a5de01_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55dd4982_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e3d7e63_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25895767_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6aa825e1_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59403010_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1abb5005_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16a5c45a_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60aaa3c3_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@246278a9_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14145723_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7815d2c6_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6186dfb6_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@415cf556_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ad565d4_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3afb82d2_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1f1e6223_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4df1ce43_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61b4354c_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5086c11d_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a21ed93_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a24d25c_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b3b8d7a_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21e63a4a_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2878b475_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@426d4e05_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@500da6ae_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5434bb19_ARCHIVE_LOCATION">c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Assets Proyecto 1/CircularBuffer</xilinx:tag>
+      </xilinx:tags>
+      <xilinx:configElementInfos>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ASSOCIATED_BUSIF" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.ASSOCIATED_RESET" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.CLK_DOMAIN" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.FREQ_HZ" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.FREQ_TOLERANCE_HZ" xilinx:valuePermission="bd_and_user"/>
+        <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.CLK.PHASE" xilinx:valueSource="ip_propagated" xilinx:valuePermission="bd_and_user"/>
+      </xilinx:configElementInfos>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2020.1</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="a88d4390"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="ec656cc0"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="3a731011"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="354a4874"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>

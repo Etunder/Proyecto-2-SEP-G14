@@ -23,23 +23,31 @@ void update_sensor_values()
 
 void update_gpio_values()
 {
-    int pot1_value = atoi(pot1);
-    int pot2_value = atoi(pot2);
-
-    int concatenated_value = ((file_index & 0x7) << 20) | (pot1_value & 0xFFFFF);
-
+	int pot1_value = 0;
+    if (playing == 1) {
+    	pot1_value = atoi(pot1);
+    }
+    int concatenated_value = (((out_fft_index & 0xF) << 15) | ((CB_update & 0x1) << 14) | ((fft_start & 0x1) << 13) | ((moods & 0x7) << 10) | (pot1_value & 0x3FF));
+    uint32_t commandline;
     XGpio_DiscreteWrite(&gpio1, POT1_pin, concatenated_value);
-    XGpio_DiscreteWrite(&gpio1, POT2_pin, pot2_value);
+
+    commandline = XGpio_DiscreteRead(&gpio1, POT2_pin);
+
+    fft_index = (commandline >> 3) & 0xF;
+    full_out = (commandline >> 2) & 0x1;             // Extract the 4th bit
+    is_done = (commandline >> 1) & 0x1;              // Extract the 3rd bit
+    fft_processing_done = commandline & 0x1;
 }
 
 void update_day_night(int *dia, int *prev_dia)
 {
-    *prev_dia = *dia;
-    if (atoi(opt) > 6000) {
-        *dia = 1;
-    } else {
-        *dia = 0;
-    }
+	*prev_dia = *dia;
+	if (atoi(opt) > 6000) {
+		*dia = 1;
+	} else {
+		*dia = 0;
+	}
+
 }
 
 void print_debug_info()
@@ -55,6 +63,7 @@ void print_debug_info()
     xil_printf("Luz :%d\n\r", read_opt());
     xil_printf("Temp :%d\n\r", read_tmp());
     xil_printf("Dia :%d\n\r", dia);
+    xil_printf("moods :%d\n\r", moods);
     xil_printf("file_index :%d\n\r", file_index);
     xil_printf("\n");
 }

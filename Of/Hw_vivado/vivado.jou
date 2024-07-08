@@ -2,98 +2,59 @@
 # Vivado v2020.1 (64-bit)
 # SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
 # IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
-# Start of session at: Sun Jul  7 15:33:35 2024
-# Process ID: 15144
-# Current directory: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10412 C:\Users\Amteo\Desktop\Proyecto-2-SEP-G14\Of\Hw_vivado\Hardware_Proyecto_Booster.xpr
-# Log file: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/vivado.log
-# Journal file: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado\vivado.jou
+# Start of session at: Mon Jul  8 03:50:24 2024
+# Process ID: 11336
+# Current directory: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15596 C:\Users\etien\Desktop\Proyecto-2-SEP-G14\Of\Hw_vivado\Hardware_Proyecto_Booster.xpr
+# Log file: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/vivado.log
+# Journal file: C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.xpr
+open_project C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.xpr
 update_compile_order -fileset sources_1
-open_bd_design {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}
-regenerate_bd_layout
-regenerate_bd_layout
-validate_bd_design -force
-make_wrapper -files [get_files C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd] -top
-reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 8
 wait_on_run impl_1
-set_property pfm_name {} [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}]
-write_hw_platform -fixed -include_bit -force -file C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/AAA.xsa
+open_bd_design {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}
+update_module_reference DEMO_BUZZER_0_0
+make_wrapper -files [get_files C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd] -top
+reset_run synth_1
+reset_run DEMO_xbar_0_synth_1
+reset_run DEMO_processing_system7_0_0_synth_1
+reset_run DEMO_rst_ps7_0_50M_0_synth_1
+reset_run DEMO_axi_timer_1_0_synth_1
+reset_run DEMO_axi_timer_0_0_synth_1
+reset_run DEMO_ila_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property pfm_name {} [get_files -all {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}]
+write_hw_platform -fixed -include_bit -force -file C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/DEMO_wrapper.xsa
 open_hw_manager
 connect_hw_server -allow_non_jtag
 open_hw_target
-set_property PROGRAM.FILE {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/DEMO_wrapper.bit} [get_hw_devices xc7z010_1]
-set_property PROBES.FILE {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/DEMO_wrapper.ltx} [get_hw_devices xc7z010_1]
-set_property FULL_PROBES.FILE {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/DEMO_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/DEMO_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/DEMO_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/DEMO_wrapper.ltx} [get_hw_devices xc7z010_1]
 current_hw_device [get_hw_devices xc7z010_1]
 refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
-set_property INPUT_VALUE_RADIX UNSIGNED [get_hw_probes DEMO_i/axi_gpio_1_gpio_io_o -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"DEMO_i/vio_0"}]]
-set_property INPUT_VALUE_RADIX UNSIGNED [get_hw_probes DEMO_i/axi_gpio_1_gpio2_io_o -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"DEMO_i/vio_0"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"DEMO_i/ila_0"}]]
 close_hw_manager
 open_hw_manager
 connect_hw_server -allow_non_jtag
 open_hw_target
-set_property PROGRAM.FILE {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/DEMO_wrapper.bit} [get_hw_devices xc7z010_1]
-set_property PROBES.FILE {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/DEMO_wrapper.ltx} [get_hw_devices xc7z010_1]
-set_property FULL_PROBES.FILE {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/DEMO_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/DEMO_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/DEMO_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/DEMO_wrapper.ltx} [get_hw_devices xc7z010_1]
 current_hw_device [get_hw_devices xc7z010_1]
 refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"DEMO_i/ila_0"}]]
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/DEMO_wrapper.bit} [get_hw_devices xc7z010_1]
+set_property PROBES.FILE {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/DEMO_wrapper.ltx} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/DEMO_wrapper.ltx} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
 refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
-set_property INPUT_VALUE_RADIX BINARY [get_hw_probes DEMO_i/axi_gpio_1_gpio2_io_o -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"DEMO_i/vio_0"}]]
-set_property INPUT_VALUE_RADIX BINARY [get_hw_probes DEMO_i/axi_gpio_1_gpio_io_o -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"DEMO_i/vio_0"}]]
-update_module_reference DEMO_BUZZER_0_0
-startgroup
-make_bd_pins_external  [get_bd_pins BUZZER_0/LEDR]
-endgroup
-startgroup
-make_bd_pins_external  [get_bd_pins BUZZER_0/LEDG]
-endgroup
-startgroup
-make_bd_pins_external  [get_bd_pins BUZZER_0/LEDB]
-endgroup
-set_property name LEDR [get_bd_ports LEDR_0]
-set_property name LEDG [get_bd_ports LEDG_0]
-set_property name LEDB [get_bd_ports LEDB_0]
-regenerate_bd_layout
-startgroup
-set_property -dict [list CONFIG.C_GPIO_WIDTH {13}] [get_bd_cells axi_gpio_1]
-endgroup
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0
-endgroup
-set_property -dict [list CONFIG.DIN_FROM {9} CONFIG.DIN_WIDTH {13} CONFIG.DOUT_WIDTH {10}] [get_bd_cells xlslice_0]
-startgroup
-create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_1
-endgroup
-set_property location {3 773 175} [get_bd_cells xlslice_0]
-startgroup
-set_property -dict [list CONFIG.C_PROBE_IN4_WIDTH {3} CONFIG.C_PROBE_IN3_WIDTH {10} CONFIG.C_PROBE_IN0_WIDTH {13} CONFIG.C_NUM_PROBE_IN {5}] [get_bd_cells vio_0]
-endgroup
-delete_bd_objs [get_bd_nets axi_gpio_1_gpio_io_o]
-connect_bd_net [get_bd_pins axi_gpio_1/gpio_io_o] [get_bd_pins xlslice_0/Din]
-connect_bd_net [get_bd_pins axi_gpio_1/gpio_io_o] [get_bd_pins xlslice_1/Din]
-connect_bd_net [get_bd_pins axi_gpio_1/gpio_io_o] [get_bd_pins vio_0/probe_in0]
-connect_bd_net [get_bd_pins xlslice_0/Dout] [get_bd_pins vio_0/probe_in3]
-connect_bd_net [get_bd_pins xlslice_0/Dout] [get_bd_pins BUZZER_0/POT1]
-connect_bd_net [get_bd_pins BUZZER_0/MOOD] [get_bd_pins vio_0/probe_in4]
-connect_bd_net [get_bd_pins BUZZER_0/MOOD] [get_bd_pins xlslice_1/Dout]
-startgroup
-set_property -dict [list CONFIG.DIN_TO {10} CONFIG.DIN_FROM {12} CONFIG.DIN_WIDTH {13} CONFIG.DOUT_WIDTH {3}] [get_bd_cells xlslice_1]
-endgroup
-regenerate_bd_layout
-make_wrapper -files [get_files C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd] -top
-reset_run synth_1
-reset_run DEMO_vio_0_0_synth_1
-reset_run DEMO_axi_gpio_0_1_synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property pfm_name {} [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}]
-write_hw_platform -fixed -include_bit -force -file C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/AAA.xsa
-set_property pfm_name {} [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}]
-write_hw_platform -fixed -include_bit -force -file C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/BBB.xsa
-set_property pfm_name {} [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}]
-write_hw_platform -fixed -include_bit -force -file C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/BBB.xsa
-refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"DEMO_i/ila_0"}]]
+save_wave_config {C:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}

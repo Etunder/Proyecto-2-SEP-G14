@@ -1,10 +1,10 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Sat Jul  6 23:44:55 2024
--- Host        : DESKTOP-AVIBNI3 running 64-bit major release  (build 9200)
+-- Date        : Mon Jul  8 04:19:05 2024
+-- Host        : DESKTOP-9CMCGP1 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_rst_ps7_0_50M_0/DEMO_rst_ps7_0_50M_0_stub.vhdl
+--               c:/Users/etien/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ip/DEMO_rst_ps7_0_50M_0/DEMO_rst_ps7_0_50M_0_stub.vhdl
 -- Design      : DEMO_rst_ps7_0_50M_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z010clg400-1
