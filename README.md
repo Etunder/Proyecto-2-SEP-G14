@@ -4,7 +4,7 @@ Proyecto 2 del Grupo 14 del curso Sistemas Electrónicos Programables IEE2463.
 Se subio a OneDrive debido al peso de este, puesto que GitHub no soporta subir archivos tan pesados.
 Link proyecto entero OneDrive: https://uccl0-my.sharepoint.com/:f:/g/personal/etienne_cabiac_uc_cl/Eq6IL17F2XtAtaEbSwSwz9QB-yedx0i9YDFeT1u7yttljA?e=5YDvCR
 
-Link Video: https://youtu.be/VhqMAuuSq5c
+Link Video: https://youtu.be/uhtVLKFLcmc
 
 Descripcion: El proyecto presentado a continuación constituye principalmente un analizador de canciones en frecuencias. Para ello primero leemos las canciones sampleadas ubicadas en la tarjeta SD, luego, según la canción seleccionada utilizando el display, se obtiene el valor de la frecuencia más relevante y se hace sonar el buzzer según este resultado. Además, se implementan diferentes periféricos del Booster Pack que nos fue proporcionado para interactuar, permitiendo, por ejemplo, cambiar la canción seleccionada con el acelerómetro, mostrar un gráfico del micrófono para analizar nuestra voz y en general, interactuar con el software.
 
