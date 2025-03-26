@@ -1,0 +1,6 @@
+#include "estado3.h"
+#include "LCD_GUI.h"
+
+void handle_estado3(const char* color) {
+    GUI_DisString_EN(30, 40, "???", &Font24, GUI_BACKGROUND, color);
+}

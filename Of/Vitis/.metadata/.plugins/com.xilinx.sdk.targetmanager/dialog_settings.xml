@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="" key="lab10prop2-bmmFile"/>
+	<item value="false" key="lab10prop2-partial_bit"/>
+	<item value="{&quot;cables&quot;:[{&quot;name&quot;:&quot;Digilent Zybo Z7 210351B3FC84A&quot;,&quot;indexContextMap&quot;:{&quot;2&quot;:&quot;jsn-Zybo Z7-210351B3FC84A-4ba00477-0&quot;,&quot;3&quot;:&quot;jsn-Zybo Z7-210351B3FC84A-13722093-0&quot;}}]}" key="devices_info_Local"/>
+	<item value="Local" key="lab10prop2-target"/>
+	<item value="Auto Detect" key="lab10prop2-device"/>
+	<item value="lab10prop2" key="programfpga.sdxproject"/>
+	<item value="C:\Users\Amteo\Desktop\Universidad\SEP\Labs\LAB10\lab10_prop2\Hw_vivado\Hardware_Proyecto_Booster.runs\impl_1\DEMO_wrapper.bit" key="lab10prop2-bitFile"/>
+	<item value="false" key="lab10prop2-skip_rev_check"/>
+</section>

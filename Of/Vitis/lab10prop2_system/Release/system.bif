@@ -1,0 +1,7 @@
+/*HW_lab10prop2*/
+the_ROM_image:
+{
+ [bootloader] <HW_lab10prop2/boot/fsbl.elf>
+ <bitstream>
+ <elf,ps7_cortexa9_0>
+}

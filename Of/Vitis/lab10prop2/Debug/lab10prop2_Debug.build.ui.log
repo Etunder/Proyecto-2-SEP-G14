@@ -1,0 +1,41 @@
+2024-07-07T15:37:23.205541800255-15:37:23 **** Incremental Build of configuration Debug for project lab10prop2 ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-'Building file: ../src/init_project.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/init_project.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/standalone_domain/bspinclude/include -MMD -MP -MF"src/init_project.d" -MT"src/init_project.o" -o "src/init_project.o" "../src/init_project.c"
+000-In file included from ../src/init_project.c:11:
+000/lab10prop2/src/timers.h6-1-1fatal error: xtmrctr.h: No such file or directory2-../src/timers.h:6:10: fatal error: xtmrctr.h: No such file or directory
+000-    6 | #include "xtmrctr.h"
+000-      |          ^~~~~~~~~~~
+000-compilation terminated.
+000-'Finished building: ../src/init_project.c'
+000-' '
+000-'Building file: ../src/timers.c'
+000-'Invoking: ARM v7 gcc compiler'
+000-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/timers.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/standalone_domain/bspinclude/include -MMD -MP -MF"src/timers.d" -MT"src/timers.o" -o "src/timers.o" "../src/timers.c"
+000-In file included from ../src/timers.c:1:
+000/lab10prop2/src/timers.h6-1-1fatal error: xtmrctr.h: No such file or directory2-../src/timers.h:6:10: fatal error: xtmrctr.h: No such file or directory
+000-    6 | #include "xtmrctr.h"
+000-      |          ^~~~~~~~~~~
+000-compilation terminated.
+000-'Finished building: ../src/timers.c'
+000-' '
+000-'Building target: lab10prop2.elf'
+000-'Invoking: ARM v7 gcc linker'
+000-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/HW_lab10prop2/export/HW_lab10prop2/sw/HW_lab10prop2/standalone_domain/bsplib/lib -o "lab10prop2.elf"  ./src/ADC.o ./src/Delay.o ./src/I2C.o ./src/LCD_Driver.o ./src/LCD_GUI.o ./src/LCD_SPI.o ./src/estado0.o ./src/estado1.o ./src/estado2.o ./src/estado3.o ./src/font12.o ./src/font16.o ./src/font20.o ./src/font24.o ./src/font8.o ./src/globals.o ./src/init_project.o ./src/main.o ./src/platform.o ./src/timers.o ./src/utils.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+000-arm-xilinx-eabi-gcc.exe: error: ./src/init_project.o: No such file or directory
+000-arm-xilinx-eabi-gcc.exe: error: ./src/timers.o: No such file or directory
+000-'Finished building target: lab10prop2.elf'
+000-' '
+000-'Invoking: ARM v7 Print Size'
+000-arm-none-eabi-size lab10prop2.elf  |tee "lab10prop2.elf.size"
+000-arm-none-eabi-size: 'lab10prop2.elf': No such file
+000-'Finished building: lab10prop2.elf.size'
+000-' '
+00255-
+15:37:26 Build Finished (took 3s.381ms)
+

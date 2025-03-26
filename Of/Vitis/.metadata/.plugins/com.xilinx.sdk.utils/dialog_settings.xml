@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="C:\Users\Amteo\Desktop\Universidad\SEP\Labs\LAB10\lab10_prop2\Hw_vivado\Hardware_Proyecto_Booster.runs\impl_1" key="sdx_program_fpga_view_bit_bmm_browse_key"/>
+	<item value="C:\Users\Amteo\Desktop\Universidad\SEP\Labs\LAB10\lab10_prop2\Vitis\HW_lab10prop2\export\HW_lab10prop2\sw\HW_lab10prop2\boot" key="bootgen_files_selection"/>
+	<item value="C:\Users\Amteo\Desktop\Proyecto-2-SEP-G14\Of\Hw_vivado" key="scw_hwspec_file_selection"/>
+	<item value="C:\Users\Amteo\Desktop\Universidad\SEP\Labs\LAB10\lab10_prop2\Hw_vivado\Hardware_Proyecto_Booster.runs\impl_1" key="debug_files_selection"/>
+	<item value="C:\Users\Amteo\Desktop\Universidad\SEP\Labs\LAB10\lab10_prop2\Vitis\HW_lab10prop2\export\HW_lab10prop2\sw\HW_lab10prop2\boot" key="zynq_flash_files_selection"/>
+	<item value="C:\Users\Amteo\Desktop\Universidad\SEP\Labs\LAB10\lab10_prop2\Hw_vivado" key="scw_hwspec"/>
+</section>

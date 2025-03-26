@@ -1,0 +1,14 @@
+#include "globals.h"
+#include "utils.h"
+
+int estado2_handler()
+{
+    draw_microphone_plot();
+
+    if (atoi(joyx) < 350) {
+        LCD_Clear(GUI_BACKGROUND);
+        return 0;
+    }
+
+    return 2;
+}

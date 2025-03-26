@@ -1,0 +1,6 @@
+#ifndef ESTADO1_H
+#define ESTADO1_H
+
+void handle_estado1(int *opcion, int *cancion, const char* color);
+
+#endif

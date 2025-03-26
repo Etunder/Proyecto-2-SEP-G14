@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="Local" key="lab10prop2_system-target"/>
+	<item value="lab10prop2_system" key="programflash.hwplatform"/>
+	<item value="qspi-x4-single" key="lab10prop2_system-flashType"/>
+	<item value="C:/Users/Amteo/Desktop/Universidad/SEP/Labs/LAB10/lab10_prop2/Vitis/lab10prop2_system/_ide/bootimage/BOOT.bin" key="lab10prop2_system-imgFile"/>
+	<item value="Auto Detect" key="lab10prop2_system-device"/>
+	<item value="" key="lab10prop2_system-offSet"/>
+	<item value="false" key="lab10prop2_system-verifyFlash"/>
+	<item value="C:\Users\Amteo\Desktop\Universidad\SEP\Labs\LAB10\lab10_prop2\Vitis\HW_lab10prop2\export\HW_lab10prop2\sw\HW_lab10prop2\boot\fsbl.elf" key="lab10prop2_system-fsblFile"/>
+	<item value="false" key="lab10prop2_system-blankCheck"/>
+</section>

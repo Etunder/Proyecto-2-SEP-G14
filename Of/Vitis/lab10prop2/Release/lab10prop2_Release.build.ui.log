@@ -1,0 +1,10 @@
+2024-06-19T09:12:27.155680300255-09:12:27 **** Incremental Build of configuration Release for project lab10prop2 ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-make[1]: Nothing to be done for 'main-build'.
+00255-
+09:12:28 Build Finished (took 1s.217ms)
+

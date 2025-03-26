@@ -1,0 +1,10 @@
+#ifndef UTILS_H
+#define UTILS_H
+
+void update_sensor_values();
+void update_gpio_values();
+void update_day_night(int *dia, int *prev_dia);
+void print_debug_info();
+const char* tmp_to_color(int tmp);
+
+#endif // UTILS_H

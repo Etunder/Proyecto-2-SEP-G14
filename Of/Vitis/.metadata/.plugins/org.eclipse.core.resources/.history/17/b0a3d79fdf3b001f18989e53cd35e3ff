@@ -1,0 +1,29 @@
+#include "estado1.h"
+#include "ADC.h"
+#include "LCD_GUI.h"
+#include "utils.h"
+
+void handle_estado1(int *opcion, int *cancion, const char* color) {
+    int joyy = read_joyy();
+    int joyx = read_joyx();
+
+    if (joyy > 650) {
+        *opcion = (*opcion > 1) ? (*opcion - 1) : 3;
+    } else if (joyy < 350) {
+        *opcion = (*opcion < 3) ? (*opcion + 1) : 1;
+    }
+
+    GUI_DisString_EN(15, 10, "CANCIONES", &Font12, GUI_BACKGROUND, WHITE);
+    (*opcion == 1) ? GUI_DisString_EN(5, 50, song_titles[0], &Font8, GUI_BACKGROUND, color) : GUI_DisString_EN(5, 50, song_titles[0], &Font8, GUI_BACKGROUND, WHITE);
+    (*opcion == 2) ? GUI_DisString_EN(5, 70, song_titles[1], &Font8, GUI_BACKGROUND, color) : GUI_DisString_EN(5, 70, song_titles[1], &Font8, GUI_BACKGROUND, WHITE);
+    (*opcion == 3) ? GUI_DisString_EN(5, 90, song_titles[2], &Font8, GUI_BACKGROUND, color) : GUI_DisString_EN(5, 90, song_titles[2], &Font8, GUI_BACKGROUND, WHITE);
+
+    if (joyx > 650) {
+        *cancion = *opcion;
+        *opcion = 1;
+        LCD_Clear(GUI_BACKGROUND);
+    } else if (*cancion > 0) {
+        GUI_DisString_EN(15, 10, "Sonando...", &Font12, GUI_BACKGROUND, WHITE);
+        GUI_DisString_EN(5, 50, song_titles[*cancion - 1], &Font8, GUI_BACKGROUND, color);
+    }
+}

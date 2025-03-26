@@ -1,0 +1,34 @@
+#include "globals.h"
+#include "utils.h"
+
+int estado0_handler(int *opcion, int *inicio, int dia, int prev_dia)
+{
+    if (atoi(joyy) > 650) {
+        if (*opcion > 1) {
+            --(*opcion);
+        } else {
+            *opcion = 3;
+        }
+    } else if (atoi(joyy) < 350) {
+        if (*opcion < 3) {
+            ++(*opcion);
+        } else {
+            *opcion = 1;
+        }
+    }
+
+    draw_main_menu(*opcion, dia, prev_dia, *inicio);
+
+    *inicio = 1;
+    delay_ms(20);
+
+    if (atoi(joyx) > 650) {
+        LCD_Clear(GUI_BACKGROUND);
+        int new_estado = *opcion;
+        *opcion = 1;
+        delay_ms(50);
+        return new_estado;
+    }
+
+    return 0;
+}

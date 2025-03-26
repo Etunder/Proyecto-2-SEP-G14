@@ -1,0 +1,6 @@
+#ifndef TIMERS_H
+#define TIMERS_H
+
+int init_project();
+
+#endif // TIMERS_H

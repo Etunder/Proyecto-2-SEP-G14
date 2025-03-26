@@ -1,0 +1,6 @@
+#ifndef ESTADO2_H
+#define ESTADO2_H
+
+void handle_estado2(int mic_values[], int prev_mic_values[], const char* color);
+
+#endif

@@ -1,0 +1,1464 @@
+/*
+
+Xilinx Vivado v2020.1 (64-bit) [Major: 2020, Minor: 1]
+SW Build: 2902540 on Wed May 27 19:54:49 MDT 2020
+IP Build: 2902112 on Wed May 27 22:43:36 MDT 2020
+
+Process ID (PID): 15144
+License: Customer
+
+Current time: 	Sun Jul 07 15:34:13 CLT 2024
+Time zone: 	Chile Standard Time (America/Santiago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 2
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2020.1/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Amteo
+User home directory: C:/Users/Amteo
+User working directory: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado
+User country: 	CL
+User language: 	es
+User locale: 	es_CL
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2020.1
+RDI_DATADIR: C:/Xilinx/Vivado/2020.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2020.1/bin
+
+Vivado preferences file location: C:/Users/Amteo/AppData/Roaming/Xilinx/Vivado/2020.1/vivado.xml
+Vivado preferences directory: C:/Users/Amteo/AppData/Roaming/Xilinx/Vivado/2020.1/
+Vivado layouts directory: C:/Users/Amteo/AppData/Roaming/Xilinx/Vivado/2020.1/data/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2020.1/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/vivado.log
+Vivado journal file location: 	C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/vivado.jou
+Engine tmp dir: 	C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/.Xil/Vivado-15144-DESKTOP-AVIBNI3
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2020.1/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2020.1
+XILINX_SDK: C:/Xilinx/Vitis/2020.1
+XILINX_VITIS: C:/Xilinx/Vitis/2020.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2020.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2020.1
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 830 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cs):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Amteo\Desktop\Proyecto-2-SEP-G14\Of\Hw_vivado\Hardware_Proyecto_Booster.xpr. Version: Vivado v2020.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 830 MB. GUI used memory: 52 MB. Current time: 7/7/24, 3:34:14 PM CLT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 92 MB (+94253kb) [00:00:29]
+// [Engine Memory]: 830 MB (+718404kb) [00:00:29]
+// [GUI Memory]: 111 MB (+14811kb) [00:00:33]
+// WARNING: HEventQueue.dispatchEvent() is taking  5859 ms.
+// Tcl Message: open_project C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/ip_repo'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Tests/ip_repo'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'. 
+// WARNING: HEventQueue.dispatchEvent() is taking  2185 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1314 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 1056.695 ; gain = 0.000 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,010 MB. GUI used memory: 71 MB. Current time: 7/7/24, 3:34:36 PM CLT
+// Project name: Hardware_Proyecto_Booster; location: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado; part: xc7z010clg400-1
+// [Engine Memory]: 1,010 MB (+145485kb) [00:00:40]
+dismissDialog("Open Project"); // bz (cs)
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// [GUI Memory]: 136 MB (+20342kb) [00:00:49]
+// TclEventType: DG_GRAPH_STALE
+// [GUI Memory]: 147 MB (+4001kb) [00:00:51]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 33 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // af (cs)
+selectMenuItem((HResource) null, "Launch Vitis IDE"); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // aa (q, cs)
+// bz (cs):  Launch Vitis IDE : addNotify
+// 'X' command handler elapsed time: 4 seconds
+dismissDialog("Launch Vitis IDE"); // bz (cs)
+// Elapsed time: 148 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DEMO_wrapper(STRUCTURE) (DEMO_wrapper.vhd)]", 1); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DEMO_wrapper(STRUCTURE) (DEMO_wrapper.vhd), DEMO_i : DEMO (DEMO.bd)]", 2, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DEMO_wrapper(STRUCTURE) (DEMO_wrapper.vhd), DEMO_i : DEMO (DEMO.bd)]", 2, true, false, false, false, false, true); // B (F, cs) - Double Click - Node
+// bz (cs):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - axi_timer_0 Adding component instance block -- xilinx.com:ip:axi_timer:2.0 - axi_timer_1 Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0 Adding component instance block -- xilinx.com:module_ref:BUZZER:1.0 - BUZZER_0 Successfully read diagram <DEMO> from BD file <C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  2676 ms.
+// TclEventType: RSB_CONNECTION_CHANGE
+// Elapsed time: 15 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 1503.668 ; gain = 0.000 
+dismissDialog("Open Block Design"); // bz (cs)
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 724, 218, 1065, 448, false, false, false, true, false); // hq (m, cs) - Popup Trigger
+// Elapsed time: 17 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// [GUI Memory]: 157 MB (+3090kb) [00:06:26]
+// Elapsed time: 129 seconds
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Elapsed time: 93 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 10, 67, 1259, 665, false, false, false, true, false); // hq (m, cs) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // af (ao, cs)
+// Elapsed time: 14 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectButton(PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN, "System_validate_bd_design_rsb"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_VALIDATE_RSB_DESIGN
+// Tcl Command: 'validate_bd_design -force'
+selectButton("OptionPane.button", "Rerun Validate Design"); // JButton (v, B)
+// TclEventType: MSGMGR_REFRESH_MSG
+// TclEventType: RSB_PARAM_PROP
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// bz (cs):  Validate Design : addNotify
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: validate_bd_design -force 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 35 seconds
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bz)
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PARAM_PROP
+// Tcl Message: validate_bd_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:37 . Memory (MB): peak = 1503.668 ; gain = 0.000 
+dismissDialog("Validate Design"); // bz (cs)
+selectButton("OptionPane.button", "OK"); // JButton (v, B)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cs): Re-customize IP: addNotify
+// Elapsed time: 63 seconds
+dismissDialog("Re-customize IP"); // r (cs)
+// Elapsed time: 171 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aL (aI, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DEMO_wrapper(STRUCTURE) (DEMO_wrapper.vhd), DEMO_i : DEMO (DEMO.bd)]", 2, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DEMO_wrapper(STRUCTURE) (DEMO_wrapper.vhd), DEMO_i : DEMO (DEMO.bd)]", 2, true, false, false, false, true, false); // B (F, cs) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+// a (cs): Create HDL Wrapper: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Create HDL Wrapper"); // a (cs)
+// bz (cs):  Create HDL Wrapper : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: make_wrapper -files [get_files C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd] -top 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <C:\Users\Amteo\Desktop\Proyecto-2-SEP-G14\Of\Hw_vivado\Hardware_Proyecto_Booster.srcs\sources_1\bd\DEMO\DEMO.bd>  Wrote  : <C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ui/bd_58220e03.ui>  
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 554ms to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1141 ms. Increasing delay to 3000 ms.
+// Tcl Message: VHDL Output written to : C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/synth/DEMO.vhd 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: VHDL Output written to : C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/sim/DEMO.vhd VHDL Output written to : C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/hdl/DEMO_wrapper.vhd 
+// Tcl Message: make_wrapper: Time (s): cpu = 00:00:05 ; elapsed = 00:00:30 . Memory (MB): peak = 1515.129 ; gain = 11.461 
+// Elapsed time: 30 seconds
+dismissDialog("Create HDL Wrapper"); // bz (cs)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 42 seconds
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cs): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bz (cs):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cs)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cD' command handler elapsed time: 5 seconds
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Launch Runs"); // f (cs)
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// bz (cs):  Generate Bitstream : addNotify
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: Wrote  : <C:\Users\Amteo\Desktop\Proyecto-2-SEP-G14\Of\Hw_vivado\Hardware_Proyecto_Booster.srcs\sources_1\bd\DEMO\DEMO.bd>  Wrote  : <C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ui/bd_58220e03.ui>  
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: VHDL Output written to : C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/synth/DEMO.vhd VHDL Output written to : C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/sim/DEMO.vhd VHDL Output written to : C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/hdl/DEMO_wrapper.vhd 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/hw_handoff/DEMO.hwh Generated Block Design Tcl file C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/hw_handoff/DEMO_bd.tcl Generated Hardware Definition File C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/synth/DEMO.hwdef 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// WARNING: HEventQueue.dispatchEvent() is taking  1411 ms.
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DEMO_auto_pc_0, cache-ID = f0066fce20473567; cache size = 22.206 MB. 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// [GUI Memory]: 169 MB (+4872kb) [00:14:40]
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Jul  7 15:48:37 2024] Launched synth_1... Run output will be captured here: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/synth_1/runme.log [Sun Jul  7 15:48:37 2024] Launched impl_1... Run output will be captured here: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1536.496 ; gain = 15.418 
+// Elapsed time: 11 seconds
+dismissDialog("Generate Bitstream"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// [GUI Memory]: 180 MB (+2015kb) [00:16:03]
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1173 ms. Increasing delay to 3000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1716 ms. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1393 ms. Increasing delay to 4179 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cs): Bitstream Generation Completed: addNotify
+// Elapsed time: 320 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ag)
+dismissDialog("Bitstream Generation Completed"); // ag (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // af (cs)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}]'
+// k (cs): Export Hardware Platform: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, k)
+selectRadioButton((HResource) null, "Include bitstream. This platform includes the complete hardware implementation and bitstream, in addition to the hardware specification for software tools."); // b (a, k)
+selectButton("NEXT", "Next >"); // JButton (j, k)
+setText("XSA file name:", "AAA"); // ac (Q, k)
+selectButton("NEXT", "Next >"); // JButton (j, k)
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}]'
+// Tcl Command: 'set_property pfm_name {} [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}]'
+selectButton("FINISH", "Finish"); // JButton (j, k)
+// 'm' command handler elapsed time: 14 seconds
+// Tcl Message: set_property pfm_name {} [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}] 
+dismissDialog("Export Hardware Platform"); // k (cs)
+// bz (cs):  Export Hardware Platform : addNotify
+// Tcl Message: write_hw_platform -fixed -include_bit -force -file C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/AAA.xsa 
+// Tcl Message: INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/AAA.xsa ... 
+// Tcl Message: INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2020.1/data\embeddedsw) loading 2 seconds 
+// Tcl Message: INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/AAA.xsa 
+// Tcl Message: write_hw_platform: Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1594.328 ; gain = 57.832 
+// Elapsed time: 19 seconds
+dismissDialog("Export Hardware Platform"); // bz (cs)
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3316 ms. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2670 ms. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2710 ms. Increasing delay to 8130 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3693 ms. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1080 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 361ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1423 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,010 MB. GUI used memory: 100 MB. Current time: 7/7/24, 4:04:41 PM CLT
+// Elapsed time: 915 seconds
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // u (J, cs)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // u (J, cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (J, cs)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bz (cs):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw_manager 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+dismissDialog("Open Hardware Manager"); // bz (cs)
+// TclEventType: HW_SERVER_UPDATE
+// bz (cs):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ****** Xilinx cs_server v2020.1.0   **** Build date : May 13 2020-21:10:29     ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1594.328 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351B3FC84A 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  7404 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,727 MB. GUI used memory: 101 MB. Current time: 7/7/24, 4:10:21 PM CLT
+// Tcl Message: open_hw_target: Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 2845.578 ; gain = 1251.250 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/DEMO_wrapper.bit} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/DEMO_wrapper.ltx} [get_hw_devices xc7z010_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/DEMO_wrapper.ltx} [get_hw_devices xc7z010_1] 
+// Tcl Message: current_hw_device [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// [Engine Memory]: 1,774 MB (+748780kb) [00:36:26]
+// WARNING: HEventQueue.dispatchEvent() is taking  2055 ms.
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 19 seconds
+dismissDialog("Auto Connect"); // bz (cs)
+// Elapsed time: 26 seconds
+selectButton(PAResourceEtoH.HardwareDashboardView_SHOW_DASHBOARD_OPTIONS, "Dashboard Options"); // C (N, cs)
+selectTree(PAResourceEtoH.HardwareDashboardOptionsPanel_LAYER_TREE, "[Windows, xc7z010_1, hw_vio_1]", 1, false); // h (f, cs)
+// WARNING: HEventQueue.dispatchEvent() is taking  1003 ms.
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+selectTree(PAResourceEtoH.HardwareDashboardOptionsPanel_LAYER_TREE, "[Windows, xc7z010_1, hw_vio_1]", 1, false); // h (f, cs)
+selectTree(PAResourceEtoH.HardwareDashboardOptionsPanel_LAYER_TREE, "[Windows, xc7z010_1, hw_vio_1]", 1, false); // h (f, cs)
+selectButton(PAResourceTtoZ.VioProbesTreeTablePanel_ADD_PROBE, "VioProbeTablePanel_new"); // E (g, cs)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hw_vio_1]", 0, true); // N (J, ResizableWindow) - Node
+expandTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hw_vio_1, DEMO_i/axi_gpio_1_gpio2_io_o[9:0]]", 1); // N (J, ResizableWindow)
+collapseTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hw_vio_1, DEMO_i/axi_gpio_1_gpio2_io_o[9:0]]", 1); // N (J, ResizableWindow)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hw_vio_1]", 0, true); // N (J, ResizableWindow) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 1,798 MB. GUI used memory: 107 MB. Current time: 7/7/24, 4:11:10 PM CLT
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 14 seconds
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "DEMO_i/axi_gpio_1_gpio_io_o[9:0] ; [H] 3BE ; HARDWARE_VIO_ACTIVITY_BOTH ; Input ; hw_vio_1", 2, "[H] 3BE", 1, true); // g (J, cs) - Node
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "DEMO_i/axi_gpio_1_gpio_io_o[9:0] ; [H] 3BE ; HARDWARE_VIO_ACTIVITY_BOTH ; Input ; hw_vio_1", 2, "[H] 3BE", 1, true, false, false, false, true, false); // g (J, cs) - Popup Trigger - Node
+selectMenu(PAResourceItoN.LabtoolsMenu_RADIX, "Radix"); // af (ao, cs)
+selectMenuItem(PAResourceItoN.LabtoolsMenu_UNSIGNED_DECIMAL, "Unsigned Decimal"); // aq (cs)
+// Run Command: PAResourceCommand.PACommandNames_SET_VIO_UNSIGNED_DECIMAL_RADIX
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property INPUT_VALUE_RADIX UNSIGNED [get_hw_probes DEMO_i/axi_gpio_1_gpio_io_o -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"DEMO_i/vio_0"}]] 
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "DEMO_i/axi_gpio_1_gpio2_io_o[9:0] ; [H] 000 ;  ; Input ; hw_vio_1", 1, "[H] 000", 1, true); // g (J, cs) - Node
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "DEMO_i/axi_gpio_1_gpio2_io_o[9:0] ; [H] 000 ;  ; Input ; hw_vio_1", 1, "[H] 000", 1, true, false, false, false, true, false); // g (J, cs) - Popup Trigger - Node
+selectMenu(PAResourceItoN.LabtoolsMenu_RADIX, "Radix"); // af (ao, cs)
+selectMenuItem(PAResourceItoN.LabtoolsMenu_UNSIGNED_DECIMAL, "Unsigned Decimal"); // aq (cs)
+// Run Command: PAResourceCommand.PACommandNames_SET_VIO_UNSIGNED_DECIMAL_RADIX
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property INPUT_VALUE_RADIX UNSIGNED [get_hw_probes DEMO_i/axi_gpio_1_gpio2_io_o -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"DEMO_i/vio_0"}]] 
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Elapsed time: 77 seconds
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_vios"); // i
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210351B3FC84A 
+// n (cs): Close Hardware Target: addNotify
+// TclEventType: HW_SERVER_UPDATE
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 533ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1029 ms.
+// Elapsed time: 39 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cs)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aB, cs)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// A (cs): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bz (cs):  Close Hardware Manager : addNotify
+dismissDialog("Confirm Close"); // A (cs)
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw_manager 
+dismissDialog("Close Hardware Manager"); // bz (cs)
+// Elapsed time: 16 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (g, cs)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "deb"); // OverlayTextField (az, ResizableWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "deb"); // OverlayTextField (az, ResizableWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "deb"); // OverlayTextField (az, ResizableWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "deb"); // OverlayTextField (az, ResizableWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "deb"); // OverlayTextField (az, ResizableWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "deb"); // OverlayTextField (az, ResizableWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "deb"); // OverlayTextField (az, ResizableWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "deb"); // OverlayTextField (az, ResizableWindow)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "deb"); // OverlayTextField (az, ResizableWindow)
+// Elapsed time: 75 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField (az)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BUZZER(Behavioral) (BUZZER.vhd)]", 3, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, BUZZER(Behavioral) (BUZZER.vhd)]", 3, false, false, false, false, false, true); // B (F, cs) - Double Click
+selectCodeEditor("BUZZER.vhd", 466, 227); // bP (w, cs)
+selectCodeEditor("BUZZER.vhd", 194, 248); // bP (w, cs)
+selectCodeEditor("BUZZER.vhd", 194, 248, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("BUZZER.vhd", 254, 242); // bP (w, cs)
+selectCodeEditor("BUZZER.vhd", 254, 242, false, false, false, false, true); // bP (w, cs) - Double Click
+selectCodeEditor("BUZZER.vhd", 198, 306); // bP (w, cs)
+// WARNING: HEventQueue.dispatchEvent() is taking  3470 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3927 ms. Increasing delay to 8000 ms.
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 1093 ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 441 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (J, cs) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// bz (cs):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// PAPropertyPanels.initPanels (BUZZER.vhd) elapsed time: 0.2s
+// WARNING: HEventQueue.dispatchEvent() is taking  1373 ms.
+// Tcl Message: open_hw_manager 
+dismissDialog("Open Hardware Manager"); // bz (cs)
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (ds, cs)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// bz (cs):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 
+// Tcl Message: INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ****** Xilinx cs_server v2020.1.0   **** Build date : May 13 2020-21:10:29     ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.    
+// Tcl Message: connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2908.281 ; gain = 0.000 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351B3FC84A 
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/DEMO_wrapper.bit} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/DEMO_wrapper.ltx} [get_hw_devices xc7z010_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/DEMO_wrapper.ltx} [get_hw_devices xc7z010_1] 
+// Tcl Message: current_hw_device [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  3001 ms.
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 12 seconds
+dismissDialog("Auto Connect"); // bz (cs)
+// Elapsed time: 39 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BUZZER.vhd", 0); // m (l, cs)
+selectCodeEditor("BUZZER.vhd", 461, 187); // bP (w, cs)
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 5, true); // u (J, cs) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IP_INTEGRATOR
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m (l, cs)
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4335 ms. Increasing delay to 13005 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 58 ms. Decreasing delay to 2058 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2608 ms. Increasing delay to 7824 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6140 ms. Increasing delay to 9000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6051 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1500 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 104 MB. Current time: 7/7/24, 4:41:12 PM CLT
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// O (cs):  Re-customize IP : addNotify
+// r (cs): Re-customize Module Reference: addNotify
+// Elapsed time: 1227 seconds
+dismissDialog("Re-customize IP"); // O (cs)
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+dismissDialog("Re-customize Module Reference"); // r (cs)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cs): Re-customize Module Reference: addNotify
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+dismissDialog("Re-customize Module Reference"); // r (cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BUZZER.vhd", 2); // m (l, cs)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_OBJECT_DELETE
+// Elapsed time: 11 seconds
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_vios"); // i
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210351B3FC84A 
+// n (cs): Close Hardware Target: addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 15 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cs)
+selectCodeEditor("BUZZER.vhd", 204, 392); // bP (w, cs)
+// Elapsed time: 71 seconds
+selectCodeEditor("BUZZER.vhd", 605, 435); // bP (w, cs)
+selectCodeEditor("BUZZER.vhd", 532, 427); // bP (w, cs)
+selectCodeEditor("BUZZER.vhd", 538, 390); // bP (w, cs)
+// Elapsed time: 83 seconds
+selectCodeEditor("BUZZER.vhd", 438, 307); // bP (w, cs)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// WARNING: HEventQueue.dispatchEvent() is taking  1016 ms.
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// WARNING: updateGUI() is taking  1233 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2184 ms.
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// WARNING: updateGUI() is taking  1444 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1476 ms.
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210351B3FC84A 
+// n (cs): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 98 MB. Current time: 7/7/24, 5:11:11 PM CLT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4820 ms. Increasing delay to 14460 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 54 ms. Decreasing delay to 2054 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1556 ms. Increasing delay to 4668 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2602 ms. Increasing delay to 7806 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1266 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4531 ms. Increasing delay to 13593 ms.
+// WARNING: HTimer (ExpRunMonitor Update Timer) is taking 500ms to process. Increasing delay to 3000 ms.
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 71 ms. Decreasing delay to 2071 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1346 ms. Increasing delay to 4038 ms.
+// Elapsed time: 3077 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (J, cs) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 96 MB. Current time: 7/7/24, 5:41:12 PM CLT
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2968 ms. Increasing delay to 8904 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 4634 ms. Increasing delay to 13902 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 73 ms. Decreasing delay to 2073 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1144 ms. Increasing delay to 3432 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 2030 ms. Increasing delay to 6090 ms.
+// Elapsed time: 892 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (J, cs) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (J, cs) - Node
+selectButton(PAResourceOtoP.ProgramDebugTab_REFRESH_DEVICE, "Refresh device"); // h (ds, cs)
+selectMenuItem((HResource) null, "xc7z010_1"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_REFRESH_DEVICE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  1556 ms.
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// bz (cs):  Refresh Device : addNotify
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+dismissDialog("Refresh Device"); // bz (cs)
+selectButton(PAResourceEtoH.HardwareDashboardView_SHOW_DASHBOARD_OPTIONS, "Dashboard Options"); // C (N, cs)
+selectTree(PAResourceEtoH.HardwareDashboardOptionsPanel_LAYER_TREE, "[Windows, xc7z010_1]", 0, true); // h (f, cs) - Node
+// TclEventType: HW_SYSMON_CHANGE
+selectTree(PAResourceEtoH.HardwareDashboardOptionsPanel_LAYER_TREE, "[Windows, xc7z010_1]", 0, true); // h (f, cs) - Node
+selectTree(PAResourceEtoH.HardwareDashboardOptionsPanel_LAYER_TREE, "[Windows, xc7z010_1]", 0, true); // h (f, cs) - Node
+selectTree(PAResourceEtoH.HardwareDashboardOptionsPanel_LAYER_TREE, "[Windows, xc7z010_1, XADC]", 2, false); // h (f, cs)
+selectButton(PAResourceEtoH.HardwareDashboardOptionsPanel_CLOSE_DASHBOARD_OPTIONS, (String) null); // E (u, cs)
+selectButton(PAResourceTtoZ.VioProbesTreeTablePanel_ADD_PROBE, "VioProbeTablePanel_new"); // E (g, cs)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hw_vio_1]", 0, true); // N (J, ResizableWindow) - Node
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 11 seconds
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "DEMO_i/axi_gpio_1_gpio2_io_o[9:0] ; [U] 0 ; HARDWARE_VIO_ACTIVITY_BOTH ; Input ; hw_vio_1", 1, "DEMO_i/axi_gpio_1_gpio2_io_o[9:0]", 0, true); // g (J, cs) - Node
+expandTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "DEMO_i/axi_gpio_1_gpio2_io_o[9:0] ; [U] 0 ; HARDWARE_VIO_ACTIVITY_BOTH ; Input ; hw_vio_1", 1); // g (J, cs)
+collapseTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "DEMO_i/axi_gpio_1_gpio2_io_o[9:0] ; [U] 0 ;  ; Input ; hw_vio_1", 1); // g (J, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BUZZER.vhd", 0); // m (l, cs)
+selectCodeEditor("BUZZER.vhd", 632, 209); // bP (w, cs)
+// Elapsed time: 66 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hw_vios", 1); // m (l, cs)
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "DEMO_i/axi_gpio_1_gpio2_io_o[9:0] ; [U] 0 ;  ; Input ; hw_vio_1", 1, "[U] 0", 1, true, false, false, false, true, false); // g (J, cs) - Popup Trigger - Node
+selectMenu(PAResourceItoN.LabtoolsMenu_RADIX, "Radix"); // af (ao, cs)
+selectMenu(PAResourceItoN.LabtoolsMenu_ACTIVITY_PERSISTENCE, "Activity Persistence"); // af (ao, cs)
+selectMenu(PAResourceItoN.LabtoolsMenu_NAME, "Name"); // af (ao, cs)
+selectMenu(PAResourceItoN.LabtoolsMenu_NAME, "Name"); // af (ao, cs)
+selectMenu(PAResourceItoN.LabtoolsMenu_ACTIVITY_PERSISTENCE, "Activity Persistence"); // af (ao, cs)
+selectMenu(PAResourceItoN.LabtoolsMenu_RADIX, "Radix"); // af (ao, cs)
+selectMenu(PAResourceItoN.LabtoolsMenu_ACTIVITY_PERSISTENCE, "Activity Persistence"); // af (ao, cs)
+selectMenu(PAResourceItoN.LabtoolsMenu_RADIX, "Radix"); // af (ao, cs)
+selectMenuItem(PAResourceItoN.LabtoolsMenu_BINARY, "Binary"); // aq (cs)
+// Run Command: PAResourceCommand.PACommandNames_SET_VIO_BINARY_RADIX
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property INPUT_VALUE_RADIX BINARY [get_hw_probes DEMO_i/axi_gpio_1_gpio2_io_o -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"DEMO_i/vio_0"}]] 
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "DEMO_i/axi_gpio_1_gpio_io_o[9:0] ; [U] 0 ;  ; Input ; hw_vio_1", 2, "[U] 0", 1, true); // g (J, cs) - Node
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "DEMO_i/axi_gpio_1_gpio_io_o[9:0] ; [U] 0 ;  ; Input ; hw_vio_1", 2, "[U] 0", 1, true); // g (J, cs) - Node
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "DEMO_i/axi_gpio_1_gpio_io_o[9:0] ; [U] 0 ;  ; Input ; hw_vio_1", 2, "[U] 0", 1, true, false, false, false, true, false); // g (J, cs) - Popup Trigger - Node
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Debug Probe Properties..."); // ai (ao, cs)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+// WARNING: updateGUI() is taking  1565 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1694 ms.
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "DEMO_i/axi_gpio_1_gpio_io_o[9:0] ; [U] 0 ;  ; Input ; hw_vio_1", 2, "[U] 0", 1, true, false, false, false, true, false); // g (J, cs) - Popup Trigger - Node
+selectMenu(PAResourceItoN.LabtoolsMenu_RADIX, "Radix"); // af (ao, cs)
+selectMenu(PAResourceItoN.LabtoolsMenu_ACTIVITY_PERSISTENCE, "Activity Persistence"); // af (ao, cs)
+selectMenu(PAResourceItoN.LabtoolsMenu_RADIX, "Radix"); // af (ao, cs)
+selectMenuItem(PAResourceItoN.LabtoolsMenu_BINARY, "Binary"); // aq (cs)
+// Run Command: PAResourceCommand.PACommandNames_SET_VIO_BINARY_RADIX
+// TclEventType: DEBUG_PROBE_CHANGE
+// Tcl Message: set_property INPUT_VALUE_RADIX BINARY [get_hw_probes DEMO_i/axi_gpio_1_gpio_io_o -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z010_1] -filter {CELL_NAME=~"DEMO_i/vio_0"}]] 
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "DEMO_i/AXIFloat_0_XD[31:0] ; [H] 0000_0000 ;  ; Input ; hw_vio_1", 0, "[H] 0000_0000", 1, true); // g (J, cs) - Node
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BUZZER.vhd", 0); // m (l, cs)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_OBJECT_DELETE
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_vios"); // i
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210351B3FC84A 
+// n (cs): Close Hardware Target: addNotify
+// TclEventType: HW_SERVER_UPDATE
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cs)
+selectCodeEditor("BUZZER.vhd", 459, 255); // bP (w, cs)
+// Elapsed time: 181 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 574, 41); // dT (ae, cs)
+// Elapsed time: 253 seconds
+selectCodeEditor("BUZZER.vhd", 412, 107); // bP (w, cs)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator]", 5, true); // u (J, cs) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IP_INTEGRATOR
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DEMO_wrapper(STRUCTURE) (DEMO_wrapper.vhd)]", 1); // B (F, cs)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Zybo-Z7-Master.xdc]", 5, false); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Zybo-Z7-Master.xdc]", 5, false, false, false, false, false, true); // B (F, cs) - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("Zybo-Z7-Master.xdc", 766, 150); // bP (w, cs)
+selectCodeEditor("Zybo-Z7-Master.xdc", 747, 131); // bP (w, cs)
+selectCodeEditor("Zybo-Z7-Master.xdc", 754, 179); // bP (w, cs)
+// Elapsed time: 36 seconds
+selectCodeEditor("Zybo-Z7-Master.xdc", 714, 177, false, false, false, true, false); // bP (w, cs) - Popup Trigger
+selectCodeEditor("Zybo-Z7-Master.xdc", 594, 188); // bP (w, cs)
+selectCodeEditor("Zybo-Z7-Master.xdc", 600, 188); // bP (w, cs)
+selectCodeEditor("Zybo-Z7-Master.xdc", 561, 145); // bP (w, cs)
+selectCodeEditor("Zybo-Z7-Master.xdc", 504, 132); // bP (w, cs)
+selectButton(RDIResourceCommand.RDICommands_LINE_COMMENT, (String) null); // E (g, cs)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 56 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "BUZZER.vhd", 2); // m (l, cs)
+selectCodeEditor("BUZZER.vhd", 260, 181); // bP (w, cs)
+selectCodeEditor("BUZZER.vhd", 289, 159); // bP (w, cs)
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "BUZZER.vhd", 'c'); // bP (w, cs)
+typeControlKey((HResource) null, "BUZZER.vhd", 'v'); // bP (w, cs)
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectCodeEditor("BUZZER.vhd", 455, 157); // bP (w, cs)
+// Elapsed time: 16 seconds
+typeControlKey((HResource) null, "BUZZER.vhd", 'c'); // bP (w, cs)
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "BUZZER.vhd", 'v'); // bP (w, cs)
+typeControlKey((HResource) null, "BUZZER.vhd", 'v'); // bP (w, cs)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1602 ms.
+selectCodeEditor("BUZZER.vhd", 190, 382); // bP (w, cs)
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 3104 ms. Increasing delay to 9312 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1959ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1959 ms.
+selectCodeEditor("BUZZER.vhd", 470, 368); // bP (w, cs)
+// Elapsed time: 62 seconds
+selectCodeEditor("BUZZER.vhd", 460, 156); // bP (w, cs)
+// Elapsed time: 16 seconds
+selectCodeEditor("BUZZER.vhd", 438, 189); // bP (w, cs)
+selectCodeEditor("BUZZER.vhd", 439, 181); // bP (w, cs)
+// Elapsed time: 68 seconds
+selectCodeEditor("BUZZER.vhd", 460, 121); // bP (w, cs)
+// Elapsed time: 15 seconds
+selectCodeEditor("BUZZER.vhd", 176, 430); // bP (w, cs)
+// Elapsed time: 13 seconds
+typeControlKey((HResource) null, "BUZZER.vhd", 'c'); // bP (w, cs)
+typeControlKey((HResource) null, "BUZZER.vhd", 'v'); // bP (w, cs)
+typeControlKey((HResource) null, "BUZZER.vhd", 'v'); // bP (w, cs)
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "BUZZER.vhd", 'c'); // bP (w, cs)
+typeControlKey((HResource) null, "BUZZER.vhd", 'v'); // bP (w, cs)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 101 MB. Current time: 7/7/24, 6:11:12 PM CLT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("BUZZER.vhd", 303, 416); // bP (w, cs)
+selectCodeEditor("BUZZER.vhd", 196, 361); // bP (w, cs)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m (l, cs)
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_CHANGED_MODULES, "Refresh Changed Modules"); // h (ds, cs)
+// TclEventType: IP_LOCK_CHANGE
+// Tcl Message: update_module_reference DEMO_BUZZER_0_0 
+// bz (cs):  Refresh Changed Modules : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// Tcl Message: INFO: [IP_Flow 19-5107] Inferred bus interface 'clk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository). 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/ip_repo'. INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Tests/ip_repo'. 
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// Tcl Message: Upgrading 'C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd' 
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1972] Upgraded DEMO_BUZZER_0_0 from BUZZER_v1_0 1.0 to BUZZER_v1_0 1.0 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Wrote  : <C:\Users\Amteo\Desktop\Proyecto-2-SEP-G14\Of\Hw_vivado\Hardware_Proyecto_Booster.srcs\sources_1\bd\DEMO\DEMO.bd>  Wrote  : <C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ui/bd_58220e03.ui>  
+// Tcl Message: update_module_reference: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 2914.105 ; gain = 0.000 
+// a (cs): Critical Messages: addNotify
+dismissDialog("Refresh Changed Modules"); // bz (cs)
+dismissDialog("Critical Messages"); // a (cs)
+// WARNING: updateGUI() is taking  1072 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1095 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1628 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1337ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1339 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1382 ms.
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 915, 116, 1259, 590, false, false, false, true, false); // hq (m, cs) - Popup Trigger
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins BUZZER_0/LEDR] 
+// Tcl Message: endgroup 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins BUZZER_0/LEDG] 
+// Tcl Message: endgroup 
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_PORTS
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: startgroup 
+// Tcl Message: make_bd_pins_external  [get_bd_pins BUZZER_0/LEDB] 
+// Tcl Message: endgroup 
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "LEDR", true); // ac (Q, cs)
+// Tcl Command: 'set_property name LEDR [get_bd_ports LEDR_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name LEDR [get_bd_ports LEDR_0] 
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "LEDG", true); // ac (Q, cs)
+// Tcl Command: 'set_property name LEDG [get_bd_ports LEDG_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name LEDG [get_bd_ports LEDG_0] 
+// Elapsed time: 10 seconds
+setText(PAResourceQtoS.RSBExternalPortPropPanels_NAME, "LEDB", true); // ac (Q, cs)
+// Tcl Command: 'set_property name LEDB [get_bd_ports LEDB_0]'
+// TclEventType: RSB_RENAME_OBJECT
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_RENAME_OBJECT
+// Tcl Message: set_property name LEDB [get_bd_ports LEDB_0] 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cs): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // r (cs)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cs): Re-customize IP: addNotify
+// Elapsed time: 20 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "IP Configuration", 1); // bi (E, r)
+setText("GPIO Width", "13", true); // D (bj, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cs)
+// Tcl Command: 'set_property -dict [list CONFIG.C_GPIO_WIDTH {13}] [get_bd_cells axi_gpio_1]'
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// r (cs): Re-customize IP: addNotify
+// bz (r):  Customize IP : addNotify
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.C_GPIO_WIDTH {13}] [get_bd_cells axi_gpio_1] 
+// Tcl Message: endgroup 
+dismissDialog("Customize IP"); // bz (r)
+// Elapsed time: 11 seconds
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (g, cs)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "slice"); // OverlayTextField (az, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Slice", 2, "Slice", 0, false); // L (J, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Slice", 2); // L (J, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Slice", 2, "Slice", 0, false, false, false, false, false, true); // L (J, ResizableWindow) - Double Click
+// Tcl Message: startgroup 
+// bz (cs):  Add IP : addNotify
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0 
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bz (cs)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cs): Re-customize IP: addNotify
+setText("Din Width", "13", true); // D (bj, r)
+// Elapsed time: 11 seconds
+setText("Din From", "12"); // D (bj, r)
+setText("Din From", "9"); // D (bj, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+// Tcl Command: 'set_property -dict [list CONFIG.DIN_FROM {9} CONFIG.DIN_WIDTH {13} CONFIG.DOUT_WIDTH {10}] [get_bd_cells xlslice_0]'
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+dismissDialog("Re-customize IP"); // r (cs)
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// r (cs): Re-customize IP: addNotify
+// bz (r):  Customize IP : addNotify
+// Tcl Message: set_property -dict [list CONFIG.DIN_FROM {9} CONFIG.DIN_WIDTH {13} CONFIG.DOUT_WIDTH {10}] [get_bd_cells xlslice_0] 
+dismissDialog("Customize IP"); // bz (r)
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // E (g, cs)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "slice"); // OverlayTextField (az, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Slice", 2, "Slice", 0, false); // L (J, ResizableWindow)
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Slice", 2); // L (J, ResizableWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Slice", 2, "Slice", 0, false, false, false, false, false, true); // L (J, ResizableWindow) - Double Click
+// Tcl Message: startgroup 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// bz (cs):  Add IP : addNotify
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_1 
+// Tcl Message: endgroup 
+dismissDialog("Add IP"); // bz (cs)
+// Tcl Command: 'set_property location {3 773 175} [get_bd_cells xlslice_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3 773 175} [get_bd_cells xlslice_0] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// O (cs):  Re-customize IP : addNotify
+// r (cs): Re-customize IP: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1835 ms.
+// Elapsed time: 12 seconds
+dismissDialog("Re-customize IP"); // O (cs)
+setText("Input  Probe  Count", "5", true); // D (bj, r)
+// WARNING: HEventQueue.dispatchEvent() is taking  1053 ms.
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "PROBE_IN Ports(0..4)", 1); // bi (E, r)
+setText("PROBE IN0 WIDTH", "13", true); // D (bj, r)
+setText("PROBE IN3 WIDTH", "10"); // D (bj)
+setText("PROBE IN4 WIDTH", "3", true); // D (bj, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cs)
+// Tcl Command: 'set_property -dict [list CONFIG.C_PROBE_IN4_WIDTH {3} CONFIG.C_PROBE_IN3_WIDTH {10} CONFIG.C_PROBE_IN0_WIDTH {13} CONFIG.C_NUM_PROBE_IN {5}] [get_bd_cells vio_0]'
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// r (cs): Re-customize IP: addNotify
+// bz (r):  Customize IP : addNotify
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.C_PROBE_IN4_WIDTH {3} CONFIG.C_PROBE_IN3_WIDTH {10} CONFIG.C_PROBE_IN0_WIDTH {13} CONFIG.C_NUM_PROBE_IN {5}] [get_bd_cells vio_0] 
+// Tcl Message: endgroup 
+// [GUI Memory]: 193 MB (+4409kb) [02:40:15]
+dismissDialog("Customize IP"); // bz (r)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_nets axi_gpio_1_gpio_io_o] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins axi_gpio_1/gpio_io_o] [get_bd_pins xlslice_0/Din] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins axi_gpio_1/gpio_io_o] [get_bd_pins xlslice_1/Din] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins axi_gpio_1/gpio_io_o] [get_bd_pins vio_0/probe_in0] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins xlslice_0/Dout] [get_bd_pins vio_0/probe_in3] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins xlslice_0/Dout] [get_bd_pins BUZZER_0/POT1] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins BUZZER_0/MOOD] [get_bd_pins vio_0/probe_in4] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins BUZZER_0/MOOD] [get_bd_pins xlslice_1/Dout] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cs): Re-customize IP: addNotify
+// Elapsed time: 47 seconds
+setText("Din Width", "13"); // D (bj, r)
+setText("Din From", "12"); // D (bj, r)
+setText("Din Down To", "10"); // D (bj, r)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (r)
+dismissDialog("Re-customize IP"); // r (cs)
+// Tcl Command: 'set_property -dict [list CONFIG.DIN_TO {10} CONFIG.DIN_FROM {12} CONFIG.DIN_WIDTH {13} CONFIG.DOUT_WIDTH {3}] [get_bd_cells xlslice_1]'
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.DIN_TO {10} CONFIG.DIN_FROM {12} CONFIG.DIN_WIDTH {13} CONFIG.DOUT_WIDTH {3}] [get_bd_cells xlslice_1] 
+// Tcl Message: endgroup 
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cs): Re-customize IP: addNotify
+// Elapsed time: 11 seconds
+dismissDialog("Re-customize IP"); // r (cs)
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// r (cs): Re-customize IP: addNotify
+dismissDialog("Re-customize IP"); // r (cs)
+// Elapsed time: 201 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DEMO_wrapper(STRUCTURE) (DEMO_wrapper.vhd)]", 1); // B (F, cs)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DEMO_wrapper(STRUCTURE) (DEMO_wrapper.vhd), DEMO_i : DEMO (DEMO.bd)]", 2, true); // B (F, cs) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, DEMO_wrapper(STRUCTURE) (DEMO_wrapper.vhd), DEMO_i : DEMO (DEMO.bd)]", 2, true, false, false, false, true, false); // B (F, cs) - Popup Trigger - Node
+selectMenuItem(PAResourceCommand.PACommandNames_CREATE_TOP_HDL, "Create HDL Wrapper..."); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_CREATE_TOP_HDL
+// a (cs): Create HDL Wrapper: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Create HDL Wrapper"); // a (cs)
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// bz (cs):  Create HDL Wrapper : addNotify
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: make_wrapper -files [get_files C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd] -top 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : <C:\Users\Amteo\Desktop\Proyecto-2-SEP-G14\Of\Hw_vivado\Hardware_Proyecto_Booster.srcs\sources_1\bd\DEMO\DEMO.bd>  Wrote  : <C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ui/bd_58220e03.ui>  VHDL Output written to : C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/synth/DEMO.vhd 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: VHDL Output written to : C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/sim/DEMO.vhd VHDL Output written to : C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/hdl/DEMO_wrapper.vhd 
+// Tcl Message: make_wrapper: Time (s): cpu = 00:00:22 ; elapsed = 00:00:38 . Memory (MB): peak = 2937.664 ; gain = 15.516 
+// Elapsed time: 37 seconds
+dismissDialog("Create HDL Wrapper"); // bz (cs)
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "run_bitstream"); // E (g, cs)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cs): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bz (cs):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cs)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run DEMO_vio_0_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run DEMO_axi_gpio_0_1_synth_1 
+// f (cs): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cD' command handler elapsed time: 4 seconds
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Launch Runs"); // f (cs)
+// bz (cs):  Generate Bitstream : addNotify
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 8 
+// Tcl Message: Wrote  : <C:\Users\Amteo\Desktop\Proyecto-2-SEP-G14\Of\Hw_vivado\Hardware_Proyecto_Booster.srcs\sources_1\bd\DEMO\DEMO.bd>  Wrote  : <C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/ui/bd_58220e03.ui>  
+// Tcl Message: VHDL Output written to : C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/synth/DEMO.vhd 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: VHDL Output written to : C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/sim/DEMO.vhd VHDL Output written to : C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/hdl/DEMO_wrapper.vhd 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block BUZZER_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_1 . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 . 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc . INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 . INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_1 . 
+// Tcl Message: Exporting to file C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/hw_handoff/DEMO.hwh Generated Block Design Tcl file C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/hw_handoff/DEMO_bd.tcl Generated Hardware Definition File C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/synth/DEMO.hwdef 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// WARNING: HEventQueue.dispatchEvent() is taking  1542 ms.
+// TclEventType: FILE_SET_NEW
+// Tcl Message: INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP DEMO_auto_pc_0, cache-ID = f0066fce20473567; cache size = 22.206 MB. 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// [GUI Memory]: 206 MB (+2921kb) [02:46:02]
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Jul  7 18:19:59 2024] Launched DEMO_vio_0_0_synth_1, DEMO_axi_gpio_0_1_synth_1, DEMO_BUZZER_0_0_synth_1, synth_1... Run output will be captured here: DEMO_vio_0_0_synth_1: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/DEMO_vio_0_0_synth_1/runme.log DEMO_axi_gpio_0_1_synth_1: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/DEMO_axi_gpio_0_1_synth_1/runme.log DEMO_BUZZER_0_0_synth_1: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/DEMO_BUZZER_0_0_synth_1/runme.log synth_1: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/synth_1/runme.log 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sun Jul  7 18:19:59 2024] Launched impl_1... Run output will be captured here: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 2947.254 ; gain = 9.590 
+// Elapsed time: 24 seconds
+dismissDialog("Generate Bitstream"); // bz (cs)
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3405 ms. Increasing delay to 3000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 10776ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 14188 ms. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2145 ms. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3271 ms. Increasing delay to 6000 ms.
+// WARNING: HTimer (ExpRunMonitor Update Timer) is taking 3270ms to process. Increasing delay to 3000 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 224 MB (+8290kb) [02:50:04]
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 1141ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1141 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// ag (cs): Bitstream Generation Completed: addNotify
+// Elapsed time: 804 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ag)
+dismissDialog("Bitstream Generation Completed"); // ag (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // af (cs)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}]'
+// k (cs): Export Hardware Platform: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, k)
+selectRadioButton((HResource) null, "Include bitstream. This platform includes the complete hardware implementation and bitstream, in addition to the hardware specification for software tools."); // b (a, k)
+selectButton("NEXT", "Next >"); // JButton (j, k)
+setText("XSA file name:", (String) null); // ac (Q, k)
+setText("XSA file name:", (String) null); // ac (Q, k)
+setText("XSA file name:", "AAA", true); // ac (Q, k)
+selectButton("NEXT", "Next >"); // JButton (j, k)
+selectButton("OptionPane.button", "Yes"); // JButton (v, C)
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}]'
+// Tcl Command: 'set_property pfm_name {} [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}]'
+selectButton("FINISH", "Finish"); // JButton (j, k)
+// 'm' command handler elapsed time: 32 seconds
+// Tcl Message: set_property pfm_name {} [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}] 
+dismissDialog("Export Hardware Platform"); // k (cs)
+// Tcl Message: write_hw_platform -fixed -include_bit -force -file C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/AAA.xsa 
+// Tcl Message: INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/AAA.xsa ... 
+// bz (cs):  Export Hardware Platform : addNotify
+// Tcl Message: INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/AAA.xsa 
+// Tcl Message: write_hw_platform: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 3023.633 ; gain = 76.379 
+// Elapsed time: 12 seconds
+dismissDialog("Export Hardware Platform"); // bz (cs)
+// Elapsed time: 21 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // af (cs)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}]'
+// k (cs): Export Hardware Platform: addNotify
+// Elapsed time: 10 seconds
+selectButton("NEXT", "Next >"); // JButton (j, k)
+selectRadioButton((HResource) null, "Include bitstream. This platform includes the complete hardware implementation and bitstream, in addition to the hardware specification for software tools."); // b (a, k)
+selectButton("NEXT", "Next >"); // JButton (j, k)
+setText("XSA file name:", "BBB", true); // ac (Q, k)
+selectButton("NEXT", "Next >"); // JButton (j, k)
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}]'
+// Tcl Command: 'set_property pfm_name {} [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}]'
+selectButton("FINISH", "Finish"); // JButton (j, k)
+// 'm' command handler elapsed time: 17 seconds
+// Tcl Message: set_property pfm_name {} [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}] 
+dismissDialog("Export Hardware Platform"); // k (cs)
+// Tcl Message: write_hw_platform -fixed -include_bit -force -file C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/BBB.xsa 
+// Tcl Message: INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/BBB.xsa ... 
+// bz (cs):  Export Hardware Platform : addNotify
+// Tcl Message: INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/BBB.xsa 
+// Tcl Message: write_hw_platform: Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3038.293 ; gain = 12.598 
+// Elapsed time: 13 seconds
+dismissDialog("Export Hardware Platform"); // bz (cs)
+// Elapsed time: 35 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // af (cs)
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // af (cs)
+selectMenuItem(PAResourceCommand.PACommandNames_EXPORT_HARDWARE, "Export Hardware..."); // ai (cs)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cs)
+// Run Command: PAResourceCommand.PACommandNames_EXPORT_HARDWARE
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}]'
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}]'
+// k (cs): Export Hardware Platform: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, k)
+selectRadioButton((HResource) null, "Include bitstream. This platform includes the complete hardware implementation and bitstream, in addition to the hardware specification for software tools."); // b (a, k)
+selectButton("NEXT", "Next >"); // JButton (j, k)
+setText("XSA file name:", "BBB", true); // ac (Q, k)
+selectButton("NEXT", "Next >"); // JButton (j, k)
+// Tcl Command: 'get_property pfm_name [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}]'
+// Tcl Command: 'set_property pfm_name {} [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}]'
+selectButton("FINISH", "Finish"); // JButton (j, k)
+// 'm' command handler elapsed time: 10 seconds
+// Tcl Message: set_property pfm_name {} [get_files -all {C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/Hardware_Proyecto_Booster.srcs/sources_1/bd/DEMO/DEMO.bd}] 
+dismissDialog("Export Hardware Platform"); // k (cs)
+// Tcl Message: write_hw_platform -fixed -include_bit -force -file C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/BBB.xsa 
+// Tcl Message: INFO: [Vivado 12-4895] Creating Hardware Platform: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/BBB.xsa ... 
+// bz (cs):  Export Hardware Platform : addNotify
+// Tcl Message: INFO: [Vivado 12-4896] Successfully created Hardware Platform: C:/Users/Amteo/Desktop/Proyecto-2-SEP-G14/Of/Hw_vivado/BBB.xsa 
+// Tcl Message: write_hw_platform: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 3050.477 ; gain = 12.117 
+// Elapsed time: 14 seconds
+dismissDialog("Export Hardware Platform"); // bz (cs)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// WARNING: HEventQueue.dispatchEvent() is taking  1009 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1178 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,806 MB. GUI used memory: 141 MB. Current time: 7/7/24, 6:41:17 PM CLT
+// Elapsed time: 353 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (J, cs) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+selectButton(PAResourceOtoP.ProgramDebugTab_REFRESH_DEVICE, "Refresh device"); // h (ds, cs)
+selectMenuItem((HResource) null, "xc7z010_1"); // ai (ao, cs)
+// Run Command: PAResourceCommand.PACommandNames_REFRESH_DEVICE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  1335 ms.
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-2302] Device xc7z010 (JTAG device index = 1) is programmed with a design that has 1 VIO core(s). 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// bz (cs):  Refresh Device : addNotify
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+dismissDialog("Refresh Device"); // bz (cs)
+expandTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "DEMO_i/AXIFloat_0_XD[31:0] ; [H] 0000_0000 ;  ; Input ; hw_vio_1", 0); // g (J, cs)
+collapseTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "DEMO_i/AXIFloat_0_XD[31:0] ; [H] 0000_0000 ;  ; Input ; hw_vio_1", 0); // g (J, cs)
+selectButton(PAResourceTtoZ.VioProbesTreeTablePanel_ADD_PROBE, "VioProbeTablePanel_new"); // E (g, cs)
+selectTree(PAResourceOtoP.ProbesView_PROBES_TREE, "[root, hw_vio_1]", 0, true); // N (J, ResizableWindow) - Node
+// Elapsed time: 13 seconds
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "DEMO_i/Net[2:0] ; [H] 0 ;  ; Input ; hw_vio_1", 1, "[H] 0", 1, true); // g (J, cs) - Node
+expandTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "DEMO_i/Net[2:0] ; [H] 0 ;  ; Input ; hw_vio_1", 1); // g (J, cs)
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "DEMO_i/Net[2:0] ; [H] 0 ;  ; Input ; hw_vio_1", 1, "[H] 0", 1, true, false, false, false, false, true); // g (J, cs) - Double Click - Node
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "DEMO_i/axi_gpio_1_gpio2_io_o[9:0] ; [B] 00_0000_0000 ;  ; Input ; hw_vio_1", 7, "[B] 00_0000_0000", 1, true); // g (J, cs) - Node
+expandTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "DEMO_i/axi_gpio_1_gpio2_io_o[9:0] ; [B] 00_0000_0000 ;  ; Input ; hw_vio_1", 7); // g (J, cs)
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "DEMO_i/axi_gpio_1_gpio2_io_o[9:0] ; [B] 00_0000_0000 ;  ; Input ; hw_vio_1", 7, "[B] 00_0000_0000", 1, true, false, false, false, false, true); // g (J, cs) - Double Click - Node
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "DEMO_i/axi_gpio_1_gpio_io_o[12:0] ; [H] 0000 ;  ; Input ; hw_vio_1", 5, "[H] 0000", 1, true); // g (J, cs) - Node
+expandTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "DEMO_i/axi_gpio_1_gpio_io_o[12:0] ; [H] 0000 ;  ; Input ; hw_vio_1", 5); // g (J, cs)
+selectTreeTable(PAResourceTtoZ.VioProbesTreeTablePanel_VIO_PROBES_TREE_TABLE, "DEMO_i/axi_gpio_1_gpio_io_o[12:0] ; [H] 0000 ;  ; Input ; hw_vio_1", 5, "[H] 0000", 1, true, false, false, false, false, true); // g (J, cs) - Double Click - Node
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// WARNING: HEventQueue.dispatchEvent() is taking  2329 ms.
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Elapsed time: 66 seconds
+closeView(PAResourceOtoP.PAViews_DASHBOARD, "hw_vios"); // i
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210351B3FC84A 
+// n (cs): Close Hardware Target: addNotify
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// WARNING: HEventQueue.dispatchEvent() is taking  1860 ms.
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: DEBUG_PROBE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_VIO_CHANGE
+// TclEventType: HW_VIO_PROBE_VALUE_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE

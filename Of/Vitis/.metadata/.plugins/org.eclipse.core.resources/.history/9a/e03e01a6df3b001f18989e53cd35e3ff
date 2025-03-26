@@ -1,0 +1,14 @@
+#include "estado2.h"
+#include "LCD_GUI.h"
+
+void handle_estado2(int mic_values[], int prev_mic_values[], const char* color) {
+    for (int i = 0; i < 19; i++) {
+        GUI_DrawLine(i * 6 + 10, 120 - prev_mic_values[i] / 8, (i + 1) * 6 + 10, 120 - prev_mic_values[i + 1] / 8, BLACK, LINE_SOLID, DOT_PIXEL_2X2);
+        prev_mic_values[i] = mic_values[i];
+    }
+    prev_mic_values[19] = mic_values[19];
+
+    for (int i = 0; i < 19; i++) {
+        GUI_DrawLine(i * 6 + 10, 120 - mic_values[i] / 8, (i + 1) * 6 + 10, 120 - mic_values[i + 1] / 8, color, LINE_SOLID, DOT_PIXEL_2X2);
+    }
+}
